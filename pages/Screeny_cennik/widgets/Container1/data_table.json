@@ -262,7 +262,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cenakatalogowa\"]))}}",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.cenakatalogowa).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
