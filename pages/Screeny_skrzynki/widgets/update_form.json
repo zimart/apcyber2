@@ -225,8 +225,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 214,
-  "originalTopRow": 125,
+  "originalBottomRow": 70,
+  "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -290,7 +290,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "maxheight",
           "position": 2,
-          "sourceData": 3000
+          "sourceData": 1500
         },
         "maxwidth": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -334,7 +334,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "skrzynkaliczba",
           "position": 6,
-          "sourceData": 95
+          "sourceData": 85
         },
         "systemskrzynka": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -401,7 +401,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "wysokosc",
           "position": 3,
-          "sourceData": 95
+          "sourceData": 85
         }
       },
       "dataType": "object",

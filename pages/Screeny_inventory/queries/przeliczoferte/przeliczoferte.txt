@@ -1,0 +1,6 @@
+UPDATE screeny_inventory
+SET systemzdoplata = CASE
+  {{tabela_screeny_inventory_id.updatedRows.map(() => `WHEN id = ${id.id} THEN '${id.updatedFields.systemzdoplata}'`).join('\n')}}
+END,
+
+WHERE id IN ({{tabela_screeny_inventory_id.updatedRows.map((id) => id.allFields.id).join(',')}});

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT wymiar FROM screeny_skrzynki where systemskrzynka = {{system_select.selectedOptionLabel}} AND {{szerokosc_input.text}} <= maxwidth AND maxheight >= {{wysokosc_input.text}}\nORDER BY wymiar DESC;",
+      "body": "SELECT wymiar FROM screeny_skrzynki where systemskrzynka = {{system_select.selectedOptionLabel}} AND {{szerokosc_input.text}} <= maxwidth AND maxheight >= {{wysokosc_input.text}}\nORDER BY wysokosc ASC;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

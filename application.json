@@ -117,6 +117,10 @@
     {
       "id": "Oferty3",
       "isDefault": false
+    },
+    {
+      "id": "Screeny_inventory2",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
