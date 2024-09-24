@@ -1,0 +1,10 @@
+INSERT INTO screeny_kolor (
+	system,
+	kolorm,
+	linia,
+	doplata)
+VALUES (
+	'{{insert_form.formData.system}}',
+	'{{insert_form.formData.kolorm}}',
+	'{{insert_form.formData.linia}}',
+	'{{insert_form.formData.doplata}}');

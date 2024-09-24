@@ -1,0 +1,2 @@
+DELETE FROM screeny_cennik
+  WHERE id_cennik = {{data_table.triggeredRow.id_cennik}};

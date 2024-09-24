@@ -1,0 +1,1 @@
+SELECT MAX(id_oferta) id_oferta FROM oferty;

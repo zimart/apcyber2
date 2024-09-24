@@ -1,0 +1,68 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 49,
+  "bottomRowBeforeCollapse": 7,
+  "boxShadow": "none",
+  "defaultText": "{{wysokosccala.wys2.data}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "iyb187w358",
+  "label": "WYSOKOŚĆ",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 26,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 5,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{storeValue('calkowita', wysokosc_input.text);}}",
+  "originalBottomRow": 47,
+  "originalTopRow": 40,
+  "parentColumnSpace": 19.59375,
+  "parentId": "8jwyu0isum",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 34,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 42,
+  "topRowBeforeCollapse": 0,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "sp5k2e25k8",
+  "widgetName": "wysokosc_input"
+}

@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66efc516595f5300cd79eedb_3c50288f-4b27-4eec-8eaf-72cef57a46ba",
+  "id": "rozne-js_html",
+  "unpublishedCollection": {
+    "name": "html",
+    "pageId": "rozne-js",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

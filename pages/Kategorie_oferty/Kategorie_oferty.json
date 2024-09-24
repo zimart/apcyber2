@@ -1,0 +1,33 @@
+{
+  "gitSyncId": "66db510001b5f41415619b59_f6d9e8ad-59c5-462d-a554-8ce15413cdb9",
+  "unpublishedPage": {
+    "isHidden": true,
+    "layouts": [
+      {
+        "dsl": {
+          "backgroundColor": "none",
+          "bottomRow": 890.0,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0.0,
+          "minHeight": 890.0,
+          "parentColumnSpace": 1.0,
+          "parentRowSpace": 1.0,
+          "rightColumn": 1174.0,
+          "snapColumns": 64.0,
+          "snapRows": 125.0,
+          "topRow": 0.0,
+          "type": "CANVAS_WIDGET",
+          "version": 90.0,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
+      }
+    ],
+    "name": "Kategorie_oferty",
+    "slug": "kategorie-oferty"
+  }
+}

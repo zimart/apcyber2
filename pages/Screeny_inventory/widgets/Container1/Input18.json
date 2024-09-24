@@ -1,0 +1,74 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "bottomRowBeforeCollapse": 7,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "changes",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{Select11.selectedOptionLabel===\"SCREENY\"}}",
+  "key": "6vwsj7s9ar",
+  "label": "Rabat na system",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelTextColor": "#831843",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 20,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 28,
+  "mobileRightColumn": 48,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{ustawrabat.run();\ntabela_inventory_id.run()}}",
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
+  "parentColumnSpace": 19.90625,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 27,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "gse7krk8qv",
+  "widgetName": "Input18"
+}

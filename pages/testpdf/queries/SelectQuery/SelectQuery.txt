@@ -1,0 +1,1 @@
+SELECT skugen,skrzynka,linia,system,szerokosc FROM screeny_inventory;

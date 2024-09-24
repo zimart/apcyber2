@@ -1,0 +1,1 @@
+SELECT DISTINCT tkanina_main FROM screeny_tkanina_wybor;

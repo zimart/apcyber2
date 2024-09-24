@@ -1,0 +1,12 @@
+INSERT INTO screeny_napedy (
+	seria,
+	rodzaj,
+	moc,
+	model,
+	cenakatalogowanaped)
+VALUES (
+	'{{insert_form.formData.seria}}',
+	'{{insert_form.formData.rodzaj}}',
+	'{{insert_form.formData.moc}}',
+	'{{insert_form.formData.model}}',
+	'{{insert_form.formData.cenakatalogowanaped}}');

@@ -1,0 +1,2 @@
+DELETE FROM screeny_system
+  WHERE id_system_screen = {{data_table.triggeredRow.id_system_screen}};

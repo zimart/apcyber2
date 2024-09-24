@@ -1,0 +1,11 @@
+{
+  "accessor": [
+    "Sketchfab",
+    "SketchfabAPIClient"
+  ],
+  "defs": "{\"!name\":\"LIB/Sketchfab\",\"SketchfabAPIClient\":{\"!type\":\"fn()\",\"prototype\":{\"getIdentifier\":{\"!type\":\"fn()\",\"prototype\":{}},\"getDomain\":{\"!type\":\"fn()\",\"prototype\":{}},\"setIdentifier\":{\"!type\":\"fn()\",\"prototype\":{}},\"use\":{\"!type\":\"fn()\",\"prototype\":{}},\"listenServer\":{\"!type\":\"fn()\",\"prototype\":{}}}},\"Sketchfab\":{\"!type\":\"fn()\",\"prototype\":{\"_urlOptionsDict\":{\"skfb_api_version\":{\"default\":{\"!type\":\"string\"},\"type\":{\"!type\":\"string\"}}},\"_optionsLoaded\":{\"!type\":\"fn()\",\"prototype\":{}},\"_getURLOption\":{\"!type\":\"fn()\",\"prototype\":{}},\"_getURLOptions\":{\"!type\":\"fn()\",\"prototype\":{}},\"getEmbedURL\":{\"!type\":\"fn()\",\"prototype\":{}},\"init\":{\"!type\":\"fn()\",\"prototype\":{}},\"_initializeAPIEmbed\":{\"!type\":\"fn()\",\"prototype\":{}},\"_realInit\":{\"!type\":\"fn()\",\"prototype\":{}},\"success\":{\"!type\":\"fn()\",\"prototype\":{}},\"error\":{\"!type\":\"fn()\",\"prototype\":{}},\"show\":{\"!type\":\"fn()\",\"prototype\":{}}}}}",
+  "name": "Sketchfab",
+  "uidString": "Sketchfab_SketchfabAPIClient_https://static.sketchfab.com/api/sketchfab-viewer-1.3.2.js",
+  "url": "https://static.sketchfab.com/api/sketchfab-viewer-1.3.2.js",
+  "version": ""
+}

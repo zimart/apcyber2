@@ -1,0 +1,62 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "0.375rem",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "defaultText": "{{rodzajwysokosci.selectedOptionValue}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ebj3l9h399",
+  "label": "from select",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 55,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{storeValue('dth', sku_input.text);}}",
+  "originalBottomRow": 193,
+  "originalTopRow": 187,
+  "parentColumnSpace": 19.89794921875,
+  "parentId": "esfh9fxray",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 1,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "tna7zcanuq",
+  "widgetName": "rodzajwysokoscilabel"
+}

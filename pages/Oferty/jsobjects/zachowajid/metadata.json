@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66db510001b5f41415619b59_4b5bf1b7-ccdd-4005-8d31-bcffebb652f2",
+  "id": "Oferty_zachowajid",
+  "unpublishedCollection": {
+    "name": "zachowajid",
+    "pageId": "Oferty",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "value",
+        "value": "''"
+      }
+    ]
+  }
+}

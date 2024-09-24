@@ -1,0 +1,4 @@
+UPDATE screeny_inventory SET
+    vat = '{{Vat.selectedOptionValue}}'
+  WHERE fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}};
+	

@@ -1,0 +1,1 @@
+SELECT DISTINCT wysokosc FROM screeny_skrzynki where wymiar = {{Select8.selectedOptionValue}}

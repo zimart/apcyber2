@@ -1,0 +1,5 @@
+UPDATE screeny_tkanina_wybor SET
+		tkanina = '{{update_form.fieldState.tkanina.isVisible ? update_form.formData.tkanina : update_form.sourceData.tkanina}}',
+		tkanina_main = '{{update_form.fieldState.tkanina_main.isVisible ? update_form.formData.tkanina_main : update_form.sourceData.tkanina_main}}',
+    doplatam2 = '{{update_form.fieldState.doplatam2.isVisible ? update_form.formData.doplatam2 : update_form.sourceData.doplatam2}}'
+WHERE id = {{data_table.selectedRow.id}};

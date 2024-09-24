@@ -1,0 +1,16 @@
+INSERT INTO oferty (
+	temat,
+	klient,
+	numeroferty,
+	kategoria,
+	id_klient,
+	fk_klienci_oferty_id,
+	dataoferty)
+VALUES (
+	'{{insert_form.formData.temat}}',
+	'{{insert_form.formData.klient}}',
+	'{{insert_form.formData.numeroferty}}',
+	'{{insert_form.formData.kategoria}}',
+	'{{insert_form.formData.id_klient}}',
+	'{{insert_form.formData.fk_klienci_oferty_id}}',
+	'{{insert_form.formData.dataoferty}}');

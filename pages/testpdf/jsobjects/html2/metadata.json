@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66db510001b5f41415619b59_198794c4-a99d-4345-8f9a-a38cf25fd3c8",
+  "id": "testpdf_html2",
+  "unpublishedCollection": {
+    "name": "html2",
+    "pageId": "testpdf",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

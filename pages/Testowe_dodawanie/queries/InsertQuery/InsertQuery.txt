@@ -1,0 +1,10 @@
+INSERT INTO testowe_dodawanie (
+
+	szer,
+	wys,
+	razem)
+VALUES (
+
+	'{{insert_form.formData.szer}}',
+	'{{insert_form.formData.wys}}',
+	'{{insert_form.formData.razem}}');

@@ -1,0 +1,45 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "delete",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "sc24l1mhlp",
+  "leftColumn": 55,
+  "minWidth": 50,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 55,
+  "mobileRightColumn": 59,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "onClick": "{{kasuj.run()}}",
+  "parentColumnSpace": 20.25,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 59,
+  "topRow": 4,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "c5bxvf54e5",
+  "widgetName": "IconButton4"
+}

@@ -1,0 +1,1 @@
+SELECT * FROM oferty where fk_klienci_oferty_id = {{appsmith.URL.queryParams.id_klienta}};

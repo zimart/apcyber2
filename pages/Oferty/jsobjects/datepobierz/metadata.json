@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66db510001b5f41415619b59_8343e53e-2adc-48b7-960d-60f96af54b3a",
+  "id": "Oferty_datepobierz",
+  "unpublishedCollection": {
+    "name": "datepobierz",
+    "pageId": "Oferty",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

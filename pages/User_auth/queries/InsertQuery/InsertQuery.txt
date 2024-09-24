@@ -1,0 +1,6 @@
+INSERT INTO user_auth (
+	email,
+	pass)
+VALUES (
+	'{{insert_form.formData.email}}',
+	'{{insert_form.formData.pass}}');

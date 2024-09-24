@@ -1,0 +1,55 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 45,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "i7safppxmo",
+  "leftColumn": 5,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 39,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 35,
+  "needsErrorInfo": false,
+  "originalBottomRow": 43,
+  "originalTopRow": 39,
+  "overflow": "NONE",
+  "parentColumnSpace": 19.3134765625,
+  "parentId": "8jwyu0isum",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "shouldTruncate": false,
+  "text": "wynik {{przedcena.przedcena.data}}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 41,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "spk6bchb0x",
+  "widgetName": "Text20"
+}

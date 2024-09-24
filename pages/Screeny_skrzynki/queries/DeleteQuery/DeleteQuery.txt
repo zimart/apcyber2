@@ -1,0 +1,2 @@
+DELETE FROM screeny_skrzynki
+  WHERE id = {{data_table.triggeredRow.id}};

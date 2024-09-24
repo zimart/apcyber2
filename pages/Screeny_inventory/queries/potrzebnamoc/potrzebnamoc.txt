@@ -1,0 +1,1 @@
+SELECT cenakatalogowanaped FROM screeny_napedy where model= {{Input8.text}};

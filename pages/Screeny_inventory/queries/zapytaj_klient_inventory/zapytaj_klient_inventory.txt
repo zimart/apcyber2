@@ -1,0 +1,1 @@
+SELECT accountname FROM klienci,oferty where fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};

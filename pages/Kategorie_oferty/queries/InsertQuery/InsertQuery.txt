@@ -1,0 +1,4 @@
+INSERT INTO kategorie_oferty (
+	nazwakategorii)
+VALUES (
+	'{{insert_form.formData.nazwakategorii}}');

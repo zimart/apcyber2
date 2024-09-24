@@ -1,0 +1,2 @@
+DELETE FROM screeny_tkanina_wybor
+  WHERE id = {{data_table.triggeredRow.id}};

@@ -1,0 +1,60 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "bottomRowBeforeCollapse": 6,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "plus",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{Select8.selectedOptionLabel.length > 1; szerokosc_input.text > 0; podawana_wysokosc_input.text > 0 }}",
+  "key": "sc24l1mhlp",
+  "leftColumn": 27,
+  "minWidth": 50,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 29,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onClick": "{{\nremoveValue('sku_value')\n.then(() => removeValue('potrzebnamoc'))\n.then(() => clearStore())\n.then(() => storeValue('sku_value', tymczasowy.text))\n.then(() => danesku.run())\n.then(() => storeValue('cenasystemu', danesku.data[0].cenakatalogowa))\n.then(() => storeValue('wymaganynaped', danesku.data[0].wymaganynaped))\n.then(() => napedwybrany.run())\n.then(() => storeValue('modelnapedu', napedwybrany.data[0].model))\n.then(() => cenanapeduwybranego.run())\n.then(() => \nstoreValue('cenanapedu', cenanapeduwybranego.data[0].cenakatalogowanaped))\n.then(() => cenarazem.razem())\n}}",
+  "originalBottomRow": 6,
+  "originalTopRow": 2,
+  "parentColumnSpace": 18.6884765625,
+  "parentId": "er5qa5lbjh",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 31,
+  "topRow": 2,
+  "topRowBeforeCollapse": 2,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "9flzflwhoy",
+  "widgetName": "IconButton3"
+}

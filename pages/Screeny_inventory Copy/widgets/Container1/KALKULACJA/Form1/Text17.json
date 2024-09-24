@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 71,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "Open Sans",
+  "fontSize": "0.875rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "1pws2crgz5",
+  "leftColumn": 7,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 30,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "originalBottomRow": 70,
+  "originalTopRow": 65,
+  "overflow": "NONE",
+  "parentColumnSpace": 7.03515625,
+  "parentId": "8jwyu0isum",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 23,
+  "shouldTruncate": false,
+  "text": "System:{{Select1.selectedOptionLabel}}\nCENA: {{cena_systemu.text}}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 67,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "uwyvbeszgl",
+  "widgetName": "Text17"
+}

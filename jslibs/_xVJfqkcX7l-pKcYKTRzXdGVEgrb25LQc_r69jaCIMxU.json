@@ -1,0 +1,13 @@
+{
+  "accessor": [
+    "applyPlugin_1",
+    "default_1",
+    "__drawTable_1",
+    "__createTable_1"
+  ],
+  "defs": "{\"!name\":\"LIB/__createTable_1\",\"__drawTable_1\":{\"!type\":\"fn()\",\"prototype\":{}},\"default_1\":{\"!type\":\"fn()\",\"prototype\":{}},\"applyPlugin_1\":{\"!type\":\"fn()\",\"prototype\":{}},\"__createTable_1\":{\"!type\":\"fn()\",\"prototype\":{}}}",
+  "name": "__createTable_1",
+  "uidString": "__createTable_1___drawTable_1_applyPlugin_1_default_1_https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.6/jspdf.plugin.autotable.min.js",
+  "url": "https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.6/jspdf.plugin.autotable.min.js",
+  "version": ""
+}

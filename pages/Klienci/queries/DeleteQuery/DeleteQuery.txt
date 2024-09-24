@@ -1,0 +1,2 @@
+DELETE FROM klienci
+  WHERE accountid = {{data_table.triggeredRow.accountid}};

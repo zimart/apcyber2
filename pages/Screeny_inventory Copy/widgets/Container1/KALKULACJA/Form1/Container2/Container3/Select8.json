@@ -1,0 +1,73 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "bottomRowBeforeCollapse": 4,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "pomnq6978w",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Skrzynka",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 20,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 87,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 80,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{\nremoveValue('sku_value');\nstoreValue('skrzynkawybrana', Select8.selectedOptionValue);\nwysokosccala.wys2();\nstoreValue('calkowita', wysokosc_input.text);\nindekswys.run();\n}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
+  "parentId": "er5qa5lbjh",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 27,
+  "serverSideFiltering": false,
+  "sourceData": "{{skrzynka_zapytaj.data.map( (obj) =>{ return  {'label': obj.wymiar, 'value': obj.wymiar } })}}",
+  "topRow": 2,
+  "topRowBeforeCollapse": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "jjk7svi5mc",
+  "widgetName": "Select8"
+}

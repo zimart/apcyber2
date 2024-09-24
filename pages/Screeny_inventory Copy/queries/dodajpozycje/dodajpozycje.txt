@@ -1,0 +1,8 @@
+INSERT INTO screeny_inventory (wysokosc, szerokosc, indexszer, indexwys, skugen, cena, doplatatkanina, doplatakolor, rabatsystem, linia, system, skrzynka, kolor, tkanina, wkladka, moc, naped, price_motor, rabatmotor, priceall, doplatawkladka, rodzajmotor, seq, fk_oferty_inventory_id, powierzchnia,concat)
+  VALUES ('{{wysokosc_input.text}}',
+					'{{szerokosc_input.text}}', 
+					{{index_szer_input.text}},
+					{{index_wys_input.text}}, 
+					'{{sku_input.text}}', 
+					'{{cena_zapytaj.data[0].cenakatalogowa}}',
+					'', '', '', '', '', '{{Select8.selectedOptionValue}}', '', '', '', '', '', '', '', '', 1, '', 1, '{{appsmith.URL.queryParams.id_oferta}}', '{{powierzchnia.text}}',{{concat1.text}});

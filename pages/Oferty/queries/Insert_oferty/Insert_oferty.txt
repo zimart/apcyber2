@@ -1,0 +1,16 @@
+INSERT INTO oferty (
+	temat,
+	klient,
+	numeroferty,
+	kategoria,
+	id_klient,
+	fk_klienci_oferty_id,
+	dataoferty)
+VALUES (
+	'{{insert_form.formData.tematinput}}',
+	'{{zapytaj_klient.data[0].accountname}}',
+	'"OF"',
+	'{{insert_form.formData.kategoriainput}}',
+	'{{appsmith.URL.queryParams.id_klienta}}',
+	'{{appsmith.URL.queryParams.id_klienta}}',
+	'{{datepobierz.dzisiaj.data}}');

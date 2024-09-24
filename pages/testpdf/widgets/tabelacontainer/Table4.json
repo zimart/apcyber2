@@ -1,0 +1,321 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 85,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "linia",
+    "skugen",
+    "skrzynka",
+    "system",
+    "szerokosc"
+  ],
+  "columnSizeMap": {
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "columnUpdatedAt": 1726505635444,
+  "columnWidthMap": {
+    "linia": 199
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": "0",
+  "delimiter": ",",
+  "derivedColumns": {
+    "customColumn1": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "buttonColor": "#DD4B34",
+      "buttonLabel": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
+      "buttonLabelColor": "#FFFFFF",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "customColumn1",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Delete",
+      "labelColor": "#FFFFFF",
+      "menuColor": "#03B365",
+      "onClick": "{{showModal('Delete_Modal')}}",
+      "width": 150
+    }
+  },
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "derivedColumns.customColumn1.buttonLabel"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.skugen.computedValue"
+    },
+    {
+      "key": "primaryColumns.skrzynka.computedValue"
+    },
+    {
+      "key": "primaryColumns.linia.computedValue"
+    },
+    {
+      "key": "primaryColumns.system.computedValue"
+    },
+    {
+      "key": "primaryColumns.szerokosc.computedValue"
+    },
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
+    },
+    {
+      "key": "onSort"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "enableServerSideFiltering": false,
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": "true",
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "zba5qel0au",
+  "label": "Data",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "onPageChange": "{{SelectQuery.run()}}",
+  "onSearchTextChanged": "{{SelectQuery.run()}}",
+  "onSort": "{{SelectQuery.run()}}",
+  "parentColumnSpace": 16.3125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "primaryColumnId": "id",
+  "primaryColumns": {
+    "linia": {
+      "alias": "linia",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"linia\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "linia",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "linia",
+      "notation": "standard",
+      "originalId": "linia",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "skrzynka": {
+      "alias": "skrzynka",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skrzynka\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "skrzynka",
+      "index": 12,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "skrzynka",
+      "notation": "standard",
+      "originalId": "skrzynka",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "skugen": {
+      "alias": "skugen",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skugen\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "skugen",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "skugen",
+      "notation": "standard",
+      "originalId": "skugen",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "system": {
+      "alias": "system",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"system\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "system",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "system",
+      "notation": "standard",
+      "originalId": "system",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "szerokosc": {
+      "alias": "szerokosc",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"szerokosc\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "szerokosc",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "szerokosc",
+      "notation": "standard",
+      "originalId": "szerokosc",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchKey": "",
+  "serverSidePaginationEnabled": true,
+  "tableData": "{{SelectQuery.data}}",
+  "textSize": "0.875rem",
+  "topRow": 6,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "uji69u6swx",
+  "widgetName": "Table4"
+}

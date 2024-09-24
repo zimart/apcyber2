@@ -1,0 +1,16 @@
+INSERT INTO screeny_skrzynki (
+	wymiar,
+	maxwidth,
+	maxheight,
+	wysokosc,
+	liniaskrzynka,
+	systemskrzynka,
+	skrzynkaliczba)
+VALUES (
+	'{{insert_form.formData.wymiar}}',
+	'{{insert_form.formData.maxwidth}}',
+	'{{insert_form.formData.maxheight}}',
+	'{{insert_form.formData.wysokosc}}',
+	'{{insert_form.formData.liniaskrzynka}}',
+	'{{insert_form.formData.systemskrzynka}}',
+	'{{insert_form.formData.skrzynkaliczba}}');

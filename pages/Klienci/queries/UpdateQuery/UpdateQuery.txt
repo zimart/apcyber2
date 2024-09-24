@@ -1,0 +1,11 @@
+UPDATE klienci SET
+		accountname = '{{update_form.fieldState.accountname.isVisible ? update_form.formData.accountname : update_form.sourceData.accountname}}',
+		phone = '{{update_form.fieldState.phone.isVisible ? update_form.formData.phone : update_form.sourceData.phone}}',
+    email1 = '{{update_form.fieldState.email1.isVisible ? update_form.formData.email1 : update_form.sourceData.email1}}',
+		imie = '{{update_form.fieldState.imie.isVisible ? update_form.formData.imie : update_form.sourceData.imie}}',
+		miejscowosc = '{{update_form.fieldState.miejscowosc.isVisible ? update_form.formData.miejscowosc : update_form.sourceData.miejscowosc}}',
+		nazwiskoklient = '{{update_form.fieldState.nazwiskoklient.isVisible ? update_form.formData.nazwiskoklient : update_form.sourceData.nazwiskoklient}}',
+		ulica = '{{update_form.fieldState.ulica.isVisible ? update_form.formData.ulica : update_form.sourceData.ulica}}',
+		numer = '{{update_form.fieldState.numer.isVisible ? update_form.formData.numer : update_form.sourceData.numer}}',
+		kod = '{{update_form.fieldState.kod.isVisible ? update_form.formData.kod : update_form.sourceData.kod}}'
+WHERE accountid = {{data_table.selectedRow.accountid}};

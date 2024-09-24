@@ -1,0 +1,1 @@
+SELECT * FROM screeny_skrzynki LIMIT 10;

@@ -1,0 +1,9 @@
+UPDATE oferty SET
+		klient = '{{update_form.fieldState.klient.isVisible ? update_form.formData.klient : update_form.sourceData.klient}}',
+		temat = '{{update_form.fieldState.temat.isVisible ? update_form.formData.temat : update_form.sourceData.temat}}',
+		numeroferty = '{{update_form.fieldState.numeroferty.isVisible ? update_form.formData.numeroferty : update_form.sourceData.numeroferty}}',
+    kategoria = '{{update_form.fieldState.kategoria.isVisible ? update_form.formData.kategoria : update_form.sourceData.kategoria}}',
+				id_klient = '{{update_form.fieldState.id_klient.isVisible ? update_form.formData.id_klient : update_form.sourceData.id_klient}}',
+		fk_klienci_oferty_id = '{{update_form.fieldState.fk_klienci_oferty_id.isVisible ? update_form.formData.fk_klienci_oferty_id : update_form.sourceData.fk_klienci_oferty_id}}'
+		
+WHERE id_oferta = {{data_table.selectedRow.id_oferta}};

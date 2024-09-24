@@ -1,0 +1,70 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "defaultOptionValue": "1",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "pomnq6978w",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Podawana wysokość",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 11,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 6,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => indekswys.run())\n.then(() => skrzynka_zapytaj.run())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => powierzchnian.m2()) \n\n}}",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
+  "parentColumnSpace": 19.59375,
+  "parentId": "er5qa5lbjh",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "[\n  {\n    \"name\": \"Wysokość całkowita\",\n    \"code\": \"1\"\n  },\n  {\n    \"name\": \"Wysokość okna\",\n    \"code\": \"2\"\n  }\n]",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "jb2rfypdp1",
+  "widgetName": "rodzajwysokosci"
+}

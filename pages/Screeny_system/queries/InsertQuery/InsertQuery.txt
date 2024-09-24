@@ -1,0 +1,12 @@
+INSERT INTO screeny_system (
+	system,
+	linia,
+	seq,
+	opis,
+	valueindeks)
+VALUES (
+	'{{insert_form.formData.system}}',
+	'{{insert_form.formData.linia}}',
+	'{{insert_form.formData.seq}}',
+	'{{insert_form.formData.opis}}',
+	'{{insert_form.formData.valueindeks}}');

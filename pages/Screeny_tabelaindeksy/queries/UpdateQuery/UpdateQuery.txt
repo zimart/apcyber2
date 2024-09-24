@@ -1,0 +1,7 @@
+UPDATE screeny_tabelaindeksy SET
+		kategoria = '{{update_form.fieldState.kategoria.isVisible ? update_form.formData.kategoria : update_form.sourceData.kategoria}}',
+		indeks = '{{update_form.fieldState.indeks.isVisible ? update_form.formData.indeks : update_form.sourceData.indeks}}',
+    szermin = '{{update_form.fieldState.szermin.isVisible ? update_form.formData.szermin : update_form.sourceData.szermin}}',
+		szermax = '{{update_form.fieldState.szermax.isVisible ? update_form.formData.szermax : update_form.sourceData.szermax}}',
+		indexszernumber = '{{update_form.fieldState.indexszernumber.isVisible ? update_form.formData.indexszernumber : update_form.sourceData.indexszernumber}}'
+WHERE id = {{data_table.selectedRow.id}};

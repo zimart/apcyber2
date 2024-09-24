@@ -1,0 +1,2 @@
+UPDATE screeny_inventory SET
+    rabatsystem = '{{Input18.text}}' WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}; 

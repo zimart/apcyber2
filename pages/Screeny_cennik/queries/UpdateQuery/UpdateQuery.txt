@@ -1,0 +1,13 @@
+UPDATE screeny_cennik SET
+		indeks = '{{update_form.fieldState.indeks.isVisible ? update_form.formData.indeks : update_form.sourceData.indeks}}',
+		rodzajescreen = '{{update_form.fieldState.rodzajescreen.isVisible ? update_form.formData.rodzajescreen : update_form.sourceData.rodzajescreen}}',
+    number = '{{update_form.fieldState.number.isVisible ? update_form.formData.number : update_form.sourceData.number}}',
+		skrzynkiscreen = '{{update_form.fieldState.skrzynkiscreen.isVisible ? update_form.formData.skrzynkiscreen : update_form.sourceData.skrzynkiscreen}}',
+		kolorkonstrukcji = '{{update_form.fieldState.kolorkonstrukcji.isVisible ? update_form.formData.kolorkonstrukcji : update_form.sourceData.kolorkonstrukcji}}',
+		szerokoscrodzaje = '{{update_form.fieldState.szerokoscrodzaje.isVisible ? update_form.formData.szerokoscrodzaje : update_form.sourceData.szerokoscrodzaje}}',
+		wysokoscscreena = '{{update_form.fieldState.wysokoscscreena.isVisible ? update_form.formData.wysokoscscreena : update_form.sourceData.wysokoscscreena}}',
+		wymaganynaped = '{{update_form.fieldState.wymaganynaped.isVisible ? update_form.formData.wymaganynaped : update_form.sourceData.wymaganynaped}}',
+		wagascreen = '{{update_form.fieldState.wagascreen.isVisible ? update_form.formData.wagascreen : update_form.sourceData.wagascreen}}',
+		napedscreen = '{{update_form.fieldState.napedscreen.isVisible ? update_form.formData.napedscreen : update_form.sourceData.napedscreen}}',
+		cenakatalogowa = '{{update_form.fieldState.cenakatalogowa.isVisible ? update_form.formData.cenakatalogowa : update_form.sourceData.cenakatalogowa}}'
+  WHERE id_cennik = {{data_table.selectedRow.id_cennik}};

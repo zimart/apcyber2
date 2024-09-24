@@ -1,0 +1,1 @@
+SELECT kolorm FROM screeny_kolor where system = {{system_select.selectedOptionLabel}}

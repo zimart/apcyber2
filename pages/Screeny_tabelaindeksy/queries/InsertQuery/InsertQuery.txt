@@ -1,0 +1,12 @@
+INSERT INTO screeny_tabelaindeksy (
+	kategoria,
+	indeks,
+	szermin,
+	szermax,
+	indexszernumber)
+VALUES (
+	'{{insert_form.formData.kategoria}}',
+	'{{insert_form.formData.indeks}}',
+	'{{insert_form.formData.szermin}}',
+	'{{insert_form.formData.szermax}}',
+	'{{insert_form.formData.indexszernumber}}');

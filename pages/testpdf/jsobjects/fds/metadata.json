@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66db510001b5f41415619b59_f77aeca6-f9c4-4ce5-b719-c96e5dd66d47",
+  "id": "testpdf_fds",
+  "unpublishedCollection": {
+    "name": "fds",
+    "pageId": "testpdf",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

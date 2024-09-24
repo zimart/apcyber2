@@ -1,0 +1,26 @@
+INSERT INTO screeny_cennik (
+	indeks,
+	rodzajescreen,
+	number,
+	skrzynkiscreen,
+	kolorkonstrukcji,
+	szerokoscrodzaje,
+	wysokoscscreena,
+	wymaganynaped,
+	wagascreen,
+	napedscreen,
+	cenakatalogowa
+)
+VALUES (
+	'{{insert_form.formData.indeks}}',
+	'{{insert_form.formData.rodzajescreen}}',
+	'{{insert_form.formData.number}}',
+	'{{insert_form.formData.skrzynkiscreen}}',
+	'{{insert_form.formData.kolorkonstrukcji}}',
+	'{{insert_form.formData.szerokoscrodzaje}}',
+	'{{insert_form.formData.wysokoscscreena}}',
+	'{{insert_form.formData.wymaganynaped}}',
+	'{{insert_form.formData.wagascreen}}',
+	'{{insert_form.formData.napedscreen}}',
+	'{{insert_form.formData.cenakatalogowa}}'
+);

@@ -1,0 +1,2 @@
+SELECT system,valueindeks FROM screeny_system where linia = {{update_form.formData.linia}} 
+ORDER BY seq ASC;

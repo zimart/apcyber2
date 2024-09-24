@@ -1,0 +1,4 @@
+UPDATE user_auth SET
+		email = '{{update_form.fieldState.email.isVisible ? update_form.formData.email : update_form.sourceData.email}}',
+		pass = '{{update_form.fieldState.pass.isVisible ? update_form.formData.pass : update_form.sourceData.pass}}'
+WHERE id_user = {{data_table.selectedRow.id_user}};

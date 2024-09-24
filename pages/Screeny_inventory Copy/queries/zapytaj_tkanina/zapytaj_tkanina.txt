@@ -1,0 +1,1 @@
+SELECT rodzaj_tkanina FROM screeny_tkanina;

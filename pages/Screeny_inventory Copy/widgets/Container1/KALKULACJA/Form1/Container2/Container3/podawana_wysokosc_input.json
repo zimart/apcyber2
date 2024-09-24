@@ -1,0 +1,83 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "bottomRowBeforeCollapse": 4,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onFocus"
+    },
+    {
+      "key": "onBlur"
+    }
+  ],
+  "errorMessage": "Błędna wartość - minimum 800 max 5000",
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "ebj3l9h399",
+  "label": "Wysokość",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 15,
+  "maxDynamicHeight": 9000,
+  "maxNum": "5000",
+  "minDynamicHeight": 4,
+  "minNum": "800",
+  "minWidth": 450,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 8,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "onBlur": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => indekswys.run())\n.then(() => skrzynka_zapytaj.run())\n}}\n",
+  "onFocus": "",
+  "onTextChanged": "",
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
+  "parentColumnSpace": 20.21875,
+  "parentId": "er5qa5lbjh",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 20,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "jmdkg0qk5r",
+  "widgetName": "podawana_wysokosc_input"
+}

@@ -1,0 +1,1 @@
+SELECT accountname FROM klienci where accountid = {{appsmith.URL.queryParams.id_klienta}};

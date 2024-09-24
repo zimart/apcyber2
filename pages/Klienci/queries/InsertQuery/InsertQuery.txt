@@ -1,0 +1,20 @@
+INSERT INTO klienci (
+	accountname,
+	phone,
+	email1,
+	imie,
+	miejscowosc,
+	nazwiskoklient,
+	ulica,
+	numer,
+	kod)
+VALUES (
+	'{{insert_form.formData.accountname}}',
+	'{{insert_form.formData.phone}}',
+	'{{insert_form.formData.email1}}',
+	'{{insert_form.formData.imie}}',
+	'{{insert_form.formData.miejscowosc}}',
+	'{{insert_form.formData.nazwiskoklient}}',
+	'{{insert_form.formData.ulica}}',
+	'{{insert_form.formData.numer}}',
+	'{{insert_form.formData.kod}}');

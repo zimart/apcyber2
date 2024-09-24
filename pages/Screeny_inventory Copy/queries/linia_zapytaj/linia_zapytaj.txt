@@ -1,0 +1,1 @@
+SELECT DISTINCT linia FROM screeny_system;

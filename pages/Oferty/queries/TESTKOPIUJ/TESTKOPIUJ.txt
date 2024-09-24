@@ -1,0 +1,3 @@
+UPDATE oferty SET
+   dataoferty = '{{datepobierz.dzisiaj.data}}'
+  WHERE oferty.id_oferta = {{data_table.triggeredRow.id_oferta}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

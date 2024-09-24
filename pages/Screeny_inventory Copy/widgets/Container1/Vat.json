@@ -1,0 +1,59 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "defaultOptionValue": "23%",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "9faquaewuq",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Label",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 18,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 20.25,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 23,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"23%\",\n    \"code\": \"23\"\n  },\n  {\n    \"name\": \"8%\",\n    \"code\": \"8\"\n  },\n  {\n    \"name\": \"0%\",\n    \"code\": \"0\"\n  }\n]",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "zz8nvmghgg",
+  "widgetName": "Vat"
+}

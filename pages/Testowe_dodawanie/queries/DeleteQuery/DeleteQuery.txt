@@ -1,0 +1,2 @@
+DELETE FROM testowe_dodawanie
+  WHERE id = {{data_table.triggeredRow.id}};

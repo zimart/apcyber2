@@ -1,0 +1,3 @@
+UPDATE kategorie_oferty SET
+		nazwakategorii = '{{update_form.fieldState.nazwakategorii.isVisible ? update_form.formData.nazwakategorii : update_form.sourceData.nazwakategorii}}'
+WHERE id_kategorieoferty = {{data_table.selectedRow.id_kategorieoferty}};

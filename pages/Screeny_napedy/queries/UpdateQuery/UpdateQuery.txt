@@ -1,0 +1,7 @@
+UPDATE screeny_napedy SET
+		seria = '{{update_form.fieldState.seria.isVisible ? update_form.formData.seria : update_form.sourceData.seria}}',
+		rodzaj = '{{update_form.fieldState.rodzaj.isVisible ? update_form.formData.rodzaj : update_form.sourceData.rodzaj}}',
+    moc = '{{update_form.fieldState.moc.isVisible ? update_form.formData.moc : update_form.sourceData.moc}}',
+		model = '{{update_form.fieldState.model.isVisible ? update_form.formData.model : update_form.sourceData.model}}',
+		cenakatalogowanaped = '{{update_form.fieldState.cenakatalogowanaped.isVisible ? update_form.formData.cenakatalogowanaped : update_form.sourceData.cenakatalogowanaped}}'
+WHERE id = {{data_table.selectedRow.id}};

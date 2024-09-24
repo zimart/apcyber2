@@ -1,0 +1,2 @@
+INSERT INTO screeny_skrzynki (wymiar, maxwidth, maxheight, wysokosc, liniaskrzynka, systemskrzynka, skrzynkaliczba)
+  VALUES ('{{data_table.triggeredRow.wymiar}}', {{data_table.triggeredRow.maxwidth}}, {{data_table.triggeredRow.maxheight}}, {{data_table.triggeredRow.wysokosc}}, '{{data_table.triggeredRow.liniaskrzynka}}', '{{data_table.triggeredRow.systemskrzynka}}', '{{data_table.triggeredRow.skrzynkaliczba}}');

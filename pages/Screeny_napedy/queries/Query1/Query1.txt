@@ -1,0 +1,1 @@
+SELECT DISTINCT Rodzaj FROM screeny_napedy;

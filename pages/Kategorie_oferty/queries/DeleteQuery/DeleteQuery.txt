@@ -1,0 +1,2 @@
+DELETE FROM kategorie_oferty
+  WHERE id_kategorieoferty = {{data_table.triggeredRow.id_kategorieoferty}};

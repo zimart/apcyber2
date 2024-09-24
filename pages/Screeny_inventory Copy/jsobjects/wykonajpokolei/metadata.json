@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66db510001b5f41415619b59_3f08e1c4-5880-45fe-96f0-ac7e0f50d040",
+  "id": "Screeny_inventory Copy_wykonajpokolei",
+  "unpublishedCollection": {
+    "name": "wykonajpokolei",
+    "pageId": "Screeny_inventory Copy",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}
