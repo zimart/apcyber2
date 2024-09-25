@@ -24,6 +24,7 @@
     }
   },
   "columnOrder": [
+    "id",
     "seq",
     "cenanetto",
     "ilosc",
@@ -51,7 +52,6 @@
     "powierzchnia",
     "vat",
     "rodzajpomiaru",
-    "id",
     "indexszer",
     "indexwys",
     "skugen",
@@ -65,7 +65,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1727211784674,
+  "columnUpdatedAt": 1727287870578,
   "columnWidthMap": {
     "cena": 126,
     "cenanetto": 115,

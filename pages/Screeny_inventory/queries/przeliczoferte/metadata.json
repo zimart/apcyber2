@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE screeny_inventory\nSET systemzdoplata = CASE\n  {{tabela_screeny_inventory_id.updatedRows.map(() => `WHEN id = ${id.id} THEN '${id.updatedFields.systemzdoplata}'`).join('\\n')}}\nEND,\n\nWHERE id IN ({{tabela_screeny_inventory_id.updatedRows.map((id) => id.allFields.id).join(',')}});",
+      "body": "UPDATE screeny_inventory SET\nsystemzdoplata = CASE \n   {{tabela_screeny_inventory_id.updatedRows.map((user) => `WHEN id = ${user.id} THEN '${user.updatedFields.systezdoplata}'`).join('\\n')}}\nEND\n\nWHERE id IN ({{data_table.updatedRows.map((user) => user.allFields.id).join(',')}});",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
