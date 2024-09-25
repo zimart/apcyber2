@@ -1113,9 +1113,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.systemzdoplata))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "systemzdoplata",
           "isCustomField": false,
@@ -1127,7 +1127,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "systemzdoplata",
           "position": 33,
-          "sourceData": 2477.8
+          "sourceData": "2824"
         },
         "szerokosc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

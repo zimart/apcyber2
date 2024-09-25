@@ -1276,7 +1276,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.systemzdoplata))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.cena+currentRow.doplatakolor+currentRow.doplatatkanina+currentRow.doplatatkanina).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
