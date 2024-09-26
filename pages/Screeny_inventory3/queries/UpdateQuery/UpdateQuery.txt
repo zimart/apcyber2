@@ -1,0 +1,13 @@
+UPDATE screeny_inventory SET
+		wysokosc = '{{update_form.fieldState.wysokosc.isVisible ? update_form.formData.wysokosc : update_form.sourceData.wysokosc}}',
+		szerokosc = '{{update_form.fieldState.szerokosc.isVisible ? update_form.formData.szerokosc : update_form.sourceData.szerokosc}}',
+    indexszer = '{{update_form.fieldState.indexszer.isVisible ? update_form.formData.indexszer : update_form.sourceData.indexszer}}',
+		indexwys = '{{update_form.fieldState.indexwys.isVisible ? update_form.formData.indexwys : update_form.sourceData.indexwys}}',
+		skugen = '{{update_form.fieldState.skugen.isVisible ? update_form.formData.skugen : update_form.sourceData.skugen}}',
+		cena = '{{update_form.fieldState.cena.isVisible ? update_form.formData.cena : update_form.sourceData.cena}}',
+		procentdoplatakolor = '{{update_form.fieldState.procentdoplatakolor.isVisible ? update_form.formData.procentdoplatakolor : update_form.sourceData.procentdoplatakolor}}',
+		doplatatkanina = '{{update_form.fieldState.doplatatkanina.isVisible ? update_form.formData.doplatatkanina : update_form.sourceData.doplatatkanina}}',
+		doplatakolor = '{{update_form.fieldState.doplatakolor.isVisible ? update_form.formData.doplatakolor : update_form.sourceData.doplatakolor}}',
+		systemzdoplata = '{{update_form.fieldState.systemzdoplata.isVisible ? update_form.formData.systemzdoplata : update_form.sourceData.systemzdoplata}}',
+		rabatsystem = '{{update_form.fieldState.rabatsystem.isVisible ? update_form.formData.rabatsystem : update_form.sourceData.rabatsystem}}'
+  WHERE id = {{data_table.selectedRow.id}};

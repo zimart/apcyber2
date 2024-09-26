@@ -121,6 +121,22 @@
     {
       "id": "Screeny_inventory2",
       "isDefault": false
+    },
+    {
+      "id": "Screeny_inventory3",
+      "isDefault": false
+    },
+    {
+      "id": "Members",
+      "isDefault": false
+    },
+    {
+      "id": "Reminders",
+      "isDefault": false
+    },
+    {
+      "id": "Screeny_inventory4",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
