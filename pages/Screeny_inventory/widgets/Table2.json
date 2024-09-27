@@ -67,10 +67,9 @@
     "systemzdoplata",
     "kwotarabatsystem",
     "systemporabacie",
-    "fk_tymczasowascreeny_sc_in",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1727455955953,
+  "columnUpdatedAt": 1727461207121,
   "columnWidthMap": {
     "concat": 361,
     "wysokosc": 116
@@ -213,9 +212,6 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
-    },
-    {
-      "key": "primaryColumns.fk_tymczasowascreeny_sc_in.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -522,40 +518,6 @@
       "label": "fk_oferty_inventory_id",
       "notation": "standard",
       "originalId": "fk_oferty_inventory_id",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "fk_tymczasowascreeny_sc_in": {
-      "alias": "fk_tymczasowascreeny_sc_in",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fk_tymczasowascreeny_sc_in\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "fk_tymczasowascreeny_sc_in",
-      "index": 35,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "fk_tymczasowascreeny_sc_in",
-      "notation": "standard",
-      "originalId": "fk_tymczasowascreeny_sc_in",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

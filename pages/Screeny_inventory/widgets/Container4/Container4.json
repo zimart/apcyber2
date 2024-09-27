@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
   "bottomRow": 192,
-  "bottomRowBeforeCollapse": 193,
+  "bottomRowBeforeCollapse": 192,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -86,7 +86,7 @@
   "rightColumn": 64,
   "shouldScrollContents": true,
   "topRow": 157,
-  "topRowBeforeCollapse": 158,
+  "topRowBeforeCollapse": 157,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "x1di2i22j2",
