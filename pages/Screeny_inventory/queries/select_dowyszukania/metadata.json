@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_d68caff7-a34a-4896-b716-10ca122f7db5",
-  "id": "Members_DeleteQuery",
+  "gitSyncId": "66f263e90ea81e705fc1052a_6ad28ba4-72b0-40d7-af3e-0db97ac59757",
+  "id": "Screeny_inventory_select_dowyszukania",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM members\n  WHERE id = {{data_table.triggeredRow.id}};",
+      "body": "\n\nSELECT id,kwotatymcz,id_wiersza,fk_oferty_inventory_id FROM tymczasowascreeny INNER JOIN screeny_inventory ON tymczasowascreeny.id_wiersza = screeny_inventory.id WHERE fk_oferty_inventory_idtymcz = fk_oferty_inventory_id;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,9 +22,10 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
+    "dynamicBindingPathList": [],
     "executeOnLoad": false,
-    "name": "DeleteQuery",
-    "pageId": "Members",
+    "name": "select_dowyszukania",
+    "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }
 }

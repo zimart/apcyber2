@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_d9d7f24b-c180-41cd-ad24-2ce2dffd921f",
-  "id": "Screeny_inventory_Query2",
+  "gitSyncId": "66f263e90ea81e705fc1052a_0ed3e317-8574-4a1a-b78c-197f566fd949",
+  "id": "Members2_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM dozalatwienia LIMIT 10;",
+      "body": "DELETE FROM members\n  WHERE id = {{data_table.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,8 +23,8 @@
       "pluginId": "mysql-plugin"
     },
     "executeOnLoad": false,
-    "name": "Query2",
-    "pageId": "Screeny_inventory",
+    "name": "DeleteQuery",
+    "pageId": "Members2",
     "userSetOnLoad": false
   }
 }

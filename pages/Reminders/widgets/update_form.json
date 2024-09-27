@@ -133,13 +133,40 @@
       "key": "schema.__root_schema__.children.id.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.message.defaultValue"
+      "key": "schema.__root_schema__.children.id_oferty.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.message.borderRadius"
+      "key": "schema.__root_schema__.children.id_oferty.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.message.accentColor"
+      "key": "schema.__root_schema__.children.id_oferty.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.systemzdoplata.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.systemzdoplata.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.systemzdoplata.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.rabatsystem.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.rabatsystem.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.rabatsystem.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.kwota.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.kwota.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.kwota.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -214,29 +241,95 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
           "position": 0,
-          "sourceData": 1
+          "sourceData": 21
         },
-        "message": {
+        "id_oferty": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "message",
+          "accessor": "id_oferty",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.message))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_oferty))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
           "iconAlign": "left",
-          "identifier": "message",
+          "identifier": "id_oferty",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Message",
+          "label": "Id Oferty",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "message",
-          "position": 1,
-          "sourceData": "Hi John Doe, please update your date of birth."
+          "originalIdentifier": "id_oferty",
+          "position": 2,
+          "sourceData": 446
+        },
+        "kwota": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "kwota",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kwota))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "kwota",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Kwota",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "kwota",
+          "position": 5,
+          "sourceData": ""
+        },
+        "rabatsystem": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "rabatsystem",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rabatsystem))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "rabatsystem",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Rabatsystem",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "rabatsystem",
+          "position": 4,
+          "sourceData": 0
+        },
+        "systemzdoplata": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "systemzdoplata",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.systemzdoplata))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "systemzdoplata",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Systemzdoplata",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "systemzdoplata",
+          "position": 3,
+          "sourceData": 1609.6
         }
       },
       "dataType": "object",

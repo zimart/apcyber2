@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_65fd997d-6ea7-44d3-bcca-d412db5cf4aa",
-  "id": "Members_InsertQuery",
+  "gitSyncId": "66f263e90ea81e705fc1052a_046e6820-73a1-46eb-8d54-0ac456a472e6",
+  "id": "Members2_InsertQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "InsertQuery",
-    "pageId": "Members",
+    "pageId": "Members2",
     "userSetOnLoad": false
   }
 }

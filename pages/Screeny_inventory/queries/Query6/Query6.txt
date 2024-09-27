@@ -1,3 +1,0 @@
-UPDATE screeny_inventory SET
-    kwotarabatsystem = 'systemzdoplata',
-    WHERE 1 = 0; -- Specify a valid condition here. Removing the condition may update every row in the table!

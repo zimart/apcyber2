@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66ede1a774e8fc514affabe0_03d4c5bc-15d6-4ecb-b99d-e09882975fff",
+  "gitSyncId": "66f263e90ea81e705fc1052a_c06e2ea7-e5e0-463c-bc5d-506f5fbf7309",
   "id": "Screeny_inventory_Query4",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM dozalatwienia LIMIT 10;",
+      "body": "\n\nCzasami zachodzi w MySQL potrzeba wykonania update'u jednej tabeli na podstawie informacji przechowywanych w innej tabeli. Można to zrobić poniższym poleceniem:\n\nUPDATE screeny_inventory INNER JOIN tymczasowascreeny ON tb1.pole1=tb2.pole2 set screeny_inventory.pole3='wartosc' WHERE tb2.pole4='warunek';\n\ngdzie: tb1 – tabela 1, tb2 – tabela 2, pole1 – pole złączenia 1 tabeli, pole2 – pole złączenia 2 tabeli, pole3 – w pole wpisujemy nową ‚wartosc', pole4 – pole tabeli obcej spełniające podany ‚warunek'.\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,6 +22,7 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
+    "dynamicBindingPathList": [],
     "executeOnLoad": false,
     "name": "Query4",
     "pageId": "Screeny_inventory",

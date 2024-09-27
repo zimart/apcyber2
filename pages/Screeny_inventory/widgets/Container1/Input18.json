@@ -6,7 +6,7 @@
   "bottomRow": 7,
   "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "0",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,6 +16,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -29,12 +32,13 @@
       "key": "onTextChanged"
     }
   ],
+  "errorMessage": "WPISZ ZERO",
   "iconAlign": "left",
   "iconName": "changes",
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": "{{Select11.selectedOptionLabel===\"SCREENY\"}}",
   "key": "6vwsj7s9ar",
   "label": "Rabat na system",
@@ -59,15 +63,18 @@
   "parentColumnSpace": 19.90625,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
+  "placeholderText": "WPISZ 0 ",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 27,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
+  "tooltip": "WPISZ 0",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{Input13.text.length > 0}}",
   "version": 2,
   "widgetId": "gse7krk8qv",
   "widgetName": "Input18"

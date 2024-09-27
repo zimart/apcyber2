@@ -127,15 +127,15 @@
       "isDefault": false
     },
     {
-      "id": "Members",
-      "isDefault": false
-    },
-    {
       "id": "Reminders",
       "isDefault": false
     },
     {
       "id": "Screeny_inventory4",
+      "isDefault": false
+    },
+    {
+      "id": "Members2",
       "isDefault": false
     }
   ],

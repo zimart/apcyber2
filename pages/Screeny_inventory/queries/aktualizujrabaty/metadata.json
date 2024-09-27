@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66efc516595f5300cd79eedb_7a52a35e-a5a2-47b9-a7ff-a35addadc46c",
-  "id": "Screeny_inventory_ustawrabat",
+  "gitSyncId": "66f263e90ea81e705fc1052a_792c0587-c707-4460-8d67-5bca30c7fb80",
+  "id": "Screeny_inventory_aktualizujrabaty",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE screeny_inventory SET\n    rabatsystem = '{{Input18.text}}',\n\t  kwotarabatsystem = systemzdoplata*(rabatsystem/100),\n\t\tsystemporabacie = systemzdoplata-kwotarabatsystem\n\t\tWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
+      "body": "UPDATE screeny_inventory SET\nsystemporabacie = systemzdoplata -kwotarabatsystem WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}; ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "ustawrabat",
+    "name": "aktualizujrabaty",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }

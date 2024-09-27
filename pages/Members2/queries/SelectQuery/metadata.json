@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_a2e125ae-c40f-4396-a58f-438467b987f4",
-  "id": "Members_SelectQuery",
+  "gitSyncId": "66f263e90ea81e705fc1052a_9fa766c8-222b-4aa7-b34d-a00737554fc0",
+  "id": "Members2_SelectQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": true,
     "name": "SelectQuery",
-    "pageId": "Members",
+    "pageId": "Members2",
     "userSetOnLoad": true
   }
 }

@@ -34,7 +34,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{dodajpozycje.run()\n.then(() => \nresetWidget(\"index_szer_input\", true))\n.then(() => \ntabela_inventory_id.run())\n.then(() => \nresetWidget(\"sku_input\", true))\n.then(() => \nresetWidget(\"cenabazowasystemu\", true))\n.then(() => \nresetWidget(\"szerokosc_input\", true))\n.then(() => \nresetWidget(\"podawana_wysokosc_input\", true))\n.then(() => \ncenasystemowkatalogowa.run())\n.then(() => \nclearStore())}}",
+  "onClick": "{{dodajpozycje.run()\n.then(() => \nprzepiszrabatztymczasowej.run())\n.then(() => \nprzeliczrabaty.run())\n.then(() => \nresetWidget(\"index_szer_input\", true))\n.then(() => \ntabela_inventory_id.run())\n.then(() => \nresetWidget(\"sku_input\", true))\n.then(() => \nresetWidget(\"cenabazowasystemu\", true))\n.then(() => \nresetWidget(\"szerokosc_input\", true))\n.then(() => \nresetWidget(\"podawana_wysokosc_input\", true))\n.then(() => \ncenasystemowkatalogowa.run())\n.then(() => \nclearStore())}}",
   "originalBottomRow": 35,
   "originalTopRow": 31,
   "parentId": "8jwyu0isum",

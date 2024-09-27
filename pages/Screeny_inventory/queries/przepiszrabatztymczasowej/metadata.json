@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_468514cf-2357-47d8-9cb4-8828ec6c6065",
-  "id": "Screeny_inventory_Query5",
+  "gitSyncId": "66f263e90ea81e705fc1052a_608f869b-4029-4f32-ac62-5fa929294af9",
+  "id": "Screeny_inventory_przepiszrabatztymczasowej",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELIMITER $$\n\nCREATE TRIGGER after_members_insert\nAFTER INSERT\nON members FOR EACH ROW\nBEGIN\n    IF NEW.birthDate IS NULL THEN\n        INSERT INTO reminders(memberId, message)\n        VALUES(new.id,CONCAT('Hi ', NEW.name, ', please update your date of birth.'));\n    END IF;\nEND$$\n\nDELIMITER ;",
+      "body": "UPDATE screeny_inventory\nJOIN tymczasowascreeny ON screeny_inventory.id = tymczasowascreeny.id_wiersza\nSET screeny_inventory.kwotarabatsystem = tymczasowascreeny.kwotatymcz,\nsystemporabacie = systemzdoplata-kwotarabatsystem ;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -24,7 +24,7 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": false,
-    "name": "Query5",
+    "name": "przepiszrabatztymczasowej",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }
