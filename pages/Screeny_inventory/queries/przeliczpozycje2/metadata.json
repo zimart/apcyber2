@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_409aaf50-b435-4633-8d24-c3506cfb048b",
-  "id": "Screeny_inventory_przeliczofertepojedynczo",
+  "gitSyncId": "66f263e90ea81e705fc1052a_bb048be8-909d-4e15-ac96-77ec3e556918",
+  "id": "Screeny_inventory_przeliczpozycje2",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE screeny_inventory SET\n     rabatsystem =  '{{tabela_screeny_inventory_id.updatedRow.rabatsystem}}',\n\t\t kwotarabatsystem = '{{tabela_screeny_inventory_id.updatedRow.systemzdoplata*(tabela_screeny_inventory_id.updatedRow.rabatsystem/100)}}'\n    WHERE id = {{tabela_screeny_inventory_id.updatedRow.id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!",
+      "body": "UPDATE screeny_inventory\nSET systemporabacie = systemzdoplata-kwotarabatsystem WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}\n\n;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "przeliczofertepojedynczo",
+    "name": "przeliczpozycje2",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }

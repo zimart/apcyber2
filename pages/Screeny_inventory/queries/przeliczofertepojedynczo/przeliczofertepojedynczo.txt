@@ -1,3 +1,4 @@
 UPDATE screeny_inventory SET
-    rabatsystem = '{{tabela_screeny_inventory_id.updatedRow.rabatsystem}}'
+     rabatsystem =  '{{tabela_screeny_inventory_id.updatedRow.rabatsystem}}',
+		 kwotarabatsystem = '{{tabela_screeny_inventory_id.updatedRow.systemzdoplata*(tabela_screeny_inventory_id.updatedRow.rabatsystem/100)}}'
     WHERE id = {{tabela_screeny_inventory_id.updatedRow.id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

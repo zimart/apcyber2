@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 260,
+  "bottomRow": 259,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -243,8 +243,8 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 392,
   "needsErrorInfo": false,
-  "originalBottomRow": 260,
-  "originalTopRow": 194,
+  "originalBottomRow": 259,
+  "originalTopRow": 193,
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
@@ -1486,7 +1486,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{tabela_inventory_id.data}}",
   "textSize": "0.875rem",
-  "topRow": 194,
+  "topRow": 193,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
