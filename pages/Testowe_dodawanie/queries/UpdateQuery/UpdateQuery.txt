@@ -1,5 +1,0 @@
-UPDATE testowe_dodawanie SET
-		szer = '{{update_form.fieldState.szer.isVisible ? update_form.formData.szer : update_form.sourceData.szer}}',
-    wys = '{{update_form.fieldState.wys.isVisible ? update_form.formData.wys : update_form.sourceData.wys}}',
-		razem = '{{update_form.fieldState.razem.isVisible ? update_form.formData.razem : update_form.sourceData.razem}}'
-WHERE id = {{data_table.selectedRow.id}};

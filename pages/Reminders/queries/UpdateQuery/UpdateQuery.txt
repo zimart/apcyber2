@@ -1,4 +1,0 @@
-UPDATE reminders SET
-		message = '{{update_form.fieldState.message.isVisible ? update_form.formData.message : update_form.sourceData.message}}',
-		id = '{{update_form.fieldState.id.isVisible ? update_form.formData.id : update_form.sourceData.id}}'
-WHERE memberId = {{data_table.selectedRow.memberId}};

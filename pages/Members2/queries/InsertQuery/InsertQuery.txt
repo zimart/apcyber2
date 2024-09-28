@@ -1,8 +1,0 @@
-INSERT INTO members (
-	name,
-	email,
-	birthDate)
-VALUES (
-	'{{insert_form.formData.name}}',
-	'{{insert_form.formData.email}}',
-	'{{insert_form.formData.birthDate}}');

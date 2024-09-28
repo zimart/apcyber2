@@ -109,34 +109,6 @@
     {
       "id": "rozne-js",
       "isDefault": false
-    },
-    {
-      "id": "Testowe_dodawanie",
-      "isDefault": false
-    },
-    {
-      "id": "Oferty3",
-      "isDefault": false
-    },
-    {
-      "id": "Screeny_inventory2",
-      "isDefault": false
-    },
-    {
-      "id": "Screeny_inventory3",
-      "isDefault": false
-    },
-    {
-      "id": "Reminders",
-      "isDefault": false
-    },
-    {
-      "id": "Screeny_inventory4",
-      "isDefault": false
-    },
-    {
-      "id": "Members2",
-      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

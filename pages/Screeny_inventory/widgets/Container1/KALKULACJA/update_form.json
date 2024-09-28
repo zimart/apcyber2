@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 133,
+  "bottomRow": 84,
   "bottomRowBeforeCollapse": 133,
   "boxShadow": "none",
   "childStylesheet": {
@@ -469,8 +469,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 133,
-  "originalTopRow": 44,
+  "originalBottomRow": 84,
+  "originalTopRow": 45,
   "parentColumnSpace": 16.3125,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -1294,7 +1294,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Update Row id: {{tabela_screeny_inventory_id.selectedRow.id}}",
-  "topRow": 44,
+  "topRow": 45,
   "topRowBeforeCollapse": 44,
   "type": "JSON_FORM_WIDGET",
   "version": 1,

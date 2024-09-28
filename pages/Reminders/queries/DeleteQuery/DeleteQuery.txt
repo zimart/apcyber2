@@ -1,2 +1,0 @@
-DELETE FROM reminders
-  WHERE memberId = {{data_table.triggeredRow.memberId}};

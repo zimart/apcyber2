@@ -1,8 +1,0 @@
-INSERT INTO reminders (
-	memberId,
-	message,
-	id)
-VALUES (
-	'{{insert_form.formData.memberId}}',
-	'{{insert_form.formData.message}}',
-	'{{insert_form.formData.id}}');
