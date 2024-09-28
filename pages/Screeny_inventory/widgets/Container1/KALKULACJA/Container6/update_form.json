@@ -450,6 +450,24 @@
     },
     {
       "key": "schema.__root_schema__.children.waluta.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.razemnetto.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.razemnetto.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.razemnetto.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.brutto.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.brutto.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.brutto.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -487,7 +505,7 @@
   "maxDynamicHeight": 284,
   "minDynamicHeight": 81,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 81,
+  "originalBottomRow": 89,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "2agene8jx6",
@@ -509,6 +527,28 @@
       "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
+        "brutto": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "brutto",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.brutto))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "brutto",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Brutto",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "brutto",
+          "position": 37,
+          "sourceData": null
+        },
         "cena": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "cena",
@@ -989,6 +1029,28 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rabatsystem",
           "position": 33
+        },
+        "razemnetto": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "razemnetto",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.razemnetto))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "razemnetto",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Razemnetto",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "razemnetto",
+          "position": 36,
+          "sourceData": null
         },
         "rodzajmotor": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
