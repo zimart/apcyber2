@@ -24,9 +24,16 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -47,6 +54,7 @@
   "mobileRightColumn": 56,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
+  "onOptionChange": "{{doplata.wkladka();}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 7,

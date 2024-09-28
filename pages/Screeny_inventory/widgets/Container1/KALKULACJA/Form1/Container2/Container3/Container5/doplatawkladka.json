@@ -6,7 +6,7 @@
   "bottomRow": 7,
   "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{Number(doplata.wkladka.data).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,6 +16,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -26,7 +29,7 @@
   ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "inputType": "NUMBER",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
@@ -56,6 +59,7 @@
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 48,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 0,
   "topRowBeforeCollapse": 0,

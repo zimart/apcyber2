@@ -18,7 +18,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
@@ -41,6 +45,7 @@
   "mobileRightColumn": 33,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
+  "onTextChanged": "{{doplata.wkladka();}}",
   "originalBottomRow": 13,
   "originalTopRow": 6,
   "parentColumnSpace": 19.9375,

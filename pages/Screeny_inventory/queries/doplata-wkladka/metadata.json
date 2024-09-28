@@ -26,6 +26,6 @@
     "fullyQualifiedName": "doplata.wkladka",
     "name": "wkladka",
     "pageId": "Screeny_inventory",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

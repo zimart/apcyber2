@@ -22,13 +22,13 @@ return doplatatkanina.toFixed(2);
 	 
 wkladka: function () {
 //var wartoscdoplaty = doplatakolorinput.text;
-var cenametra = Input20.text;
+var cenametra = Input19.text;
 //var skrzynka = Select8.selectedOptionValue;
 var dlugoscprowadnic = dlugosprowadnic.text;
 var doplatawkladkacena;
 if (wkladkaselect.selectedOptionLabel === 'NZIPS') {doplatawkladkacena = dlugoscprowadnic * cenametra; }
 else if (wkladkaselect.selectedOptionLabel === 'NZIP/A') {doplatawkladkacena = 0; }
-return doplatawkladkacena.toFixed(2);
+return doplatawkladkacena;
 },
 	
 };
