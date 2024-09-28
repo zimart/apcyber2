@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 11,
   "boxShadow": "none",
-  "defaultOptionValue": "23%",
+  "defaultOptionValue": "23",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -17,6 +17,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -44,7 +47,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{tabela_inventory_id.run();}}",
+  "onOptionChange": "{{vatustaw.run();\nprzeliczpozycje.run()\ntabela_inventory_id.run();\n}}",
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 20.25,

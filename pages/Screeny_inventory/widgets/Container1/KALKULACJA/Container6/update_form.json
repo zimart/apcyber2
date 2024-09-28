@@ -6,7 +6,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
   "bottomRow": 108,
-  "bottomRowBeforeCollapse": 81,
+  "bottomRowBeforeCollapse": 108,
   "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
@@ -514,7 +514,7 @@
   "maxDynamicHeight": 284,
   "minDynamicHeight": 81,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 81,
+  "originalBottomRow": 108,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "2agene8jx6",
@@ -717,9 +717,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ilosc))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "ilosc",
           "isCustomField": false,
@@ -731,7 +731,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ilosc",
           "position": 24,
-          "sourceData": "1"
+          "sourceData": 1
         },
         "indexszer": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1023,9 +1023,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rabatmotor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "rabatmotor",
           "isCustomField": false,
@@ -1037,7 +1037,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rabatmotor",
           "position": 17,
-          "sourceData": ""
+          "sourceData": 0
         },
         "rabatsystem": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
