@@ -26,8 +26,8 @@ var cenametra = Input19.text;
 //var skrzynka = Select8.selectedOptionValue;
 var dlugoscprowadnic = dlugosprowadnic.text;
 var doplatawkladkacena;
-if (wkladkaselect.selectedOptionLabel === 'NZIPS') {doplatawkladkacena = dlugoscprowadnic * cenametra; }
-else if (wkladkaselect.selectedOptionLabel === 'NZIP/A') {doplatawkladkacena = 0; }
+if (wkladkaselect.selectedOptionLabel === 'NZIPS'&& Select1.selectedOptionLabel=== 'STANDARD') {doplatawkladkacena = dlugoscprowadnic * cenametra; }
+else if (Select1.selectedOptionLabel !== 'STANDARD') {doplatawkladkacena = 0; }
 return doplatawkladkacena;
 },
 	

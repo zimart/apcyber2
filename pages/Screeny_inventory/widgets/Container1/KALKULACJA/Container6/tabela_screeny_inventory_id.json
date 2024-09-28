@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 81,
+  "bottomRow": 107,
   "bottomRowBeforeCollapse": 128,
   "boxShadow": "none",
   "childStylesheet": {
@@ -314,7 +314,7 @@
   "labelTextSize": "0.875rem",
   "leftColumn": 0,
   "onPageChange": "{{tabela_inventory_id.run()}}",
-  "onPageSizeChange": "{{tabela_inventory_id.run()}}",
+  "onPageSizeChange": "",
   "onSearchTextChanged": "{{tabela_inventory_id.run()}}",
   "onSort": "{{tabela_inventory_id.run()}}",
   "originalBottomRow": 128,

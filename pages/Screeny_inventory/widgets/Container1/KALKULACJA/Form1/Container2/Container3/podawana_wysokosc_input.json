@@ -18,9 +18,6 @@
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "onTextChanged"
-    },
-    {
       "key": "onBlur"
     }
   ],
@@ -60,9 +57,9 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onBlur": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n.then(() => indekswys.run())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => \ndoplata.wkladka()\t)\n.then(() => \nskrzynka_zapytaj.run())\n.then(() => powierzchnian.m2())\n\n}}\n",
+  "onBlur": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n.then(() => indekswys.run())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => \ndoplata.wkladka()\t)\n.then(() => \nskrzynka_zapytaj.run())\n.then(() => powierzchnian.m2())\n.then(() => resetWidget(\"doplatawkladka2\", true))\n.then(() => \t\t\tresetWidget(\"wkladkaselect\", true))\n\t\t\t\n\t\n\n}}\n",
   "onFocus": "",
-  "onTextChanged": "",
+  "onTextChanged": "{{doplata.wkladka();}}",
   "originalBottomRow": 4,
   "originalTopRow": 0,
   "parentColumnSpace": 20.21875,

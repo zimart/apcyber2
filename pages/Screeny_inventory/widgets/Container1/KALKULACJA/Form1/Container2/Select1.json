@@ -20,6 +20,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -47,7 +50,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 123,
   "needsErrorInfo": false,
-  "onOptionChange": "{{system_zapytaj.run();}}",
+  "onOptionChange": "{{system_zapytaj.run();\nresetWidget(\"doplatawkladka2\", true);}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 32,
