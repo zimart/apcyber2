@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 16,
   "boxShadow": "none",
-  "defaultText": "{{Number(cenabazowasystemu.text+kosztdoplatykolor.text+doplatadotkaninyinput.text).toFixed(2)}}",
+  "defaultText": "{{Number(cenabazowasystemu.text+kosztdoplatykolor.text+doplatadotkaninyinput.text+doplatawkladka2.text).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

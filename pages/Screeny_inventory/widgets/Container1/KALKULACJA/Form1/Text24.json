@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 36,
+  "bottomRow": 33,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,8 +33,8 @@
   "mobileRightColumn": 8,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "originalBottomRow": 36,
-  "originalTopRow": 31,
+  "originalBottomRow": 33,
+  "originalTopRow": 28,
   "overflow": "NONE",
   "parentColumnSpace": 18.6875,
   "parentId": "8jwyu0isum",
@@ -46,7 +46,7 @@
   "text": "Cena systemu z dopłatami: {{systemzdoplatami.text ||\"\"}}\nPowierzchnia : {{powierzchnia.text||\"\"}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 31,
+  "topRow": 28,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

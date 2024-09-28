@@ -3,10 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
-  "bottomRowBeforeCollapse": 7,
+  "bottomRow": 16,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{Number(((wysokosccala.wys2.data-wartoscskrzynka.text)*2)/1000).toFixed(2) || \"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,54 +14,52 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
+  "dynamicTriggerPathList": [
     {
-      "key": "isVisible"
+      "key": "onTextChanged"
     }
   ],
-  "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "iconName": "bring-data",
-  "inputType": "TEXT",
+  "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{Select11.selectedOptionLabel===\"SCREENY\"}}",
-  "key": "elxt2cdz2s",
-  "label": "Rabat na automatykę",
+  "isVisible": true,
+  "key": "1vd02ht2jz",
+  "label": "Długość prowadnic",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "BOLD",
-  "labelTextColor": "#7f1d1d",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 27,
+  "leftColumn": 34,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 7,
-  "mobileLeftColumn": 37,
-  "mobileRightColumn": 57,
-  "mobileTopRow": 0,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 7,
-  "originalTopRow": 0,
+  "onTextChanged": "{{doplata.wkladka();}}",
+  "originalBottomRow": 57,
+  "originalTopRow": 50,
   "parentColumnSpace": 19.9375,
-  "parentId": "59rw5mx0bq",
+  "parentId": "esfh9fxray",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 34,
+  "rightColumn": 40,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 0,
-  "topRowBeforeCollapse": 0,
+  "topRow": 9,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "lhpzqaeuqk",
-  "widgetName": "rabatautomatyka"
+  "widgetId": "uupj8dlnth",
+  "widgetName": "dlugosprowadnic"
 }
