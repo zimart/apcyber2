@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 93,
+  "bottomRow": 128,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -68,9 +68,11 @@
     "kwotarabatsystem",
     "systemporabacie",
     "kurseuro",
-    "waluta"
+    "waluta",
+    "razemnetto",
+    "brutto"
   ],
-  "columnUpdatedAt": 1727535849200,
+  "columnUpdatedAt": 1727547743432,
   "columnWidthMap": {
     "concat": 262
   },
@@ -206,6 +208,12 @@
     },
     {
       "key": "primaryColumns.waluta.computedValue"
+    },
+    {
+      "key": "primaryColumns.razemnetto.computedValue"
+    },
+    {
+      "key": "primaryColumns.brutto.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -248,6 +256,40 @@
   "parentId": "w811u4s83s",
   "parentRowSpace": 10,
   "primaryColumns": {
+    "brutto": {
+      "alias": "brutto",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"brutto\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "brutto",
+      "index": 38,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "brutto",
+      "notation": "standard",
+      "originalId": "brutto",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "cena": {
       "alias": "cena",
       "allowCellWrapping": false,
@@ -1006,6 +1048,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "razemnetto": {
+      "alias": "razemnetto",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"razemnetto\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "razemnetto",
+      "index": 37,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "razemnetto",
+      "notation": "standard",
+      "originalId": "razemnetto",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "rodzajmotor": {
       "alias": "rodzajmotor",
       "allowCellWrapping": false,
@@ -1463,7 +1539,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{tabela_inventory_id.data}}",
   "textSize": "0.875rem",
-  "topRow": 13,
+  "topRow": 0,
   "totalRecordsCount": "30",
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",

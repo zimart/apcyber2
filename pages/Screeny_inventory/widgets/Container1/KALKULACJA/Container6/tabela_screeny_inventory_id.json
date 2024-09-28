@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 107,
+  "bottomRow": 108,
   "bottomRowBeforeCollapse": 128,
   "boxShadow": "none",
   "childStylesheet": {
@@ -64,14 +64,15 @@
     "customColumn1",
     "kurseuro",
     "waluta",
-    "cenanetto"
+    "cenanetto",
+    "kwotarabatmotor"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1727538777028,
+  "columnUpdatedAt": 1727548409474,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 115,
@@ -262,6 +263,9 @@
       "key": "primaryColumns.brutto.computedValue"
     },
     {
+      "key": "primaryColumns.kwotarabatmotor.computedValue"
+    },
+    {
       "key": "tableData"
     }
   ],
@@ -314,7 +318,7 @@
   "labelTextSize": "0.875rem",
   "leftColumn": 0,
   "onPageChange": "{{tabela_inventory_id.run()}}",
-  "onPageSizeChange": "",
+  "onPageSizeChange": "{{tabela_inventory_id.run()}}",
   "onSearchTextChanged": "{{tabela_inventory_id.run()}}",
   "onSort": "{{tabela_inventory_id.run()}}",
   "originalBottomRow": 128,
@@ -840,6 +844,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "kwotarabatmotor": {
+      "alias": "kwotarabatmotor",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kwotarabatmotor\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "kwotarabatmotor",
+      "index": 39,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "kwotarabatmotor",
+      "notation": "standard",
+      "originalId": "kwotarabatmotor",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "kwotarabatsystem": {
       "alias": "kwotarabatsystem",
       "allowCellWrapping": false,
@@ -1017,7 +1055,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.price_motor).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.price_motor/Select6.selectedOptionValue).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1698,13 +1736,13 @@
   "renderMode": "CANVAS",
   "rightColumn": 52,
   "searchKey": "",
-  "serverSidePaginationEnabled": true,
+  "serverSidePaginationEnabled": false,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{tabela_inventory_id.data}}",
   "textSize": "0.875rem",
   "topRow": 0,
   "topRowBeforeCollapse": 50,
-  "totalRecordsCount": "25",
+  "totalRecordsCount": "20",
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",
   "version": 3,
