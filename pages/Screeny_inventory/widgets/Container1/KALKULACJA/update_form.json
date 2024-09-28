@@ -793,7 +793,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kwotarabatsystem",
           "position": 33,
-          "sourceData": "226"
+          "sourceData": "28.28"
         },
         "linia": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1145,7 +1145,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "systemporabacie",
           "position": 33,
-          "sourceData": "226"
+          "sourceData": "254.55"
         },
         "systemzdoplata": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
