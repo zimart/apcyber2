@@ -1,0 +1,1 @@
+SELECT {{Select12.selectedOptionValue}} FROM lang where polski = "Cena bazowa";

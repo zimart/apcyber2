@@ -6,7 +6,7 @@
   "bottomRow": 6,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{doplata.kolor.data}}",
+  "defaultText": "{{Number(doplata.kolor.data).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

@@ -1,0 +1,2 @@
+DELETE FROM lang
+  WHERE id_lang = {{data_table.triggeredRow.id_lang}};

@@ -6,7 +6,7 @@
   "bottomRow": 6,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.store.cenasystemu}}",
+  "defaultText": "{{Number(appsmith.store.cenasystemu).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -35,7 +35,7 @@
   "isRequired": true,
   "isVisible": "{{sku_input.isValid}}",
   "key": "2t39cnlom2",
-  "label": "Cena bazowa systemu",
+  "label": "Cena bazowa PLN",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

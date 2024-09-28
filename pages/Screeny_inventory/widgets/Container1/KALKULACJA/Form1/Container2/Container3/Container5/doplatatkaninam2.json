@@ -6,7 +6,7 @@
   "bottomRow": 6,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{kosztdoplatytkanina.data[0].doplatam2}}",
+  "defaultText": "{{Number(kosztdoplatytkanina.data[0].doplatam2).toFixed()}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

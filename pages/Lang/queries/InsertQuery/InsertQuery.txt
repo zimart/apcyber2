@@ -1,0 +1,8 @@
+INSERT INTO lang (
+	polski,
+	angielski,
+	niemiecki)
+VALUES (
+	'{{insert_form.formData.polski}}',
+	'{{insert_form.formData.angielski}}',
+	'{{insert_form.formData.niemiecki}}');

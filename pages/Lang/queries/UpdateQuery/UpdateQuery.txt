@@ -1,0 +1,5 @@
+UPDATE lang SET
+		polski = '{{update_form.fieldState.polski.isVisible ? update_form.formData.polski : update_form.sourceData.polski}}',
+		angielski = '{{update_form.fieldState.angielski.isVisible ? update_form.formData.angielski : update_form.sourceData.angielski}}',
+    niemiecki = '{{update_form.fieldState.niemiecki.isVisible ? update_form.formData.niemiecki : update_form.sourceData.niemiecki}}'
+WHERE id_lang = {{data_table.selectedRow.id_lang}};
