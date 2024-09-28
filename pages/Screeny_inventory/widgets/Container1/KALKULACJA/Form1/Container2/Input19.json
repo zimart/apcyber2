@@ -1,63 +1,62 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": false,
+  "animateLoading": true,
+  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "WHITE-WHITE 002 002",
+  "defaultText": "",
   "dynamicBindingPathList": [
-    {
-      "key": "sourceData"
-    },
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "sourceData"
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
   "isDisabled": false,
-  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
-  "key": "p6i97dwydz",
+  "isVisible": "{{Select1.selectedOptionValue === \"STANDARD\" && szerokosc_input.text > 1200 }}",
+  "key": "1vd02ht2jz",
+  "label": "Dopłata wkł/mb",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 48,
+  "leftColumn": 58,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 189,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 20,
-  "mobileTopRow": 182,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 38,
+  "mobileRightColumn": 58,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "optionLabel": "label",
-  "optionValue": "value",
-  "originalBottomRow": 189,
-  "originalTopRow": 182,
+  "parentColumnSpace": 19.9375,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "Referencja",
   "renderMode": "CANVAS",
+  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 58,
-  "serverSideFiltering": false,
-  "sourceData": "{{tkaninawybor.data.map( (obj) =>{ return  {'label': obj.tkanina, 'value': obj.tkanina } })}}",
+  "rightColumn": 64,
+  "showStepArrows": false,
   "topRow": 0,
-  "type": "SELECT_WIDGET",
-  "version": 1,
-  "widgetId": "psksqvlpxy",
-  "widgetName": "Select10"
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "0x5z80xvyg",
+  "widgetName": "Input19"
 }
