@@ -915,7 +915,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#f4f4f5",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.systemporabacie))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.cenanetto))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,

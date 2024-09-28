@@ -1,4 +1,5 @@
 UPDATE screeny_inventory SET
-    rabatmotor = '{{rabatautomatyka.text}}'
-	 
+    rabatmotor = '{{rabatautomatyka.text}}',
+	  priceall = price_motor-(price_motor*(rabatmotor/100))
+		
 		WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};

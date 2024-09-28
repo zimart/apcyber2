@@ -56,7 +56,7 @@
   "mobileRightColumn": 57,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onBlur": "{{ustawrabatautomatyka.run();\ntabela_inventory_id.run()}}",
+  "onBlur": "{{ustawrabatautomatyka.run();\ntabela_inventory_id.run().catch(() => {});}}",
   "onTextChanged": "",
   "originalBottomRow": 7,
   "originalTopRow": 0,
