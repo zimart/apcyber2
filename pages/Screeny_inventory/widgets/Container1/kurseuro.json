@@ -15,7 +15,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
@@ -38,11 +42,12 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
+  "onTextChanged": "{{zmienkurs.run();\ntabela_inventory_id.run()}}",
   "parentColumnSpace": 20.25,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
+  "resetOnSubmit": false,
   "responsiveBehavior": "fill",
   "rightColumn": 25,
   "shouldAllowAutofill": false,
