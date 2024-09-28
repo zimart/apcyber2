@@ -27,7 +27,9 @@ INSERT INTO screeny_inventory (wysokosc,
 															 rodzajpomiaru,
 															 procentdoplatakolor,
 														 	ilosc,
-															systemzdoplata)
+															systemzdoplata,
+															kurseuro,
+															waluta)
   VALUES ('{{wysokosc_input.text}}',
 					'{{szerokosc_input.text}}', 
 					{{index_szer_input.text}},
@@ -57,6 +59,8 @@ INSERT INTO screeny_inventory (wysokosc,
 				  '{{rodzajwysokosci.selectedOptionLabel}}',
 					'{{doplatakolorinput.text}}',
 					'{{Input2.text}}',
-					'{{systemzdoplatami.text}}'
+					'{{systemzdoplatami.text}}',
+					'{{kurseuro.text}}',
+					'{{Select6.selectedOptionValue}}'
 				
 				 );

@@ -59,14 +59,16 @@
     "system",
     "kolor",
     "fk_oferty_inventory_id",
-    "customColumn1"
+    "customColumn1",
+    "kurseuro",
+    "waluta"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1727461207343,
+  "columnUpdatedAt": 1727506883577,
   "columnWidthMap": {
     "cena": 126,
     "cenanetto": 115,
@@ -223,9 +225,6 @@
       "key": "primaryColumns.systemporabacie.computedValue"
     },
     {
-      "key": "tableData"
-    },
-    {
       "key": "primaryColumns.customColumn1.boxShadow"
     },
     {
@@ -233,6 +232,15 @@
     },
     {
       "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.kurseuro.computedValue"
+    },
+    {
+      "key": "primaryColumns.waluta.computedValue"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [],
@@ -734,6 +742,40 @@
       "label": "kolor",
       "notation": "standard",
       "originalId": "kolor",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "kurseuro": {
+      "alias": "kurseuro",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kurseuro\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "kurseuro",
+      "index": 35,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "kurseuro",
+      "notation": "standard",
+      "originalId": "kurseuro",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -1452,6 +1494,40 @@
       "label": "vat",
       "notation": "standard",
       "originalId": "vat",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "waluta": {
+      "alias": "waluta",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"waluta\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "waluta",
+      "index": 36,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "waluta",
+      "notation": "standard",
+      "originalId": "waluta",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
