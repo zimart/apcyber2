@@ -3,6 +3,7 @@
   "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
+  "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
   "defaultOptionValue": "SOMFY",
   "dynamicBindingPathList": [
@@ -11,12 +12,18 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -28,7 +35,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
+  "isVisible": "{{system_select.selectedOptionLabel !== \"SOLAR ZIIIP\"}}",
   "key": "pomnq6978w",
   "labelAlignment": "left",
   "labelPosition": "Top",
@@ -47,8 +54,8 @@
   "onOptionChange": "{{rodzajnapedu.run();}}",
   "optionLabel": "name",
   "optionValue": "code",
-  "originalBottomRow": 172,
-  "originalTopRow": 165,
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
   "placeholderText": "Seria napędu",
@@ -58,6 +65,7 @@
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"SOMFY\",\n    \"code\": \"SOMFY\"\n  },\n  {\n    \"name\": \"STANDARD\",\n    \"code\": \"STANDARD\"\n  }\n]",
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "ejtqh5suq5",

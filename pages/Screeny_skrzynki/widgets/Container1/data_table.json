@@ -39,6 +39,7 @@
     "task": 245
   },
   "columnUpdatedAt": 1726311180369,
+  "compactMode": "SHORT",
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -150,6 +151,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.onClick"
+    },
+    {
+      "key": "onPageSizeChange"
     }
   ],
   "enableClientSideSearch": true,
@@ -169,6 +173,7 @@
   "labelTextSize": "0.875rem",
   "leftColumn": 1,
   "onPageChange": "{{SelectQuery.run()}}",
+  "onPageSizeChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
   "parentColumnSpace": 16.3125,
@@ -534,7 +539,7 @@
   "tableData": "{{SelectQuery.data}}",
   "textSize": "0.875rem",
   "topRow": 6,
-  "totalRecordsCount": 0,
+  "totalRecordsCount": "30",
   "type": "TABLE_WIDGET_V2",
   "version": 3,
   "verticalAlignment": "CENTER",

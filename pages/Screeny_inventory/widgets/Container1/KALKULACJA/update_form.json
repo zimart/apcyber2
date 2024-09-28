@@ -6,7 +6,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
   "bottomRow": 92,
-  "bottomRowBeforeCollapse": 84,
+  "bottomRowBeforeCollapse": 92,
   "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
@@ -1356,7 +1356,7 @@
   },
   "title": "Update Row id: {{tabela_screeny_inventory_id.selectedRow.id}}",
   "topRow": 53,
-  "topRowBeforeCollapse": 45,
+  "topRowBeforeCollapse": 53,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "6g4ewsx2v0",

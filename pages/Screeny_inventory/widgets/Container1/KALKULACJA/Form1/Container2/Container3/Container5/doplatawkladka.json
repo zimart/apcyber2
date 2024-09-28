@@ -4,6 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
+  "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -12,16 +13,24 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{Select1.selectedOptionValue === \"STANDARD\" && szerokosc_input.text > 1200 }}",
   "key": "1vd02ht2jz",
   "label": "Dopłata wkładka",
   "labelAlignment": "left",
@@ -38,6 +47,8 @@
   "mobileRightColumn": 59,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
   "parentColumnSpace": 19.9375,
   "parentId": "ikmrmo799q",
   "parentRowSpace": 10,
@@ -47,6 +58,7 @@
   "rightColumn": 48,
   "showStepArrows": false,
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ilfd6vi2w6",

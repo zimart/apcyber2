@@ -3,6 +3,7 @@
   "animateLoading": false,
   "borderRadius": "0.375rem",
   "bottomRow": 4,
+  "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
   "defaultOptionValue": "IO",
   "dynamicBindingPathList": [
@@ -11,6 +12,9 @@
     },
     {
       "key": "accentColor"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -20,6 +24,9 @@
     },
     {
       "key": "onOptionChange"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -31,7 +38,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
+  "isVisible": "{{system_select.selectedOptionLabel !== \"SOLAR ZIIIP\"}}",
   "key": "pomnq6978w",
   "labelAlignment": "left",
   "labelPosition": "Top",
@@ -50,8 +57,8 @@
   "onOptionChange": "{{removeValue('sku_value');}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 172,
-  "originalTopRow": 165,
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
   "placeholderText": "Napęd",
@@ -61,6 +68,7 @@
   "serverSideFiltering": false,
   "sourceData": "{{rodzajnapedu.data.map( (obj) =>{ return  {'label': obj.rodzaj, 'value': obj.rodzaj } })}}",
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "eihntrxfyx",
