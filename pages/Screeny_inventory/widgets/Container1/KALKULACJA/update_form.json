@@ -5,8 +5,8 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 89,
-  "bottomRowBeforeCollapse": 89,
+  "bottomRow": 84,
+  "bottomRowBeforeCollapse": 84,
   "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
@@ -1355,8 +1355,8 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Update Row id: {{tabela_screeny_inventory_id.selectedRow.id}}",
-  "topRow": 50,
-  "topRowBeforeCollapse": 50,
+  "topRow": 45,
+  "topRowBeforeCollapse": 45,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "6g4ewsx2v0",
