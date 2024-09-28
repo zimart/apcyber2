@@ -6,7 +6,7 @@
   "bottomRow": 7,
   "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "0",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -24,10 +24,17 @@
       "key": "isVisible"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
+    }
+  ],
   "iconAlign": "left",
   "iconName": "bring-data",
-  "inputType": "TEXT",
+  "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
@@ -49,6 +56,8 @@
   "mobileRightColumn": 57,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "onBlur": "{{ustawrabatautomatyka.run();\ntabela_inventory_id.run()}}",
+  "onTextChanged": "",
   "originalBottomRow": 7,
   "originalTopRow": 0,
   "parentColumnSpace": 19.9375,
@@ -58,6 +67,7 @@
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 64,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 0,
   "topRowBeforeCollapse": 0,

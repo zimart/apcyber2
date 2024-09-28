@@ -230,15 +230,6 @@
       "key": "schema.__root_schema__.children.naped.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.price_motor.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.price_motor.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.price_motor.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.rabatmotor.defaultValue"
     },
     {
@@ -468,6 +459,15 @@
     },
     {
       "key": "schema.__root_schema__.children.brutto.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.price_motor.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.price_motor.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.price_motor.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -501,11 +501,11 @@
   "isVisible": "{{!!tabela_screeny_inventory_id.selectedRow.id}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 53,
+  "leftColumn": 52,
   "maxDynamicHeight": 284,
   "minDynamicHeight": 81,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 89,
+  "originalBottomRow": 81,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "2agene8jx6",
@@ -546,8 +546,7 @@
           "label": "Brutto",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "brutto",
-          "position": 37,
-          "sourceData": null
+          "position": 37
         },
         "cena": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -942,7 +941,7 @@
           "label": "Price Motor",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "price_motor",
-          "position": 16,
+          "position": 37,
           "sourceData": "222.66"
         },
         "priceall": {
@@ -1049,8 +1048,7 @@
           "label": "Razemnetto",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "razemnetto",
-          "position": 36,
-          "sourceData": null
+          "position": 36
         },
         "rodzajmotor": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
