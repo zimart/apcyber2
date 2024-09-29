@@ -70,9 +70,10 @@
     "kurseuro",
     "waluta",
     "razemnetto",
-    "brutto"
+    "brutto",
+    "kwotarabatmotor"
   ],
-  "columnUpdatedAt": 1727547743432,
+  "columnUpdatedAt": 1727638303350,
   "columnWidthMap": {
     "concat": 262
   },
@@ -214,6 +215,9 @@
     },
     {
       "key": "primaryColumns.brutto.computedValue"
+    },
+    {
+      "key": "primaryColumns.kwotarabatmotor.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -724,6 +728,40 @@
       "label": "kurseuro",
       "notation": "standard",
       "originalId": "kurseuro",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "kwotarabatmotor": {
+      "alias": "kwotarabatmotor",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kwotarabatmotor\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "kwotarabatmotor",
+      "index": 39,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "kwotarabatmotor",
+      "notation": "standard",
+      "originalId": "kwotarabatmotor",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
