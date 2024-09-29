@@ -4,7 +4,8 @@ SET systemporabacie = systemzdoplata-kwotarabatsystem,
 		cenanetto = systemporabacie + priceall,
 		razemnetto = cenanetto * ilosc,
 		brutto = razemnetto +(razemnetto*(vat/100)),
-		concat = concat("Roleta:",system,"/",skrzynka,"/",kolor," ", szerokosc,"x",wysokosc," ",tkanina)
+		concat = concat(system,"/",skrzynka,"/",kolor," ", szerokosc,"x",wysokosc," ",tkanina),
+		moc = concat(moc,"-",system,"/",skrzynka,"/",kolor," ", szerokosc,"x",wysokosc," ",tkanina)
 WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}
 
 

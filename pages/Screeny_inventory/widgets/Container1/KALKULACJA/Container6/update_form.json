@@ -329,15 +329,6 @@
       "key": "schema.__root_schema__.children.concat.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.cenanetto.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.cenanetto.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.cenanetto.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.linia.options"
     },
     {
@@ -477,6 +468,15 @@
     },
     {
       "key": "schema.__root_schema__.children.kwotarabatmotor.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.cenanetto.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.cenanetto.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.cenanetto.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -585,9 +585,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.cenanetto))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "cenanetto",
           "isCustomField": false,
@@ -598,8 +598,8 @@
           "label": "Cenanetto",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "cenanetto",
-          "position": 30,
-          "sourceData": 1067.3
+          "position": 38,
+          "sourceData": "[object Object]"
         },
         "concat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -826,9 +826,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kwotarabatmotor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "kwotarabatmotor",
           "isCustomField": false,
@@ -840,7 +840,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kwotarabatmotor",
           "position": 38,
-          "sourceData": 26
+          "sourceData": ""
         },
         "kwotarabatsystem": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
