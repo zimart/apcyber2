@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 13,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,20 +33,20 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "originalBottomRow": 12,
-  "originalTopRow": 7,
+  "originalBottomRow": 13,
+  "originalTopRow": 9,
   "overflow": "NONE",
   "parentColumnSpace": 20.25,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 16,
+  "rightColumn": 15,
   "shouldTruncate": false,
   "text": "CENA SYSTEMÓW KATALOGOWO : {{(cenasystemowkatalogowa.data[0][\"SUM (cena)\"]/Select6.selectedOptionValue).toFixed(2)}} {{Select6.selectedOptionLabel}}",
   "textAlign": "LEFT",
   "textColor": "#231f20",
-  "topRow": 7,
+  "topRow": 9,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 20,
   "boxShadow": "none",
-  "defaultText": "{{Number(((wysokosccala.wys2.data-wartoscskrzynka.text)*2)/1000).toFixed(2) || \"\"}}",
+  "defaultText": "{{Number((((dlugosprowadnic.text-0.2)/0.2)+2)).toFixed(0)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,19 +18,15 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "1vd02ht2jz",
-  "label": "Długość prowadnic",
+  "key": "d8dmihog1h",
+  "label": "iloscklipsow",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -40,15 +36,12 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 13,
-  "mobileLeftColumn": 13,
-  "mobileRightColumn": 33,
-  "mobileTopRow": 6,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "onTextChanged": "{{doplata.wkladka();}}",
-  "originalBottomRow": 57,
-  "originalTopRow": 50,
-  "parentColumnSpace": 19.9375,
+  "parentColumnSpace": 19.62109375,
   "parentId": "esfh9fxray",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
@@ -57,9 +50,9 @@
   "rightColumn": 59,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 6,
+  "topRow": 13,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "uupj8dlnth",
-  "widgetName": "dlugosprowadnic"
+  "widgetId": "iop1ywns59",
+  "widgetName": "Input20"
 }

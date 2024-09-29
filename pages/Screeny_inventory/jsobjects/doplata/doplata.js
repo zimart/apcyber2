@@ -23,10 +23,11 @@ return doplatatkanina.toFixed(2);
 wkladka: function () {
 //var wartoscdoplaty = doplatakolorinput.text;
 var cenametra = Input19.text;
+var klipsy = kosztklipsow.text;
 //var skrzynka = Select8.selectedOptionValue;
 var dlugoscprowadnic = dlugosprowadnic.text;
 var doplatawkladkacena;
-if (wkladkaselect.selectedOptionLabel === 'NZIPS'&& Select1.selectedOptionLabel=== 'STANDARD') {doplatawkladkacena = dlugoscprowadnic * cenametra; }
+if (wkladkaselect.selectedOptionLabel === 'NZIPS'&& Select1.selectedOptionLabel=== 'STANDARD') {doplatawkladkacena = (dlugoscprowadnic * cenametra)+klipsy; }
 else if (Select1.selectedOptionLabel !== 'STANDARD') {doplatawkladkacena = 0; }
 return doplatawkladkacena;
 },
