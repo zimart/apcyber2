@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 5,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,45 +11,38 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
-  "fontStyle": "",
+  "fontSize": "1.25rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "e2g35zeg4p",
-  "leftColumn": 0,
+  "key": "z4ejkn4bwe",
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 9,
-  "mobileLeftColumn": 25,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 1,
   "mobileRightColumn": 41,
-  "mobileTopRow": 5,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 14,
-  "originalTopRow": 9,
   "overflow": "NONE",
-  "parentColumnSpace": 20.25,
-  "parentId": "o2y8szuai7",
-  "parentRowSpace": 10,
+  "parentId": "gc1m2vg4nz",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 17,
+  "rightColumn": 41,
   "shouldTruncate": false,
-  "text": "CENA SYSTEMÓW KATALOGOWO : {{(cenasystemowkatalogowa.data[0][\"SUM (cena)\"]/Select6.selectedOptionValue).toFixed(2)}} {{Select6.selectedOptionLabel}}",
+  "text": "DODAJ STEROWANIE",
   "textAlign": "LEFT",
-  "textColor": "#231f20",
-  "topRow": 9,
+  "textColor": "#231F20",
+  "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "z8d08uu83o",
-  "widgetName": "Text23"
+  "widgetId": "8h0r39yo79",
+  "widgetName": "Text25"
 }

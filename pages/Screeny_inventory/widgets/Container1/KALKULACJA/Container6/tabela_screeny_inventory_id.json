@@ -72,7 +72,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1727631041272,
+  "columnUpdatedAt": 1727633377952,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 115,
@@ -439,7 +439,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.system +\"/\"+currentRow.skrzynka+\"/\"+currentRow.szerokosc+\"x\"+currentRow.wysokosc+\"/\"+ currentRow.kolor))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.concat))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -455,7 +455,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "Produkt",
       "notation": "standard",
       "originalId": "concat",
@@ -1185,7 +1185,9 @@
       "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
-      "validation": {},
+      "validation": {
+        "max": "100"
+      },
       "verticalAlignment": "CENTER",
       "width": 150
     },
@@ -1220,7 +1222,9 @@
       "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
-      "validation": {},
+      "validation": {
+        "max": "100"
+      },
       "verticalAlignment": "CENTER",
       "width": 150
     },

@@ -53,7 +53,9 @@
   "labelWidth": 5,
   "leftColumn": 50,
   "maxDynamicHeight": 9000,
+  "maxNum": "100",
   "minDynamicHeight": 4,
+  "minNum": "0",
   "minWidth": 450,
   "mobileBottomRow": 8,
   "mobileLeftColumn": 28,
@@ -78,7 +80,7 @@
   "topRow": 5,
   "topRowBeforeCollapse": 0,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{Input13.text.length > 0}}",
+  "validation": "{{Input13.text.length > 0;Input13 <=100}}",
   "version": 2,
   "widgetId": "gse7krk8qv",
   "widgetName": "Input18"

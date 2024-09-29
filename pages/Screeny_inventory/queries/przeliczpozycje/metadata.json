@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE screeny_inventory\nSET systemporabacie = systemzdoplata-kwotarabatsystem,\n    priceall = price_motor - (price_motor*(rabatmotor/100)),\n\t\tcenanetto = systemporabacie + priceall,\n\t\trazemnetto = cenanetto * ilosc,\n\t\tbrutto = razemnetto +(razemnetto*(vat/100))\nWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}\n\n\n;\n",
+      "body": "UPDATE screeny_inventory\nSET systemporabacie = systemzdoplata-kwotarabatsystem,\n    priceall = price_motor - (price_motor*(rabatmotor/100)),\n\t\tcenanetto = systemporabacie + priceall,\n\t\trazemnetto = cenanetto * ilosc,\n\t\tbrutto = razemnetto +(razemnetto*(vat/100)),\n\t\tconcat = concat(\"Roleta:\",system,\"/\",skrzynka,\"/\",kolor,\" \", szerokosc,\"x\",wysokosc,\" \",tkanina)\nWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}\n\n\n;\n\n\n;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
