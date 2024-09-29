@@ -3,66 +3,53 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
-  "bottomRowBeforeCollapse": 7,
+  "bottomRow": 12,
   "boxShadow": "none",
-  "defaultText": "{{wysokosccala.wys2.data}}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
-  "isDisabled": true,
+  "isDisabled": false,
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,
-  "key": "iyb187w358",
-  "label": "WYSOKOŚĆ",
+  "key": "ogi41d86i1",
+  "label": "Ilość",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 16,
+  "leftColumn": 39,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 15,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 5,
-  "mobileTopRow": 8,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "onTextChanged": "{{storeValue('calkowita', wysokosc_input.text);\ndoplata.wkladka();}}",
-  "originalBottomRow": 16,
-  "originalTopRow": 9,
-  "parentColumnSpace": 19.59375,
-  "parentId": "esfh9fxray",
+  "parentColumnSpace": 12.75,
+  "parentId": "gc1m2vg4nz",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 24,
+  "rightColumn": 50,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 11,
-  "topRowBeforeCollapse": 0,
+  "topRow": 5,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "sp5k2e25k8",
-  "widgetName": "wysokosc_input"
+  "widgetId": "e5ddjxsxg8",
+  "widgetName": "Input25"
 }

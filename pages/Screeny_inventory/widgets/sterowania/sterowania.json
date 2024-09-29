@@ -64,6 +64,7 @@
   "leftColumn": 18,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
+  "minHeight": 240,
   "mobileBottomRow": 24,
   "mobileLeftColumn": 18,
   "mobileRightColumn": 42,
@@ -80,5 +81,5 @@
   "version": 2,
   "widgetId": "j09jhe2eky",
   "widgetName": "sterowania",
-  "width": 1090
+  "width": 758
 }

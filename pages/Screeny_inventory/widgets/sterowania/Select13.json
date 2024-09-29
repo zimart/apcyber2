@@ -22,11 +22,15 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "r1no23m7hz",
   "labelAlignment": "left",
@@ -43,6 +47,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
+  "onOptionChange": "{{sterowaniamodalwybor.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 16.84375,
@@ -51,7 +56,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 21,
+  "rightColumn": 14,
   "serverSideFiltering": false,
   "sourceData": "{{sterowaniamodal.data.map( (obj) =>{ return  {'label': obj.seria, 'value': obj.seria } })}}",
   "topRow": 5,
