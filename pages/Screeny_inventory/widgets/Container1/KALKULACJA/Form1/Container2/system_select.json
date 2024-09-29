@@ -53,7 +53,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 160,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nkolor_zapytaj.run()\n.then(() => skrzynka_zapytaj.run())\n.then(() => \t\tremoveValue(appsmith.store.modelnapedu))\n.then(() => \nserianapedu.run())\n;\n}}",
+  "onOptionChange": "{{\nkolor_zapytaj.run()\n.then(() => skrzynka_zapytaj.run())\n.then(() => \t\tremoveValue(appsmith.store.modelnapedu))\n.then(() => \nserianapedu.run())\n.then(() => \nrodzajnapedu.run())\n;\n}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 167,

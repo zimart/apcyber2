@@ -60,7 +60,7 @@
   "mobileRightColumn": 48,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onBlur": "{{ustawrabat.run();\nzmienwalute.run();\ntabela_inventory_id.run()}}",
+  "onBlur": "{{ustawrabat.run();\nzmienwalute.run();\ntabela_inventory_id.run();}}",
   "onTextChanged": "",
   "originalBottomRow": 7,
   "originalTopRow": 0,
