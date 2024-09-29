@@ -12,9 +12,6 @@
     },
     {
       "key": "accentColor"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -24,9 +21,6 @@
     },
     {
       "key": "onOptionChange"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -38,7 +32,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": "{{system_select.selectedOptionLabel !== \"SOLAR ZIIIP\"}}",
+  "isVisible": true,
   "key": "pomnq6978w",
   "labelAlignment": "left",
   "labelPosition": "Top",

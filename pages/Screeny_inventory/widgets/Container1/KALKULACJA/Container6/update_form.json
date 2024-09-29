@@ -599,7 +599,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "cenanetto",
           "position": 30,
-          "sourceData": 1818.68
+          "sourceData": 2003.72
         },
         "concat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -826,9 +826,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kwotarabatmotor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "kwotarabatmotor",
           "isCustomField": false,
@@ -840,7 +840,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kwotarabatmotor",
           "position": 38,
-          "sourceData": 0
+          "sourceData": ""
         },
         "kwotarabatsystem": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1037,7 +1037,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rabatmotor",
           "position": 17,
-          "sourceData": 0
+          "sourceData": 10
         },
         "rabatsystem": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

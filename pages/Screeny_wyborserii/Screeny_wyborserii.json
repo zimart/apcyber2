@@ -1,7 +1,6 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_325c2ae1-aee2-4d25-8dd3-770f310ed780",
+  "gitSyncId": "66f263e90ea81e705fc1052a_d9ee7e78-ebc2-4a40-a85b-14d304066a3c",
   "unpublishedPage": {
-    "isHidden": false,
     "layouts": [
       {
         "dsl": {
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Screeny_napedy",
-    "slug": "screeny-napedy"
+    "name": "Screeny_wyborserii",
+    "slug": "screeny-wyborserii"
   }
 }

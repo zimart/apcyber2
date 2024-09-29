@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 105,
+  "bottomRow": 212,
   "boxShadow": "none",
-  "defaultOptionValue": "{{\n            {\n              label: Select2.options[0].label,\n              value: Select2.options[0].value\n            }\n          }}",
+  "defaultOptionValue": "{{\n            {\n              label: Select13.options[0].label,\n              value: Select13.options[0].value\n            }\n          }}",
   "dynamicBindingPathList": [
     {
       "key": "sourceData"
@@ -30,7 +30,7 @@
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "3kmghw47o5",
+  "key": "37041lsh31",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelText": "Label",
@@ -40,13 +40,15 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 105,
+  "mobileBottomRow": 214,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 98,
+  "mobileTopRow": 207,
   "needsErrorInfo": false,
   "optionLabel": "label",
   "optionValue": "value",
+  "originalBottomRow": 214,
+  "originalTopRow": 207,
   "parentId": "0",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
@@ -54,10 +56,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 20,
   "serverSideFiltering": false,
-  "sourceData": "{{Query1.data.map( (obj) =>{ return  {'label': obj.Rodzaj, 'value': obj.Rodzaj } })}}",
-  "topRow": 98,
+  "sourceData": "{{serianapedu.data.map( (obj) =>{ return  {'label': obj.serianapedu, 'value': obj.serianapedu } })}}",
+  "topRow": 205,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "zbv8pf9oc1",
-  "widgetName": "Select2"
+  "widgetId": "426h97zf0c",
+  "widgetName": "Select13"
 }

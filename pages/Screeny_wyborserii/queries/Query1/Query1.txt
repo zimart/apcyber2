@@ -1,0 +1,2 @@
+INSERT INTO screeny_wyborserii (system, linia, seq, opis, valueindeks, fk_screeny_system_kolor, serianapedu)
+  VALUES ('{{data_table.triggeredRow.system}}','{{data_table.triggeredRow.linia}}', '{{data_table.triggeredRow.seq}}', '{{data_table.triggeredRow.opis}}','{{data_table.triggeredRow.valueindeks}}', '{{data_table.triggeredRow.fk_screeny_system_kolor}}', '');

@@ -1,0 +1,16 @@
+INSERT INTO screeny_wyborserii (
+	system,
+	linia,
+	seq,
+	opis,
+	valueindeks,
+	fk_screeny_system_kolor,
+	serianapedu)
+VALUES (
+	'{{insert_form.formData.system}}',
+	'{{insert_form.formData.linia}}',
+	'{{insert_form.formData.seq}}',
+	'{{insert_form.formData.opis}}',
+	'{{insert_form.formData.valueindeks}}',
+	'{{insert_form.formData.fk_screeny_system_kolor}}',
+	'{{insert_form.formData.serianapedu}}');

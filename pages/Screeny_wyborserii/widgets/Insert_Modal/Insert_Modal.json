@@ -1,66 +1,59 @@
 {
-  "backgroundColor": "#FFFFFF",
-  "borderColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "0",
-  "bottomRow": 89,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "bottomRow": 40,
+  "boxShadow": "none",
+  "canEscapeKeyClose": true,
+  "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 890,
+      "bottomRow": 600,
       "boxShadow": "none",
-      "canExtend": false,
-      "containerStyle": "none",
+      "canExtend": true,
       "detachFromLayout": true,
       "dynamicBindingPathList": [],
       "dynamicTriggerPathList": [],
+      "isDisabled": false,
       "isLoading": false,
       "isVisible": "true",
       "labelTextSize": "0.875rem",
       "leftColumn": 0,
-      "minHeight": 870,
+      "minHeight": 600,
       "parentColumnSpace": 1,
-      "parentId": "mvubsemxfo",
+      "parentId": "vmorzie6eq",
       "parentRowSpace": 1,
-      "rightColumn": 632,
+      "rightColumn": 453.1875,
+      "shouldScrollContents": false,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "59rw5mx0bq",
-      "widgetName": "Canvas1"
+      "widgetId": "9rhv3ioohq",
+      "widgetName": "Canvas4"
     }
   ],
-  "containerStyle": "card",
+  "detachFromLayout": true,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "borderRadius"
-    }
-  ],
   "dynamicTriggerPathList": [],
+  "height": 600,
   "isLoading": false,
-  "isVisible": "true",
   "labelTextSize": "0.875rem",
-  "leftColumn": 0,
+  "leftColumn": 17,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "parentColumnSpace": 19.75,
+  "parentColumnSpace": 18.8828125,
   "parentId": "0",
   "parentRowSpace": 10,
-  "rightColumn": 44,
-  "shouldScrollContents": true,
-  "topRow": 0,
-  "type": "CONTAINER_WIDGET",
-  "version": 1,
-  "widgetId": "mvubsemxfo",
-  "widgetName": "Container1"
+  "rightColumn": 41,
+  "shouldScrollContents": false,
+  "topRow": 16,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "widgetId": "vmorzie6eq",
+  "widgetName": "Insert_Modal",
+  "width": 532
 }

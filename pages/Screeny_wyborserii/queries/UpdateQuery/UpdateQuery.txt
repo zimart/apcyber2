@@ -1,0 +1,9 @@
+UPDATE screeny_wyborserii SET
+		system = '{{update_form.fieldState.system.isVisible ? update_form.formData.system : update_form.sourceData.system}}',
+		linia = '{{update_form.fieldState.linia.isVisible ? update_form.formData.linia : update_form.sourceData.linia}}',
+    seq = '{{update_form.fieldState.seq.isVisible ? update_form.formData.seq : update_form.sourceData.seq}}',
+		opis = '{{update_form.fieldState.opis.isVisible ? update_form.formData.opis : update_form.sourceData.opis}}',
+		valueindeks = '{{update_form.fieldState.valueindeks.isVisible ? update_form.formData.valueindeks : update_form.sourceData.valueindeks}}',
+		fk_screeny_system_kolor = '{{update_form.fieldState.fk_screeny_system_kolor.isVisible ? update_form.formData.fk_screeny_system_kolor : update_form.sourceData.fk_screeny_system_kolor}}',
+		serianapedu = '{{update_form.fieldState.serianapedu.isVisible ? update_form.formData.serianapedu : update_form.sourceData.serianapedu}}'
+WHERE id_system_screen = {{data_table.selectedRow.id_system_screen}};
