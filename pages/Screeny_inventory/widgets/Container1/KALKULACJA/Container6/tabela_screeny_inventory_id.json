@@ -297,6 +297,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.rabatmotor.onSubmit"
     }
   ],
   "enableClientSideSearch": true,
@@ -1166,16 +1169,17 @@
       "horizontalAlignment": "RIGHT",
       "id": "rabatmotor",
       "index": 19,
-      "isCellEditable": false,
+      "isCellEditable": true,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": false,
+      "isEditable": true,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "Rabat automatyka",
       "notation": "standard",
+      "onSubmit": "{{przeliczofertepojedynczo.run();\nprzeliczpozycje.run();\ntabela_inventory_id.run()}}",
       "originalId": "rabatmotor",
       "sticky": "",
       "textColor": "",

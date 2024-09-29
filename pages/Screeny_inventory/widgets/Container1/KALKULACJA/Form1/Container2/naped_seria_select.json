@@ -5,16 +5,13 @@
   "bottomRow": 4,
   "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( wyborsolar.naped.data))(naped_seria_select.options, naped_seria_select.serverSideFiltering) }}",
+  "defaultOptionValue": "SOMFY",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultOptionValue"
     },
     {
       "key": "sourceData"

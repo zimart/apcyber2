@@ -826,9 +826,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kwotarabatmotor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "kwotarabatmotor",
           "isCustomField": false,
@@ -840,7 +840,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kwotarabatmotor",
           "position": 38,
-          "sourceData": ""
+          "sourceData": 22.27
         },
         "kwotarabatsystem": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
