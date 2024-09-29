@@ -3,5 +3,8 @@ UPDATE screeny_napedy SET
 		rodzaj = '{{update_form.fieldState.rodzaj.isVisible ? update_form.formData.rodzaj : update_form.sourceData.rodzaj}}',
     moc = '{{update_form.fieldState.moc.isVisible ? update_form.formData.moc : update_form.sourceData.moc}}',
 		model = '{{update_form.fieldState.model.isVisible ? update_form.formData.model : update_form.sourceData.model}}',
-		cenakatalogowanaped = '{{update_form.fieldState.cenakatalogowanaped.isVisible ? update_form.formData.cenakatalogowanaped : update_form.sourceData.cenakatalogowanaped}}'
+		cenakatalogowanaped = '{{update_form.fieldState.cenakatalogowanaped.isVisible ? update_form.formData.cenakatalogowanaped : update_form.sourceData.cenakatalogowanaped}}',
+		typ = '{{update_form.fieldState.typ.isVisible ? update_form.formData.typ : update_form.sourceData.typ}}',
+		opis = '{{update_form.fieldState.opis.isVisible ? update_form.formData.opis : update_form.sourceData.opis}}',
+		niewiem = '{{update_form.fieldState.niewiem.isVisible ? update_form.formData.niewiem : update_form.sourceData.niewiem}}'
 WHERE id = {{data_table.selectedRow.id}};

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE screeny_napedy SET\n\t\tseria = '{{update_form.fieldState.seria.isVisible ? update_form.formData.seria : update_form.sourceData.seria}}',\n\t\trodzaj = '{{update_form.fieldState.rodzaj.isVisible ? update_form.formData.rodzaj : update_form.sourceData.rodzaj}}',\n    moc = '{{update_form.fieldState.moc.isVisible ? update_form.formData.moc : update_form.sourceData.moc}}',\n\t\tmodel = '{{update_form.fieldState.model.isVisible ? update_form.formData.model : update_form.sourceData.model}}',\n\t\tcenakatalogowanaped = '{{update_form.fieldState.cenakatalogowanaped.isVisible ? update_form.formData.cenakatalogowanaped : update_form.sourceData.cenakatalogowanaped}}'\nWHERE id = {{data_table.selectedRow.id}};",
+      "body": "UPDATE screeny_napedy SET\n\t\tseria = '{{update_form.fieldState.seria.isVisible ? update_form.formData.seria : update_form.sourceData.seria}}',\n\t\trodzaj = '{{update_form.fieldState.rodzaj.isVisible ? update_form.formData.rodzaj : update_form.sourceData.rodzaj}}',\n    moc = '{{update_form.fieldState.moc.isVisible ? update_form.formData.moc : update_form.sourceData.moc}}',\n\t\tmodel = '{{update_form.fieldState.model.isVisible ? update_form.formData.model : update_form.sourceData.model}}',\n\t\tcenakatalogowanaped = '{{update_form.fieldState.cenakatalogowanaped.isVisible ? update_form.formData.cenakatalogowanaped : update_form.sourceData.cenakatalogowanaped}}',\n\t\ttyp = '{{update_form.fieldState.typ.isVisible ? update_form.formData.typ : update_form.sourceData.typ}}',\n\t\topis = '{{update_form.fieldState.opis.isVisible ? update_form.formData.opis : update_form.sourceData.opis}}',\n\t\tniewiem = '{{update_form.fieldState.niewiem.isVisible ? update_form.formData.niewiem : update_form.sourceData.niewiem}}'\nWHERE id = {{data_table.selectedRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,6 +22,11 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
     "name": "UpdateQuery",
     "pageId": "Screeny_napedy",
