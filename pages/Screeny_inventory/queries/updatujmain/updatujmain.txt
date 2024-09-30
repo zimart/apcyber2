@@ -1,0 +1,3 @@
+UPDATE inventory_main
+JOIN screeny_inventory ON inventory_main.id_wiersz = screeny_inventory.id 
+SET inventory_main.cenanetto = screeny_inventory.cenanetto;

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_49d1c42e-5b25-4239-8fc2-6e7a751b9587",
-  "id": "Screeny_inventory_przeliczpozycje",
+  "gitSyncId": "66f263e90ea81e705fc1052a_97f441db-0162-404e-80b5-8a28b0642a51",
+  "id": "Screeny_inventory_dodajakcesoria",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE screeny_inventory\nSET systemporabacie = systemzdoplata-kwotarabatsystem,\n    priceall = price_motor - (price_motor*(rabatmotor/100)),\n\t\tcenanetto = systemporabacie + priceall,\n\t\trazemnetto = cenanetto * ilosc,\n\t\tbrutto = razemnetto +(razemnetto*(vat/100)),\n\t\tmoc = concat(moc,\"-\",system,\"/\",skrzynka,\"/\",kolor,\" \", szerokosc,\"x\",wysokosc,\" \",tkanina)\nWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}\n\n\n;\n\n\n;\n",
+      "body": "INSERT INTO screeny_inventory (moc, ilosc, price_motor,fk_oferty_inventory_id)\n  VALUES ('{{Select15.selectedOptionValue}}', '{{Input25.text}}', '{{Input24.text}}',\t\t'{{appsmith.URL.queryParams.id_oferta}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "przeliczpozycje",
+    "name": "dodajakcesoria",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }

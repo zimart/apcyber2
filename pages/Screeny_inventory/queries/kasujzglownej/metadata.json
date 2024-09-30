@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_49d1c42e-5b25-4239-8fc2-6e7a751b9587",
-  "id": "Screeny_inventory_przeliczpozycje",
+  "gitSyncId": "66f263e90ea81e705fc1052a_7f274879-067c-47d5-96a7-74df7ea53f12",
+  "id": "Screeny_inventory_kasujzglownej",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE screeny_inventory\nSET systemporabacie = systemzdoplata-kwotarabatsystem,\n    priceall = price_motor - (price_motor*(rabatmotor/100)),\n\t\tcenanetto = systemporabacie + priceall,\n\t\trazemnetto = cenanetto * ilosc,\n\t\tbrutto = razemnetto +(razemnetto*(vat/100)),\n\t\tmoc = concat(moc,\"-\",system,\"/\",skrzynka,\"/\",kolor,\" \", szerokosc,\"x\",wysokosc,\" \",tkanina)\nWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}\n\n\n;\n\n\n;\n",
+      "body": "DELETE FROM inventory_main WHERE inventory_main.id_wiersz = {{tabela_screeny_inventory_id.triggeredRow.id}}\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "przeliczpozycje",
+    "name": "kasujzglownej",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }

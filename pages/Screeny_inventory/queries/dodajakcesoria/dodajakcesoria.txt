@@ -1,0 +1,2 @@
+INSERT INTO screeny_inventory (moc, ilosc, price_motor,fk_oferty_inventory_id)
+  VALUES ('{{Select15.selectedOptionValue}}', '{{Input25.text}}', '{{Input24.text}}',		'{{appsmith.URL.queryParams.id_oferta}}');

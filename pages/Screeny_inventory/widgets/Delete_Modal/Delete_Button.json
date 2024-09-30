@@ -9,11 +9,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -25,7 +21,7 @@
   "isVisible": "true",
   "labelTextSize": "0.875rem",
   "leftColumn": 46,
-  "onClick": "{{\nkasujtymczasowa.run(() => \n\nDeleteQuery.run(() => tabela_inventory_id.run(() => closeModal('Delete_Modal')), () => {}))}}",
+  "onClick": "{{kasujtymczasowa.run(() => {}, () => {});\nkasujzglownej.run();\nDeleteQuery.run().then(() => {\n  closeModal(Delete_Modal.name);\n  tabela_inventory_id.run();\n  tabela_inventory_main_id.run();\n});}}",
   "parentId": "zi8fjakv8o",
   "recaptchaType": "V3",
   "rightColumn": 64,
