@@ -1,0 +1,1 @@
+UPDATE sterowania SET ilosc= '{{Table1.updatedRow.ilosc}}', cena= '{{Table1.updatedRow.cena}}', model= '{{Table1.updatedRow.model}}', seria= '{{Table1.updatedRow.seria}}', fk_oferty_inventory_id_ster= '{{Table1.updatedRow.fk_oferty_inventory_id_ster}}', opis= '{{Table1.updatedRow.opis}}' WHERE id_sterowania= '{{Table1.updatedRow.id_sterowania}}';

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_97f441db-0162-404e-80b5-8a28b0642a51",
-  "id": "Screeny_inventory_dodajakcesoria",
+  "gitSyncId": "66f263e90ea81e705fc1052a_10c14736-3b41-463d-8c4f-624134752240",
+  "id": "Screeny_inventory_iloscsterowania",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO sterowania (ilosc,cena,model,fk_oferty_inventory_id_ster,razemnetto,vat_sterowania,rabat_sterowania,cenaporabacie)\n  VALUES ('{{Input25.text}}', '{{Input24.text}}',\t'{{Select15.selectedOptionLabel}}','{{appsmith.URL.queryParams.id_oferta}}',{{Input25.text}}*{{Input24.text}},{{Vat.selectedOptionValue}},0,{{input24.text}}-({{Input24.text*0}}));\t",
+      "body": "SELECT COUNT(model) from sterowania where fk_oferty_inventory_id_ster = {{appsmith.URL.queryParams.id_oferta}} ;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "dodajakcesoria",
+    "executeOnLoad": true,
+    "name": "iloscsterowania",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }

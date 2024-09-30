@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_97f441db-0162-404e-80b5-8a28b0642a51",
-  "id": "Screeny_inventory_dodajakcesoria",
+  "gitSyncId": "66f263e90ea81e705fc1052a_66072d21-d091-4056-9215-791e3def7985",
+  "id": "Screeny_inventory_Select_sterowania1",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO sterowania (ilosc,cena,model,fk_oferty_inventory_id_ster,razemnetto,vat_sterowania,rabat_sterowania,cenaporabacie)\n  VALUES ('{{Input25.text}}', '{{Input24.text}}',\t'{{Select15.selectedOptionLabel}}','{{appsmith.URL.queryParams.id_oferta}}',{{Input25.text}}*{{Input24.text}},{{Vat.selectedOptionValue}},0,{{input24.text}}-({{Input24.text*0}}));\t",
+      "body": "SELECT\n  *\nFROM\n  sterowania\nWHERE\n  model LIKE '%{{Table1.searchText}}%'\nORDER BY\n  {{Table1.sortOrder.column || 'id_sterowania'}} {{Table1.sortOrder.order !== \"desc\" ? \"\" : \"DESC\"}}\nLIMIT\n  {{Table1.pageSize}}\nOFFSET\n  {{Table1.pageOffset}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "dodajakcesoria",
+    "name": "Select_sterowania1",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }

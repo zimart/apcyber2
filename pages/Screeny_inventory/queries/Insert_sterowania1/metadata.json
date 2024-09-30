@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_97f441db-0162-404e-80b5-8a28b0642a51",
-  "id": "Screeny_inventory_dodajakcesoria",
+  "gitSyncId": "66f263e90ea81e705fc1052a_4b626060-c403-43d0-980c-12694f69a1b1",
+  "id": "Screeny_inventory_Insert_sterowania1",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO sterowania (ilosc,cena,model,fk_oferty_inventory_id_ster,razemnetto,vat_sterowania,rabat_sterowania,cenaporabacie)\n  VALUES ('{{Input25.text}}', '{{Input24.text}}',\t'{{Select15.selectedOptionLabel}}','{{appsmith.URL.queryParams.id_oferta}}',{{Input25.text}}*{{Input24.text}},{{Vat.selectedOptionValue}},0,{{input24.text}}-({{Input24.text*0}}));\t",
+      "body": "INSERT INTO sterowania (ilosc,cena,model,seria,fk_oferty_inventory_id_ster,opis) VALUES ('{{(Table1.newRow || {}).ilosc}}','{{(Table1.newRow || {}).cena}}','{{(Table1.newRow || {}).model}}','{{(Table1.newRow || {}).seria}}','{{(Table1.newRow || {}).fk_oferty_inventory_id_ster}}','{{(Table1.newRow || {}).opis}}')",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "dodajakcesoria",
+    "name": "Insert_sterowania1",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }

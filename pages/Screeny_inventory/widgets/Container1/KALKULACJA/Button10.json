@@ -24,7 +24,7 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 11,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(sterowania.name);}}",
+  "onClick": "{{showModal(sterowania.name);\niloscsterowania.run();\nSelect_sterowania2.run()}}",
   "parentColumnSpace": 19.28271484375,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
