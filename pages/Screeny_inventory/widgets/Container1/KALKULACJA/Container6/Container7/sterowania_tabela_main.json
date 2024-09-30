@@ -6,7 +6,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
   "bottomRow": 45,
-  "bottomRowBeforeCollapse": 107,
+  "bottomRowBeforeCollapse": 45,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -33,21 +33,25 @@
     }
   },
   "columnOrder": [
+    "customColumn2",
     "id_sterowania",
     "model",
     "ilosc",
     "cena",
+    "rabat_sterowania",
+    "cenaporabacie",
     "seria",
-    "fk_oferty_inventory_id_ster",
-    "opis",
     "razemnetto",
     "vat_sterowania",
     "brutto_sterowania",
-    "rabat_sterowania",
-    "cenaporabacie"
+    "customColumn1",
+    "opis",
+    "fk_oferty_inventory_id_ster"
   ],
-  "columnUpdatedAt": 1727725147914,
-  "columnWidthMap": {},
+  "columnUpdatedAt": 1727730276890,
+  "columnWidthMap": {
+    "customColumn2": 69
+  },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [
@@ -107,15 +111,21 @@
       "key": "primaryColumns.cenaporabacie.computedValue"
     },
     {
-      "key": "isVisible"
+      "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn2.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -130,6 +140,9 @@
     },
     {
       "key": "onAddNewRowSave"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "enableClientSideSearch": false,
@@ -138,7 +151,7 @@
   "inlineEditingSaveOption": "CUSTOM",
   "isLoading": false,
   "isSortable": true,
-  "isVisible": "{{iloscsterowania.data[0][\"COUNT(model)\"] > 0}}",
+  "isVisible": true,
   "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": true,
@@ -156,8 +169,8 @@
   "onPageChange": "{{\n            Select_sterowania2.run();\n            iloscsterowania.run()\n          }}",
   "onSearchTextChanged": "{{\n            Select_sterowania2.run();\n            iloscsterowania.run()\n          }}",
   "onSort": "{{\n            Select_sterowania2.run();\n            iloscsterowania.run()\n          }}",
-  "originalBottomRow": 107,
-  "originalTopRow": 77,
+  "originalBottomRow": 45,
+  "originalTopRow": 3,
   "parentId": "nrbk700k4d",
   "parentRowSpace": 10,
   "primaryColumnId": "id_sterowania",
@@ -167,7 +180,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"brutto_sterowania\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"brutto_sterowania\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -198,7 +211,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cena\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cena\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -229,7 +242,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cenaporabacie\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cenaporabacie\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -255,12 +268,84 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "customColumn1": {
+      "alias": "USUŃ",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "Kasuj",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn1",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "USUŃ",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{showModal(modal_usun_sterowanie.name).then(() => {});}}",
+      "originalId": "customColumn1",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn2": {
+      "alias": "Lp.",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentIndex+1))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn2",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Lp.",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "originalId": "customColumn2",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "fk_oferty_inventory_id_ster": {
       "alias": "fk_oferty_inventory_id_ster",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fk_oferty_inventory_id_ster\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fk_oferty_inventory_id_ster\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -291,7 +376,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id_sterowania\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id_sterowania\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -322,7 +407,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ilosc\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ilosc\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -353,7 +438,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"model\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"model\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -384,7 +469,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opis\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opis\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -415,7 +500,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rabat_sterowania\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rabat_sterowania\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -446,7 +531,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"razemnetto\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"razemnetto\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -477,7 +562,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"seria\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"seria\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -508,7 +593,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vat_sterowania\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vat_sterowania\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -544,11 +629,11 @@
   "tableData": "{{Select_sterowania2.data}}",
   "textSize": "0.875rem",
   "topRow": 3,
-  "topRowBeforeCollapse": 77,
+  "topRowBeforeCollapse": 3,
   "totalRecordsCount": "{{iloscsterowania.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
   "widgetId": "m0ls7nxk6q",
-  "widgetName": "Table1"
+  "widgetName": "sterowania_tabela_main"
 }

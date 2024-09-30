@@ -3,10 +3,10 @@ SELECT
 FROM
   sterowania
 WHERE
-  model LIKE '%{{Table1.searchText}}%'
+  model LIKE '%{{sterowania_tabela_main.searchText}}%'
 ORDER BY
-  {{Table1.sortOrder.column || 'id_sterowania'}} {{Table1.sortOrder.order !== "desc" ? "" : "DESC"}}
+  {{sterowania_tabela_main.sortOrder.column || 'id_sterowania'}} {{sterowania_tabela_main.sortOrder.order !== "desc" ? "" : "DESC"}}
 LIMIT
-  {{Table1.pageSize}}
+  {{sterowania_tabela_main.pageSize}}
 OFFSET
-  {{Table1.pageOffset}}
+  {{sterowania_tabela_main.pageOffset}}

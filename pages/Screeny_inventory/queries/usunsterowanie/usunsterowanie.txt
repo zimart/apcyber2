@@ -1,0 +1,1 @@
+DELETE FROM sterowania WHERE {{sterowania_tabela_main.triggeredRow.id_sterowania}} = id_sterowania;

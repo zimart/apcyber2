@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO sterowania (ilosc,cena,model,seria,fk_oferty_inventory_id_ster,opis,razemnetto,vat_sterowania,brutto_sterowania,rabat_sterowania,cenaporabacie) VALUES ('{{(Table1.newRow || {}).ilosc}}','{{(Table1.newRow || {}).cena}}','{{(Table1.newRow || {}).model}}','{{(Table1.newRow || {}).seria}}','{{(Table1.newRow || {}).fk_oferty_inventory_id_ster}}','{{(Table1.newRow || {}).opis}}','{{(Table1.newRow || {}).razemnetto}}','{{(Table1.newRow || {}).vat_sterowania}}','{{(Table1.newRow || {}).brutto_sterowania}}','{{(Table1.newRow || {}).rabat_sterowania}}','{{(Table1.newRow || {}).cenaporabacie}}')",
+      "body": "INSERT INTO sterowania (ilosc,cena,model,seria,fk_oferty_inventory_id_ster,opis,razemnetto,vat_sterowania,brutto_sterowania,rabat_sterowania,cenaporabacie) VALUES ('{{(sterowania_tabela_main.newRow || {}).ilosc}}','{{(sterowania_tabela_main.newRow || {}).cena}}','{{(sterowania_tabela_main.newRow || {}).model}}','{{(sterowania_tabela_main.newRow || {}).seria}}','{{(sterowania_tabela_main.newRow || {}).fk_oferty_inventory_id_ster}}','{{(sterowania_tabela_main.newRow || {}).opis}}','{{(sterowania_tabela_main.newRow || {}).razemnetto}}','{{(sterowania_tabela_main.newRow || {}).vat_sterowania}}','{{(sterowania_tabela_main.newRow || {}).brutto_sterowania}}','{{(sterowania_tabela_main.newRow || {}).rabat_sterowania}}','{{(sterowania_tabela_main.newRow || {}).cenaporabacie}}')",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

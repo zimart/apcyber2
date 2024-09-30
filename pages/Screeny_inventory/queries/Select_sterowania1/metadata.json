@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  *\nFROM\n  sterowania\nWHERE\n  model LIKE '%{{Table1.searchText}}%'\nORDER BY\n  {{Table1.sortOrder.column || 'id_sterowania'}} {{Table1.sortOrder.order !== \"desc\" ? \"\" : \"DESC\"}}\nLIMIT\n  {{Table1.pageSize}}\nOFFSET\n  {{Table1.pageOffset}}",
+      "body": "SELECT\n  *\nFROM\n  sterowania\nWHERE\n  model LIKE '%{{sterowania_tabela_main.searchText}}%'\nORDER BY\n  {{sterowania_tabela_main.sortOrder.column || 'id_sterowania'}} {{sterowania_tabela_main.sortOrder.order !== \"desc\" ? \"\" : \"DESC\"}}\nLIMIT\n  {{sterowania_tabela_main.pageSize}}\nOFFSET\n  {{sterowania_tabela_main.pageOffset}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

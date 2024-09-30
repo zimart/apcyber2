@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_5476d5d1-8479-4b04-b0dc-cef236f1bd53",
-  "id": "Screeny_inventory_Total_record_sterowania1",
+  "gitSyncId": "66f263e90ea81e705fc1052a_30077cc5-b560-4c70-bcb4-6055a042c4d8",
+  "id": "Screeny_inventory_usunsterowanie",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(*) from sterowania WHERE model LIKE '%{{sterowania_tabela_main.searchText}}%';",
+      "body": "DELETE FROM sterowania WHERE {{sterowania_tabela_main.triggeredRow.id_sterowania}} = id_sterowania;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Total_record_sterowania1",
+    "name": "usunsterowanie",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }

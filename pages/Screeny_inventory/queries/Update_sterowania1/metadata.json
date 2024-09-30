@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE sterowania SET ilosc= '{{Table1.updatedRow.ilosc}}', cena= '{{Table1.updatedRow.cena}}', model= '{{Table1.updatedRow.model}}', seria= '{{Table1.updatedRow.seria}}', fk_oferty_inventory_id_ster= '{{Table1.updatedRow.fk_oferty_inventory_id_ster}}', opis= '{{Table1.updatedRow.opis}}' WHERE id_sterowania= '{{Table1.updatedRow.id_sterowania}}';",
+      "body": "UPDATE sterowania SET ilosc= '{{sterowania_tabela_main.updatedRow.ilosc}}', cena= '{{sterowania_tabela_main.updatedRow.cena}}', model= '{{sterowania_tabela_main.updatedRow.model}}', seria= '{{sterowania_tabela_main.updatedRow.seria}}', fk_oferty_inventory_id_ster= '{{sterowania_tabela_main.updatedRow.fk_oferty_inventory_id_ster}}', opis= '{{sterowania_tabela_main.updatedRow.opis}}' WHERE id_sterowania= '{{sterowania_tabela_main.updatedRow.id_sterowania}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
