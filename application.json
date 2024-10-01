@@ -121,6 +121,14 @@
     {
       "id": "Screeny_wyborserii",
       "isDefault": false
+    },
+    {
+      "id": "Page2",
+      "isDefault": false
+    },
+    {
+      "id": "Page2",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

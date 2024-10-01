@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66f263e90ea81e705fc1052a_2f1546ef-3051-499a-a0ee-2b8e3d0bec51",
+  "id": "Screeny_inventory_zle_pdf_chyba",
+  "unpublishedCollection": {
+    "name": "zle_pdf_chyba",
+    "pageId": "Screeny_inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}
