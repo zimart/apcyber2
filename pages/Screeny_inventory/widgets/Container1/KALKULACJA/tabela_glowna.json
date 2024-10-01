@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 128,
+  "bottomRow": 135,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -233,7 +233,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{tabela_inventory_main_id.data}}",
   "textSize": "0.875rem",
-  "topRow": 0,
+  "topRow": 7,
   "totalRecordsCount": "{{Total_record_inventory_main1.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",
