@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66f263e90ea81e705fc1052a_12545c3a-7971-41c7-9aa9-3554a8a40681",
+  "id": "Screeny_inventory_Constants",
+  "unpublishedCollection": {
+    "name": "Constants",
+    "pageId": "Screeny_inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "defaultLanguageKeys",
+        "value": "{\n  \"User Management\": \"User Management\",\n  \"Filter By\": \"Filter By\",\n  \"Find User\": \"Find User\",\n  \"Favorite Columns\": \"Favorite Columns\",\n  \"Select Favorite Columns\": \"Select Favorite Columns\",\n  \"Close\": \"Close\",\n  \"Bulk Update\": \"Bulk Update\",\n  \"Language\": \"Language\",\n  \"avatar\": \"Avatar\",\n  \"name\": \"Name\",\n  \"email\": \"Email\",\n  \"gender\": \"Gender\",\n  \"address\": \"Address\",\n  \"status\": \"Status\",\n  \"createdAt\": \"Created At\",\n  \"updatedAt\": \"Updated At\",\n  \"Confirm\": \"Confirm\",\n  \"Clear\": \"Clear\",\n  \"Delete\": \"Delete\",\n  \"Switching Languages\": \"Switching Languages\"\n}"
+      },
+      {
+        "name": "languageOptions",
+        "value": "[\"English\", \"Polish\", \"French\", \"German\", \"Dutch\", \"Chinese\", \"Japanese\", \"Spanish\", \"Arabic\", \"Hindi\", \"Russian\", \"Portugese\", \"Urdu\"]"
+      }
+    ]
+  }
+}

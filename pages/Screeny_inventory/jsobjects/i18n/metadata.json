@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66f263e90ea81e705fc1052a_a78d61b9-a22c-4fdf-9e0f-11100937f982",
+  "id": "Screeny_inventory_i18n",
+  "unpublishedCollection": {
+    "name": "i18n",
+    "pageId": "Screeny_inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "resources",
+        "value": "{\n  english: {\n    translation: Constants.defaultLanguageKeys\n  }\n}"
+      }
+    ]
+  }
+}

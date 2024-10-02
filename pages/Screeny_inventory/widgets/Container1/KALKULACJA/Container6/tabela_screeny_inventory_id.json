@@ -267,6 +267,9 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.szerokosc.label"
     }
   ],
   "dynamicPropertyPathList": [],
@@ -1559,7 +1562,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Szerokosc",
+      "label": "{{i18n.translate(\"szerokosc\")}}",
       "notation": "standard",
       "originalId": "szerokosc",
       "sticky": "",
