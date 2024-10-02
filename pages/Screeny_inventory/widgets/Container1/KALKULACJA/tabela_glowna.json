@@ -34,9 +34,9 @@
   "columnOrder": [
     "produkt",
     "ilosc",
-    "cenanetto"
+    "cena"
   ],
-  "columnUpdatedAt": 1727814865291,
+  "columnUpdatedAt": 1727895964927,
   "columnWidthMap": {
     "concat": 262,
     "produkt": 148
@@ -70,7 +70,7 @@
       "key": "primaryColumns.produkt.computedValue"
     },
     {
-      "key": "primaryColumns.cenanetto.computedValue"
+      "key": "primaryColumns.cena.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -123,20 +123,20 @@
   "parentRowSpace": 10,
   "primaryColumnId": "id_wiersz",
   "primaryColumns": {
-    "cenanetto": {
-      "alias": "cenanetto",
+    "cena": {
+      "alias": "cena",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "number",
-      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( String(currentRow[\"cenanetto\"])))}}",
+      "columnType": "text",
+      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cena\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "id": "cenanetto",
+      "id": "cena",
       "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -146,9 +146,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "cenanetto",
+      "label": "cena",
       "notation": "standard",
-      "originalId": "cenanetto",
+      "originalId": "cena",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
