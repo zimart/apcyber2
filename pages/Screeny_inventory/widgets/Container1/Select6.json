@@ -47,7 +47,7 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "{{zmienwalute.run();\ntabela_inventory_id.run()}}",
+  "onOptionChange": "{{zmienwalute.run();\ntabela_inventory_id.run();\nzmienwalutepodsumowanie.run();\ntabela_inventory_main_id.run()}}",
   "optionLabel": "name",
   "optionValue": "value",
   "parentColumnSpace": 20.21875,

@@ -71,11 +71,17 @@
     },
     {
       "key": "primaryColumns.cena.computedValue"
+    },
+    {
+      "key": "primaryColumns.ilosc.isCellVisible"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "onSort"
+    },
+    {
+      "key": "primaryColumns.ilosc.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -116,8 +122,8 @@
   "onPageChange": "{{\n            Select_inventory_main1.run();\n            Total_record_inventory_main1.run()\n          }}",
   "onSearchTextChanged": "{{\n            Select_inventory_main1.run();\n            Total_record_inventory_main1.run()\n          }}",
   "onSort": "{{\n            Select_inventory_main1.run();\n            Total_record_inventory_main1.run()\n          }}",
-  "originalBottomRow": 94,
-  "originalTopRow": 14,
+  "originalBottomRow": 135,
+  "originalTopRow": 7,
   "parentColumnSpace": 20.21875,
   "parentId": "w811u4s83s",
   "parentRowSpace": 10,
@@ -129,7 +135,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cena\"]))}}",
+      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.cena/Select6.selectedOptionValue).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -173,7 +179,7 @@
       "id": "ilosc",
       "index": 1,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czyrabat.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,

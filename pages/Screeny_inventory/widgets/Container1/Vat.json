@@ -17,9 +17,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -47,7 +44,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{vatustaw.run();\nprzeliczpozycje.run()\ntabela_inventory_id.run();\n}}",
+  "onOptionChange": "{{vatustaw.run();\nprzeliczpozycje.run();\ntabela_inventory_id.run();\nvatustaw_sterowania.run();\nSelect_sterowania2.run()}}",
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 20.25,
