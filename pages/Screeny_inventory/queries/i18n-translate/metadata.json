@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_92f6db14-8633-47e5-aa36-7eba48092edc",
+  "gitSyncId": "66f263e90ea81e705fc1052a_0b72538c-e624-4d17-932e-6ba670f5a03b",
   "id": "Screeny_inventory_i18n.translate",
   "pluginId": "js-plugin",
   "pluginType": "JS",
@@ -30,6 +30,6 @@
     "fullyQualifiedName": "i18n.translate",
     "name": "translate",
     "pageId": "Screeny_inventory",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

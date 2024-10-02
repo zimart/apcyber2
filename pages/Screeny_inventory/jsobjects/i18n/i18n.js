@@ -7,7 +7,7 @@ export default {
 	getResources() {
 		return this.resources;
 	},
-	async selectLanguage(lang = Select1.selectedOptionValue){
+	async selectLanguage(lang = Select16.selectedOptionValue){
 		if (!this.resources[lang]){
 			showModal(LanguageLoading.name);
 			await getLanguageValuesAI.run();

@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_7d007544-3625-4e66-86fe-14e1dc2bbc61",
+  "gitSyncId": "66f263e90ea81e705fc1052a_84adea36-b4ab-4c3e-ae53-01c0381e1efc",
   "id": "Screeny_inventory_i18n.getResources",
   "pluginId": "js-plugin",
   "pluginType": "JS",
@@ -26,6 +26,6 @@
     "fullyQualifiedName": "i18n.getResources",
     "name": "getResources",
     "pageId": "Screeny_inventory",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

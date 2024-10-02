@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_0b45609c-ee4e-4328-ae5b-511c50ccdf8a",
+  "gitSyncId": "66f263e90ea81e705fc1052a_82c4d210-7428-488a-947d-2cd1800bc612",
   "id": "Screeny_inventory_i18n.selectLanguage",
   "pluginId": "js-plugin",
   "pluginType": "JS",
@@ -9,7 +9,7 @@
       "jsArguments": [
         {
           "name": "lang",
-          "value": "{{Select1.selectedOptionValue}}"
+          "value": "{{Select16.selectedOptionValue}}"
         }
       ],
       "paginationType": "NONE",
@@ -27,10 +27,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "i18n.selectLanguage",
     "name": "selectLanguage",
     "pageId": "Screeny_inventory",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }
