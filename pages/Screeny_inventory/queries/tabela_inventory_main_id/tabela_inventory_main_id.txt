@@ -1,1 +1,3 @@
-SELECT moc produkt,ilosc,cena FROM inventory_main where fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}};
+SELECT moc produkt,ilosc,cena FROM inventory_main where fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}}
+ORDER BY rodzajmotor ASC
+;

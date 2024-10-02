@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_69487ee9-6ae0-4b83-815d-65f9221f489e",
-  "id": "Screeny_inventory_tabela_inventory_main_id",
+  "gitSyncId": "66f263e90ea81e705fc1052a_8a7ff0a7-b401-473d-97f6-99848b49c2a5",
+  "id": "Inventory_main_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT moc produkt,ilosc,cena FROM inventory_main where fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}}\nORDER BY rodzajmotor ASC\n;",
+      "body": "DELETE FROM inventory_main\n  WHERE id_main_inv = {{data_table.triggeredRow.id_main_inv}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,14 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "executeOnLoad": true,
-    "name": "tabela_inventory_main_id",
-    "pageId": "Screeny_inventory",
+    "executeOnLoad": false,
+    "name": "DeleteQuery",
+    "pageId": "Inventory_main",
     "userSetOnLoad": false
   }
 }

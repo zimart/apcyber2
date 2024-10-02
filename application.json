@@ -129,6 +129,10 @@
     {
       "id": "Page2",
       "isDefault": false
+    },
+    {
+      "id": "Inventory_main",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_69487ee9-6ae0-4b83-815d-65f9221f489e",
-  "id": "Screeny_inventory_tabela_inventory_main_id",
+  "gitSyncId": "66f263e90ea81e705fc1052a_161b1282-30ae-40a4-b7b8-ff603b4f6f4c",
+  "id": "Inventory_main_SelectQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT moc produkt,ilosc,cena FROM inventory_main where fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}}\nORDER BY rodzajmotor ASC\n;",
+      "body": "SELECT * FROM inventory_main\nORDER BY moc ASC\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "tabela_inventory_main_id",
-    "pageId": "Screeny_inventory",
-    "userSetOnLoad": false
+    "name": "SelectQuery",
+    "pageId": "Inventory_main",
+    "userSetOnLoad": true
   }
 }
