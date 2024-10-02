@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66f263e90ea81e705fc1052a_e432477f-c1d0-4540-a4f1-da30b868d68e",
+  "id": "Screeny_inventory_merge",
+  "unpublishedCollection": {
+    "name": "merge",
+    "pageId": "Screeny_inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

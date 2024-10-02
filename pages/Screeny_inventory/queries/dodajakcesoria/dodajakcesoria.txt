@@ -1,2 +1,2 @@
-INSERT INTO sterowania (ilosc,cena,model,fk_oferty_inventory_id_ster,razemnetto,vat_sterowania,rabat_sterowania,cenaporabacie)
-  VALUES ('{{Input25.text}}', '{{Input24.text}}',	'{{Select15.selectedOptionLabel}}','{{appsmith.URL.queryParams.id_oferta}}',{{Input25.text}}*{{Input24.text}},{{Vat.selectedOptionValue}},0,{{input24.text}}-({{Input24.text*0}}));	
+INSERT INTO sterowania (rodzajproduktu_ster,ilosc,cena,model,fk_oferty_inventory_id_ster,razemnetto,vat_sterowania,rabat_sterowania,cenaporabacie)
+  VALUES ('19','{{Input25.text}}', '{{Input24.text}}',	'{{Select15.selectedOptionLabel}}','{{appsmith.URL.queryParams.id_oferta}}',{{Input25.text}}*{{Input24.text}},{{Vat.selectedOptionValue}},0,{{input24.text}}-({{Input24.text*0}}));
