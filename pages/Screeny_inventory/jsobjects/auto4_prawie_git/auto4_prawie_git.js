@@ -10,8 +10,8 @@ const data2 = tabela_glowna.tableData;
 // Custom headers
 const columns = [
 { header: 'Produktsd', dataKey: 'Produkt' },
-{ header: 'Iloaasdg', dataKey: 'Ilosc' },
-{ header: 'Cena (EUR)', dataKey: 'Cena' } // Custom header with currency
+{ header: 'Ilosc', dataKey: 'Ilosc' },
+{ header: 'Cena', dataKey: 'Cena' } // Custom header with currency
 ];	
 	
 // Example data with computed values
@@ -33,9 +33,13 @@ Cena: (item.Cena / currencyRate).toFixed(2) // Convert price using currency rate
 
 //const columns = Object.keys(data[0]).map(key => ({ header: key, dataKey: key }));	
 
-doc.text("Additional Information", 15, 20);
+
+      doc.setFont ("Helvetica");
+      doc.setFontSize("9")
+      doc.text ("Hello wreahtrsjytdufygj", 10, 10);
+	    doc.text("Additional Information", 15, 20);
 	
-	
+	     doc.text(Text16.text, 15, 40);
 	
 //fault_1 (doc, {
 //columnStyles: { europe: { halign: 'center' },
@@ -59,16 +63,50 @@ doc.text("Additional Information", 15, 20);
 //],
 //};
 	
+	
+	
 // Add a table with auto columns
 default_1(doc, {
-columns: columns,
-body: data,
+	//theme: 'grid',
+	//headStyles: { fillColor:  [206, 214, 216] },
+	startY: 80,
+	columnStyles: { europe: { halign: 'center' },},
+	styles: { cellPadding: 1, fontSize: 8,
+					 //textColor:0,
+					 cellWidth: 'wrap',
+					overflow: 'ellipsize',
+//					overflow: 'linebreak'|'ellipsize'|'visible'|'hidden' = 'linebreak'
+//fillColor: 255,
+//textColor: Color? = 20
+//cellWidth: 'auto'|'wrap'|number = 'auto'
+minCellWidth: 6
+//minCellHeight: number = 0
+//halign: 'left'|'center'|'right' = 'left'
+//valign: 'top'|'middle'|'bottom' = 'top'
+//fontSize: number = 10
+//cellPadding: Padding = 10
+//lineColor: Color = 10
+//lineWidth: border = 0 // If 0, no border is drawn
+					
+					
+					
+					
+					},			
+  columns: columns,
+  body: data,
+	 willDrawPage: function (data) {
+      // Header
+      doc.setFontSize(20)
+      doc.setTextColor(40)
+     // if (base64Img) {
+     //   doc.addImage(base64Img, 'JPEG', data.settings.margin.left, 15, 10, 10)
+      },
 });
 	
 
 	
 	// Add a table with auto columns
-default_1(doc,tabela_glowna.tableData);
+//default_1(doc,tabela_glowna.tableData);
 
 // Add text below the table
 const finalY = doc.lastAutoTable.finalY; // The y position where the table ends

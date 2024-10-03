@@ -1,11 +1,11 @@
 {
   "animateLoading": true,
   "autoGenerateForm": true,
-  "backgroundColor": "#fff",
+  "backgroundColor": "#ffffff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "",
+  "borderWidth": "1px",
   "bottomRow": 58,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -102,12 +102,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "boxShadow"
-    },
-    {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
       "key": "resetButtonStyles.buttonColor"
     },
     {
@@ -169,6 +163,9 @@
     },
     {
       "key": "schema.__root_schema__.children.accountname.defaultValue"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -181,6 +178,9 @@
     },
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -236,7 +236,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Accountname",
+          "label": "Klient",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "accountname",
           "position": 8,
@@ -445,7 +445,7 @@
     "borderRadius": "0px",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "buttonVariant": "SECONDARY",
+    "buttonVariant": "PRIMARY",
     "iconAlign": "left",
     "iconName": "add",
     "placement": "START"

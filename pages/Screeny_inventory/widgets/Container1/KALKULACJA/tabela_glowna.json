@@ -72,11 +72,17 @@
     },
     {
       "key": "primaryColumns.Ilosc.computedValue"
+    },
+    {
+      "key": "primaryColumns.Ilosc.isCellVisible"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "onSort"
+    },
+    {
+      "key": "primaryColumns.Ilosc.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -174,7 +180,7 @@
       "id": "Ilosc",
       "index": 2,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czyrabat.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,

@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 85,
+  "bottomRow": 87,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "button": {
@@ -121,9 +121,6 @@
       "key": "primaryColumns.customColumn1.borderRadius"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonColor"
-    },
-    {
       "key": "primaryColumns.customColumn4.boxShadow"
     },
     {
@@ -173,7 +170,7 @@
   "key": "zba5qel0au",
   "label": "Data",
   "labelTextSize": "0.875rem",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
@@ -256,7 +253,7 @@
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonColor": "#be185d",
       "buttonLabel": "Zobacz oferty ",
       "buttonStyle": "rgb(3, 179, 101)",
       "columnType": "button",
@@ -386,7 +383,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "imie",
+      "label": "Imię",
       "notation": "standard",
       "originalId": "imie",
       "sticky": "",
@@ -522,7 +519,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "numer",
+      "label": "Numer",
       "notation": "standard",
       "originalId": "numer",
       "sticky": "",
@@ -608,7 +605,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{SelectQuery.data}}",
   "textSize": "0.875rem",
-  "topRow": 6,
+  "topRow": 8,
   "totalRecordsCount": "20",
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",

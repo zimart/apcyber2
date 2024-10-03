@@ -23,7 +23,7 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "kolorm",
     "pageId": "Page2",
     "userSetOnLoad": false

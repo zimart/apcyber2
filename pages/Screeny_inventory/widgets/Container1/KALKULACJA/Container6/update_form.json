@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 108,
+  "bottomRow": 123,
   "bottomRowBeforeCollapse": 108,
   "boxShadow": "none",
   "childStylesheet": {
@@ -108,9 +108,6 @@
     },
     {
       "key": "submitButtonStyles.buttonColor"
-    },
-    {
-      "key": "submitButtonStyles.borderRadius"
     },
     {
       "key": "resetButtonStyles.borderRadius"
@@ -514,7 +511,7 @@
   "maxDynamicHeight": 284,
   "minDynamicHeight": 81,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 108,
+  "originalBottomRow": 89,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "2agene8jx6",
@@ -1441,7 +1438,7 @@
   "sourceData": "{{_.omit(tabela_screeny_inventory_id.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id\")}}",
   "submitButtonLabel": "Update",
   "submitButtonStyles": {
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "0px",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"

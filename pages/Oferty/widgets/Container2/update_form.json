@@ -140,15 +140,6 @@
       "key": "schema.__root_schema__.children.temat.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.Lp_.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.Lp_.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Lp_.borderRadius"
-    },
-    {
       "key": "title"
     },
     {
@@ -235,8 +226,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_id_klient.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 41,
-  "originalTopRow": 4,
+  "originalBottomRow": 89,
+  "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "x3oj14smam",
   "parentRowSpace": 10,
@@ -257,28 +248,6 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
-        "Lp_": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "Lp.",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Lp.\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "Lp_",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": false,
-          "label": "Lp",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "Lp.",
-          "position": 0,
-          "sourceData": 3
-        },
         "dataoferty": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "dataoferty",
@@ -407,8 +376,7 @@
           "label": "Kurseuro",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kurseuro",
-          "position": 8,
-          "sourceData": null
+          "position": 8
         },
         "numeroferty": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -473,8 +441,7 @@
           "label": "Waluta",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "waluta",
-          "position": 9,
-          "sourceData": null
+          "position": 9
         }
       },
       "dataType": "object",

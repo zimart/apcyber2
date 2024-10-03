@@ -2,14 +2,11 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#be185d",
   "buttonVariant": "PRIMARY",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -22,7 +19,7 @@
   "isLoading": false,
   "isVisible": "true",
   "labelTextSize": "0.875rem",
-  "leftColumn": 60,
+  "leftColumn": 61,
   "onClick": "{{SelectQuery.run()}}",
   "parentColumnSpace": 12.0703125,
   "parentId": "59rw5mx0bq",

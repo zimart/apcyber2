@@ -267,7 +267,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (update_form.formData.imie))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (update_form.formData.imie+\"\"+update_form.formData.nazwiskoklient))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "accountname",
