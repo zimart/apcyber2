@@ -1,6 +1,7 @@
 {
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 15,
+  "counterClockwise": false,
   "counterClosewise": false,
   "dynamicBindingPathList": [
     {
@@ -10,9 +11,10 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicTriggerPathList": [],
   "fillColor": "{{appsmith.theme.colors.primaryColor}}",
   "isCanvas": false,
-  "isIndeterminate": false,
+  "isIndeterminate": true,
   "isLoading": false,
   "isVisible": true,
   "key": "xfequbr3ml",
@@ -26,11 +28,11 @@
   "parentId": "rroncfz6ct",
   "parentRowSpace": 10,
   "progress": 50,
-  "progressType": "linear",
+  "progressType": "circular",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 60,
-  "showResult": false,
+  "showResult": true,
   "steps": 1,
   "topRow": 11,
   "type": "PROGRESS_WIDGET",

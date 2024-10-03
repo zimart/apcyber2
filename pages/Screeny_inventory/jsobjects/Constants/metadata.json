@@ -9,11 +9,11 @@
     "variables": [
       {
         "name": "defaultLanguageKeys",
-        "value": "{\n  \"User Management\": \"User Management\",\n  \"Filter By\": \"Filter By\",\n  \"Find User\": \"Find User\",\n  \"Favorite Columns\": \"Favorite Columns\",\n  \"Select Favorite Columns\": \"Select Favorite Columns\",\n  \"Close\": \"Close\",\n  \"Bulk Update\": \"Bulk Update\",\n  \"Language\": \"Language\",\n  \"avatar\": \"Avatar\",\n  \"name\": \"Name\",\n  \"email\": \"Email\",\n  \"gender\": \"Gender\",\n  \"address\": \"Address\",\n  \"status\": \"Status\",\n  \"createdAt\": \"Created At\",\n  \"updatedAt\": \"Updated At\",\n  \"Confirm\": \"Confirm\",\n  \"Clear\": \"Clear\",\n  \"Delete\": \"Delete\",\n  \"Switching Languages\": \"Switching Languages\"\n}"
+        "value": "{\n  \"Język\": \"Język\",\n  \"Ilość\": \"Ilość\",\n  \"DODAJ STEROWANIE\": \"DODAJ STEROWANIE\",\n  \"Zmiana języka\": \"Zmiana języka\"\n}"
       },
       {
         "name": "languageOptions",
-        "value": "[\"English\", \"Polish\", \"French\", \"German\", \"Dutch\", \"Chinese\", \"Japanese\", \"Spanish\", \"Arabic\", \"Hindi\", \"Russian\", \"Portugese\", \"Urdu\"]"
+        "value": "[\"Polski\", \"English\", \"German\"]"
       }
     ]
   }

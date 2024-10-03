@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
+  "bottomRow": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "polski",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -38,10 +41,10 @@
   "key": "ibcwvtayax",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "{{i18n.translate(\"Język\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 24,
+  "leftColumn": 38,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -59,7 +62,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 44,
+  "rightColumn": 45,
   "serverSideFiltering": false,
   "sourceData": "{{Constants.languageOptions.map(item => ({ name: item, code: item.toLowerCase()}))}}",
   "topRow": 0,

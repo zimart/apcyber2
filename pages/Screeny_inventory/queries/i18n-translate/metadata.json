@@ -30,6 +30,6 @@
     "fullyQualifiedName": "i18n.translate",
     "name": "translate",
     "pageId": "Screeny_inventory",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

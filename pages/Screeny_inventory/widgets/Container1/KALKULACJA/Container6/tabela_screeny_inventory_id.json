@@ -72,7 +72,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1727638601278,
+  "columnUpdatedAt": 1727975901031,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -80,7 +80,7 @@
     "doplatakolor": 141,
     "doplatatkanina": 127,
     "doplatawkladka": 141,
-    "ilosc": 60,
+    "ilosc": 147,
     "kwotarabatsystem": 168,
     "moc": 125,
     "naped": 146,
@@ -270,6 +270,9 @@
     },
     {
       "key": "primaryColumns.szerokosc.label"
+    },
+    {
+      "key": "primaryColumns.ilosc.label"
     }
   ],
   "dynamicPropertyPathList": [],
@@ -703,7 +706,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "ilosc",
+      "label": "{{i18n.translate(\"Ilość\")}}",
       "notation": "standard",
       "originalId": "ilosc",
       "sticky": "",
@@ -1562,7 +1565,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"szerokosc\")}}",
+      "label": "{{i18n.translate(\"Szerokość\")}}",
       "notation": "standard",
       "originalId": "szerokosc",
       "sticky": "",

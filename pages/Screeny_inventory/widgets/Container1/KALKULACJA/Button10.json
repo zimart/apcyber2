@@ -6,7 +6,11 @@
   "buttonColor": "#831843",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -34,7 +38,7 @@
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 12,
-  "text": "DODAJ STEROWANIE",
+  "text": "{{i18n.translate(\"DODAJ STEROWANIE\")}}",
   "topRow": 7,
   "type": "BUTTON_WIDGET",
   "version": 1,

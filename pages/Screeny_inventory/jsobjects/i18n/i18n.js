@@ -1,6 +1,6 @@
 export default {
 	resources: {
-		english: {
+		polski: {
 			translation: Constants.defaultLanguageKeys
 		}
 	},
@@ -21,7 +21,7 @@ export default {
 			this.translate();
 		}
 	},
-	async setup(lang='english'){
+	async setup(lang='polski'){
 		await i18next.init({
 			debug: true,
 			resources: this.resources

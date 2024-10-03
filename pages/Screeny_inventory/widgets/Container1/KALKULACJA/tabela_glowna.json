@@ -32,13 +32,14 @@
     }
   },
   "columnOrder": [
-    "produkt",
-    "ilosc",
-    "cena"
+    "Produkt",
+    "Cena",
+    "Ilosc"
   ],
-  "columnUpdatedAt": 1727895964927,
+  "columnUpdatedAt": 1727985140377,
   "columnWidthMap": {
     "concat": 262,
+    "ilosc": 220,
     "produkt": 148
   },
   "defaultPageSize": 0,
@@ -61,27 +62,21 @@
       "key": "totalRecordsCount"
     },
     {
-      "key": "primaryColumns.ilosc.computedValue"
-    },
-    {
       "key": "tableData"
     },
     {
-      "key": "primaryColumns.produkt.computedValue"
+      "key": "primaryColumns.Produkt.computedValue"
     },
     {
-      "key": "primaryColumns.cena.computedValue"
+      "key": "primaryColumns.Cena.computedValue"
     },
     {
-      "key": "primaryColumns.ilosc.isCellVisible"
+      "key": "primaryColumns.Ilosc.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "onSort"
-    },
-    {
-      "key": "primaryColumns.ilosc.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -129,20 +124,20 @@
   "parentRowSpace": 10,
   "primaryColumnId": "id_wiersz",
   "primaryColumns": {
-    "cena": {
-      "alias": "cena",
+    "Cena": {
+      "alias": "Cena",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.cena/Select6.selectedOptionValue).toFixed(2)))}}",
+      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow[\"Cena\"]/Select6.selectedOptionValue).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "id": "cena",
+      "id": "Cena",
       "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -152,9 +147,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "cena",
+      "label": "Cena",
       "notation": "standard",
-      "originalId": "cena",
+      "originalId": "Cena",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -163,55 +158,21 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "ilosc": {
-      "alias": "ilosc",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "number",
-      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( String(currentRow[\"ilosc\"])))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "ilosc",
-      "index": 1,
-      "isCellEditable": false,
-      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czyrabat.isSwitchedOn))}}",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "ilosc",
-      "notation": "standard",
-      "originalId": "ilosc",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "produkt": {
-      "alias": "produkt",
+    "Ilosc": {
+      "alias": "Ilosc",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( String(currentRow[\"produkt\"])))}}",
+      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Ilosc\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "id": "produkt",
-      "index": 1,
+      "id": "Ilosc",
+      "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -220,9 +181,43 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "produkt",
+      "label": "Ilosc",
       "notation": "standard",
-      "originalId": "produkt",
+      "originalId": "Ilosc",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "Produkt": {
+      "alias": "Produkt",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Produkt\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "Produkt",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Produkt",
+      "notation": "standard",
+      "originalId": "Produkt",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

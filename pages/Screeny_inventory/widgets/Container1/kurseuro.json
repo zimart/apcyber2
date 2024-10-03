@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -27,7 +30,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "fcag1fd5db",
-  "label": "KURS EURO",
+  "label": "{{i18n.translate(\"KURS EURO\")}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

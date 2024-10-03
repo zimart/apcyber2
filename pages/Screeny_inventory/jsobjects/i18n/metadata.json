@@ -9,7 +9,7 @@
     "variables": [
       {
         "name": "resources",
-        "value": "{\n  english: {\n    translation: Constants.defaultLanguageKeys\n  }\n}"
+        "value": "{\n  polski: {\n    translation: Constants.defaultLanguageKeys\n  }\n}"
       }
     ]
   }

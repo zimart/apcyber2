@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
-  "bottomRow": 264,
-  "docUrl": "{{pdf_dziala.BuildPDF.data}}",
+  "bottomRow": 299,
+  "docUrl": "{{auto4_prawie_git.BuildPDF.data}}",
   "dynamicBindingPathList": [
     {
       "key": "docUrl"
@@ -19,7 +19,7 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 224,
   "needsErrorInfo": false,
-  "originalBottomRow": 264,
+  "originalBottomRow": 299,
   "originalTopRow": 224,
   "parentColumnSpace": 20.5625,
   "parentId": "0",
