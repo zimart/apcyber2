@@ -574,7 +574,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "cena",
           "position": 31,
-          "sourceData": "1.03"
+          "sourceData": "1609.00"
         },
         "cenanetto": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

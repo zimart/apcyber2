@@ -405,7 +405,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#f4f4f5",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number.parseFloat(currentRow.cena/Select6.selectedOptionValue).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number.parseFloat(currentRow.cena/kursinput.text).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
