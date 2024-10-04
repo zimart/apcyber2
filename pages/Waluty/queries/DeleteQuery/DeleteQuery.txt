@@ -1,0 +1,2 @@
+DELETE FROM waluty
+  WHERE id_waluta = {{data_table.triggeredRow.id_waluta}};

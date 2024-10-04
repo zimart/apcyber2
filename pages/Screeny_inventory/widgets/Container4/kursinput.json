@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 24,
   "boxShadow": "none",
-  "defaultText": "{{kurseuro.text}}",
+  "defaultText": "{{walutakurs.data[0].kurs}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -20,7 +20,7 @@
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
@@ -50,6 +50,7 @@
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 31,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 17,
   "type": "INPUT_WIDGET_V2",

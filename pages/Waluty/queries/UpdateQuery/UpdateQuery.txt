@@ -1,0 +1,5 @@
+UPDATE waluty SET
+		skrot = '{{update_form.fieldState.skrot.isVisible ? update_form.formData.skrot : update_form.sourceData.skrot}}',
+		kurs = '{{update_form.fieldState.kurs.isVisible ? update_form.formData.kurs : update_form.sourceData.kurs}}',
+    konto = '{{update_form.fieldState.konto.isVisible ? update_form.formData.konto : update_form.sourceData.konto}}'
+WHERE id_waluta = {{data_table.selectedRow.id_waluta}};

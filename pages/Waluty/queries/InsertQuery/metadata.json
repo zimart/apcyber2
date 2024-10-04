@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_3e989c78-54a6-4603-8ebb-0706dee52ecb",
-  "id": "Screeny_inventory_zmienkurs",
+  "gitSyncId": "66f263e90ea81e705fc1052a_67e0a8de-bf16-49bc-9b23-b796e3e41f95",
+  "id": "Waluty_InsertQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE screeny_inventory SET\n    kurseuro = '{{kursinput.text}}',\n\t\twaluta = '{{Select6.selectedOptionLabel}}'\n\t  WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
+      "body": "INSERT INTO waluty (\n\tskrot,\n\tkurs,\n\tkonto)\nVALUES (\n\t'{{insert_form.formData.skrot}}',\n\t'{{insert_form.formData.kurs}}',\n\t'{{insert_form.formData.konto}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,14 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "executeOnLoad": false,
-    "name": "zmienkurs",
-    "pageId": "Screeny_inventory",
+    "name": "InsertQuery",
+    "pageId": "Waluty",
     "userSetOnLoad": false
   }
 }

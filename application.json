@@ -133,6 +133,10 @@
     {
       "id": "Inventory_main",
       "isDefault": false
+    },
+    {
+      "id": "Waluty",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

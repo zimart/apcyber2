@@ -1,0 +1,8 @@
+INSERT INTO waluty (
+	skrot,
+	kurs,
+	konto)
+VALUES (
+	'{{insert_form.formData.skrot}}',
+	'{{insert_form.formData.kurs}}',
+	'{{insert_form.formData.konto}}');

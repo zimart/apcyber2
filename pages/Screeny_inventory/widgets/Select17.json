@@ -2,35 +2,27 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 307,
   "boxShadow": "none",
-  "defaultOptionValue": "polski",
+  "defaultOptionValue": "{{\n            {\n              label: Select17.options[0].label,\n              value: Select17.options[0].value\n            }\n          }}",
   "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "sourceData"
-    },
-    {
-      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
     }
   ],
   "isDisabled": false,
@@ -38,36 +30,36 @@
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "ibcwvtayax",
+  "key": "lh6ptyj2jc",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "{{i18n.translate(\"Język\")}}",
+  "labelText": "Label",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 57,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 7,
-  "mobileLeftColumn": 24,
-  "mobileRightColumn": 44,
-  "mobileTopRow": 0,
+  "mobileBottomRow": 309,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 302,
   "needsErrorInfo": false,
-  "onOptionChange": "{{i18n.selectLanguage();}}",
-  "optionLabel": "name",
-  "optionValue": "code",
-  "parentColumnSpace": 20.25,
-  "parentId": "59rw5mx0bq",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 307,
+  "originalTopRow": 300,
+  "parentId": "0",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 20,
   "serverSideFiltering": false,
-  "sourceData": "{{Constants.languageOptions.map(item => ({ name: item, code: item.toLowerCase()}))}}",
-  "topRow": 0,
+  "sourceData": "{{waluta.data.map( (obj) =>{ return  {'label': obj.SKROT, 'value': obj.SKROT } })}}",
+  "topRow": 300,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "as5ir3qi4l",
-  "widgetName": "Select16"
+  "widgetId": "60l8h3t297",
+  "widgetName": "Select17"
 }

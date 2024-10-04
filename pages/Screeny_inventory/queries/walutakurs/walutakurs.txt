@@ -1,0 +1,1 @@
+SELECT kurs FROM waluty where skrot = {{Select6.selectedOptionLabel}};

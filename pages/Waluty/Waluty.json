@@ -1,12 +1,11 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_81fbe252-54ad-489b-aab3-bae40ffaeb84",
+  "gitSyncId": "66f263e90ea81e705fc1052a_833cfe1a-5ec8-4848-a7bb-b7e0eb82ec43",
   "unpublishedPage": {
-    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 3070,
+          "bottomRow": 890,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Screeny_inventory",
-    "slug": "screeny-inventory"
+    "name": "Waluty",
+    "slug": "waluty"
   }
 }

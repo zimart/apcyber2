@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_3e989c78-54a6-4603-8ebb-0706dee52ecb",
-  "id": "Screeny_inventory_zmienkurs",
+  "gitSyncId": "66f263e90ea81e705fc1052a_797050dc-b9e9-4736-8d11-23b4c4cd9596",
+  "id": "Waluty_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE screeny_inventory SET\n    kurseuro = '{{kursinput.text}}',\n\t\twaluta = '{{Select6.selectedOptionLabel}}'\n\t  WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
+      "body": "DELETE FROM waluty\n  WHERE id_waluta = {{data_table.triggeredRow.id_waluta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,14 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "executeOnLoad": false,
-    "name": "zmienkurs",
-    "pageId": "Screeny_inventory",
+    "name": "DeleteQuery",
+    "pageId": "Waluty",
     "userSetOnLoad": false
   }
 }

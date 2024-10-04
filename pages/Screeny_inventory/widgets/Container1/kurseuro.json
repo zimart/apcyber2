@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 6,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.URL.queryParams.kurseurooferta || 4.3}}",
+  "defaultText": "{{appsmith.URL.queryParams.kurseurooferta || kursinput.text}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,10 +18,17 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
@@ -29,7 +36,7 @@
   ],
   "iconAlign": "left",
   "inputType": "NUMBER",
-  "isDisabled": false,
+  "isDisabled": "{{Select6.selectedOptionLabel===\"PLN\"}}",
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
@@ -40,7 +47,7 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 51,
+  "leftColumn": 44,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -56,10 +63,10 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": false,
   "responsiveBehavior": "fill",
-  "rightColumn": 58,
+  "rightColumn": 51,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 5,
+  "topRow": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "0fv2p4o55u",
