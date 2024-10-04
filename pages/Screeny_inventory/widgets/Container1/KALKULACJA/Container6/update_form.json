@@ -511,7 +511,7 @@
   "maxDynamicHeight": 284,
   "minDynamicHeight": 81,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 89,
+  "originalBottomRow": 123,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "2agene8jx6",
