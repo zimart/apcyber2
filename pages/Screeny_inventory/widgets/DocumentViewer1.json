@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 299,
+  "bottomRow": 301,
   "docUrl": "{{auto4_prawie_git.BuildPDF.data}}",
   "dynamicBindingPathList": [
     {
@@ -27,7 +27,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "topRow": 224,
+  "topRow": 226,
   "type": "DOCUMENT_VIEWER_WIDGET",
   "version": 1,
   "widgetId": "e9snq3ovjj",

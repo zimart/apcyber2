@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 12,
   "boxShadow": "none",
-  "defaultText": "4.3",
+  "defaultText": "{{appsmith.URL.queryParams.kurseurooferta || 4.3}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,9 +15,13 @@
     },
     {
       "key": "label"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
@@ -45,7 +49,7 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onTextChanged": "{{zmienkurs.run();\ntabela_inventory_id.run()}}",
+  "onTextChanged": "{{zmienkurs.run();\nzmienkurswofercie.run();\ntabela_inventory_id.run()}}",
   "parentColumnSpace": 20.25,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
