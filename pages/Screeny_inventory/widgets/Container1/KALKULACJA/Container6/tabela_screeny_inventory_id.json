@@ -283,6 +283,21 @@
     },
     {
       "key": "primaryColumns.customColumn2.menuColor"
+    },
+    {
+      "key": "primaryColumns.cenanetto.label"
+    },
+    {
+      "key": "primaryColumns.concat.label"
+    },
+    {
+      "key": "primaryColumns.wysokosc.label"
+    },
+    {
+      "key": "primaryColumns.cena.label"
+    },
+    {
+      "key": "primaryColumns.doplatatkanina.label"
     }
   ],
   "dynamicPropertyPathList": [],
@@ -407,7 +422,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Cena bazowa systemu",
+      "label": "{{i18n.translate(\"Cena bazowa systemu\")}}",
       "notation": "standard",
       "originalId": "cena",
       "sticky": "",
@@ -441,7 +456,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Produkt",
+      "label": "{{i18n.translate(\"Produkt\")}}",
       "notation": "standard",
       "originalId": "cenanetto",
       "sticky": "",
@@ -475,7 +490,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": false,
-      "label": "Dane",
+      "label": "{{i18n.translate(\"Opis\")}}",
       "notation": "standard",
       "originalId": "concat",
       "sticky": "",
@@ -625,7 +640,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Doplata tkanina",
+      "label": "{{i18n.translate(\"Dopłata tkanina\")}}",
       "notation": "standard",
       "originalId": "doplatatkanina",
       "sticky": "",
@@ -1790,7 +1805,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Wysokość",
+      "label": "{{i18n.translate(\"Wysokość\")}}",
       "notation": "standard",
       "originalId": "wysokosc",
       "sticky": "",

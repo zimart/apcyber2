@@ -37,7 +37,7 @@
         },
         "textGeneration": {
           "input": {
-            "data": "Replace the values in given object with the translated value of the key in language {{Select1.selectedOptionLabel}} and only return the object. Do not change the key. The object is {{JSON.stringify(Constants.defaultLanguageKeys)}}. Do not return any other sentence or the keyword json"
+            "data": "Replace the values in given object with the translated value of the key in language {{Select16.selectedOptionLabel}} and only return the object. Do not change the key. The object is {{JSON.stringify(Constants.defaultLanguageKeys)}}. Do not return any other sentence or the keyword json"
           }
         },
         "textSummary": {

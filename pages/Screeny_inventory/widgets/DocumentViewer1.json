@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 301,
+  "bottomRow": 299,
   "docUrl": "{{auto4_prawie_git.BuildPDF.data}}",
   "dynamicBindingPathList": [
     {
@@ -19,15 +19,15 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 224,
   "needsErrorInfo": false,
-  "originalBottomRow": 301,
-  "originalTopRow": 226,
+  "originalBottomRow": 299,
+  "originalTopRow": 224,
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "topRow": 226,
+  "topRow": 224,
   "type": "DOCUMENT_VIEWER_WIDGET",
   "version": 1,
   "widgetId": "e9snq3ovjj",

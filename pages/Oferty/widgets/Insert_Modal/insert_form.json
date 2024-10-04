@@ -358,8 +358,7 @@
           "label": "Kurseuro",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kurseuro",
-          "position": 7,
-          "sourceData": null
+          "position": 7
         },
         "numeroferty": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -426,8 +425,7 @@
           "label": "Waluta",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "waluta",
-          "position": 8,
-          "sourceData": null
+          "position": 8
         }
       },
       "dataType": "object",

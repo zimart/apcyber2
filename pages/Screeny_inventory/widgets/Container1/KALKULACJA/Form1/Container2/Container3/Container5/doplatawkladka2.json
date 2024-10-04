@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 0,
+  "bottomRow": 7,
   "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
   "defaultText": "{{Number(doplata.wkladka.data).toFixed(2)}}",
