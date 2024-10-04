@@ -113,8 +113,8 @@ const finalY = doc.lastAutoTable.finalY; // The y position where the table ends
 doc.text("Additional Information", 14, finalY + 10);
 	
 
-
-return doc.output("dataurlstring");
+//return doc.output("dataurlstring");
 //doc.save('table.pdf');
+	download(doc.output(), 'timesheet.pdf');
 }
 }

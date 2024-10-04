@@ -20,9 +20,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -50,7 +47,7 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "{{zmienkurswofercie.run();\nwalutakurs.run()}}",
+  "onOptionChange": "{{zmienkurswofercie.run();\nwalutakurs.run();\npdf_polski.BuildPDF()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 20.21875,
