@@ -9,9 +9,10 @@ const data2 = tabela_glowna.tableData;
 	
 // Custom headers
 const columns = [
-{ header: 'Produktsd', dataKey: 'Produkt' },
+{ header: 'Produkt', dataKey: 'Produkt' },
 { header: 'Ilosc', dataKey: 'Ilosc' },
-{ header: 'Cena', dataKey: 'Cena' } // Custom header with currency
+{ header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
+{ header: 'Opis', dataKey: 'Opis' } // Custom header with currency
 ];	
 	
 // Example data with computed values
@@ -19,7 +20,8 @@ const currencyRate = kursinput.text; // Example currency rate for conversion
 const data = tabela_glowna.tableData.map(item => ({
 Produkt: item.Produkt,
 Ilosc: item.Ilosc,
-Cena: (item.Cena / currencyRate).toFixed(2) // Convert price using currency rate
+cenanetto: (item.cenanetto / currencyRate).toFixed(2),// Convert price using currency rate
+Opis: item.opiszrabatami
 }));	
 
 //const columns2 = tabela_glowna.tableHeaders;

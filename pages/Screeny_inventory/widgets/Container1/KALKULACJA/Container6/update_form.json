@@ -474,6 +474,33 @@
     },
     {
       "key": "schema.__root_schema__.children.cenanetto.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.opisbezrabatow.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.opisbezrabatow.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.opisbezrabatow.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.opiszrabatami.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.opiszrabatami.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.opiszrabatami.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.id.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -489,6 +516,9 @@
     },
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicTriggerPathList": [
@@ -507,11 +537,11 @@
   "isVisible": "{{!!tabela_screeny_inventory_id.selectedRow.id}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 50,
+  "leftColumn": 47,
   "maxDynamicHeight": 284,
   "minDynamicHeight": 81,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 89,
+  "originalBottomRow": 123,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "2agene8jx6",
@@ -707,6 +737,28 @@
           "originalIdentifier": "fk_oferty_inventory_id",
           "position": 21,
           "sourceData": "114"
+        },
+        "id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "id",
+          "position": 41,
+          "sourceData": 754
         },
         "ilosc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -928,6 +980,48 @@
           "position": 15,
           "sourceData": "Maestria 6/17 IO"
         },
+        "opisbezrabatow": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "opisbezrabatow",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.opisbezrabatow))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Multiline Text Input",
+          "iconAlign": "left",
+          "identifier": "opisbezrabatow",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Opisbezrabatow",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "opisbezrabatow",
+          "position": 39
+        },
+        "opiszrabatami": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "opiszrabatami",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.opiszrabatami))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Multiline Text Input",
+          "iconAlign": "left",
+          "identifier": "opiszrabatami",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Opiszrabatami",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "opiszrabatami",
+          "position": 40
+        },
         "powierzchnia": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "powierzchnia",
@@ -1034,7 +1128,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rabatmotor",
           "position": 17,
-          "sourceData": 10
+          "sourceData": 0
         },
         "rabatsystem": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1435,7 +1529,7 @@
   "scrollContents": true,
   "shouldScrollContents": true,
   "showReset": false,
-  "sourceData": "{{_.omit(tabela_screeny_inventory_id.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id\")}}",
+  "sourceData": "{{tabela_screeny_inventory_id.selectedRow}}",
   "submitButtonLabel": "Update",
   "submitButtonStyles": {
     "borderRadius": "0px",

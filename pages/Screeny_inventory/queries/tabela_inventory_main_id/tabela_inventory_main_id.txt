@@ -1,3 +1,3 @@
-SELECT moc Produkt,concat,ilosc Ilosc,cenanetto,razemnetto,vat,brutto FROM inventory_main where fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}}
+SELECT moc Produkt,concat,ilosc Ilosc,cenanetto,razemnetto,vat,brutto,opisbezrabatow,opiszrabatami FROM inventory_main where fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}}
 ORDER BY rodzajmotor ASC
 ;

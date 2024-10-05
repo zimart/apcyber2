@@ -30,7 +30,7 @@ INSERT INTO screeny_inventory (wysokosc,
 															systemzdoplata,
 															kurseuro,
 															waluta,
-															vat)
+															vat,opisbezrabatow,opiszrabatami)
   VALUES ('{{wysokosc_input.text}}',
 					'{{szerokosc_input.text}}', 
 					{{index_szer_input.text}},
@@ -63,6 +63,7 @@ INSERT INTO screeny_inventory (wysokosc,
 					'{{systemzdoplatami.text}}',
 					'{{kurseuro.text}}',
 					'{{Select6.selectedOptionValue}}',
-					'{{Vat.selectedOptionValue}}'
-				
+					'{{Vat.selectedOptionValue}}',
+				  '',
+					''
 				 );
