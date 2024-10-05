@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_0c3a2f76-2c0b-4780-9780-efa644f732cd",
-  "id": "Screeny_inventory_Select_sterowania2",
+  "gitSyncId": "66f263e90ea81e705fc1052a_71fc8cff-c770-4195-9803-ca676c9ce6b4",
+  "id": "Screeny_inventory_obrazekkolor",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM  sterowania WHERE fk_oferty_inventory_id_ster = {{appsmith.URL.queryParams.id_oferta}}\n \n",
+      "body": "SELECT obrazek FROM screeny_kolor where kolorm = {{kolor_select.selectedOptionValue}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "Select_sterowania2",
+    "name": "obrazekkolor",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }

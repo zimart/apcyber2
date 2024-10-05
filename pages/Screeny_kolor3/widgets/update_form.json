@@ -167,6 +167,33 @@
     },
     {
       "key": "schema.__root_schema__.children.czydoplata.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.obrazek.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.obrazek.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.obrazek.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.obrazek.children.__array_item__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.obrazek.children.__array_item__.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.obrazek.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.obrazek.children.__array_item__.children.__array_item__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.obrazek.children.__array_item__.children.__array_item__.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.obrazek.children.__array_item__.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -307,6 +334,75 @@
           "originalIdentifier": "linia",
           "position": 1,
           "sourceData": "STANDARD"
+        },
+        "obrazek": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "obrazek",
+          "backgroundColor": "#FAFAFA",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "cellBoxShadow": "none",
+          "children": {
+            "__array_item__": {
+              "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+              "accessor": "__array_item__",
+              "backgroundColor": "#FAFAFA",
+              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+              "boxShadow": "none",
+              "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+              "cellBoxShadow": "none",
+              "children": {
+                "__array_item__": {
+                  "accessor": "__array_item__",
+                  "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "boxShadow": "none",
+                  "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                  "cellBoxShadow": "none",
+                  "children": {},
+                  "dataType": "object",
+                  "fieldType": "Object",
+                  "identifier": "__array_item__",
+                  "isCustomField": false,
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "isVisible": true,
+                  "label": "Array Item",
+                  "labelTextSize": "0.875rem",
+                  "originalIdentifier": "__array_item__",
+                  "position": -1,
+                  "sourceData": {}
+                }
+              },
+              "dataType": "object",
+              "fieldType": "Array",
+              "identifier": "__array_item__",
+              "isCollapsible": true,
+              "isCustomField": false,
+              "isDisabled": false,
+              "isRequired": false,
+              "isVisible": true,
+              "label": "Array Item",
+              "labelTextSize": "0.875rem",
+              "originalIdentifier": "__array_item__",
+              "position": -1,
+              "sourceData": {}
+            }
+          },
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.obrazek))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Array",
+          "identifier": "obrazek",
+          "isCollapsible": true,
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Obrazek",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "obrazek",
+          "position": 5,
+          "sourceData": ""
         },
         "system": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

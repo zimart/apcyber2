@@ -174,6 +174,15 @@
     },
     {
       "key": "schema.__root_schema__.children.czydoplata.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.obrazek.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.obrazek.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.obrazek.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -189,6 +198,12 @@
     },
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicTriggerPathList": [
@@ -204,10 +219,10 @@
   "isVisible": "{{!!data_table.selectedRow.id}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 39,
+  "leftColumn": 50,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+  "onSubmit": "{{Update_screeny_kolor1.run(() => {\n            showAlert(\"Successfully updated! Refresh the table to see updates\");\n            \n          }, () => {\n            showAlert(\"Unable to save!\");\n          })}}",
   "originalBottomRow": 89,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
@@ -318,6 +333,28 @@
           "serverSideFiltering": false,
           "sourceData": "STANDARD"
         },
+        "obrazek": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "obrazek",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.obrazek))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Multiline Text Input",
+          "iconAlign": "left",
+          "identifier": "obrazek",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Obrazek",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "obrazek",
+          "position": 5,
+          "sourceData": ""
+        },
         "system": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "system",
@@ -364,7 +401,7 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id\")}}",
+  "sourceData": "{{_.pick(data_table.selectedRow,'kolorm','linia','doplata','system','czydoplata','obrazek')}}",
   "submitButtonLabel": "Update",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -372,7 +409,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Update Row id: {{data_table.selectedRow.id}}",
+  "title": "Update Row id {{data_table.selectedRow.id}}",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "JSON_FORM_WIDGET",

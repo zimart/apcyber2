@@ -90,55 +90,13 @@
       "key": "schema.__root_schema__.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.col3.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col4.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col5.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col2.defaultValue"
-    },
-    {
       "key": "sourceData"
-    },
-    {
-      "key": "schema.__root_schema__.children.col6.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col7.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col8.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col9.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col10.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col11.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col12.defaultValue"
     },
     {
       "key": "schema.__root_schema__.borderRadius"
     },
     {
       "key": "schema.__root_schema__.cellBorderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.col1.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col1.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.col1.borderRadius"
     },
     {
       "key": "borderRadius"
@@ -159,79 +117,70 @@
       "key": "resetButtonStyles.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.col2.accentColor"
+      "key": "schema.__root_schema__.children.kolorm.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.col2.borderRadius"
+      "key": "schema.__root_schema__.children.kolorm.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.col3.accentColor"
+      "key": "schema.__root_schema__.children.kolorm.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.col3.borderRadius"
+      "key": "schema.__root_schema__.children.linia.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.col4.accentColor"
+      "key": "schema.__root_schema__.children.linia.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.col5.accentColor"
+      "key": "schema.__root_schema__.children.linia.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.col5.borderRadius"
+      "key": "schema.__root_schema__.children.doplata.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.col6.accentColor"
+      "key": "schema.__root_schema__.children.doplata.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.col6.borderRadius"
+      "key": "schema.__root_schema__.children.doplata.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.col7.accentColor"
+      "key": "schema.__root_schema__.children.system.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.col7.borderRadius"
+      "key": "schema.__root_schema__.children.system.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.col8.accentColor"
+      "key": "schema.__root_schema__.children.system.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.col8.borderRadius"
+      "key": "schema.__root_schema__.children.czydoplata.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.col9.accentColor"
+      "key": "schema.__root_schema__.children.czydoplata.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.col9.borderRadius"
+      "key": "schema.__root_schema__.children.czydoplata.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.col10.accentColor"
+      "key": "schema.__root_schema__.children.obrazek.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.col10.borderRadius"
+      "key": "schema.__root_schema__.children.obrazek.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.col11.accentColor"
+      "key": "schema.__root_schema__.children.obrazek.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.col11.borderRadius"
+      "key": "schema.__root_schema__.children.customField1.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.col12.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.col12.borderRadius"
+      "key": "schema.__root_schema__.children.customField1.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col5.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col4.defaultValue"
     },
     {
       "key": "borderRadius"
@@ -277,282 +226,157 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
-        "col1": {
-          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-          "accessor": "col1",
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+        "customField1": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "customField1",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.col1))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "col1",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Col 1",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "col1",
-          "position": 0,
-          "sourceData": 5
-        },
-        "col10": {
-          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-          "accessor": "col10",
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-          "boxShadow": "none",
-          "cellBorderRadius": "0px",
-          "cellBoxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.col10))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "col10",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Col 10",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "col10",
-          "position": 9
-        },
-        "col11": {
-          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-          "accessor": "col11",
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-          "boxShadow": "none",
-          "cellBorderRadius": "0px",
-          "cellBoxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.col11))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "col11",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Col 11",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "col11",
-          "position": 10
-        },
-        "col12": {
-          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-          "accessor": "col12",
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-          "boxShadow": "none",
-          "cellBorderRadius": "0px",
-          "cellBoxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.col12))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "col12",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Col 12",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "col12",
-          "position": 11
-        },
-        "col2": {
-          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-          "accessor": "col2",
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-          "boxShadow": "none",
-          "cellBorderRadius": "0px",
-          "cellBoxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.col2))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
-          "identifier": "col2",
+          "identifier": "customField1",
+          "isCustomField": true,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Custom Field 1",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "customField1",
+          "position": 6,
+          "sourceData": ""
+        },
+        "czydoplata": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "czydoplata",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.czydoplata))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "czydoplata",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Col 2",
+          "label": "Czydoplata",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "col2",
+          "originalIdentifier": "czydoplata",
+          "position": 4,
+          "sourceData": ""
+        },
+        "doplata": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "doplata",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.doplata))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "doplata",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Doplata",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "doplata",
+          "position": 2
+        },
+        "kolorm": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "kolorm",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kolorm))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "kolorm",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Kolorm",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "kolorm",
+          "position": 0,
+          "sourceData": "ULTRA BIALY 22B Sky Roll"
+        },
+        "linia": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "linia",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.linia))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "linia",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Linia",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "linia",
           "position": 1,
-          "sourceData": "skill B"
+          "sourceData": "STANDARD"
         },
-        "col3": {
-          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-          "accessor": "col3",
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+        "obrazek": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "obrazek",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
-          "cellBorderRadius": "0px",
-          "cellBoxShadow": "none",
           "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.col3))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.obrazek))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
           "iconAlign": "left",
-          "identifier": "col3",
+          "identifier": "obrazek",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Col 3",
+          "label": "Obrazek",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "col3",
-          "position": 2,
-          "sourceData": 9
+          "originalIdentifier": "obrazek",
+          "position": 5,
+          "sourceData": ""
         },
-        "col4": {
-          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-          "accessor": "col4",
-          "alignWidget": "LEFT",
-          "borderRadius": "0px",
+        "system": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "system",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
-          "cellBorderRadius": "0px",
-          "cellBoxShadow": "none",
           "children": {},
-          "dataType": "boolean",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.col4))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Switch",
-          "identifier": "col4",
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.system))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "system",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
-          "label": "Col 4",
+          "label": "System",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "col4",
+          "originalIdentifier": "system",
           "position": 3,
-          "sourceData": true
-        },
-        "col5": {
-          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-          "accessor": "col5",
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-          "boxShadow": "none",
-          "cellBorderRadius": "0px",
-          "cellBoxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.col5))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "col5",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Col 5",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "col5",
-          "position": 4
-        },
-        "col6": {
-          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-          "accessor": "col6",
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-          "boxShadow": "none",
-          "cellBorderRadius": "0px",
-          "cellBoxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.col6))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "col6",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Col 6",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "col6",
-          "position": 5
-        },
-        "col7": {
-          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-          "accessor": "col7",
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-          "boxShadow": "none",
-          "cellBorderRadius": "0px",
-          "cellBoxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.col7))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "col7",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Col 7",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "col7",
-          "position": 6
-        },
-        "col8": {
-          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-          "accessor": "col8",
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-          "boxShadow": "none",
-          "cellBorderRadius": "0px",
-          "cellBoxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.col8))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "col8",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Col 8",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "col8",
-          "position": 7
-        },
-        "col9": {
-          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-          "accessor": "col9",
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-          "boxShadow": "none",
-          "cellBorderRadius": "0px",
-          "cellBoxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.col9))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "col9",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Col 9",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "col9",
-          "position": 8
+          "sourceData": "SRS90 ZiiiP-E"
         }
       },
       "dataType": "object",

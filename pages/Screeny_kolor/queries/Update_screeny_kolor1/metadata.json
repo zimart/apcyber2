@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_0c3a2f76-2c0b-4780-9780-efa644f732cd",
-  "id": "Screeny_inventory_Select_sterowania2",
+  "gitSyncId": "66f263e90ea81e705fc1052a_75314b7a-989c-4d7c-8671-dda5e19b69a9",
+  "id": "Screeny_kolor_Update_screeny_kolor1",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM  sterowania WHERE fk_oferty_inventory_id_ster = {{appsmith.URL.queryParams.id_oferta}}\n \n",
+      "body": "UPDATE screeny_kolor SET kolorm= '{{update_form.formData.kolorm}}', linia= '{{update_form.formData.linia}}', doplata= '{{update_form.formData.doplata}}', system= '{{update_form.formData.system}}', czydoplata= '{{update_form.formData.czydoplata}}', obrazek= '{{update_form.formData.obrazek}}' WHERE id= '{{data_table.selectedRow.id}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "Select_sterowania2",
-    "pageId": "Screeny_inventory",
+    "executeOnLoad": false,
+    "name": "Update_screeny_kolor1",
+    "pageId": "Screeny_kolor",
     "userSetOnLoad": false
   }
 }

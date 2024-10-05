@@ -1,0 +1,1 @@
+UPDATE screeny_kolor SET kolorm= '{{update_form.formData.kolorm}}', linia= '{{update_form.formData.linia}}', doplata= '{{update_form.formData.doplata}}', system= '{{update_form.formData.system}}', czydoplata= '{{update_form.formData.czydoplata}}', obrazek= '{{update_form.formData.obrazek}}' WHERE id= '{{data_table.selectedRow.id}}';

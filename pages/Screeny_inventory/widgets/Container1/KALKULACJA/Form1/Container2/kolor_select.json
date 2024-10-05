@@ -20,6 +20,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -47,7 +50,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 173,
   "needsErrorInfo": false,
-  "onOptionChange": "{{czydoplatakolor.run();\ndoplatakolorzapytaj.run();\ncena_zapytaj.run()}}",
+  "onOptionChange": "{{obrazekkolor.run()\nczydoplatakolor.run();\ndoplatakolorzapytaj.run();\ncena_zapytaj.run();\n}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 180,

@@ -3,10 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
-  "bottomRowBeforeCollapse": 6,
+  "bottomRow": 9090,
   "boxShadow": "none",
-  "defaultText": "28",
+  "defaultText": "{{FilePicker1.files[0].data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,53 +14,47 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
+      "key": "defaultText"
     }
   ],
-  "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
-  "isDisabled": true,
+  "inputType": "MULTI_LINE_TEXT",
+  "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{Select1.selectedOptionValue === \"STANDARD\" && szerokosc_input.text > 1200 }}",
-  "key": "1vd02ht2jz",
-  "label": "Dopłata wkł/mb",
+  "isVisible": false,
+  "key": "ynvkzs5ktd",
+  "label": "Label",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 58,
+  "leftColumn": 22,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 7,
-  "mobileLeftColumn": 38,
-  "mobileRightColumn": 58,
-  "mobileTopRow": 1,
+  "mobileBottomRow": 34,
+  "mobileLeftColumn": 44,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 27,
   "needsErrorInfo": false,
-  "originalBottomRow": 6,
-  "originalTopRow": 0,
-  "parentColumnSpace": 19.9375,
-  "parentId": "76671vu120",
+  "originalBottomRow": 9090,
+  "originalTopRow": 90,
+  "parentColumnSpace": 20.5625,
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 38,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 0,
-  "topRowBeforeCollapse": 0,
+  "topRow": 90,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "0x5z80xvyg",
-  "widgetName": "Input19"
+  "widgetId": "x4mg4ae6zy",
+  "widgetName": "Input1"
 }
