@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO sterowania\n(rodzajproduktu_ster,\tilosc, cena, model, fk_oferty_inventory_id_ster, razemnetto, vat_sterowania, rabat_sterowania, cenaporabacie,kwotarabatu)\n  VALUES ('19','{{Input25.text}}', '{{Input24.text}}',\t'{{Select15.selectedOptionLabel}}','{{appsmith.URL.queryParams.id_oferta}}',{{Input25.text}}*{{Input24.text}},{{Vat.selectedOptionValue}},0,{{input24.text}}-kwotarabatu,kwotarabatu);",
+      "body": "INSERT INTO sterowania\n(rodzajproduktu_ster,\tilosc, cena, model, fk_oferty_inventory_id_ster, razemnetto, vat_sterowania, rabat_sterowania, cenaporabacie,brutto_sterowania,kwotarabatu)\n  VALUES ('19','{{Input25.text}}', '{{Input24.text}}',\t'{{Select15.selectedOptionLabel}}','{{appsmith.URL.queryParams.id_oferta}}',{{Input25.text}}*{{Input24.text}},{{Vat.selectedOptionValue}},0,{{input24.text}}-kwotarabatu,razemnetto*((vat_sterowania/100)+1),kwotarabatu);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
