@@ -31,7 +31,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{dodajakcesoria.run().then(() => {\n  iloscsterowania.run();\n  Select_sterowania2.run();\n});}}",
+  "onClick": "{{dodajakcesoria.run().then(() => {\n  iloscsterowania.run();\n  Select_sterowania2.run();\n});\ntabela_inventory_main_id.run()}}",
   "parentId": "sb8brmf4m8",
   "placement": "CENTER",
   "recaptchaType": "V3",

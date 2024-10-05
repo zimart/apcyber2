@@ -662,7 +662,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "doplatatkanina",
           "position": 31,
-          "sourceData": "70"
+          "sourceData": "0.00"
         },
         "doplatawkladka": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -837,7 +837,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kwotarabatmotor",
           "position": 38,
-          "sourceData": ""
+          "sourceData": "6"
         },
         "kwotarabatsystem": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -859,7 +859,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kwotarabatsystem",
           "position": 33,
-          "sourceData": "28.28"
+          "sourceData": "NaN"
         },
         "linia": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1034,7 +1034,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rabatmotor",
           "position": 17,
-          "sourceData": 0
+          "sourceData": 10
         },
         "rabatsystem": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1232,7 +1232,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "systemporabacie",
           "position": 33,
-          "sourceData": "254.55"
+          "sourceData": "NaN"
         },
         "systemzdoplata": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1254,7 +1254,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "systemzdoplata",
           "position": 33,
-          "sourceData": "282.84"
+          "sourceData": "374.19"
         },
         "szerokosc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

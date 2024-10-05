@@ -33,10 +33,10 @@
   },
   "columnOrder": [
     "Produkt",
-    "Cena",
-    "Ilosc"
+    "Ilosc",
+    "Cena"
   ],
-  "columnUpdatedAt": 1727985140377,
+  "columnUpdatedAt": 1728126060016,
   "columnWidthMap": {
     "concat": 262,
     "ilosc": 220,
