@@ -33,6 +33,8 @@
   "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onClick": "{{closeModal(pdfmodal.name);}}",
+  "originalBottomRow": 28,
+  "originalTopRow": 24,
   "parentId": "4dz2r3feri",
   "placement": "CENTER",
   "recaptchaType": "V3",

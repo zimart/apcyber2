@@ -1,6 +1,6 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "allowAddNewRow": true,
+  "allowAddNewRow": false,
   "animateLoading": true,
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -47,9 +47,10 @@
     "customColumn1",
     "opis",
     "fk_oferty_inventory_id_ster",
-    "rodzajproduktu_ster"
+    "rodzajproduktu_ster",
+    "kwotarabatu"
   ],
-  "columnUpdatedAt": 1728130631041,
+  "columnUpdatedAt": 1728140518006,
   "columnWidthMap": {
     "customColumn2": 69
   },
@@ -155,6 +156,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.alias"
+    },
+    {
+      "key": "primaryColumns.kwotarabatu.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -189,7 +193,7 @@
   "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": true,
-  "isVisibleSearch": true,
+  "isVisibleSearch": false,
   "key": "q9z6f83crm",
   "label": "Data",
   "leftColumn": 0,
@@ -461,6 +465,40 @@
       "notation": "standard",
       "originalId": "ilosc",
       "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "kwotarabatu": {
+      "alias": "kwotarabatu",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kwotarabatu\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "kwotarabatu",
+      "index": 13,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "kwotarabatu",
+      "notation": "standard",
+      "originalId": "kwotarabatu",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

@@ -18,6 +18,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
     }
   ],
   "iconAlign": "left",
@@ -44,7 +47,8 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onTextChanged": "{{ustawrabatsterowania.run();\nSelect_sterowania2.run()}}",
+  "onBlur": "{{ustawrabatsterowania.run();\nSelect_sterowania2.run()}}",
+  "onTextChanged": "",
   "parentColumnSpace": 14.7723388671875,
   "parentId": "nrbk700k4d",
   "parentRowSpace": 10,

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_97f441db-0162-404e-80b5-8a28b0642a51",
-  "id": "Screeny_inventory_dodajakcesoria",
+  "gitSyncId": "66f263e90ea81e705fc1052a_fc7e088f-6508-49c6-8135-a358b271e720",
+  "id": "Klienci_kasuj_klient_oferta",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO sterowania\n(rodzajproduktu_ster,\tilosc, cena, model, fk_oferty_inventory_id_ster, razemnetto, vat_sterowania, rabat_sterowania, cenaporabacie,kwotarabatu)\n  VALUES ('19','{{Input25.text}}', '{{Input24.text}}',\t'{{Select15.selectedOptionLabel}}','{{appsmith.URL.queryParams.id_oferta}}',{{Input25.text}}*{{Input24.text}},{{Vat.selectedOptionValue}},0,{{input24.text}}-kwotarabatu,kwotarabatu);",
+      "body": "DELETE FROM oferty WHERE id_oferta = {{data_table.triggeredRow.accountid}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "dodajakcesoria",
-    "pageId": "Screeny_inventory",
+    "name": "kasuj_klient_oferta",
+    "pageId": "Klienci",
     "userSetOnLoad": false
   }
 }
