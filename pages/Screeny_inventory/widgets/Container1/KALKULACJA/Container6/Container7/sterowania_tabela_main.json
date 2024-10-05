@@ -40,8 +40,8 @@
     "cena",
     "rabat_sterowania",
     "cenaporabacie",
-    "seria",
     "razemnetto",
+    "seria",
     "vat_sterowania",
     "brutto_sterowania",
     "customColumn1",
@@ -49,7 +49,7 @@
     "fk_oferty_inventory_id_ster",
     "rodzajproduktu_ster"
   ],
-  "columnUpdatedAt": 1728074500823,
+  "columnUpdatedAt": 1728130631041,
   "columnWidthMap": {
     "customColumn2": 69
   },
@@ -125,6 +125,36 @@
     },
     {
       "key": "primaryColumns.rodzajproduktu_ster.computedValue"
+    },
+    {
+      "key": "primaryColumns.cena.label"
+    },
+    {
+      "key": "primaryColumns.ilosc.label"
+    },
+    {
+      "key": "primaryColumns.model.label"
+    },
+    {
+      "key": "primaryColumns.rabat_sterowania.label"
+    },
+    {
+      "key": "primaryColumns.cenaporabacie.label"
+    },
+    {
+      "key": "primaryColumns.razemnetto.label"
+    },
+    {
+      "key": "primaryColumns.vat_sterowania.label"
+    },
+    {
+      "key": "primaryColumns.brutto_sterowania.label"
+    },
+    {
+      "key": "primaryColumns.customColumn1.label"
+    },
+    {
+      "key": "primaryColumns.customColumn1.alias"
     }
   ],
   "dynamicPropertyPathList": [
@@ -184,7 +214,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"brutto_sterowania\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow[\"brutto_sterowania\"]/kursinput.text).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -200,7 +230,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "brutto_sterowania",
+      "label": "{{i18n.translate(\"Brutto\")}}",
       "notation": "standard",
       "originalId": "brutto_sterowania",
       "sticky": "",
@@ -215,7 +245,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cena\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow[\"cena\"]/kursinput.text).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -231,7 +261,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "cena",
+      "label": "{{i18n.translate(\"Cena\")}}",
       "notation": "standard",
       "originalId": "cena",
       "sticky": "",
@@ -246,7 +276,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cenaporabacie\"]))}}",
+      "computedValue": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow[\"cenaporabacie\"]/kursinput.text).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -262,7 +292,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "cenaporabacie",
+      "label": "{{i18n.translate(\"Cena po rabacie\")}}",
       "notation": "standard",
       "originalId": "cenaporabacie",
       "sticky": "",
@@ -273,7 +303,7 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "USUŃ",
+      "alias": "{{i18n.translate(\"Usuń\")}}",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
@@ -299,7 +329,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "USUŃ",
+      "label": "{{i18n.translate(\"Usuń\")}}",
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "onClick": "{{showModal(modal_usun_sterowanie.name).then(() => {});}}",
@@ -427,7 +457,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "ilosc",
+      "label": "{{i18n.translate(\"Ilość\")}}",
       "notation": "standard",
       "originalId": "ilosc",
       "sticky": "",
@@ -458,7 +488,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "model",
+      "label": "{{i18n.translate(\"Model\")}}",
       "notation": "standard",
       "originalId": "model",
       "sticky": "",
@@ -520,7 +550,7 @@
       "isEditable": true,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "rabat_sterowania",
+      "label": "{{i18n.translate(\"Rabat\")}}",
       "notation": "standard",
       "originalId": "rabat_sterowania",
       "sticky": "",
@@ -551,7 +581,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "razemnetto",
+      "label": "{{i18n.translate(\"Razem netto\")}}",
       "notation": "standard",
       "originalId": "razemnetto",
       "sticky": "",
@@ -647,7 +677,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "vat_sterowania",
+      "label": "{{i18n.translate(\"VAT %\")}}",
       "notation": "standard",
       "originalId": "vat_sterowania",
       "sticky": "",

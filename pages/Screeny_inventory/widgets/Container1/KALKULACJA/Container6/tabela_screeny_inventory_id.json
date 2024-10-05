@@ -26,7 +26,6 @@
   },
   "columnOrder": [
     "customColumn2",
-    "customColumn1",
     "id",
     "seq",
     "cenanetto",
@@ -64,6 +63,7 @@
     "linia",
     "system",
     "kolor",
+    "customColumn1",
     "fk_oferty_inventory_id",
     "kurseuro",
     "waluta"
@@ -73,7 +73,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1728129408208,
+  "columnUpdatedAt": 1728129762916,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -576,7 +576,7 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "{{i18n.translate(\"Kasuj\")}}",
+      "alias": "{{i18n.translate(\"Usuń\")}}",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "buttonLabel": "kasuj",
@@ -601,13 +601,13 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Kasuj\")}}",
+      "label": "{{i18n.translate(\"Usuń\")}}",
       "labelColor": "#FFFFFF",
       "menuColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
       "onClick": "{{showModal(Delete_Modal.name);}}",
       "originalId": "customColumn1",
-      "sticky": "left",
+      "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -984,7 +984,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "{{i18n.translate(\"Kurs euro\")}}",
       "notation": "standard",
       "originalId": "kurseuro",
@@ -1809,7 +1809,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "{{i18n.translate(\"Waluta\")}}",
       "notation": "standard",
       "originalId": "waluta",
