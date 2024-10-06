@@ -758,7 +758,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
           "position": 41,
-          "sourceData": 754
+          "sourceData": 773
         },
         "ilosc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1237,7 +1237,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "seq",
           "position": 21,
-          "sourceData": 1
+          "sourceData": 3
         },
         "skrzynka": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

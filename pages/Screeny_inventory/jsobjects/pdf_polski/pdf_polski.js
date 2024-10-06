@@ -5,25 +5,37 @@ async BuildPDF () {
 //const doc = jspdf.jsPDF()
 const doc = jspdf.jsPDF();
 const data2 = tabela_glowna.tableData;
+
 //const data = tabela_glowna.tableData;
-	
+//const waluta = netto+walutaskrot.text;	
 // Custom headers
 const columns = [
 { header: 'Produkt', dataKey: 'Produkt' },
 { header: 'Ilosc', dataKey: 'Ilosc' },
 { header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
-{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
-{ header: 'Razem', dataKey: 'Razem' } // Custom header with currency
+{ header: 'Rabat %', dataKey: 'Rabatprocent' } ,// Custom header with currency
+{ header: 'Rabat', dataKey: 'Rabat' } ,// Custom header with currency
+{ header: 'Netto po rabacie', dataKey: 'nettopo' } ,// Custom header with currency
+//{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
+{ header: 'Razem netto', dataKey: 'razemnetto' }, // Custom header with currency
+{ header: 'VAT', dataKey: 'vat' }, // Custom header with currency
+{ header: 'Brutto', dataKey: 'Brutto' } // Custom header with currency
 ];	
 	
 // Example data with computed values
+
 const currencyRate = kursinput.text; // Example currency rate for conversion
 const data = tabela_glowna.tableData.map(item => ({
 Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Ilosc: item.Ilosc,
 cenanetto: (item.cenanetto / currencyRate).toFixed(2),// Convert price using currency rate
-Opis: item.opiszrabatami,
-Razem: item.brutto
+//Opis: item.opiszrabatami,
+Rabatprocent: item.razemnetto,
+Rabat: item.brutto,
+nettopo: (item.brutto/ currencyRate).toFixed(2),
+razemnetto: (item.brutto/ currencyRate).toFixed(2),
+vat: (item.brutto/ currencyRate).toFixed(2),
+Brutto: (item.brutto/ currencyRate).toFixed(2)
 }));	
 
 //const columns2 = tabela_glowna.tableHeaders;
@@ -39,7 +51,7 @@ Razem: item.brutto
 
 
       doc.setFont ("Helvetica");
-      doc.setFontSize("9")
+      doc.setFontSize("8")
       doc.text ("Hello wreahtrsjytdufygj", 10, 10);
 	    doc.text("Additional Information", 15, 20);
 	
@@ -71,21 +83,37 @@ Razem: item.brutto
 	
 // Add a table with auto columns
 default_1(doc, {
-	//theme: 'grid',
-	//headStyles: { fillColor:  [206, 214, 216] },
+	theme: 'grid',
+	headStyles: { fillColor:  [247, 247, 247] ,
+           // lineColor: 'black',
+							 lineWidth: 0.1,
+            //lineColor: 'black'
+							},
 	startY: 80,
-	columnStyles: { europe: { halign: 'center' },},
-	styles: { cellPadding: 1, fontSize: 8,
-					 //textColor:0,
+	columnStyles: { europe: { halign: 'center',valign: 'middle' },
+             Produkt: {
+       //fontStyle: 'bold',
+							 halign: 'left',
+							 valign: 'middle'
+      },
+								
+								},
+	styles: { cellPadding: 1.5, fontSize: 8,
+					 textColor:0,
+					
+           // lineColor: 'black',
 					 cellWidth: 'auto',
 					overflow: 'linebreak',
 //					overflow: 'linebreak'|'ellipsize'|'visible'|'hidden' = 'linebreak'
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 6
+minCellWidth: 15,
+minCellHeight:12,
 //minCellHeight: number = 0
-//halign: 'left'|'center'|'right' = 'left'
+	halign: 'center',
+valign: 'middle'
+//	halign: 'left'|'center'|'right' = 'left'
 //valign: 'top'|'middle'|'bottom' = 'top'
 //fontSize: number = 10
 //cellPadding: Padding = 10

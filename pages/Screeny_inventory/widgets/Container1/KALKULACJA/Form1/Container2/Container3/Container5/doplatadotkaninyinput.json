@@ -6,7 +6,7 @@
   "bottomRow": 7,
   "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
-  "defaultText": "{{Number.parseFloat(powierzchnia.text*doplatatkaninam2.text).toFixed(2)}}",
+  "defaultText": "{{Number.parseFloat(powierzchnia.text*doplatatkaninam2.text).toFixed(2)||0}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
