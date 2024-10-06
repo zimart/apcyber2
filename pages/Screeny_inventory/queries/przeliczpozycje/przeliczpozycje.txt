@@ -5,8 +5,8 @@ SET systemporabacie = systemzdoplata-kwotarabatsystem,
 		razemnetto = cenanetto * ilosc,
 		brutto = razemnetto +(razemnetto*(vat/100)),
 		moc = concat("Roleta","-",system,"/",skrzynka,"/",kolor," ", szerokosc,"x",wysokosc," ",tkanina),
-		opisbezrabatow = CONCAT("Roleta screen"," | System: ",system," | Skrzynka: ",skrzynka," | Kolor:",kolor,CHAR(13)," | Szer: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina," Cena bazowa: ",cena," | Doplata kolor:","procent doplaty.."," | Kwota doplaty: ","doplatakolor"," | Doplata tkanina:","doplatatkan"," | Doplata do wkladki: ","doplatawkladka"," | Cena rolety:",systemzdoplata," Cena napedu:",priceall," | Cena systemu:",systemporabacie),
-		opiszrabatami = CONCAT("Roleta screen"," | System: ",system," | Skrzynka: ",skrzynka," | Kolor:",kolor,CHAR(13)," | Szer: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina," Cena bazowa: ",cena," | Doplata kolor:","procent doplaty.."," | Kwota doplaty: ","doplatakolor"," | Doplata tkanina:","doplatatkan"," | Doplata do wkladki: ","doplatawkladka"," | Cena rolety:",systemzdoplata," Cena napedu:",priceall," | Cena systemu:",systemporabacie)
+		opisbezrabatow = CONCAT("System: ",system," | Skrzynka: ",skrzynka," | Kolor:",kolor,CHAR(13),"Szer: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina,CHAR(13),"Cena bazowa: ",cena," | Doplata kolor:","hmm"," | Kwota doplaty: ","doplatakolor"," | Doplata tkanina:","doplatatkan"," | Doplata do wkladki: ","doplatawkladka"," | Cena rolety:",systemzdoplata," Cena napedu:",priceall," | Cena systemu:",systemporabacie),
+		opiszrabatami = CONCAT("System: ",system," | Skrzynka: ",skrzynka," | Kolor:",kolor,CHAR(13),"Szer: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina,CHAR(13)," Cena bazowa: ",cena," | Doplata kolor:","hmm2"," | Kwota doplaty: ","doplatakolor"," | Doplata tkanina:","doplatatkan"," | Doplata do wkladki: ","doplatawkladka"," | Cena rolety:",systemzdoplata," Cena napedu:",priceall," | Cena systemu:",systemporabacie)
 WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}
 
 

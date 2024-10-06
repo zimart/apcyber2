@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "bottomRow": 344,
-  "bottomRowBeforeCollapse": 344,
+  "bottomRowBeforeCollapse": 337,
   "docUrl": "{{pdf_polski.BuildPDF.data}}",
   "dynamicBindingPathList": [
     {
@@ -12,7 +12,7 @@
   "flexVerticalAlignment": "start",
   "isCanvas": false,
   "isLoading": false,
-  "isVisible": false,
+  "isVisible": true,
   "key": "qtw72jn9sl",
   "leftColumn": 0,
   "mobileBottomRow": 264,
@@ -29,7 +29,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "topRow": 269,
-  "topRowBeforeCollapse": 269,
+  "topRowBeforeCollapse": 262,
   "type": "DOCUMENT_VIEWER_WIDGET",
   "version": 1,
   "widgetId": "e9snq3ovjj",

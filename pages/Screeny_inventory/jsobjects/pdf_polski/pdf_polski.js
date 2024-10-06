@@ -12,16 +12,18 @@ const columns = [
 { header: 'Produkt', dataKey: 'Produkt' },
 { header: 'Ilosc', dataKey: 'Ilosc' },
 { header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
-{ header: 'Opis', dataKey: 'Opis' } // Custom header with currency
+{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
+{ header: 'Razem', dataKey: 'Razem' } // Custom header with currency
 ];	
 	
 // Example data with computed values
 const currencyRate = kursinput.text; // Example currency rate for conversion
 const data = tabela_glowna.tableData.map(item => ({
-Produkt: item.Produkt,
+Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Ilosc: item.Ilosc,
 cenanetto: (item.cenanetto / currencyRate).toFixed(2),// Convert price using currency rate
-Opis: item.opiszrabatami
+Opis: item.opiszrabatami,
+Razem: item.brutto
 }));	
 
 //const columns2 = tabela_glowna.tableHeaders;
@@ -75,8 +77,8 @@ default_1(doc, {
 	columnStyles: { europe: { halign: 'center' },},
 	styles: { cellPadding: 1, fontSize: 8,
 					 //textColor:0,
-					 cellWidth: 'wrap',
-					overflow: 'ellipsize',
+					 cellWidth: 'auto',
+					overflow: 'linebreak',
 //					overflow: 'linebreak'|'ellipsize'|'visible'|'hidden' = 'linebreak'
 //fillColor: 255,
 //textColor: Color? = 20
