@@ -3,22 +3,23 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 49,
+  "bottomRow": 7,
   "boxShadow": "none",
-  "defaultText": "{{doplatakolorinput.text||0}}",
+  "defaultText": "0",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
@@ -26,35 +27,34 @@
   "isRequired": false,
   "isVisible": true,
   "key": "aijze856dw",
-  "label": "procentdoplatakolorukryte",
+  "label": "Rabat ogólny",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 54,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 49,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 15,
-  "mobileTopRow": 42,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 45,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 49,
-  "originalTopRow": 42,
-  "parentColumnSpace": 20.25,
-  "parentId": "esfh9fxray",
+  "onSubmit": "{{ustawrabatogolny.run().then(() => {\n  tabela_inventory_main_id.run();\n});}}",
+  "parentColumnSpace": 19.9375,
+  "parentId": "w811u4s83s",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 15,
+  "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 42,
+  "topRow": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "mwsas3mwk8",
-  "widgetName": "procentdoplatakolorukryte"
+  "widgetId": "vnzpvs1vd6",
+  "widgetName": "rabatogolny"
 }

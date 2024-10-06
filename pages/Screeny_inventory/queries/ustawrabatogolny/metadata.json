@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_69487ee9-6ae0-4b83-815d-65f9221f489e",
-  "id": "Screeny_inventory_tabela_inventory_main_id",
+  "gitSyncId": "66f263e90ea81e705fc1052a_805bad94-0b65-4255-814c-cad62b611a5e",
+  "id": "Screeny_inventory_ustawrabatogolny",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT moc Produkt,concat,ilosc Ilosc,cenanetto,razemnetto,vat,brutto,opisbezrabatow,opiszrabatami,rabatogolny,kwotarabatogolny,cenaporabacie FROM inventory_main where fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}}\nORDER BY rodzajmotor ASC\n;",
+      "body": "UPDATE inventory_main SET\n    rabatogolny = '{{rabatogolny.text}}',\n    kwotarabatogolny = cenanetto*(rabatogolny/100),\n\t\tcenaporabacie = cenanetto-kwotarabatogolny\nWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "tabela_inventory_main_id",
+    "executeOnLoad": false,
+    "name": "ustawrabatogolny",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }
