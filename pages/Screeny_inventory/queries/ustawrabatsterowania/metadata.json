@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE sterowania SET\n     rabat_sterowania = {{rabatsterowania.text}},\n     razemnetto = cenaporabacie*ilosc,\n    rabat_sterowania = {{rabatsterowania.text}},\n\t\tkwotarabatu = cena * (rabat_sterowania/100),\n    cenaporabacie = cena - kwotarabatu\t\t\n\t\tWHERE fk_oferty_inventory_id_ster = {{appsmith.URL.queryParams.id_oferta}};",
+      "body": "UPDATE sterowania SET\n    rabat_sterowania = {{rabatsterowania.text}},\n\t\tkwotarabatu = cena * (rabat_sterowania/100),\n    cenaporabacie = cena - kwotarabatu,\n\t\trazemnetto = ilosc * cenaporabacie\n\t\tWHERE fk_oferty_inventory_id_ster = {{appsmith.URL.queryParams.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
