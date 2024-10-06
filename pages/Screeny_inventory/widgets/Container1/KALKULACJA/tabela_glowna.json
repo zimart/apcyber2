@@ -148,9 +148,6 @@
       "key": "primaryColumns.cenaporabacie.label"
     },
     {
-      "key": "primaryColumns.opiszrabatami.isCellVisible"
-    },
-    {
       "key": "primaryColumns.Ilosc.label"
     }
   ],
@@ -160,12 +157,6 @@
     },
     {
       "key": "primaryColumns.Ilosc.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.opiszrabatami.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.opisbezrabatow.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -467,7 +458,7 @@
       "id": "opisbezrabatow",
       "index": 7,
       "isCellEditable": false,
-      "isCellVisible": "true",
+      "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -491,7 +482,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opiszrabatami\"]))}}",
+      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( currentRow.opiszrabatami))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -501,7 +492,7 @@
       "id": "opiszrabatami",
       "index": 8,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czyrabat.isSwitchedOn))}}",
+      "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,

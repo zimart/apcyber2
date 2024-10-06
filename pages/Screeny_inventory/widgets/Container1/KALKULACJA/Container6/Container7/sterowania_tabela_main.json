@@ -39,6 +39,7 @@
     "ilosc",
     "cena",
     "rabat_sterowania",
+    "kwotarabatu",
     "cenaporabacie",
     "razemnetto",
     "seria",
@@ -47,10 +48,9 @@
     "customColumn1",
     "opis",
     "fk_oferty_inventory_id_ster",
-    "rodzajproduktu_ster",
-    "kwotarabatu"
+    "rodzajproduktu_ster"
   ],
-  "columnUpdatedAt": 1728140518006,
+  "columnUpdatedAt": 1728227074210,
   "columnWidthMap": {
     "customColumn2": 69
   },
@@ -111,15 +111,6 @@
     },
     {
       "key": "primaryColumns.cenaporabacie.computedValue"
-    },
-    {
-      "key": "primaryColumns.customColumn1.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn1.boxShadow"
     },
     {
       "key": "primaryColumns.customColumn2.computedValue"
@@ -233,7 +224,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "{{i18n.translate(\"Brutto\")}}",
       "notation": "standard",
       "originalId": "brutto_sterowania",
@@ -310,12 +301,9 @@
       "alias": "{{i18n.translate(\"Usuń\")}}",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "buttonLabel": "Kasuj",
       "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "button",
+      "columnType": "iconButton",
       "computedValue": "",
       "currencyCode": "USD",
       "customAlias": "",
@@ -323,6 +311,7 @@
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
+      "iconName": "delete",
       "id": "customColumn1",
       "index": 10,
       "isCellEditable": false,
@@ -651,7 +640,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "rodzajproduktu_ster",
       "notation": "standard",
       "originalId": "rodzajproduktu_ster",
@@ -714,7 +703,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "{{i18n.translate(\"VAT %\")}}",
       "notation": "standard",
       "originalId": "vat_sterowania",

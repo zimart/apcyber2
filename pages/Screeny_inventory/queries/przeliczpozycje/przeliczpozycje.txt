@@ -3,14 +3,13 @@ SET systemporabacie = systemzdoplata-kwotarabatsystem,
     priceall = price_motor - (price_motor*(rabatmotor/100)),
 		cenanetto = systemporabacie + priceall,
 		razemnetto = cenanetto * ilosc,
-		brutto = razemnetto +(razemnetto*(vat/100)),
+		kwotarabatmotor = price_motor*(rabatmotor/100),
+	
 		moc = concat("Roleta","-",system,"/",skrzynka,"/",kolor," ", szerokosc,"x",wysokosc," ",tkanina),
-		opisbezrabatow = CONCAT("System: ",system," | Skrzynka: ",skrzynka," | Kolor:",kolor,CHAR(13),"Szer: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina,CHAR(10),"Cena bazowa: ",(cena/{{kursinput.text}})," | Doplata kolor:",procentdoplatakolor,"%"," | Kwota doplaty: ",doplatakolor," | Doplata tkanina:",doplatatkanina," | Doplata do wkladki: ",doplatawkladka,CHAR(13),"Cena rolety:",systemzdoplata," Cena napedu:",priceall," | Cena systemu:",systemporabacie),
-		opiszrabatami = CONCAT("System: ",system," | Skrzynka: ",skrzynka," | Kolor:",kolor,CHAR(13),"Szer: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina,CHAR(13),"Cena bazowa: ",cena," | Doplata kolor:",procentdoplatakolor,"%"," | Kwota doplaty: ",doplatakolor," | Doplata tkanina:",doplatatkanina," | Doplata do wkladki: ",doplatawkladka,CHAR(13),"Cena rolety:",systemzdoplata," | Rabat: ",rabatsystem,"%"," | Roleta po rabacie:","tutajcenaporabacie"," | Cena napedu:",priceall," | Rabat automatyka","rabatprocentautomatyka"," | Naped po rabacie","cenanapeduporabacie"," | Cena systemu po rabatach:",systemporabacie)
-WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}
+		opisbezrabatow = CONCAT("System: ",system," | Skrzynka: ",skrzynka," | Kolor:",kolor,CHAR(13),"Szer: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina,CHAR(10),"Cena bazowa: ",cena," | Doplata kolor:",procentdoplatakolor,"%"," | Kwota doplaty: ",doplatakolor," | Doplata tkanina:",doplatatkanina," | Doplata do wkladki: ",doplatawkladka,CHAR(13),"Cena rolety:",systemzdoplata," Cena napedu:",priceall," | Cena systemu:",systemporabacie),
+		opiszrabatami = CONCAT("System: ",system," | Skrzynka: ",skrzynka," | Kolor:",kolor,CHAR(13),"Szer: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina,CHAR(13)," Cena bazowa: ",cena)
+		
+			
+WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};
 
 
-;
-
-
-;
