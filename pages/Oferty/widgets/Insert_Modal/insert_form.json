@@ -4,7 +4,7 @@
   "backgroundColor": "#fff",
   "borderRadius": "0.375rem",
   "borderWidth": "",
-  "bottomRow": 41,
+  "bottomRow": 27,
   "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
@@ -153,9 +153,6 @@
       "key": "schema.__root_schema__.children.dataoferty.defaultValue"
     },
     {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
       "key": "schema.__root_schema__.children.kurseuro.defaultValue"
     },
     {
@@ -209,7 +206,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{Insert_oferty.run(\n\t() => tabela_id_klient.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
-  "originalBottomRow": 58,
+  "originalBottomRow": 41,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "9rhv3ioohq",
@@ -354,7 +351,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Kurseuro",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kurseuro",
@@ -421,7 +418,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Waluta",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "waluta",
@@ -454,9 +451,9 @@
   "sourceData": "{{_.omit(data_table.tableData[0], \"customColumn1\", \"id_oferta\")}}",
   "submitButtonLabel": "Zapisz",
   "submitButtonStyles": {
-    "borderRadius": "0px",
+    "borderRadius": "0.375rem",
     "boxShadow": "none",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonColor": "#831843",
     "buttonVariant": "PRIMARY",
     "iconAlign": "left",
     "iconName": "saved",

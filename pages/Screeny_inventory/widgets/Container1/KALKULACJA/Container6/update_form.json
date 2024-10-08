@@ -5,8 +5,8 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 123,
-  "bottomRowBeforeCollapse": 123,
+  "bottomRow": 129,
+  "bottomRowBeforeCollapse": 129,
   "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
@@ -541,8 +541,8 @@
   "maxDynamicHeight": 284,
   "minDynamicHeight": 81,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 123,
-  "originalTopRow": 0,
+  "originalBottomRow": 129,
+  "originalTopRow": 6,
   "parentColumnSpace": 16.3125,
   "parentId": "2agene8jx6",
   "parentRowSpace": 10,
@@ -1538,8 +1538,8 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "{{tabela_screeny_inventory_id.selectedRow.id}}",
-  "topRow": 0,
-  "topRowBeforeCollapse": 0,
+  "topRow": 6,
+  "topRowBeforeCollapse": 6,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": true,
   "version": 1,
