@@ -110,7 +110,11 @@
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTabSelected"
+    }
+  ],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
@@ -125,6 +129,7 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
+  "onTabSelected": "{{tabela_inventory_main_id.run();}}",
   "parentColumnSpace": 20.21875,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
