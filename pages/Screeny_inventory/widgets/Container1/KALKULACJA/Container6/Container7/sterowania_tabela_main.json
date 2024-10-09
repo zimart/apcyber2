@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 54,
+  "bottomRow": 49,
   "bottomRowBeforeCollapse": 45,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
@@ -50,7 +50,7 @@
     "fk_oferty_inventory_id_ster",
     "rodzajproduktu_ster"
   ],
-  "columnUpdatedAt": 1728489438278,
+  "columnUpdatedAt": 1728498373327,
   "columnWidthMap": {
     "customColumn2": 69
   },
@@ -150,6 +150,9 @@
     },
     {
       "key": "primaryColumns.kwotarabatu.computedValue"
+    },
+    {
+      "key": "primaryColumns.kwotarabatu.label"
     }
   ],
   "dynamicPropertyPathList": [
@@ -490,7 +493,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "kwotarabatu",
+      "label": "{{i18n.translate(\"Kwota rabatu\")}}",
       "notation": "standard",
       "originalId": "kwotarabatu",
       "sticky": "",
@@ -586,7 +589,7 @@
       "isVisible": true,
       "label": "{{i18n.translate(\"Rabat\")}}",
       "notation": "standard",
-      "onSubmit": "{{przeliczrabatsterowania1.run().then(() => {\n  przeliczrabatsterowania2.run();\n  Select_sterowania2.run();\n});}}",
+      "onSubmit": "{{przeliczrabatsterowania1.run().then(() => {\n  przeliczrabatsterowania2.run();\n  przeliczrabatsterowania3.run();\n  Select_sterowania2.run();\n});}}",
       "originalId": "rabat_sterowania",
       "sticky": "",
       "textSize": "0.875rem",
@@ -615,7 +618,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "{{i18n.translate(\"Razem netto\")}}",
       "notation": "standard",
       "originalId": "razemnetto",
@@ -731,7 +734,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{Select_sterowania2.data}}",
   "textSize": "0.875rem",
-  "topRow": 12,
+  "topRow": 7,
   "topRowBeforeCollapse": 3,
   "totalRecordsCount": "{{iloscsterowania.data[0].count}}",
   "type": "TABLE_WIDGET_V2",

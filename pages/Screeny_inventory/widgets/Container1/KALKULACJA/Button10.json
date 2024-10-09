@@ -28,7 +28,7 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 11,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(sterowania.name).then(() => {\n  iloscsterowania.run();\n  iloscsterowania.run();\n  Select_sterowania2.run();\n  ustawrabatogolny.run();\n});}}",
+  "onClick": "{{showModal(sterowania.name).then(() => {\n  iloscsterowania.run();\n  Select_sterowania2.run();\n  ustawrabatogolny.run();\n});}}",
   "parentColumnSpace": 19.28271484375,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,

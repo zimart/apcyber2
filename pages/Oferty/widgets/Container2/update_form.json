@@ -158,9 +158,6 @@
       "key": "schema.__root_schema__.borderRadius"
     },
     {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
       "key": "schema.__root_schema__.children.kategoria.defaultValue"
     },
     {
@@ -501,9 +498,9 @@
   "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id_oferta\")}}",
   "submitButtonLabel": "Zapisz",
   "submitButtonStyles": {
-    "borderRadius": "0px",
+    "borderRadius": "0.375rem",
     "boxShadow": "none",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonColor": "#831843",
     "buttonVariant": "PRIMARY",
     "iconAlign": "left",
     "iconName": "saved"

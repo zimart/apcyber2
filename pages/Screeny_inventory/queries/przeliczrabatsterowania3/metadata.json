@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66efc516595f5300cd79eedb_53eb91e3-a907-4d8a-a7c8-de18c3804cd0",
-  "id": "Screeny_kolor3_DeleteQuery",
+  "gitSyncId": "66f263e90ea81e705fc1052a_31537468-5b6e-4906-aef5-887d9072bf07",
+  "id": "Screeny_inventory_przeliczrabatsterowania3",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM screeny_kolor\n  WHERE id = {{data_table.triggeredRow.id}};",
+      "body": "UPDATE sterowania SET\n \n\t\tkwotarabatu = cena * (rabat_sterowania/100),\n    cenaporabacie = cena - kwotarabatu,\n\t\trazemnetto = ilosc * cenaporabacie\n\t\tWHERE fk_oferty_inventory_id_ster = {{appsmith.URL.queryParams.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,9 +22,14 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
-    "name": "DeleteQuery",
-    "pageId": "Screeny_kolor3",
+    "name": "przeliczrabatsterowania3",
+    "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }
 }

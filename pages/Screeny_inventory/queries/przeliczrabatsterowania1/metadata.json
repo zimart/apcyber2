@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE sterowania SET\n    ilosc = '{{sterowania_tabela_main.updatedRow.ilosc}}',\n    cena = '{{sterowania_tabela_main.updatedRow.cena}}',\n\t\trabat_sterowania = '{{sterowania_tabela_main.updatedRow.rabat_sterowania}}',\n\t\tkwotarabatu = '{{sterowania_tabela_main.updatedRow.cena}}'*('{{sterowania_tabela_main.updatedRow.rabat_sterowania}}'/100),\n\t\t cenaporabacie = '{{sterowania_tabela_main.updatedRow.cena}}'-('{{sterowania_tabela_main.updatedRow.cena}}'*'{{sterowania_tabela_main.updatedRow.rabat_sterowania}}'/100),\n    razemnetto = '{{sterowania_tabela_main.updatedRow.ilosc}}'*'{{sterowania_tabela_main.updatedRow.cenaporabacie}}'\n   \n   \n    WHERE id_sterowania = {{sterowania_tabela_main.updatedRow.id_sterowania}}; ",
+      "body": "UPDATE sterowania SET\n    ilosc = '{{sterowania_tabela_main.updatedRow.ilosc}}',\n    cena = '{{sterowania_tabela_main.updatedRow.cena}}',\n\t\trabat_sterowania = '{{sterowania_tabela_main.updatedRow.rabat_sterowania}}',\n\t\tkwotarabatu = '{{sterowania_tabela_main.updatedRow.cena}}'*('{{sterowania_tabela_main.updatedRow.rabat_sterowania}}'/100),\n\t\t cenaporabacie = '{{sterowania_tabela_main.updatedRow.cena}}'-('{{sterowania_tabela_main.updatedRow.cena}}'*'{{sterowania_tabela_main.updatedRow.rabat_sterowania}}'/100)\n   \n   \n   \n    WHERE id_sterowania = {{sterowania_tabela_main.updatedRow.id_sterowania}}; ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
