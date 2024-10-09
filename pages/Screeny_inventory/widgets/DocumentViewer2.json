@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 423,
+  "bottomRow": 419,
   "docUrl": "{{JSObject2.BuildPDF.data}}",
   "dynamicBindingPathList": [
     {
@@ -27,7 +27,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "topRow": 383,
+  "topRow": 379,
   "type": "DOCUMENT_VIEWER_WIDGET",
   "version": 1,
   "widgetId": "p8y26qpr9u",

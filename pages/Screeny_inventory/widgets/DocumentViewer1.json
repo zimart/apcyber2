@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 380,
+  "bottomRow": 376,
   "bottomRowBeforeCollapse": 337,
   "docUrl": "{{pdf_polski_z_rabatami.BuildPDF.data}}",
   "dynamicBindingPathList": [
@@ -28,7 +28,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "topRow": 305,
+  "topRow": 301,
   "topRowBeforeCollapse": 262,
   "type": "DOCUMENT_VIEWER_WIDGET",
   "version": 1,

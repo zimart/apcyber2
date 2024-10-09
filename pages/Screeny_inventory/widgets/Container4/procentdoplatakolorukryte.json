@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 83,
+  "bottomRow": 81,
   "boxShadow": "none",
   "defaultText": "{{doplatakolorinput.text||0}}",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 15,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 76,
+  "topRow": 74,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "mwsas3mwk8",
