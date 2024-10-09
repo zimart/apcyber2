@@ -55,7 +55,7 @@
   "mobileTopRow": 7,
   "needsErrorInfo": false,
   "onTextChanged": "{{doplata.tkanina();}}",
-  "originalBottomRow": 0,
+  "originalBottomRow": 6,
   "originalTopRow": 0,
   "parentColumnSpace": 18.65625,
   "parentId": "ikmrmo799q",

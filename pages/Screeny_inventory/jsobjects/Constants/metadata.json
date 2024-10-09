@@ -9,7 +9,7 @@
     "variables": [
       {
         "name": "defaultLanguageKeys",
-        "value": "{\n  \"Język\": \"Język\",\n  \"Ilość\": \"Ilość\",\n  \"DODAJ STEROWANIE\": \"DODAJ STEROWANIE\",\n  \"Zmiana języka\": \"Zmiana języka\",\n  \"Szerokość\": \"Szerokość\",\n  \"Produkt\": \"Produkt\",\n  \"Wysokość\": \"Wysokość\",\n  \"Cena bazowa systemu\": \"Cena bazowa systemu\"\n}"
+        "value": "{\n  \"Język\": \"Język\",\n  \"Ilość\": \"Ilość\",\n  \"DODAJ STEROWANIE\": \"DODAJ STEROWANIE\",\n  \"Zmiana języka\": \"Zmiana języka\",\n  \"Szerokość\": \"Szerokość\",\n  \"Produkt\": \"Produkt\",\n  \"Wysokość\": \"Wysokość\",\n  \"Cena bazowa systemu\": \"Cena bazowa systemu\",\n  \"Kolor\": \"Kolor\"\n}"
       },
       {
         "name": "languageOptions",

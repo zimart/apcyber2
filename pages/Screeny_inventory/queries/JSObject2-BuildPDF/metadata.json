@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_7b8ff8f8-0315-44ec-bb16-32d92d4a5679",
-  "id": "Screeny_inventory_JSObject2.myFun1",
+  "gitSyncId": "66f263e90ea81e705fc1052a_ead848da-db78-4959-9513-dba87a0b6c33",
+  "id": "Screeny_inventory_JSObject2.BuildPDF",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -10,7 +10,6 @@
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
-    "clientSideExecution": true,
     "collectionId": "Screeny_inventory_JSObject2",
     "confirmBeforeExecute": false,
     "datasource": {
@@ -23,9 +22,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "fullyQualifiedName": "JSObject2.myFun1",
-    "name": "myFun1",
+    "executeOnLoad": true,
+    "fullyQualifiedName": "JSObject2.BuildPDF",
+    "name": "BuildPDF",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }

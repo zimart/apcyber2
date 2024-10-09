@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 55,
   "boxShadow": "none",
   "defaultText": "{{system_select.selectedOptionValue|| \"\"}}-{{Select8.selectedOptionValue|| \"\"}}-{{index_szer_input.text|| \"\"}}-{{index_wys_input.text|| \"\"}}",
   "dynamicBindingPathList": [
@@ -51,7 +51,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 9,
   "showStepArrows": false,
-  "topRow": 8,
+  "topRow": 48,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "hwu10pyuiq",

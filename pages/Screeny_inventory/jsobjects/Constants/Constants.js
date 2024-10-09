@@ -8,7 +8,8 @@ export default {
 		"Szerokość":"Szerokość",
 		"Produkt":"Produkt",
 		"Wysokość":"Wysokość",
-		"Cena bazowa systemu":"Cena bazowa systemu"
+		"Cena bazowa systemu":"Cena bazowa systemu",
+		"Kolor":"Kolor"
 	},
 	languageOptions: [
 		"Polski",

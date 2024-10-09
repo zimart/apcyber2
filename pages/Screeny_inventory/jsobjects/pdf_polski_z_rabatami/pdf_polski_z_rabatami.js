@@ -26,7 +26,8 @@ const columns = [
 
 const currencyRate = kursinput.text; // Example currency rate for conversion
 const data = tabela_glowna.tableData.map(item => ({
-Produkt: item.Produkt +"\n"+item.opiszrabatami,
+//Produkt: item.Produkt +"\n"+item.opiszrabatami,
+	Produkt: item.Produkt +"\n"+item.opisbezrabatow,
 Ilosc: item.Ilosc,
 cenanetto: (item.cenanetto / currencyRate).toFixed(2),// Convert price using currency rate
 //Opis: item.opiszrabatami,
@@ -88,8 +89,9 @@ default_1(doc, {
            // lineColor: 'black',
 							 lineWidth: 0.1,
             //lineColor: 'black'
+							 fontSize: 8
 							},
-	startY: 80,
+	startY: 40,
 	columnStyles: { europe: { halign: 'center',valign: 'middle' },
              Produkt: {
        //fontStyle: 'bold',
@@ -111,7 +113,7 @@ default_1(doc, {
 minCellWidth: 15,
 minCellHeight:12,
 //minCellHeight: number = 0
-	halign: 'center',
+halign: 'center',
 valign: 'middle'
 //	halign: 'left'|'center'|'right' = 'left'
 //valign: 'top'|'middle'|'bottom' = 'top'
