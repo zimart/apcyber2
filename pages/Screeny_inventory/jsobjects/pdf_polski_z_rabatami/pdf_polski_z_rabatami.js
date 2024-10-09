@@ -18,7 +18,7 @@ const columns = [
 { header: 'Netto po rabacie', dataKey: 'nettopo' } ,// Custom header with currency
 //{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
 { header: 'Razem netto', dataKey: 'razemnetto' }, // Custom header with currency
-{ header: 'VAT', dataKey: 'vat' }, // Custom header with currency
+{ header: 'VAT %', dataKey: 'vat' }, // Custom header with currency
 { header: 'Brutto', dataKey: 'Brutto' } // Custom header with currency
 ];	
 	
@@ -30,11 +30,11 @@ Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Ilosc: item.Ilosc,
 cenanetto: (item.cenanetto / currencyRate).toFixed(2),// Convert price using currency rate
 //Opis: item.opiszrabatami,
-Rabatprocent: item.razemnetto,
-Rabat: item.brutto,
-nettopo: (item.brutto/ currencyRate).toFixed(2),
-razemnetto: (item.brutto/ currencyRate).toFixed(2),
-vat: (item.brutto/ currencyRate).toFixed(2),
+Rabatprocent: item.rabatogolny,
+Rabat: (item.kwotarabatogolny/currencyRate).toFixed(2),
+nettopo: (item.cenaporabacie / currencyRate).toFixed(2),
+razemnetto: (item.razemnetto/ currencyRate).toFixed(2),
+vat: item.vat,
 Brutto: (item.brutto/ currencyRate).toFixed(2)
 }));	
 
