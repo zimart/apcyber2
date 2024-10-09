@@ -31,7 +31,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{dodajakcesoria.run().then(() => {\n  iloscsterowania.run();\n  ustawrabatsterowania.run();\n  Select_sterowania2.run();\n  ustawrabatogolny.run();\n  tabela_inventory_main_id.run();\n});}}",
+  "onClick": "{{dodajakcesoria.run().then(() => {\n  iloscsterowania.run();\n  ustawrabatsterowania.run();\n  Select_sterowania2.run();\n  przelicz_tabele_main.run();\n  tabela_inventory_main_id.run();\n});}}",
   "parentId": "sb8brmf4m8",
   "placement": "CENTER",
   "recaptchaType": "V3",

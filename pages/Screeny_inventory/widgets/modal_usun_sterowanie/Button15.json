@@ -33,7 +33,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{usun_sterowanie_z_main.run().then(() => {\n  usunsterowanie.run();\n  closeModal(modal_usun_sterowanie.name);\n  Select_sterowania2.run();\n  iloscsterowania.run();\n  tabela_inventory_main_id.run();\n});}}",
+  "onClick": "{{usun_sterowanie_z_main.run().then(() => {\n  usunsterowanie.run();\n  closeModal(modal_usun_sterowanie.name);\n  Select_sterowania2.run();\n  iloscsterowania.run();\n  przelicz_tabele_main.run();\n  tabela_inventory_main_id.run();\n});}}",
   "parentId": "bkab6zyor2",
   "placement": "CENTER",
   "recaptchaType": "V3",

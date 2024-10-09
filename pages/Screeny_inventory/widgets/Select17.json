@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 345,
+  "bottomRow": 352,
   "boxShadow": "none",
   "defaultOptionValue": "{{\n            {\n              label: Select17.options[0].label,\n              value: Select17.options[0].value\n            }\n          }}",
   "dynamicBindingPathList": [
@@ -57,7 +57,7 @@
   "rightColumn": 20,
   "serverSideFiltering": false,
   "sourceData": "{{waluta.data.map( (obj) =>{ return  {'label': obj.SKROT, 'value': obj.SKROT } })}}",
-  "topRow": 338,
+  "topRow": 345,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "60l8h3t297",

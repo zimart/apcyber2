@@ -47,7 +47,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onBlur": "{{ustawrabatsterowania.run();\nSelect_sterowania2.run()}}",
+  "onBlur": "{{ustawrabatsterowania.run().then(() => {\n  Select_sterowania2.run();\n  przelicz_tabele_main.run();\n});}}",
   "onTextChanged": "",
   "parentColumnSpace": 14.7723388671875,
   "parentId": "nrbk700k4d",

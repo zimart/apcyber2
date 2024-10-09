@@ -1,0 +1,7 @@
+UPDATE inventory_main SET
+   	vat = {{Vat.selectedOptionValue}},
+    kwotarabatogolny = cenanetto*(rabatogolny/100),
+		cenaporabacie = cenanetto-kwotarabatogolny,
+		razemnetto = ilosc*cenaporabacie,
+		brutto = razemnetto*((vat/100)+1)
+WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};

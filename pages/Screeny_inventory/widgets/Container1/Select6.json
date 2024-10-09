@@ -47,7 +47,7 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "{{zmienkurswofercie.run();\nwalutakurs.run();\npdf_polski.BuildPDF()}}",
+  "onOptionChange": "{{zmienkurswofercie.run();\nwalutakurs.run();\npdf_polski_z_rabatami.BuildPDF()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 20.21875,

@@ -31,7 +31,7 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onClick": "{{pdf_polski.BuildPDF();}}",
+  "onClick": "{{pdf_polski_z_rabatami.BuildPDF();}}",
   "parentColumnSpace": 19.9375,
   "parentId": "w811u4s83s",
   "parentRowSpace": 10,
