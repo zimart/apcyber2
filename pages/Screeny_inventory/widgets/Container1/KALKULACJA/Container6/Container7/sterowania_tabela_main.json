@@ -50,7 +50,7 @@
     "fk_oferty_inventory_id_ster",
     "rodzajproduktu_ster"
   ],
-  "columnUpdatedAt": 1728227074210,
+  "columnUpdatedAt": 1728489438278,
   "columnWidthMap": {
     "customColumn2": 69
   },
@@ -172,6 +172,12 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.rabat_sterowania.onSubmit"
+    },
+    {
+      "key": "primaryColumns.ilosc.onSubmit"
     }
   ],
   "enableClientSideSearch": false,
@@ -442,16 +448,17 @@
       "horizontalAlignment": "LEFT",
       "id": "ilosc",
       "index": 1,
-      "isCellEditable": false,
+      "isCellEditable": true,
       "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
-      "isEditable": false,
+      "isEditable": true,
       "isSaveVisible": true,
       "isVisible": true,
       "label": "{{i18n.translate(\"Ilość\")}}",
       "notation": "standard",
+      "onSubmit": "{{ustawrabatsterowania.run().then(() => {\n  Select_sterowania2.run();\n});}}",
       "originalId": "ilosc",
       "sticky": "",
       "textSize": "0.875rem",
@@ -579,6 +586,7 @@
       "isVisible": true,
       "label": "{{i18n.translate(\"Rabat\")}}",
       "notation": "standard",
+      "onSubmit": "{{przeliczrabatsterowania1.run().then(() => {\n  Select_sterowania2.run();\n});}}",
       "originalId": "rabat_sterowania",
       "sticky": "",
       "textSize": "0.875rem",

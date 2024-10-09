@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 340,
+  "bottomRow": 337,
   "bottomRowBeforeCollapse": 337,
   "docUrl": "{{pdf_polski.BuildPDF.data}}",
   "dynamicBindingPathList": [
@@ -28,7 +28,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "topRow": 265,
+  "topRow": 262,
   "topRowBeforeCollapse": 262,
   "type": "DOCUMENT_VIEWER_WIDGET",
   "version": 1,
