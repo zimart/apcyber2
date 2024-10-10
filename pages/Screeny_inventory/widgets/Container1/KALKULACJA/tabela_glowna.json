@@ -1,6 +1,6 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "allowAddNewRow": true,
+  "allowAddNewRow": false,
   "animateLoading": true,
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -76,7 +76,7 @@
   "defaultSelectedRowIndices": [
     0
   ],
-  "delimiter": ",",
+  "delimiter": ";",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -213,7 +213,7 @@
   "isLoading": false,
   "isSortable": true,
   "isVisible": true,
-  "isVisibleDownload": false,
+  "isVisibleDownload": true,
   "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
