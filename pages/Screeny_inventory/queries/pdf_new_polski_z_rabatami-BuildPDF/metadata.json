@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "pdf_new_polski_z_rabatami.BuildPDF",
     "name": "BuildPDF",
     "pageId": "Screeny_inventory",

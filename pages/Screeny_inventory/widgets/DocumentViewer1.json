@@ -2,7 +2,7 @@
   "animateLoading": true,
   "bottomRow": 358,
   "bottomRowBeforeCollapse": 337,
-  "docUrl": "{{pdf_polski_z_rabatami.BuildPDF.data}}",
+  "docUrl": "{{pdf_new_polski_z_rabatami.BuildPDF.data}}",
   "dynamicBindingPathList": [
     {
       "key": "docUrl"
