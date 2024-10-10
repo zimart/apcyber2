@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 7,
   "boxShadow": "none",
   "defaultText": "{{cenarazem.razem.data}}",
   "dynamicBindingPathList": [
@@ -46,7 +46,7 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onTextChanged": "",
-  "originalBottomRow": 9,
+  "originalBottomRow": 7,
   "originalTopRow": 0,
   "parentColumnSpace": 18.6884765625,
   "parentId": "esfh9fxray",
