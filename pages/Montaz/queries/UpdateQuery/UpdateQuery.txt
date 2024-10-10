@@ -1,0 +1,10 @@
+UPDATE montaz SET
+		 	fk_oferty_inventory_id = '{{update_form.fieldState. 	fk_oferty_inventory_id.isVisible ? update_form.formData. 	fk_oferty_inventory_id : update_form.sourceData. 	fk_oferty_inventory_id}}',
+		ilosc = '{{update_form.fieldState.ilosc.isVisible ? update_form.formData.ilosc : update_form.sourceData.ilosc}}',
+    cenanetto = '{{update_form.fieldState.cenanetto.isVisible ? update_form.formData.cenanetto : update_form.sourceData.cenanetto}}',
+		rabat = '{{update_form.fieldState.rabat.isVisible ? update_form.formData.rabat : update_form.sourceData.rabat}}',
+		kwotarabatmontaz = '{{update_form.fieldState.kwotarabatmontaz.isVisible ? update_form.formData.kwotarabatmontaz : update_form.sourceData.kwotarabatmontaz}}',
+		cenaporabaciemontaz = '{{update_form.fieldState.cenaporabaciemontaz.isVisible ? update_form.formData.cenaporabaciemontaz : update_form.sourceData.cenaporabaciemontaz}}',
+		vat_montaz = '{{update_form.fieldState.vat_montaz.isVisible ? update_form.formData.vat_montaz : update_form.sourceData.vat_montaz}}',
+		bruttomontaz = '{{update_form.fieldState.bruttomontaz.isVisible ? update_form.formData.bruttomontaz : update_form.sourceData.bruttomontaz}}'
+WHERE id_montaz = {{data_table.selectedRow.id_montaz}};

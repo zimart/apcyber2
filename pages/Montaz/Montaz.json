@@ -1,12 +1,11 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_81fbe252-54ad-489b-aab3-bae40ffaeb84",
+  "gitSyncId": "66f263e90ea81e705fc1052a_54fc2385-84c2-4aa7-865d-5d19e866d36e",
   "unpublishedPage": {
-    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 4290,
+          "bottomRow": 890,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Screeny_inventory",
-    "slug": "screeny-inventory"
+    "name": "Montaz",
+    "slug": "montaz"
   }
 }

@@ -1,0 +1,18 @@
+INSERT INTO montaz (
+	 	fk_oferty_inventory_id,
+	ilosc,
+	cenanetto,
+	rabat,
+	kwotarabatmontaz,
+	cenaporabaciemontaz,
+	vat_montaz,
+	bruttomontaz)
+VALUES (
+	'{{insert_form.formData. 	fk_oferty_inventory_id}}',
+	'{{insert_form.formData.ilosc}}',
+	'{{insert_form.formData.cenanetto}}',
+	'{{insert_form.formData.rabat}}',
+	'{{insert_form.formData.kwotarabatmontaz}}',
+	'{{insert_form.formData.cenaporabaciemontaz}}',
+	'{{insert_form.formData.vat_montaz}}',
+	'{{insert_form.formData.bruttomontaz}}');

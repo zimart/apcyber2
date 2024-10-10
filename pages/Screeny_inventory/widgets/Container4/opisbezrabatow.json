@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 74,
+  "bottomRow": 76,
   "boxShadow": "none",
   "defaultText": "{{system_select.selectedOptionLabel}}/{{wartoscskrzynka.text}}/{{kolor_select.selectedOptionLabel}}/{{Select9.selectedOptionLabel}}-{{Select10.selectedOptionLabel}} \nSzer: {{szerokosc_input.text}} Wys: {{wysokosc_input.text}} / Napęd: {{Input8.text}}\nCena rolety: {{Input22.text}} Cena napędu : {{cenanapedu.text}}  Cena systemu {{Input22.text+cenanapedu.text}} netto",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 34,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 62,
+  "topRow": 64,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "4pcmr7zn3l",

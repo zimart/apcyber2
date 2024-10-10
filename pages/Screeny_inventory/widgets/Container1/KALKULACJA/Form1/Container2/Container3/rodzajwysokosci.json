@@ -50,7 +50,7 @@
   "onOptionChange": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => indekswys.run())\n.then(() => skrzynka_zapytaj.run())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => powierzchnian.m2()) \n\n}}",
   "optionLabel": "name",
   "optionValue": "code",
-  "originalBottomRow": 7,
+  "originalBottomRow": 11,
   "originalTopRow": 0,
   "parentColumnSpace": 19.59375,
   "parentId": "er5qa5lbjh",

@@ -1,0 +1,2 @@
+DELETE FROM montaz
+  WHERE id_montaz = {{data_table.triggeredRow.id_montaz}};

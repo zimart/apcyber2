@@ -125,6 +125,10 @@
     {
       "id": "Waluty",
       "isDefault": false
+    },
+    {
+      "id": "Montaz",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
