@@ -30,7 +30,7 @@
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
   "rightColumn": 55,
-  "text": "Oferty klienta: {{zapytaj_klient.data[0].accountname}}",
+  "text": "Oferty klienta:\n{{appsmith.URL.queryParams.klient}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,
