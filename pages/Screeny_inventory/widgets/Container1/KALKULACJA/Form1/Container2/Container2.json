@@ -60,14 +60,22 @@
     },
     {
       "key": "backgroundColor"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{kategoriaselect.selectedOptionLabel===\"SCREENY\"}}",
   "key": "e41zwzme6l",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,

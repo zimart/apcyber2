@@ -71,7 +71,7 @@
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
-  "isVisible": "{{Select11.selectedOptionLabel=== \"SCREENY\"}}",
+  "isVisible": "{{kategoriaselect.selectedOptionLabel===\"SCREENY\"}}",
   "key": "dr815y3fp3",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,

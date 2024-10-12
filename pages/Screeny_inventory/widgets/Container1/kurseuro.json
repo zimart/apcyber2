@@ -4,6 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
+  "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
   "defaultText": "4.3",
   "dynamicBindingPathList": [
@@ -14,13 +15,13 @@
       "key": "borderRadius"
     },
     {
-      "key": "isDisabled"
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "isDisabled"
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -30,10 +31,10 @@
   ],
   "iconAlign": "left",
   "inputType": "NUMBER",
-  "isDisabled": "{{Select6.selectedOptionLabel===\"PLN\"}}",
+  "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{Select6.selectedOptionLabel===\"EUR\"}}",
   "key": "fcag1fd5db",
   "label": "KURS EURO",
   "labelAlignment": "left",
@@ -51,6 +52,8 @@
   "mobileTopRow": 7,
   "needsErrorInfo": false,
   "onTextChanged": "{{zmienkurs.run();\nzmienkurswofercie.run();\ntabela_inventory_id.run()}}",
+  "originalBottomRow": 6,
+  "originalTopRow": 0,
   "parentColumnSpace": 20.25,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -61,6 +64,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "0fv2p4o55u",

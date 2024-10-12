@@ -11,9 +11,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -48,8 +45,8 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "onOptionChange": "{{zmienkurswofercie.run();}}",
-  "optionLabel": "label",
-  "optionValue": "value",
+  "optionLabel": "name",
+  "optionValue": "code",
   "parentColumnSpace": 20.21875,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -58,7 +55,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 57,
   "serverSideFiltering": false,
-  "sourceData": "{{waluta.data.map( (obj) =>{ return  {'label': obj.SKROT, 'value': obj.SKROT } })}}",
+  "sourceData": "[\n  {\n    \"name\": \"PLN\",\n    \"code\": \"PLN\"\n  },\n  {\n    \"name\": \"EUR\",\n    \"code\": \"EUR\"\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,

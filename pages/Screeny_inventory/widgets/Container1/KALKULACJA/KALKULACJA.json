@@ -10,7 +10,7 @@
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1790,
+      "bottomRow": 1880,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -55,7 +55,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1790,
+      "bottomRow": 1880,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -130,8 +130,8 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onTabSelected": "{{tabela_inventory_main_id.run();}}",
-  "originalBottomRow": 206,
-  "originalTopRow": 23,
+  "originalBottomRow": 84,
+  "originalTopRow": 14,
   "parentColumnSpace": 20.21875,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -158,7 +158,7 @@
       "widgetId": "w811u4s83s"
     }
   },
-  "topRow": 23,
+  "topRow": 14,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "9v595xa5mj",

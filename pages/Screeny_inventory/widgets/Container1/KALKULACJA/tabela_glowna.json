@@ -53,7 +53,7 @@
     "opiszrabatami",
     "opisbezrabatow"
   ],
-  "columnUpdatedAt": 1728415462965,
+  "columnUpdatedAt": 1728743162153,
   "columnWidthMap": {
     "Ilosc": 85,
     "Produkt": 170.00000000000003,
@@ -127,15 +127,6 @@
       "key": "primaryColumns.kwotarabatogolny.computedValue"
     },
     {
-      "key": "primaryColumns.rabatogolny.label"
-    },
-    {
-      "key": "primaryColumns.cenanetto.label"
-    },
-    {
-      "key": "primaryColumns.kwotarabatogolny.label"
-    },
-    {
       "key": "primaryColumns.razemnetto.label"
     },
     {
@@ -146,12 +137,6 @@
     },
     {
       "key": "primaryColumns.cenaporabacie.computedValue"
-    },
-    {
-      "key": "primaryColumns.cenaporabacie.label"
-    },
-    {
-      "key": "primaryColumns.Ilosc.label"
     },
     {
       "key": "primaryColumns.rabatsystem.computedValue"
@@ -179,6 +164,33 @@
     },
     {
       "key": "primaryColumns.kwotarabatmotor.computedValue"
+    },
+    {
+      "key": "primaryColumns.cena.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.systemzdoplata.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatsystem.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.kwotarabatsystem.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.systemporabacie.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.price_motor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatmotor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.kwotarabatmotor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.priceall.isCellVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -187,6 +199,33 @@
     },
     {
       "key": "primaryColumns.Ilosc.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.cena.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.systemzdoplata.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatsystem.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.kwotarabatsystem.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.systemporabacie.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.price_motor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatmotor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.kwotarabatmotor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.priceall.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -227,7 +266,7 @@
   "onPageChange": "{{\n            Select_inventory_main1.run();\n            Total_record_inventory_main1.run()\n          }}",
   "onSearchTextChanged": "{{\n            Select_inventory_main1.run();\n            Total_record_inventory_main1.run()\n          }}",
   "onSort": "{{\n            Select_inventory_main1.run();\n            Total_record_inventory_main1.run()\n          }}",
-  "originalBottomRow": 135,
+  "originalBottomRow": 64,
   "originalTopRow": 7,
   "parentColumnSpace": 20.21875,
   "parentId": "w811u4s83s",
@@ -250,14 +289,14 @@
       "id": "Ilosc",
       "index": 2,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czyrabat.isSwitchedOn))}}",
+      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czykalkulacja.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Ilość\")}}",
+      "label": "Ilość",
       "notation": "standard",
       "originalId": "Ilosc",
       "sticky": "",
@@ -352,7 +391,7 @@
       "id": "cena",
       "index": 14,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czykalkulacja.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -376,7 +415,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( (currentRow[\"cenanetto\"]/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( String(currentRow.cenanetto).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -393,7 +432,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Cena netto\")}}",
+      "label": "Cena netto",
       "notation": "standard",
       "originalId": "cenanetto",
       "sticky": "",
@@ -410,7 +449,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( (currentRow.cenaporabacie/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( (currentRow.cenaporabacie).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -427,7 +466,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Cena po rabacie\")}}",
+      "label": "Cena po rabacie",
       "notation": "standard",
       "originalId": "cenaporabacie",
       "sticky": "",
@@ -454,14 +493,14 @@
       "id": "kwotarabatmotor",
       "index": 19,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czykalkulacja.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "kwotarabatmotor",
+      "label": "Kwota rabatu - aut.",
       "notation": "standard",
       "originalId": "kwotarabatmotor",
       "sticky": "",
@@ -495,7 +534,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Rabat\")}}",
+      "label": "Rabat",
       "notation": "standard",
       "originalId": "kwotarabatogolny",
       "sticky": "",
@@ -522,14 +561,14 @@
       "id": "kwotarabatsystem",
       "index": 18,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czykalkulacja.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "kwotarabatsystem",
+      "label": "Kwota rabatu",
       "notation": "standard",
       "originalId": "kwotarabatsystem",
       "sticky": "",
@@ -562,7 +601,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Opis - bez rabatów",
       "notation": "standard",
       "originalId": "opisbezrabatow",
@@ -596,7 +635,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Opis - z rabatami",
       "notation": "standard",
       "originalId": "opiszrabatami",
@@ -624,7 +663,7 @@
       "id": "price_motor",
       "index": 15,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czykalkulacja.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -658,7 +697,7 @@
       "id": "priceall",
       "index": 18,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czykalkulacja.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -692,7 +731,7 @@
       "id": "rabatmotor",
       "index": 13,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czykalkulacja.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -733,7 +772,7 @@
       "isEditable": true,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Rabat % ogólny\")}}",
+      "label": "Rabat % ogólny",
       "notation": "standard",
       "originalId": "rabatogolny",
       "sticky": "",
@@ -760,7 +799,7 @@
       "id": "rabatsystem",
       "index": 12,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czykalkulacja.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -784,7 +823,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( (currentRow.razemnetto/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( (currentRow.razemnetto).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -828,7 +867,7 @@
       "id": "systemporabacie",
       "index": 17,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czykalkulacja.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -862,7 +901,7 @@
       "id": "systemzdoplata",
       "index": 16,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( czykalkulacja.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
