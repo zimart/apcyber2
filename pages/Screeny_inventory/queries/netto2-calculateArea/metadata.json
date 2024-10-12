@@ -29,7 +29,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "netto2.calculateArea",
     "name": "calculateArea",
     "pageId": "Screeny_inventory",

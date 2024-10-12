@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 135,
+  "bottomRow": 64,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -119,9 +119,6 @@
     },
     {
       "key": "primaryColumns.opiszrabatami.computedValue"
-    },
-    {
-      "key": "primaryColumns.Produkt.label"
     },
     {
       "key": "primaryColumns.rabatogolny.computedValue"
@@ -294,7 +291,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Produkt\")}}",
+      "label": "Produkt",
       "notation": "standard",
       "originalId": "Produkt",
       "sticky": "",
