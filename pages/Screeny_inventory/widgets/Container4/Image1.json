@@ -29,6 +29,8 @@
   "mobileTopRow": 5,
   "needsErrorInfo": false,
   "objectFit": "contain",
+  "originalBottomRow": 28,
+  "originalTopRow": 17,
   "parentColumnSpace": 20.25,
   "parentId": "esfh9fxray",
   "parentRowSpace": 10,

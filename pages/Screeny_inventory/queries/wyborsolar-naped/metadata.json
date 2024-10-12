@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "wyborsolar.naped",
     "name": "naped",
     "pageId": "Screeny_inventory",
