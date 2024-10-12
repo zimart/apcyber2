@@ -5,19 +5,13 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
   "boxShadow": "none",
-  "defaultText": "{{kursinput.text}}",
+  "defaultText": "4.3",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "label"
-    },
-    {
-      "key": "defaultText"
     },
     {
       "key": "isDisabled"
@@ -41,7 +35,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "fcag1fd5db",
-  "label": "{{i18n.translate(\"KURS EURO\")}}",
+  "label": "KURS EURO",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

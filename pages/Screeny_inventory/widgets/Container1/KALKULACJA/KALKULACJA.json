@@ -130,7 +130,7 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onTabSelected": "{{tabela_inventory_main_id.run();}}",
-  "originalBottomRow": 67,
+  "originalBottomRow": 206,
   "originalTopRow": 23,
   "parentColumnSpace": 20.21875,
   "parentId": "59rw5mx0bq",
