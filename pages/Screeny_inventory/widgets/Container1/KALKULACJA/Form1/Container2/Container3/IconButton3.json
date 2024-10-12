@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 2,
+  "bottomRow": 6,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
   "buttonColor": "#831843",
@@ -43,7 +43,7 @@
   "mobileTopRow": 3,
   "needsErrorInfo": false,
   "onClick": "{{\nremoveValue('sku_value')\n.then(() => \nstoreValue('sku_value', tymczasowy.text))\n.then(() => danesku.run())\n.then(() => storeValue('cenasystemu', cena_systemu.text).catch(() => {\n  showAlert('blad', 'error')\n}))\n.then(() => storeValue('wymaganynaped', wymaganamocnaped.text))\n.then(() => napedwybrany.run())\n.then(() => cenanapeduwybranego.run())\n.then(() => storeValue('modelnapedu', Input8.text))\n.then(() => \nstoreValue('cenanapedu', cenanapedu.text))\n.then(() => doplata.kolor())\n.then(() => doplata.wkladka())\n\n\n}}",
-  "originalBottomRow": 6,
+  "originalBottomRow": 2,
   "originalTopRow": 2,
   "parentColumnSpace": 18.6884765625,
   "parentId": "er5qa5lbjh",
