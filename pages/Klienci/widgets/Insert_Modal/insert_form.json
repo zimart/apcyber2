@@ -2,8 +2,9 @@
   "animateLoading": true,
   "autoGenerateForm": true,
   "backgroundColor": "#ffffff",
+  "borderColor": "#f4f4f5",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "1px",
+  "borderWidth": "0",
   "bottomRow": 58,
   "boxShadow": "none",
   "childStylesheet": {
@@ -163,9 +164,6 @@
     },
     {
       "key": "schema.__root_schema__.children.accountname.defaultValue"
-    },
-    {
-      "key": "submitButtonStyles.buttonColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -178,9 +176,6 @@
     },
     {
       "key": "onSubmit"
-    },
-    {
-      "key": "submitButtonStyles.buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -440,15 +435,15 @@
   "scrollContents": true,
   "showReset": false,
   "sourceData": "{{_.omit(data_table.tableData[0], \"customColumn1\", \"accountid\")}}",
-  "submitButtonLabel": "Dodaj",
+  "submitButtonLabel": "DODAJ",
   "submitButtonStyles": {
-    "borderRadius": "0px",
+    "borderRadius": "0.375rem",
     "boxShadow": "none",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonColor": "#831843",
     "buttonVariant": "PRIMARY",
     "iconAlign": "left",
     "iconName": "add",
-    "placement": "START"
+    "placement": "CENTER"
   },
   "title": "Dodaj klienta",
   "topRow": 0,

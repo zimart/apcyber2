@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM oferty WHERE id_oferta = {{data_table.triggeredRow.accountid}};",
+      "body": "DELETE FROM oferty WHERE id_klient = {{data_table.triggeredRow.accountid}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
