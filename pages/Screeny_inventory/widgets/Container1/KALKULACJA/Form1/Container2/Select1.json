@@ -1,6 +1,6 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": false,
+  "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
@@ -31,7 +31,7 @@
     }
   ],
   "isDisabled": false,
-  "isFilterable": true,
+  "isFilterable": false,
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,
@@ -61,7 +61,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 5,
-  "serverSideFiltering": false,
+  "serverSideFiltering": true,
   "sourceData": "{{linia_zapytaj.data.map( (obj) =>{ return  {'label': obj.linia, 'value': obj.linia } })}}",
   "topRow": 0,
   "type": "SELECT_WIDGET",

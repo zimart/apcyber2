@@ -1,0 +1,2 @@
+SELECT wymiar FROM screeny_skrzynki where systemskrzynka = {{system_select.selectedOptionLabel}} AND {{szerokosc_input.text}} <= maxwidth AND maxheight >= {{wysokosc_input.text}}
+ORDER BY wysokosc ASC;

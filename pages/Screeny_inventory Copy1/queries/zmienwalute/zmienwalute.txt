@@ -1,0 +1,11 @@
+UPDATE screeny_inventory SET
+    cena = cena,
+		doplatatkanina = doplatatkanina,
+		doplatakolor = doplatakolor,
+		doplatawkladka = doplatawkladka,
+		systemzdoplata = systemzdoplata,
+	  kwotarabatsystem = systemzdoplata*(rabatsystem/100),
+		systemporabacie = systemzdoplata-kwotarabatsystem,
+		kurseuro = {{kurseuro.text}},
+		waluta = {{Select6.selectedOptionLabel}}
+		WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};

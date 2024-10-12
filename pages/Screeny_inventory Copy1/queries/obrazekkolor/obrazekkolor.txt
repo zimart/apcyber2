@@ -1,0 +1,1 @@
+SELECT obrazek FROM screeny_kolor where kolorm = {{kolor_select.selectedOptionValue}};

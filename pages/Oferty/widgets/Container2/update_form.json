@@ -235,7 +235,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_id_klient.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 45,
+  "originalBottomRow": 48,
   "originalTopRow": 4,
   "parentColumnSpace": 16.3125,
   "parentId": "x3oj14smam",

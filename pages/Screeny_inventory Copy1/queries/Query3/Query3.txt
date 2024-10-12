@@ -1,0 +1,3 @@
+UPDATE screeny_inventory SET
+    vat = '{{Vat.selectedOptionValue}}'
+  WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferty}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

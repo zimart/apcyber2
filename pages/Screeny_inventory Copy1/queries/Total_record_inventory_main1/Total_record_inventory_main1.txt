@@ -1,0 +1,1 @@
+SELECT COUNT(*) from inventory_main WHERE seq LIKE '%{{tabela_glowna.searchText}}%';

@@ -23,7 +23,7 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "linia_zapytaj",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": true

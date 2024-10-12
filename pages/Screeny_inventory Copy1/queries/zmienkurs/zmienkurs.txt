@@ -1,0 +1,4 @@
+UPDATE screeny_inventory SET
+    kurseuro = '{{kursinput.text}}',
+		waluta = '{{Select6.selectedOptionLabel}}'
+	  WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};

@@ -111,19 +111,15 @@
       "isDefault": false
     },
     {
-      "id": "Screeny_inventory2",
-      "isDefault": false
-    },
-    {
       "id": "Screeny_wyborserii",
       "isDefault": false
     },
     {
-      "id": "Inventory_main",
+      "id": "Waluty",
       "isDefault": false
     },
     {
-      "id": "Waluty",
+      "id": "Screeny_inventory Copy1",
       "isDefault": false
     }
   ],

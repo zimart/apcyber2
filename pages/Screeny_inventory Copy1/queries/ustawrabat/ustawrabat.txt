@@ -1,0 +1,8 @@
+UPDATE screeny_inventory SET
+    rabatsystem = '{{Input18.text}}',
+	  kwotarabatsystem = systemzdoplata*(rabatsystem/100),
+		systemporabacie = systemzdoplata-kwotarabatsystem,
+		cenanetto = priceall+systemporabacie,	
+		razemnetto = cenanetto * ilosc		
+		
+		WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};

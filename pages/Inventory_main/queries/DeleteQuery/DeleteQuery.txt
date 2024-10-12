@@ -1,2 +1,0 @@
-DELETE FROM inventory_main
-  WHERE id_main_inv = {{data_table.triggeredRow.id_main_inv}};

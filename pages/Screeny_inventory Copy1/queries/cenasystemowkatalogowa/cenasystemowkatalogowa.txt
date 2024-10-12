@@ -1,0 +1,2 @@
+SELECT SUM (cena)
+FROM screeny_inventory WHERE fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}};

@@ -1,0 +1,4 @@
+UPDATE screeny_inventory
+JOIN tymczasowascreeny ON screeny_inventory.id = tymczasowascreeny.id_wiersza
+SET screeny_inventory.kwotarabatsystem = tymczasowascreeny.kwotatymcz,
+systemporabacie = systemzdoplata-kwotarabatsystem ;

@@ -1,0 +1,1 @@
+SELECT `indeks` FROM `screeny_tabelaindeksy` WHERE {{szerokosc_input.text}} <= szermax AND {{szerokosc_input.text}} > szermin;

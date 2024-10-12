@@ -1,0 +1,8 @@
+UPDATE inventory_main
+JOIN screeny_inventory ON inventory_main.id_wiersz = screeny_inventory.id 
+SET inventory_main.cenanetto = screeny_inventory.cenanetto,inventory_main.cena = screeny_inventory.cena,
+inventory_main.rabatsystem = screeny_inventory.rabatsystem,inventory_main.rabatmotor=screeny_inventory.rabatmotor,
+inventory_main.vat=screeny_inventory.vat,inventory_main.opisbezrabatow=screeny_inventory.opisbezrabatow,
+inventory_main.opiszrabatami=screeny_inventory.opiszrabatami,inventory_main.razemnetto=screeny_inventory.razemnetto,
+inventory_main.brutto=screeny_inventory.brutto,
+inventory_main.procentdoplatakolor = screeny_inventory.procentdoplatakolor

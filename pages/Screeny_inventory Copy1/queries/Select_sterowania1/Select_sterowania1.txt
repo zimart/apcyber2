@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  sterowania
+WHERE
+  model LIKE '%{{sterowania_tabela_main.searchText}}%'
+ORDER BY
+  {{sterowania_tabela_main.sortOrder.column || 'id_sterowania'}} {{sterowania_tabela_main.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{sterowania_tabela_main.pageSize}}
+OFFSET
+  {{sterowania_tabela_main.pageOffset}}

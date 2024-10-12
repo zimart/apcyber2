@@ -1,0 +1,10 @@
+UPDATE sterowania SET
+    ilosc = '{{sterowania_tabela_main.updatedRow.ilosc}}',
+    cena = '{{sterowania_tabela_main.updatedRow.cena}}',
+		rabat_sterowania = '{{sterowania_tabela_main.updatedRow.rabat_sterowania}}',
+		kwotarabatu = '{{sterowania_tabela_main.updatedRow.cena}}'*('{{sterowania_tabela_main.updatedRow.rabat_sterowania}}'/100),
+		 cenaporabacie = '{{sterowania_tabela_main.updatedRow.cena}}'-('{{sterowania_tabela_main.updatedRow.cena}}'*'{{sterowania_tabela_main.updatedRow.rabat_sterowania}}'/100)
+   
+   
+   
+    WHERE id_sterowania = {{sterowania_tabela_main.updatedRow.id_sterowania}}; 

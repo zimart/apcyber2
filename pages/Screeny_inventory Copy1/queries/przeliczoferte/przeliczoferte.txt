@@ -1,0 +1,6 @@
+UPDATE screeny_inventory SET
+kwotarabatsystem = CASE 
+   {{tabela_screeny_inventory_id.updatedRows.map((user) => `WHEN id = ${user.id} THEN '${user.updatedFields.kwotarabatsystem}'`).join('\n')}}
+END
+
+WHERE id IN ({{tabela_screeny_inventory_id.updatedRows.map((user) => user.allFields.id).join(',')}});

@@ -1,0 +1,1 @@
+SELECT doplata FROM screeny_kolor where kolorm = {{kolor_select.selectedOptionLabel}} AND system = {{system_select.selectedOptionLabel}}
