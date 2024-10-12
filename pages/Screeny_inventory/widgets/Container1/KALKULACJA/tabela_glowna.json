@@ -32,6 +32,9 @@
     }
   },
   "columnOrder": [
+    "customColumn1",
+    "Produkt",
+    "Ilosc",
     "cena",
     "systemzdoplata",
     "rabatsystem",
@@ -49,11 +52,9 @@
     "vat",
     "brutto",
     "opiszrabatami",
-    "opisbezrabatow",
-    "Produkt",
-    "Ilosc"
+    "opisbezrabatow"
   ],
-  "columnUpdatedAt": 1728759901442,
+  "columnUpdatedAt": 1728767940483,
   "columnWidthMap": {
     "Ilosc": 85,
     "Produkt": 372,
@@ -61,6 +62,7 @@
     "cenanetto": 116,
     "cenaporabacie": 159,
     "concat": 88,
+    "customColumn1": 60,
     "ilosc": 220,
     "kwotarabatogolny": 140,
     "opisbezrabatow": 131,
@@ -188,6 +190,9 @@
     },
     {
       "key": "primaryColumns.Ilosc.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -465,6 +470,39 @@
       "originalId": "cenaporabacie",
       "sticky": "",
       "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "Lp.",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( currentIndex+1))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "customColumn1",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Lp.",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "originalId": "customColumn1",
+      "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

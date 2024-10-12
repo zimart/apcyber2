@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE screeny_inventory SET\n    rabatsystem = '{{Input18.text}}',\n\t  kwotarabatsystem = systemzdoplata*(rabatsystem/100),\n\t\tsystemporabacie = systemzdoplata-kwotarabatsystem,\n\t\tcenanetto = priceall+systemporabacie,\t\n\t\trazemnetto = cenanetto * ilosc\t\t\n\t\t\n\t\tWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
+      "body": "UPDATE screeny_inventory SET\n    rabatsystem = '{{rabatsystem.text}}',\n\t  kwotarabatsystem = systemzdoplata*(rabatsystem/100),\n\t\tsystemporabacie = systemzdoplata-kwotarabatsystem,\n\t\tcenanetto = priceall+systemporabacie,\t\n\t\trazemnetto = cenanetto * ilosc\t\t\n\t\t\n\t\tWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

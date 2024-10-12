@@ -1,5 +1,5 @@
 UPDATE screeny_inventory SET
-    rabatsystem = '{{Input18.text}}',
+    rabatsystem = '{{rabatsystem.text}}',
 	  kwotarabatsystem = systemzdoplata*(rabatsystem/100),
 		systemporabacie = systemzdoplata-kwotarabatsystem,
 		cenanetto = priceall+systemporabacie,	

@@ -3,10 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 0,
-  "bottomRowBeforeCollapse": 5,
+  "bottomRow": 41,
   "boxShadow": "none",
-  "defaultText": "4.3",
+  "defaultText": "{{system_select.selectedOptionValue|| \"\"}}-{{Select8.selectedOptionValue|| \"\"}}-{{index_szer_input.text|| \"\"}}-{{index_wys_input.text|| \"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,58 +14,46 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
+  "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{Select6.selectedOptionLabel===\"EUR\"}}",
-  "key": "fcag1fd5db",
-  "label": "KURS EURO",
+  "isVisible": true,
+  "key": "ehbgngl96u",
+  "label": "Label",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 42,
+  "leftColumn": 36,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 14,
-  "mobileLeftColumn": 10,
-  "mobileRightColumn": 30,
-  "mobileTopRow": 7,
+  "mobileBottomRow": 41,
+  "mobileLeftColumn": 36,
+  "mobileRightColumn": 56,
+  "mobileTopRow": 34,
   "needsErrorInfo": false,
-  "onTextChanged": "{{zmienkurs.run();\nzmienkurswofercie.run();\ntabela_inventory_id.run()}}",
-  "originalBottomRow": 5,
-  "originalTopRow": 0,
+  "originalBottomRow": 41,
+  "originalTopRow": 34,
   "parentColumnSpace": 20.25,
-  "parentId": "w811u4s83s",
+  "parentId": "esfh9fxray",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "resetOnSubmit": false,
+  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 47,
-  "shouldAllowAutofill": false,
+  "rightColumn": 56,
   "showStepArrows": false,
-  "topRow": 0,
-  "topRowBeforeCollapse": 0,
+  "topRow": 34,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "0fv2p4o55u",
-  "widgetName": "kurseuro"
+  "widgetId": "5pu0hk68yv",
+  "widgetName": "tymczasowy"
 }
