@@ -18,6 +18,7 @@ const columns = [
 //{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
 { header: 'Razem netto', dataKey: 'razemnetto' }, // Custom header with currency
 { header: 'VAT %', dataKey: 'vat' }, // Custom header with currency
+{ header: 'VAT', dataKey: 'vatkwota' }, // Custom header with currency
 { header: 'Brutto', dataKey: 'Brutto' } // Custom header with currency
 ];	
 	
@@ -35,6 +36,7 @@ Rabat: (item.kwotarabatogolny/currencyRate).toFixed(2),
 nettopo: (item.cenaporabacie / currencyRate).toFixed(2),
 razemnetto: (item.razemnetto/ currencyRate).toFixed(2),
 vat: item.vat,
+vatkwota: (item.razemnetto*(item.vat/100)).toFixed(2),
 Brutto: (item.brutto/ currencyRate).toFixed(2)
 }));	
 
@@ -97,7 +99,7 @@ default_1(doc, {
            // lineColor: 'black',
 							 lineWidth: 0.1,
             //lineColor: 'black'
-							 fontSize: 10,
+							 fontSize: 9,
 							 fontStyle: 'bold',
 							},
 	startY: 50,
@@ -109,7 +111,7 @@ default_1(doc, {
       },
 								
 								},
-	styles: { cellPadding: 1.5, fontSize: 9,
+	styles: { cellPadding: 1.2, fontSize: 9,
 					 textColor:0,
 					 //font: 'Amiri',
 					 font: 'Roboto',
