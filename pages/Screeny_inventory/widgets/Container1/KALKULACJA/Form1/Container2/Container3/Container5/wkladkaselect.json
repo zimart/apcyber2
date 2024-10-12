@@ -57,7 +57,7 @@
   "onOptionChange": "{{doplata.wkladka();}}",
   "optionLabel": "name",
   "optionValue": "code",
-  "originalBottomRow": 0,
+  "originalBottomRow": 7,
   "originalTopRow": 0,
   "parentColumnSpace": 18.6875,
   "parentId": "ikmrmo799q",

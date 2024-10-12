@@ -275,12 +275,6 @@
       "key": "primaryColumns.customColumn2.menuColor"
     },
     {
-      "key": "primaryColumns.moc.label"
-    },
-    {
-      "key": "primaryColumns.razemnetto.label"
-    },
-    {
       "key": "primaryColumns.brutto.label"
     },
     {
@@ -1055,7 +1049,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#FFFFFF",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.cenanetto/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.cenanetto).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1072,7 +1066,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Cena netto\")}}",
+      "label": "Cena netto",
       "notation": "standard",
       "originalId": "moc",
       "sticky": "",
@@ -1401,7 +1395,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#f5f5f5",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.razemnetto/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (currentRow.razemnetto).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1418,7 +1412,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Razem netto\")}}",
+      "label": "Razem netto",
       "notation": "standard",
       "originalId": "razemnetto",
       "sticky": "",
@@ -1911,7 +1905,7 @@
   "renderMode": "CANVAS",
   "rightColumn": 47,
   "searchKey": "",
-  "serverSidePaginationEnabled": true,
+  "serverSidePaginationEnabled": false,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{tabela_inventory_id.data}}",
   "textSize": "0.875rem",

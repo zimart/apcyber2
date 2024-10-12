@@ -1,6 +1,6 @@
 {
   "accentColor": "#15803d",
-  "animateLoading": true,
+  "animateLoading": false,
   "backgroundColor": "#FFFFFF",
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -99,7 +99,7 @@
       "widgetName": "Canvas6"
     }
   ],
-  "defaultTab": "KALKULACJA - SCREENY",
+  "defaultTab": "KALKULACJA",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
@@ -129,8 +129,8 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "onTabSelected": "{{tabela_inventory_main_id.run()}}",
-  "originalBottomRow": 197,
+  "onTabSelected": "",
+  "originalBottomRow": 78,
   "originalTopRow": 8,
   "parentColumnSpace": 20.21875,
   "parentId": "59rw5mx0bq",

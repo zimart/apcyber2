@@ -5,7 +5,7 @@
   "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 45,
+  "bottomRow": 48,
   "bottomRowBeforeCollapse": 89,
   "boxShadow": "none",
   "childStylesheet": {
@@ -170,9 +170,6 @@
       "key": "schema.__root_schema__.children.kategoria.options"
     },
     {
-      "key": "schema.__root_schema__.children.numeroferty.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.kurseuro.defaultValue"
     },
     {
@@ -201,6 +198,9 @@
     },
     {
       "key": "borderColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.numeroferty.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -235,7 +235,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_id_klient.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 48,
+  "originalBottomRow": 45,
   "originalTopRow": 4,
   "parentColumnSpace": 16.3125,
   "parentId": "x3oj14smam",
@@ -421,7 +421,7 @@
           "iconAlign": "left",
           "identifier": "numeroferty",
           "isCustomField": false,
-          "isDisabled": true,
+          "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
@@ -429,7 +429,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "numeroferty",
           "position": 6,
-          "sourceData": "OF/2024/09/101"
+          "sourceData": "OF/2024/10/160"
         },
         "temat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
