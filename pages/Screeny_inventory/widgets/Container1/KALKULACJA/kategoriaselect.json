@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 5,
   "boxShadow": "none",
   "defaultOptionValue": "SCREENY",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "rightColumn": 13,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"SCREENY\",\n    \"code\": \"SCREENY\"\n  },\n  {\n    \"name\": \"PLISY\",\n    \"code\": \"PLISY\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
-  "topRow": 0,
+  "topRow": 1,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "t0efz1pega",
