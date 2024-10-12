@@ -1,0 +1,3 @@
+UPDATE oferty SET
+    numeroferty = CONCAT("OF/",{{numerofertmiesiac.miesiac.data}},"/",id_oferta)
+  WHERE  id_klient = {{appsmith.URL.queryParams.id_klienta}}

@@ -1,8 +1,8 @@
 {
   "animateLoading": true,
   "autoGenerateForm": true,
-  "backgroundColor": "#fff",
-  "borderColor": "#2E3D4955",
+  "backgroundColor": "#f8f8f8",
+  "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
   "bottomRow": 48,
@@ -198,6 +198,9 @@
     },
     {
       "key": "schema.__root_schema__.children.Lp_.accentColor"
+    },
+    {
+      "key": "borderColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -232,8 +235,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_id_klient.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 89,
-  "originalTopRow": 0,
+  "originalBottomRow": 48,
+  "originalTopRow": 4,
   "parentColumnSpace": 16.3125,
   "parentId": "x3oj14smam",
   "parentRowSpace": 10,
@@ -375,7 +378,7 @@
           "iconAlign": "left",
           "identifier": "klient",
           "isCustomField": false,
-          "isDisabled": false,
+          "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
@@ -496,12 +499,12 @@
   "shouldScrollContents": true,
   "showReset": false,
   "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id_oferta\")}}",
-  "submitButtonLabel": "Zapisz",
+  "submitButtonLabel": "ZAPISZ",
   "submitButtonStyles": {
-    "borderRadius": "0.375rem",
+    "borderRadius": "0px",
     "boxShadow": "none",
     "buttonColor": "#831843",
-    "buttonVariant": "PRIMARY",
+    "buttonVariant": "SECONDARY",
     "iconAlign": "left",
     "iconName": "saved"
   },

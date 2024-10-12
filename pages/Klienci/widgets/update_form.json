@@ -1,11 +1,11 @@
 {
   "animateLoading": true,
   "autoGenerateForm": true,
-  "backgroundColor": "#fff",
+  "backgroundColor": "#f8f8f8",
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 89,
+  "bottomRow": 86,
   "bottomRowBeforeCollapse": 89,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
@@ -219,6 +219,9 @@
     },
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "backgroundColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -251,7 +254,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "SECONDARY"
   },
-  "rightColumn": 63,
+  "rightColumn": 64,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",

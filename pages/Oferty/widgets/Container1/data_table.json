@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "0px",
   "borderWidth": "",
-  "bottomRow": 90,
+  "bottomRow": 85,
   "boxShadow": "none",
   "childStylesheet": {
     "button": {
@@ -43,7 +43,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1728073273426,
+  "columnUpdatedAt": 1728736045223,
   "columnWidthMap": {
     "customColumn1": 102,
     "customColumn3": 111,
@@ -148,6 +148,9 @@
     },
     {
       "key": "primaryColumns.customColumn4.onClick"
+    },
+    {
+      "key": "onPageSizeChange"
     }
   ],
   "enableClientSideSearch": true,
@@ -167,6 +170,7 @@
   "labelTextSize": "0.875rem",
   "leftColumn": 0,
   "onPageChange": "{{SelectQuery.run()}}",
+  "onPageSizeChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
   "originalBottomRow": 215,
@@ -516,7 +520,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "kurseuro",
       "notation": "standard",
       "originalId": "kurseuro",
@@ -618,7 +622,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "waluta",
       "notation": "standard",
       "originalId": "waluta",
@@ -637,8 +641,8 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{tabela_id_klient.data}}",
   "textSize": "0.875rem",
-  "topRow": 11,
-  "totalRecordsCount": 0,
+  "topRow": 6,
+  "totalRecordsCount": "30",
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",
   "version": 3,

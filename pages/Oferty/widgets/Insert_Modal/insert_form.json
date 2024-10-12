@@ -177,9 +177,6 @@
       "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
     },
     {
-      "key": "onSubmit"
-    },
-    {
       "key": "schema.__root_schema__.children.dataoferty.defaultValue"
     }
   ],
@@ -205,8 +202,8 @@
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{Insert_oferty.run(\n\t() => tabela_id_klient.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
-  "originalBottomRow": 41,
+  "onSubmit": "{{Insert_oferty.run(() => {\n  tabela_id_klient.run().then(() => closeModal('Insert_Modal'));\n  zapisznumeroferty.run();\n}, error => {\n  showAlert(`Error while inserting resource!\\n ${error}`, 'error');\n});}}",
+  "originalBottomRow": 27,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "9rhv3ioohq",
