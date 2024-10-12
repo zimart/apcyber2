@@ -119,15 +119,6 @@
       "key": "primaryColumns.rodzajproduktu_ster.computedValue"
     },
     {
-      "key": "primaryColumns.cena.label"
-    },
-    {
-      "key": "primaryColumns.ilosc.label"
-    },
-    {
-      "key": "primaryColumns.model.label"
-    },
-    {
       "key": "primaryColumns.rabat_sterowania.label"
     },
     {
@@ -265,7 +256,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Cena\")}}",
+      "label": "Cena",
       "notation": "standard",
       "originalId": "cena",
       "sticky": "",
@@ -459,7 +450,7 @@
       "isEditable": true,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Ilość\")}}",
+      "label": "Ilość",
       "notation": "standard",
       "onSubmit": "{{przeliczrabatsterowania1.run().then(() => {\n  przeliczrabatsterowania2.run();\n  Select_sterowania2.run();\n  przelicz_tabele_main.run();\n});}}",
       "originalId": "ilosc",
@@ -525,7 +516,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Model\")}}",
+      "label": "Model",
       "notation": "standard",
       "originalId": "model",
       "sticky": "",

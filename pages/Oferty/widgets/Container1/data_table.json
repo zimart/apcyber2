@@ -279,7 +279,7 @@
       "label": "DODAJ",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{storeValue('id_oferta', data_table.triggeredRow.id_oferta).then(() => {\n  storeValue('kurseurooferta', data_table.triggeredRow.kurseuro);\n  navigateTo('Screeny_inventory', {\n    id_oferta: appsmith.store.id_oferta,\n    kurseurooferta: appsmith.store.kurseurooferta\n  }, 'SAME_WINDOW');\n});}}",
+      "onClick": "{{storeValue('id_oferta', data_table.triggeredRow.id_oferta).then(() => {\n  storeValue('klient', data_table.triggeredRow.klient);\n  navigateTo('Screeny_inventory', {\n    id_oferta: appsmith.store.id_oferta,\n    klient: appsmith.store.klient\n  }, 'SAME_WINDOW');\n});}}",
       "originalId": "customColumn4",
       "sticky": "",
       "textSize": "0.875rem",

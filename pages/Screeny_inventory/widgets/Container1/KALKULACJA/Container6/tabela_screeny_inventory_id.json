@@ -3,7 +3,7 @@
   "animateLoading": true,
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "1",
+  "borderWidth": "0",
   "bottomRow": 54,
   "bottomRowBeforeCollapse": 128,
   "boxShadow": "none",
@@ -75,7 +75,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1728500257996,
+  "columnUpdatedAt": 1728721214121,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -266,12 +266,6 @@
       "key": "tableData"
     },
     {
-      "key": "primaryColumns.szerokosc.label"
-    },
-    {
-      "key": "primaryColumns.ilosc.label"
-    },
-    {
       "key": "primaryColumns.customColumn2.boxShadow"
     },
     {
@@ -279,57 +273,6 @@
     },
     {
       "key": "primaryColumns.customColumn2.menuColor"
-    },
-    {
-      "key": "primaryColumns.cenanetto.label"
-    },
-    {
-      "key": "primaryColumns.concat.label"
-    },
-    {
-      "key": "primaryColumns.wysokosc.label"
-    },
-    {
-      "key": "primaryColumns.cena.label"
-    },
-    {
-      "key": "primaryColumns.doplatatkanina.label"
-    },
-    {
-      "key": "primaryColumns.procentdoplatakolor.label"
-    },
-    {
-      "key": "primaryColumns.doplatakolor.label"
-    },
-    {
-      "key": "primaryColumns.doplatawkladka.label"
-    },
-    {
-      "key": "primaryColumns.systemzdoplata.label"
-    },
-    {
-      "key": "primaryColumns.rabatsystem.label"
-    },
-    {
-      "key": "primaryColumns.kwotarabatsystem.label"
-    },
-    {
-      "key": "primaryColumns.systemporabacie.label"
-    },
-    {
-      "key": "primaryColumns.naped.label"
-    },
-    {
-      "key": "primaryColumns.price_motor.label"
-    },
-    {
-      "key": "primaryColumns.rabatmotor.label"
-    },
-    {
-      "key": "primaryColumns.kwotarabatmotor.label"
-    },
-    {
-      "key": "primaryColumns.priceall.label"
     },
     {
       "key": "primaryColumns.moc.label"
@@ -369,12 +312,6 @@
     },
     {
       "key": "primaryColumns.customColumn1.alias"
-    },
-    {
-      "key": "primaryColumns.customColumn2.label"
-    },
-    {
-      "key": "primaryColumns.customColumn2.alias"
     },
     {
       "key": "primaryColumns.opisbezrabatow.computedValue"
@@ -492,7 +429,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#f4f4f5",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number.parseFloat(currentRow.cena/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number.parseFloat(currentRow.cena).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -509,7 +446,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Cena bazowa systemu\")}}",
+      "label": "Cena bazowa systemu",
       "notation": "standard",
       "originalId": "cena",
       "sticky": "",
@@ -543,7 +480,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Produkt\")}}",
+      "label": "Produkt",
       "notation": "standard",
       "originalId": "cenanetto",
       "sticky": "",
@@ -577,7 +514,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": false,
-      "label": "{{i18n.translate(\"Opis\")}}",
+      "label": "Opis",
       "notation": "standard",
       "originalId": "concat",
       "sticky": "",
@@ -628,7 +565,7 @@
       "width": 150
     },
     "customColumn2": {
-      "alias": "{{i18n.translate(\"Szczegóły\")}}",
+      "alias": "Szczegóły",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
@@ -656,7 +593,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Szczegóły\")}}",
+      "label": "Szczegóły",
       "labelColor": "#FFFFFF",
       "menuColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
@@ -675,7 +612,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.doplatakolor/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.doplatakolor).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -692,7 +629,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Dopłata do koloru\")}}",
+      "label": "Dopłata do koloru",
       "notation": "standard",
       "originalId": "doplatakolor",
       "sticky": "",
@@ -709,7 +646,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.doplatatkanina/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.doplatatkanina).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -726,7 +663,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Dopłata tkanina\")}}",
+      "label": "Dopłata tkanina",
       "notation": "standard",
       "originalId": "doplatatkanina",
       "sticky": "",
@@ -743,7 +680,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.doplatawkladka/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.doplatawkladka).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -760,7 +697,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Dopłata do wkładki\")}}",
+      "label": "Dopłata do wkładki",
       "notation": "standard",
       "originalId": "doplatawkladka",
       "sticky": "",
@@ -862,7 +799,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Ilość\")}}",
+      "label": "Ilość",
       "notation": "standard",
       "originalId": "ilosc",
       "sticky": "",
@@ -1015,7 +952,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow[\"kwotarabatmotor\"]/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow[\"kwotarabatmotor\"]).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1032,7 +969,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Kwota rabatu\")}}",
+      "label": "Kwota rabatu",
       "notation": "standard",
       "originalId": "kwotarabatmotor",
       "sticky": "",
@@ -1049,7 +986,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.kwotarabatsystem/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.kwotarabatsystem).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1066,7 +1003,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Kwota rabatu\")}}",
+      "label": "Kwota rabatu",
       "notation": "standard",
       "onSubmit": "",
       "originalId": "kwotarabatsystem",
@@ -1169,7 +1106,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Napęd\")}}",
+      "label": "Napęd",
       "notation": "standard",
       "originalId": "naped",
       "sticky": "",
@@ -1288,7 +1225,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.price_motor/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.price_motor).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1305,7 +1242,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Cena napędu\")}}",
+      "label": "Cena napędu",
       "notation": "standard",
       "originalId": "price_motor",
       "sticky": "",
@@ -1322,7 +1259,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.priceall/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.priceall).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1339,7 +1276,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Automatyka po rabacie\")}}",
+      "label": "Automatyka po rabacie",
       "notation": "standard",
       "originalId": "priceall",
       "sticky": "",
@@ -1373,7 +1310,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Dopłata do koloru\")}}",
+      "label": "Dopłata do koloru",
       "notation": "standard",
       "originalId": "procentdoplatakolor",
       "sticky": "",
@@ -1407,7 +1344,7 @@
       "isEditable": true,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Rabat automatyka\")}}",
+      "label": "Rabat automatyka",
       "notation": "standard",
       "onSubmit": "{{przeliczofertepojedynczo.run();\nprzeliczpozycje.run();\ntabela_inventory_id.run()}}",
       "originalId": "rabatmotor",
@@ -1444,7 +1381,7 @@
       "isEditable": true,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Rabat system\")}}",
+      "label": "Rabat system",
       "notation": "standard",
       "onSubmit": "{{przeliczofertepojedynczo.run().then(() => {\n  przeliczpozycje.run();\n  tabela_inventory_id.run();\n  tabela_inventory_main_id.run();\n}).catch(() => {});}}",
       "originalId": "rabatsystem",
@@ -1702,7 +1639,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.systemporabacie/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.systemporabacie).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1719,7 +1656,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"System po rabacie\")}}",
+      "label": "System po rabacie",
       "notation": "standard",
       "onSubmit": "{{przeliczofertepojedynczo.run()}}",
       "originalId": "systemporabacie",
@@ -1754,7 +1691,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"System z dopłatą\")}}",
+      "label": "System z dopłatą",
       "notation": "standard",
       "onSubmit": "",
       "originalId": "systemzdoplata",
@@ -1789,7 +1726,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Szerokość\")}}",
+      "label": "Szerokość",
       "notation": "standard",
       "originalId": "szerokosc",
       "sticky": "",
@@ -1959,7 +1896,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Wysokość\")}}",
+      "label": "Wysokość",
       "notation": "standard",
       "originalId": "wysokosc",
       "sticky": "",
@@ -1974,7 +1911,7 @@
   "renderMode": "CANVAS",
   "rightColumn": 47,
   "searchKey": "",
-  "serverSidePaginationEnabled": false,
+  "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{tabela_inventory_id.data}}",
   "textSize": "0.875rem",

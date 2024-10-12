@@ -2,7 +2,7 @@
   "borderColor": "#d4d4d8",
   "borderRadius": "0px",
   "borderWidth": "",
-  "bottomRow": 4,
+  "bottomRow": 7,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -29,9 +29,9 @@
   "parentColumnSpace": 11.78515625,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "rightColumn": 9,
+  "rightColumn": 15,
   "shouldScrollContents": true,
-  "text": "Klient:{{zapytaj_klient_inv.data[0].klient ||\"\"}}",
+  "text": "Klient: {{appsmith.URL.queryParams.klient}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,

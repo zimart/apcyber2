@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "cenasystemowkatalogowa",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false

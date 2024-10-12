@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "zapytaj_klient_inv",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
