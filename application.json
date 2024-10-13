@@ -39,10 +39,6 @@
       "isDefault": false
     },
     {
-      "id": "Page1",
-      "isDefault": false
-    },
-    {
       "id": "Klienci",
       "isDefault": true
     },
@@ -95,19 +91,7 @@
       "isDefault": false
     },
     {
-      "id": "Screeny_inventory Copy",
-      "isDefault": false
-    },
-    {
-      "id": "Oferty2",
-      "isDefault": false
-    },
-    {
       "id": "rozne-js",
-      "isDefault": false
-    },
-    {
-      "id": "Lang",
       "isDefault": false
     },
     {
@@ -119,7 +103,7 @@
       "isDefault": false
     },
     {
-      "id": "Screeny_inventory Copy1",
+      "id": "Oferta",
       "isDefault": false
     }
   ],

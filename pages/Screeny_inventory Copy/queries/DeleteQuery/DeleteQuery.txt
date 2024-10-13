@@ -1,2 +1,0 @@
-DELETE FROM screeny_inventory
-  WHERE id = {{data_table.triggeredRow.id}};

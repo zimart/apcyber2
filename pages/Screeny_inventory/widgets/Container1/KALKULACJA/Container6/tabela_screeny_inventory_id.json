@@ -75,7 +75,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1728769721414,
+  "columnUpdatedAt": 1728807294320,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -312,11 +312,137 @@
     },
     {
       "key": "primaryColumns.opiszrabatami.computedValue"
+    },
+    {
+      "key": "primaryColumns.szerokosc.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.wysokosc.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.cena.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.doplatatkanina.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.procentdoplatakolor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.doplatakolor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.doplatawkladka.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.systemzdoplata.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatsystem.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.systemporabacie.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.kwotarabatsystem.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.naped.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.price_motor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatmotor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.priceall.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.kwotarabatmotor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.wkladka.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.skrzynka.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rodzajpomiaru.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.kolor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.tkanina.isCellVisible"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.szerokosc.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.wysokosc.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.cena.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.doplatatkanina.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.procentdoplatakolor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.doplatakolor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.doplatawkladka.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.systemzdoplata.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatsystem.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.systemporabacie.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.kwotarabatsystem.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.naped.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.price_motor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatmotor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.priceall.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.kwotarabatmotor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.wkladka.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.skrzynka.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rodzajpomiaru.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.kolor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.tkanina.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -433,7 +559,7 @@
       "id": "cena",
       "index": 6,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -616,7 +742,7 @@
       "id": "doplatakolor",
       "index": 8,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -650,7 +776,7 @@
       "id": "doplatatkanina",
       "index": 7,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -684,7 +810,7 @@
       "id": "doplatawkladka",
       "index": 21,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -888,7 +1014,7 @@
       "id": "kolor",
       "index": 13,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -956,7 +1082,7 @@
       "id": "kwotarabatmotor",
       "index": 39,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -990,7 +1116,7 @@
       "id": "kwotarabatsystem",
       "index": 12,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1093,7 +1219,7 @@
       "id": "naped",
       "index": 17,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1133,7 +1259,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "opisbezrabatow",
       "notation": "standard",
       "originalId": "opisbezrabatow",
@@ -1167,7 +1293,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "opiszrabatami",
       "notation": "standard",
       "originalId": "opiszrabatami",
@@ -1229,7 +1355,7 @@
       "id": "price_motor",
       "index": 18,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1263,7 +1389,7 @@
       "id": "priceall",
       "index": 20,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1297,7 +1423,7 @@
       "id": "procentdoplatakolor",
       "index": 7,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1331,7 +1457,7 @@
       "id": "rabatmotor",
       "index": 19,
       "isCellEditable": true,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1368,7 +1494,7 @@
       "id": "rabatsystem",
       "index": 9,
       "isCellEditable": true,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1473,7 +1599,7 @@
       "id": "rodzajpomiaru",
       "index": 31,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1541,7 +1667,7 @@
       "id": "skrzynka",
       "index": 12,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1643,7 +1769,7 @@
       "id": "systemporabacie",
       "index": 13,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1678,7 +1804,7 @@
       "id": "systemzdoplata",
       "index": 32,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1713,7 +1839,7 @@
       "id": "szerokosc",
       "index": 2,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1747,7 +1873,7 @@
       "id": "tkanina",
       "index": 14,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1849,7 +1975,7 @@
       "id": "wkladka",
       "index": 15,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1883,7 +2009,7 @@
       "id": "wysokosc",
       "index": 1,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,

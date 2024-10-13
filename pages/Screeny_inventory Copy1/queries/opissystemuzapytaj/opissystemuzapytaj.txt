@@ -1,1 +1,0 @@
-SELECT * FROM screeny_system WHERE system = {{system_select.selectedOptionLabel}};

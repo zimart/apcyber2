@@ -1,1 +1,0 @@
-SELECT kolorm FROM screeny_kolor WHERE system LIKE '{{system_select.selectedOptionValue}}';

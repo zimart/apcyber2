@@ -123,9 +123,6 @@
       "key": "primaryColumns.razemnetto.label"
     },
     {
-      "key": "primaryColumns.vat.label"
-    },
-    {
       "key": "primaryColumns.brutto.label"
     },
     {
@@ -855,7 +852,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( (currentRow.razemnetto).toFixed(2)))}}",
+      "computedValue": "{{tabela_glowna.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.razemnetto/kursinput.text).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -974,7 +971,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"VAT\")}}",
+      "label": "VAT %",
       "notation": "standard",
       "originalId": "vat",
       "sticky": "",
