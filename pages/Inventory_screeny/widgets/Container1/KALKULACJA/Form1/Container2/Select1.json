@@ -44,7 +44,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 123,
   "needsErrorInfo": false,
-  "onOptionChange": "{{systemwyborjs.system();\nresetWidget(\"doplatawkladka2\", true);}}",
+  "onOptionChange": "{{system_zapytaj.run();\nresetWidget(\"doplatawkladka2\", true);}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 32,
