@@ -34,7 +34,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{dodajpozycje.run()\n.then(() => \nprzepiszrabatztymczasowej.run())\n.then(() => \nprzeliczpozycje.run())\n.then(() => \nresetWidget(\"index_szer_input\", true))\n.then(() => \ntabela_inventory_id.run())\n.then(() => \nresetWidget(\"sku_input\", true))\n.then(() => \nresetWidget(\"cenabazowasystemu\", true))\n.then(() => \nresetWidget(\"szerokosc_input\", true))\n.then(() => \nresetWidget(\"podawana_wysokosc_input\", true))\n.then(() => \ncenasystemowkatalogowa.run())\n.then(() => \t\t\tupdatemain2.run())\n.then(() => \t\t\tustawrabatogolny.run())\n.then(() => \t\t\ttabela_inventory_main_id.run())\n.then(() => \nclearStore())}}",
+  "onClick": "{{dodajpozycje.run()\n.then(() => \nprzepiszrabatztymczasowej.run())\n.then(() => \nprzeliczpozycje.run())\n.then(() => \nresetWidget(\"index_szer_input\", true))\n.then(() => \ntabela_inventory_id.run())\n.then(() => \nresetWidget(\"sku_input\", true))\n.then(() => \nresetWidget(\"cenabazowasystemu\", true))\n.then(() => \nresetWidget(\"szerokosc_input\", true))\n.then(() => \nresetWidget(\"podawana_wysokosc_input\", true))\n.then(() => \t\t\tupdatemain2.run())\n.then(() => \t\t\tustawrabatogolny.run())\n.then(() => \t\t\ttabela_inventory_main_id.run())\n.then(() => \nclearStore())}}",
   "originalBottomRow": 32,
   "originalTopRow": 28,
   "parentId": "8jwyu0isum",
