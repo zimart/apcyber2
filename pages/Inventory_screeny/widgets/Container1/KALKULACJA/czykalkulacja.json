@@ -1,0 +1,47 @@
+{
+  "accentColor": "#831843",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "defaultSwitchState": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{kategoriaselect.selectedOptionLabel===\"SCREENY\"}}",
+  "key": "hw6krb24tf",
+  "label": "Kalkulacja",
+  "labelPosition": "Right",
+  "leftColumn": 6,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 8,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "originalBottomRow": 5,
+  "originalTopRow": 1,
+  "parentColumnSpace": 19.62109375,
+  "parentId": "w811u4s83s",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 13,
+  "topRow": 1,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "nluc9ubdii",
+  "widgetName": "czykalkulacja"
+}

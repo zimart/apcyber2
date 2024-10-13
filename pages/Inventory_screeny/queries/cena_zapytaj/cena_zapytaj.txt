@@ -1,0 +1,1 @@
+SELECT cenakatalogowa FROM screeny_cennik WHERE indeks={{appsmith.store.sku_value}};

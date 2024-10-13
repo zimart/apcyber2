@@ -1,0 +1,49 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "#831843",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "refresh",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "dkg5txkpm2",
+  "leftColumn": 14,
+  "minWidth": 120,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 30,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onClick": "{{tabela_inventory_main_id.run()}}",
+  "parentColumnSpace": 19.9375,
+  "parentId": "w811u4s83s",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 24,
+  "text": "ODŚWIEŻ TABELĘ",
+  "topRow": 1,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "989awc8r5z",
+  "widgetName": "Button22"
+}

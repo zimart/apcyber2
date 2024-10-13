@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  inventory_main
+WHERE
+  seq LIKE '%{{tabela_glowna.searchText}}%'
+ORDER BY
+  {{tabela_glowna.sortOrder.column || 'id_wiersz'}} {{tabela_glowna.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{tabela_glowna.pageSize}}
+OFFSET
+  {{tabela_glowna.pageOffset}}

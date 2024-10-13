@@ -1,0 +1,7 @@
+
+
+Czasami zachodzi w MySQL potrzeba wykonania update'u jednej tabeli na podstawie informacji przechowywanych w innej tabeli. Można to zrobić poniższym poleceniem:
+
+UPDATE screeny_inventory INNER JOIN tymczasowascreeny ON tb1.pole1=tb2.pole2 set screeny_inventory.pole3='wartosc' WHERE tb2.pole4='warunek';
+
+gdzie: tb1 – tabela 1, tb2 – tabela 2, pole1 – pole złączenia 1 tabeli, pole2 – pole złączenia 2 tabeli, pole3 – w pole wpisujemy nową ‚wartosc', pole4 – pole tabeli obcej spełniające podany ‚warunek'.

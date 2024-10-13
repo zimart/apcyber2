@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( wyborsolar.naped.data))(system_select.options, system_select.serverSideFiltering) }}",
+  "defaultOptionValue": "EASY ZIIIP",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,9 +14,6 @@
     },
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",

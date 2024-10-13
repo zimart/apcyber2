@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9090,
+  "bottomRow": 100,
   "boxShadow": "none",
   "defaultText": "{{FilePicker1.files[0].data}}",
   "dynamicBindingPathList": [

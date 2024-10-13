@@ -1,0 +1,3 @@
+
+
+SELECT id,kwotatymcz,id_wiersza,fk_oferty_inventory_id FROM tymczasowascreeny INNER JOIN screeny_inventory ON tymczasowascreeny.id_wiersza = screeny_inventory.id WHERE fk_oferty_inventory_idtymcz = fk_oferty_inventory_id;

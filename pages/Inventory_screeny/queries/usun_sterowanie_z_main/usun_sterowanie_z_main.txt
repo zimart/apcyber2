@@ -1,0 +1,1 @@
+DELETE FROM inventory_main WHERE {{sterowania_tabela_main.triggeredRow.id_sterowania}} = id_wiersz and fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};

@@ -1,0 +1,28 @@
+INSERT INTO screeny_inventory (
+	skugen,
+	wysokosc,
+	szerokosc,
+	indexszer,
+	indexwys,
+	cena,
+	doplatatkanina,
+	doplatakolor,
+	rabatsystem,
+	linia,
+	system,
+	fk_oferty_inventory_id
+)
+VALUES (
+	'{{insert_form.formData.skugen}}',
+	'{{insert_form.formData.wysokosc}}',
+	'{{insert_form.formData.szerokosc}}',
+	'{{insert_form.formData.indexszer}}',
+	'{{insert_form.formData.indexwys}}',
+	'{{insert_form.formData.cena}}',
+	'{{insert_form.formData.doplatatkanina}}',
+	'{{insert_form.formData.doplatakolor}}',
+	'{{insert_form.formData.rabatsystem}}',
+	'{{Select1.selectedOptionLabel}}',
+	'{{insert_form.formData.system}}',
+	'{{appsmith.URL.queryParams.oferta_id}}'
+);

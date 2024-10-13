@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24,
+  "bottomRow": 26,
   "boxShadow": "none",
   "defaultText": "{{kurswaluta.kurs.data}}",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 27,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 17,
+  "topRow": 19,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ty6l9sxfvj",

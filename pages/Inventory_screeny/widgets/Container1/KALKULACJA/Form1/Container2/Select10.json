@@ -1,0 +1,63 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "defaultOptionValue": "WHITE-WHITE 002 002",
+  "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "p6i97dwydz",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Referencja",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 48,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 189,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 182,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 189,
+  "originalTopRow": 182,
+  "parentId": "76671vu120",
+  "parentRowSpace": 10,
+  "placeholderText": "Referencja",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 58,
+  "serverSideFiltering": false,
+  "sourceData": "{{tkaninawybor.data.map( (obj) =>{ return  {'label': obj.tkanina, 'value': obj.tkanina } })}}",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "psksqvlpxy",
+  "widgetName": "Select10"
+}

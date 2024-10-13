@@ -1,0 +1,1 @@
+SELECT tkanina FROM screeny_tkanina_wybor WHERE tkanina_main={{Select9.selectedOptionValue}};

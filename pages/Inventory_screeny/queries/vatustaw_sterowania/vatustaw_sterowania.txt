@@ -1,0 +1,4 @@
+UPDATE sterowania SET
+    vat_sterowania = '{{Vat.selectedOptionValue}}'
+  WHERE fk_oferty_inventory_id_ster ={{appsmith.URL.queryParams.id_oferta}};
+	

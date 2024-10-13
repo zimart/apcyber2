@@ -1,0 +1,62 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "defaultOptionValue": "SCREENY",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "true",
+  "key": "mdr1tx12yu",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "WYBIERZ KATEGORIĘ",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 10,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 19.90625,
+  "parentId": "o2y8szuai7",
+  "parentRowSpace": 10,
+  "placeholderText": "WYBIERZ KATEGORIĘ",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 13,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"SCREENY\",\n    \"code\": \"SCREENY\"\n  },\n  {\n    \"name\": \"PLISY\",\n    \"code\": \"PLISY\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "topRow": 1,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "t0efz1pega",
+  "widgetName": "kategoriaselect"
+}

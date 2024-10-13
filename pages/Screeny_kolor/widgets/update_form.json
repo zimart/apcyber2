@@ -223,7 +223,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{Update_screeny_kolor1.run(() => {\n            showAlert(\"Successfully updated! Refresh the table to see updates\");\n            \n          }, () => {\n            showAlert(\"Unable to save!\");\n          })}}",
-  "originalBottomRow": 89,
+  "originalBottomRow": 86,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "0",

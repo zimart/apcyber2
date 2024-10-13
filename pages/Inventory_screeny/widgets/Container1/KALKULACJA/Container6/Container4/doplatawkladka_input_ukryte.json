@@ -1,0 +1,60 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 34,
+  "boxShadow": "none",
+  "defaultText": "{{doplatawkladka2.text||0}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "aijze856dw",
+  "label": "doplatawkladkaukryte",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 24,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 47,
+  "mobileLeftColumn": 42,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 40,
+  "needsErrorInfo": false,
+  "originalBottomRow": 34,
+  "originalTopRow": 27,
+  "parentColumnSpace": 20.25,
+  "parentId": "esfh9fxray",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 44,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 27,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "kg5p3itaa7",
+  "widgetName": "doplatawkladka_input_ukryte"
+}
