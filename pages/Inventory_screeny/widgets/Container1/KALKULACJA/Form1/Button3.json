@@ -12,11 +12,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -34,7 +30,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{dodajpozycje_new.run()}}",
+  "onClick": "{{dodajpozycje_new.run().then(() => {\n  resetWidget(\"index_szer_input\", true);\n  resetWidget(\"index_wys_input\", true);\n  resetWidget(\"sku_input\", true);\n  resetWidget(\"cenabazowasystemu\", true);\n  resetWidget(\"podawana_wysokosc_input\", true);\n\tresetWidget(\"szerokosc_input\", true);\n  tabela_inventory_id_new.run();\n  clearStore();\n  \n});}}",
   "originalBottomRow": 32,
   "originalTopRow": 28,
   "parentId": "8jwyu0isum",

@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 79,
+  "bottomRow": 14,
   "bottomRowBeforeCollapse": 138,
   "boxShadow": "none",
   "childStylesheet": {
@@ -541,8 +541,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id_new.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 76,
-  "originalTopRow": 16,
+  "originalBottomRow": 73,
+  "originalTopRow": 10,
   "parentColumnSpace": 16.3125,
   "parentId": "2agene8jx6",
   "parentRowSpace": 10,
@@ -758,7 +758,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
           "position": 41,
-          "sourceData": 873
+          "sourceData": 880
         },
         "ilosc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1237,7 +1237,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "seq",
           "position": 21,
-          "sourceData": 1
+          "sourceData": 6
         },
         "skrzynka": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1538,7 +1538,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "{{tabela_screeny_inventory_id.selectedRow.id}}",
-  "topRow": 16,
+  "topRow": 10,
   "topRowBeforeCollapse": 15,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": true,

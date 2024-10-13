@@ -21,7 +21,7 @@
   "isVisible": "true",
   "labelTextSize": "0.875rem",
   "leftColumn": 46,
-  "onClick": "{{kasujtymczasowa.run(() => {}, () => {});\nkasujzglownej.run();\nDeleteQuery.run().then(() => {\n  closeModal(Delete_Modal.name);\n  tabela_inventory_id_new.run();\n  tabela_inventory_main_id.run();\n});}}",
+  "onClick": "{{kasujtymczasowa.run(() => {}, () => {});\nkasujzglownej.run();\nDeleteQuery_new.run().then(() => {\n  closeModal(Delete_Modal.name);\n  tabela_inventory_id_new.run();\n  tabela_inventory_main_id.run();\n});}}",
   "parentId": "zi8fjakv8o",
   "recaptchaType": "V3",
   "rightColumn": 64,
