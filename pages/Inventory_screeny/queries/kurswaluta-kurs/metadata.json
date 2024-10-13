@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "kurswaluta.kurs",
     "name": "kurs",
     "pageId": "Inventory_screeny",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

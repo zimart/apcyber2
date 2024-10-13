@@ -1,5 +1,4 @@
 export default {
-
 		
 indekswys2: function () {
 var szerokoscm = rodzajwysokoscilabel.text;
@@ -10,9 +9,6 @@ if (szerokoscm === 1) { szerm33 = podana; }
 else if (szerokoscm === 2) { szerm33 = podana + Input3.text ; }
 return szerm33;
 },
-	
-	
-	 
 	
 };
 
