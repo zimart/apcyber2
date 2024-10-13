@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -14,6 +14,11 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -24,14 +29,14 @@
   "isLoading": false,
   "isVisible": true,
   "key": "0xizktc8g4",
-  "leftColumn": 30,
+  "leftColumn": 47,
   "minWidth": 120,
   "mobileBottomRow": 6,
   "mobileLeftColumn": 30,
   "mobileRightColumn": 46,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onClick": "{{tabela_inventory_id_new.run()}}",
+  "onClick": "{{linia_zapytaj.run().then(() => {\n  system_zapytaj.run();\n  kolor_zapytaj.run();\n});}}",
   "parentColumnSpace": 19.9375,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -40,9 +45,9 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 46,
+  "rightColumn": 63,
   "text": "Submit",
-  "topRow": 2,
+  "topRow": 0,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "wfsyahu0t0",

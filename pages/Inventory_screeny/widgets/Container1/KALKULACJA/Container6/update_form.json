@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 73,
+  "bottomRow": 80,
   "bottomRowBeforeCollapse": 138,
   "boxShadow": "none",
   "childStylesheet": {
@@ -404,15 +404,6 @@
       "key": "schema.__root_schema__.children.rabatsystem.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.systemzdoplata.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.systemzdoplata.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.systemzdoplata.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.kurseuro.defaultValue"
     },
     {
@@ -501,6 +492,15 @@
     },
     {
       "key": "schema.__root_schema__.children.id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.systemzdoplata.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.systemzdoplata.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.systemzdoplata.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -541,7 +541,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id_new.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 73,
+  "originalBottomRow": 70,
   "originalTopRow": 10,
   "parentColumnSpace": 16.3125,
   "parentId": "2agene8jx6",
@@ -758,7 +758,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
           "position": 41,
-          "sourceData": 880
+          "sourceData": 910
         },
         "ilosc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1237,7 +1237,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "seq",
           "position": 21,
-          "sourceData": 6
+          "sourceData": 1
         },
         "skrzynka": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1343,12 +1343,12 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Systemzdoplata",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "systemzdoplata",
-          "position": 33,
-          "sourceData": "374.19"
+          "position": 41,
+          "sourceData": "1118"
         },
         "szerokosc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
