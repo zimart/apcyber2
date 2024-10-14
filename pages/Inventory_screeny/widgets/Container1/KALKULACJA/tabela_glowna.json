@@ -222,6 +222,9 @@
     },
     {
       "key": "primaryColumns.priceall.isCellVisible"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicTriggerPathList": [
