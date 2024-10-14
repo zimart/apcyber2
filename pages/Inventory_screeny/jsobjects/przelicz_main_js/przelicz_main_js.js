@@ -13,6 +13,10 @@ tabela_inventory_main_id.run())
 closeModal(LanguageLoading.name));
 
 },
+	
+	
+	
+	
 }
 	
 //async kategoria2(kategoria3 = kategoriaselect.selectedOptionValue){
