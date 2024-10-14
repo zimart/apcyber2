@@ -7,9 +7,6 @@
   "defaultOptionValue": "COPACO SERGE 600",
   "dynamicBindingPathList": [
     {
-      "key": "sourceData"
-    },
-    {
       "key": "accentColor"
     },
     {
@@ -63,7 +60,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 48,
   "serverSideFiltering": false,
-  "sourceData": "{{tkanina_typ.data.map( (obj) =>{ return  {'label': obj.tkanina_main, 'value': obj.tkanina_main } })}}",
+  "sourceData": "[\n   \t\n  {\n    \"label\": \"COPACO SERGE 600\",\n    \"value\": \"COPACO SERGE 600\"\n  },\n  {\n    \"label\": \"COPACO SERGE 1%\",\n    \"value\": \"COPACO SERGE 1%\"\n  },\n\t{\n    \"label\": \"COPACO LUNAR\",\n    \"value\": \"COPACO LUNAR\"\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,

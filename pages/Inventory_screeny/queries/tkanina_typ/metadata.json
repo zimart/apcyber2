@@ -23,9 +23,9 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "tkanina_typ",
     "pageId": "Inventory_screeny",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
