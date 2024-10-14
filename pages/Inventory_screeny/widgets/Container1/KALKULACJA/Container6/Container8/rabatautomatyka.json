@@ -22,6 +22,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
+    },
+    {
+      "key": "onBlur"
     }
   ],
   "dynamicTriggerPathList": [
@@ -57,7 +60,7 @@
   "mobileRightColumn": 57,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onBlur": "{{ustawrabatautomatyka.run().then(() => {\n  przeliczpozycje.run();\n  updatemain2.run();\n  tabela_inventory_id_new.run();\n  tabela_inventory_main_id.run();\n});}}",
+  "onBlur": "{{ustawrabatautomatyka.run()\n.then(() =>\t\t\t\t\t\t\t\t\t\t\t\nprzeliczpozycje.run())\n.then(() =>\t\ttabela_inventory_main_id.run()\n)}}",
   "onTextChanged": "",
   "originalBottomRow": 11,
   "originalTopRow": 4,
