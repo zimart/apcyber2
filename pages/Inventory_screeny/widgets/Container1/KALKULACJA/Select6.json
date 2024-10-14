@@ -44,7 +44,7 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nkurswaluta.kurs();\nzmienkurswofercie.run();\n\n}}",
+  "onOptionChange": "{{kurswaluta.kurs();}}",
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 20.21875,

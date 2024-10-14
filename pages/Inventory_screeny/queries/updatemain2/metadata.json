@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE inventory_main\nJOIN screeny_inventory ON inventory_main.id_wiersz = screeny_inventory.id \nSET inventory_main.cenanetto = screeny_inventory.cenanetto,inventory_main.cena = screeny_inventory.cena,\ninventory_main.rabatsystem = screeny_inventory.rabatsystem,inventory_main.rabatmotor=screeny_inventory.rabatmotor,\ninventory_main.vat=screeny_inventory.vat,inventory_main.opisbezrabatow=screeny_inventory.opisbezrabatow,\ninventory_main.opiszrabatami=screeny_inventory.opiszrabatami,inventory_main.razemnetto=screeny_inventory.razemnetto,\ninventory_main.brutto=screeny_inventory.brutto,\ninventory_main.procentdoplatakolor = screeny_inventory.procentdoplatakolor",
+      "body": "UPDATE inventory_main\nJOIN inventory_screeny ON inventory_main.id_wiersz = inventory_screeny.id \nSET inventory_main.cenanetto = inventory_screeny.cenanetto,inventory_main.cena = inventory_screeny.cena,\ninventory_main.kwotarabatsystem = inventory_screeny.kwotarabatsystem,\ninventory_main.systemporabacie = inventory_screeny.systemporabacie,\ninventory_main.kwotarabatmotor = inventory_screeny.kwotarabatmotor,\ninventory_main.priceall = inventory_screeny.priceall,\ninventory_main.rabatsystem = inventory_screeny.rabatsystem,inventory_main.rabatmotor=inventory_screeny.rabatmotor,\ninventory_main.vat=inventory_screeny.vat,inventory_main.opisbezrabatow=inventory_screeny.opisbezrabatow,\ninventory_main.opiszrabatami=inventory_screeny.opiszrabatami,inventory_main.razemnetto=inventory_screeny.razemnetto,\ninventory_main.brutto=inventory_screeny.brutto,\ninventory_main.procentdoplatakolor = inventory_screeny.procentdoplatakolor",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
