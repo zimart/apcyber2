@@ -6,7 +6,7 @@ var wybranakategoria = kategoriaselect.selectedOptionLabel;
 //var doplatakolor = (cenasystemubaza*(doplatakolorinput.text/100));
 if (wybranakategoria === 'SCREENY') { 
   showModal(LanguageLoading.name);
-	await system_zapytaj.run();
+	system_zapytaj.run();
   closeModal(LanguageLoading.name);
 };
 
