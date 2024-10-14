@@ -3,6 +3,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
+  "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -17,9 +18,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -31,7 +29,7 @@
   "isFilterable": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "true",
+  "isVisible": true,
   "key": "mdr1tx12yu",
   "labelAlignment": "left",
   "labelPosition": "Top",
@@ -52,6 +50,8 @@
   "onOptionChange": "{{kategoria.kategoria();}}",
   "optionLabel": "name",
   "optionValue": "code",
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
   "parentColumnSpace": 19.90625,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -62,6 +62,7 @@
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"SCREENY\",\n    \"code\": \"SCREENY\"\n  },\n  {\n    \"name\": \"PLISY\",\n    \"code\": \"PLISY\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "t0efz1pega",

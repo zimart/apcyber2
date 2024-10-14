@@ -5,9 +5,11 @@ var wybranakategoria = kategoriaselect.selectedOptionLabel;
 //var skrzynka = Select8.selectedOptionValue;
 //var doplatakolor = (cenasystemubaza*(doplatakolorinput.text/100));
 if (wybranakategoria === 'SCREENY') { 
-  showModal(LanguageLoading.name);
-	system_zapytaj.run();
-  closeModal(LanguageLoading.name);
+  showModal(LanguageLoading.name) 
+	.then(() => 
+	system_zapytaj.run())
+	.then(() => 
+  closeModal(LanguageLoading.name));
 };
 
 },
