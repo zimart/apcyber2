@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "ladowanie_2.showModalOnPageLoad",
     "name": "showModalOnPageLoad",
     "pageId": "Kalkulacja",

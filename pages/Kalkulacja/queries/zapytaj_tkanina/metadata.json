@@ -23,9 +23,9 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "zapytaj_tkanina",
     "pageId": "Kalkulacja",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

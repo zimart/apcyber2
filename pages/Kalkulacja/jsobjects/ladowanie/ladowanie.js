@@ -4,9 +4,11 @@ loading: function () {
 //var skrzynka = Select8.selectedOptionValue;
 //var doplatakolor = (cenasystemubaza*(doplatakolorinput.text/100));
 showModal(LanguageLoading.name)
-	system_zapytaj.run()
-	.then(() => 
-  
+	.then(() =>
+	zapytaj_kategoria.run())
+	.then(() =>
+	system_zapytaj.run())
+	.then(() =>   
 closeModal(LanguageLoading.name));
 
 },
