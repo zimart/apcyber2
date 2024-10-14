@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 77,
+  "bottomRow": 80,
   "bottomRowBeforeCollapse": 138,
   "boxShadow": "none",
   "childStylesheet": {
@@ -541,7 +541,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id_new.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 80,
+  "originalBottomRow": 77,
   "originalTopRow": 10,
   "parentColumnSpace": 16.3125,
   "parentId": "2agene8jx6",

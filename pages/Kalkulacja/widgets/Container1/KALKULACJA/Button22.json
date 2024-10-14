@@ -30,7 +30,7 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onClick": "{{tabela_inventory_main_id.run()}}",
+  "onClick": "{{przelicz_main_js.przelicz_glowna();}}",
   "parentColumnSpace": 19.9375,
   "parentId": "w811u4s83s",
   "parentRowSpace": 10,

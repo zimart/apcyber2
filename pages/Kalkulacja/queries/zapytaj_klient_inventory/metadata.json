@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "zapytaj_klient_inventory",
     "pageId": "Kalkulacja",
     "userSetOnLoad": true

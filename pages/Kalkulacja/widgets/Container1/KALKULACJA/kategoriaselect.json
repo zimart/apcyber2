@@ -47,7 +47,7 @@
   "mobileRightColumn": 10,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "onOptionChange": "{{kategoria.kategoria();}}",
+  "onOptionChange": "",
   "optionLabel": "name",
   "optionValue": "value",
   "originalBottomRow": 7,

@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "Select_sterowania2",
     "pageId": "Kalkulacja",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
