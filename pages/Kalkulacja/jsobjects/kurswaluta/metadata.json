@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_59dd2b9e-80f8-4bb1-a47d-79fb5d5552ec",
+  "id": "Kalkulacja_kurswaluta",
+  "unpublishedCollection": {
+    "name": "kurswaluta",
+    "pageId": "Kalkulacja",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

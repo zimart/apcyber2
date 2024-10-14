@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_25e2c535-5160-4318-8ebc-30aff9e75eb9",
+  "id": "Kalkulacja_Constants",
+  "unpublishedCollection": {
+    "name": "Constants",
+    "pageId": "Kalkulacja",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "defaultLanguageKeys",
+        "value": "{\n  \"Język\": \"Język\",\n  \"Ilość\": \"Ilość\",\n  \"DODAJ STEROWANIE\": \"DODAJ STEROWANIE\",\n  \"Zmiana języka\": \"Zmiana języka\",\n  \"Szerokość\": \"Szerokość\",\n  \"Produkt\": \"Produkt\",\n  \"Wysokość\": \"Wysokość\",\n  \"Cena bazowa systemu\": \"Cena bazowa systemu\",\n  \"Kolor\": \"Kolor\"\n}"
+      },
+      {
+        "name": "languageOptions",
+        "value": "[\"Polski\", \"Deutch\", \"English\"]"
+      }
+    ]
+  }
+}
