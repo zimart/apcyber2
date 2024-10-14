@@ -99,7 +99,7 @@
       "widgetName": "Canvas6"
     }
   ],
-  "defaultTab": "PODSUMOWANIE",
+  "defaultTab": "KALKULACJA",
   "dynamicBindingPathList": [
     {
       "key": "boxShadow"
@@ -130,7 +130,7 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onTabSelected": "",
-  "originalBottomRow": 83,
+  "originalBottomRow": 220,
   "originalTopRow": 13,
   "parentColumnSpace": 20.21875,
   "parentId": "59rw5mx0bq",
@@ -143,7 +143,7 @@
   "tabsObj": {
     "tab1": {
       "id": "tab1",
-      "index": 1,
+      "index": 0,
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "KALKULACJA",
@@ -152,7 +152,7 @@
     },
     "tab2": {
       "id": "tab2",
-      "index": 0,
+      "index": 1,
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "PODSUMOWANIE",

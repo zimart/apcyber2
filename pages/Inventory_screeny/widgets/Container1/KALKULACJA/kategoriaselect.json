@@ -22,9 +22,13 @@
       "key": "isVisible"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
-  "isFilterable": true,
+  "isFilterable": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": "true",
@@ -45,6 +49,7 @@
   "mobileRightColumn": 10,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
+  "onOptionChange": "{{kategoria.kategoria();}}",
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 19.90625,
