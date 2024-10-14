@@ -283,7 +283,7 @@
       "label": "DODAJ",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{storeValue('id_oferta', data_table.triggeredRow.id_oferta).then(() => {\n  storeValue('klient', data_table.triggeredRow.klient);\n  storeValue('numer', data_table.triggeredRow.numeroferty);\n  storeValue('data', data_table.triggeredRow.dataoferty);\n  navigateTo('Inventory_screeny', {\n    id_oferta: appsmith.store.id_oferta,\n    klient: appsmith.store.klient,\n    data: appsmith.store.data,\n    numer: appsmith.store.numer\n  }, 'SAME_WINDOW');\n});}}",
+      "onClick": "{{storeValue('id_oferta', data_table.triggeredRow.id_oferta).then(() => {\n  storeValue('klient', data_table.triggeredRow.klient);\n  storeValue('numer', data_table.triggeredRow.numeroferty);\n  storeValue('data', data_table.triggeredRow.dataoferty);\n  navigateTo('Kalkulacja', {\n    id_oferta: appsmith.store.id_oferta,\n    klient: appsmith.store.klient,\n    data: appsmith.store.data,\n    numer: appsmith.store.numer\n  }, 'SAME_WINDOW');\n});}}",
       "originalId": "customColumn4",
       "sticky": "",
       "textSize": "0.875rem",
