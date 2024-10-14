@@ -34,7 +34,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{dodajpozycje_new.run()\n.then(() => \nprzeliczpozycje.run())\n.then(() => \ntabela_inventory_id_new.run())\n.then(() => \nresetWidget(\"index_szer_input\", true))\n.then(() => \nresetWidget(\"sku_input\", true))\n.then(() => \nresetWidget(\"cenabazowasystemu\", true))\n.then(() => \nresetWidget(\"szerokosc_input\", true))\n.then(() => \nclearStore())}}",
+  "onClick": "{{dodajpozycje_new.run()\n.then(() => \nresetWidget(\"index_szer_input\", true))\n.then(() => \nresetWidget(\"sku_input\", true))\n.then(() => \nresetWidget(\"cenabazowasystemu\", true))\n.then(() => \nresetWidget(\"podawana_wysokosc_input\", true))\n.then(() => \nresetWidget(\"szerokosc_input\", true))\n.then(() => \nprzeliczpozycje.run())\n.then(() => \ntabela_inventory_id_new.run())\n.then(() => \nclearStore())}}",
   "originalBottomRow": 32,
   "originalTopRow": 28,
   "parentId": "8jwyu0isum",
