@@ -103,11 +103,11 @@
       "isDefault": false
     },
     {
-      "id": "Oferta",
+      "id": "Kalkulacja",
       "isDefault": false
     },
     {
-      "id": "Kalkulacja",
+      "id": "Podsumowanie",
       "isDefault": false
     }
   ],

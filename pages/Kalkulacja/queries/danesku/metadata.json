@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "danesku",
     "pageId": "Kalkulacja",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

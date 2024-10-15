@@ -25,9 +25,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
-    },
-    {
-      "key": "onBlur"
     }
   ],
   "dynamicTriggerPathList": [
@@ -65,7 +62,7 @@
   "mobileRightColumn": 48,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onBlur": "{{ustawrabat.run()\n.then(() =>\t\t\t\t\t\t\t\t\t\t\t\nprzeliczpozycje.run())\n.then(() =>\t\ttabela_inventory_id_new.run()\n)}}\n",
+  "onBlur": "{{ustawrabat.run()\n.then(() =>\t\t\t\t\t\t\t\t\t\t\nprzeliczpozycje.run())\n.then(() =>\t\ttabela_inventory_id_new.run()\n)}}\n",
   "onTextChanged": "",
   "originalBottomRow": 10,
   "originalTopRow": 4,

@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "system_zapytaj",
     "pageId": "Kalkulacja",
     "userSetOnLoad": true

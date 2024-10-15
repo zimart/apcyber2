@@ -45,7 +45,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onBlur": "{{ustawrabatogolny.run().then(() => {\n  tabela_inventory_main_id.run();\n});}}",
+  "onBlur": "{{showModal(LanguageLoading.name).then(() => {});}}",
   "onSubmit": "",
   "parentColumnSpace": 19.9375,
   "parentId": "w811u4s83s",

@@ -1,2 +1,0 @@
-SELECT moc Produkt,ilosc Ilosc,cenanetto,razemnetto,vat,brutto,opisbezrabatow,opiszrabatami,rabatogolny,kwotarabatogolny,cenaporabacie,rabatsystem,rabatmotor,cena,price_motor,systemzdoplata,systemporabacie,priceall,kwotarabatsystem,kwotarabatmotor FROM inventory_main where fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}}
-ORDER BY rodzajmotor ASC;

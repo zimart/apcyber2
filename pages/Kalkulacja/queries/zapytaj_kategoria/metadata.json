@@ -23,9 +23,9 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "zapytaj_kategoria",
     "pageId": "Kalkulacja",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

@@ -34,6 +34,7 @@
   "columnOrder": [
     "customColumn1",
     "Produkt",
+    "Ilosc",
     "cena",
     "systemzdoplata",
     "rabatsystem",
@@ -51,10 +52,9 @@
     "vat",
     "brutto",
     "opiszrabatami",
-    "opisbezrabatow",
-    "Ilosc"
+    "opisbezrabatow"
   ],
-  "columnUpdatedAt": 1728939299542,
+  "columnUpdatedAt": 1729008778009,
   "columnWidthMap": {
     "Ilosc": 85,
     "Produkt": 372,
@@ -667,7 +667,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "Opis - z rabatami",
       "notation": "standard",
       "originalId": "opiszrabatami",

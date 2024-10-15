@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_ec14be97-e727-46e4-9299-ccf7b599d85d",
+  "id": "Podsumowanie_kurswaluta",
+  "unpublishedCollection": {
+    "name": "kurswaluta",
+    "pageId": "Podsumowanie",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -5,7 +5,7 @@
   "bottomRow": 8,
   "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "SCREENY",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -47,7 +47,7 @@
   "mobileRightColumn": 10,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "onOptionChange": "{{kategoria.kategoria();}}",
+  "onOptionChange": "",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 7,

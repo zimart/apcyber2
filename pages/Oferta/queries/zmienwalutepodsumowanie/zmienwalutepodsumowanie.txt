@@ -1,3 +1,0 @@
-UPDATE inventory_main SET
-    cena = cena
-		WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};

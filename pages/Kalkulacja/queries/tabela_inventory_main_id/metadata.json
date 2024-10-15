@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "tabela_inventory_main_id",
     "pageId": "Kalkulacja",
     "userSetOnLoad": true

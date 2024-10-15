@@ -44,7 +44,7 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "{{kurswaluta.kurs();}}",
+  "onOptionChange": "{{showModal(LanguageLoading.name).then(() => {\n  kurswaluta.kurs();\n  closeModal(LanguageLoading.name);\n});}}",
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 20.21875,
