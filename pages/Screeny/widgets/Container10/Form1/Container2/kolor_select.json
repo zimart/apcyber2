@@ -4,16 +4,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "EASY ZIIIP",
+  "defaultOptionValue": "RAL 7016",
   "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    },
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -38,34 +38,34 @@
   "key": "q6bew8sxi9",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "SYSTEM",
+  "labelText": "Kolor",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 5,
+  "leftColumn": 11,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 167,
+  "mobileBottomRow": 180,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 160,
+  "mobileTopRow": 173,
   "needsErrorInfo": false,
-  "onOptionChange": "{{kolor_zapytaj.run().then(() => {}).then(() => removeValue(appsmith.store.modelnapedu)).then(() => serianapedu.run()).then(() => rodzajnapedu.run());\nskrzynka_zapytaj.run();\nserianapedu.run();\nrodzajnapedu.run();}}",
+  "onOptionChange": "{{\nczydoplatakolor.run();\ndoplatakolorzapytaj.run();\ncena_zapytaj.run();\n}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 167,
-  "originalTopRow": 160,
+  "originalBottomRow": 180,
+  "originalTopRow": 173,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "Wybierz system",
+  "placeholderText": "Wybierz kolor",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 11,
+  "rightColumn": 21,
   "serverSideFiltering": false,
-  "sourceData": "{{system_zapytaj.data.map( (obj) =>{ return  {'label': obj.system, 'value': obj.valueindeks } })}}",
+  "sourceData": "{{kolor_zapytaj.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "0jdq86a8y8",
-  "widgetName": "system_select"
+  "widgetId": "ai7kcb1lmq",
+  "widgetName": "kolor_select"
 }

@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 36,
+  "bottomRow": 100,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -50,16 +50,17 @@
     "systemporabacie",
     "priceall",
     "kwotarabatsystem",
-    "kwotarabatmotor"
+    "kwotarabatmotor",
+    "id_main_inv"
   ],
-  "columnUpdatedAt": 1729011324547,
+  "columnUpdatedAt": 1729015806922,
   "columnWidthMap": {},
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [
     0
   ],
-  "delimiter": ",",
+  "delimiter": ";",
   "dynamicBindingPathList": [
     {
       "key": "tableData"
@@ -132,10 +133,17 @@
     },
     {
       "key": "primaryColumns.kwotarabatmotor.computedValue"
+    },
+    {
+      "key": "primaryColumns.id_main_inv.computedValue"
     }
   ],
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onPageChange"
+    }
+  ],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -156,7 +164,8 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "originalBottomRow": 36,
+  "onPageChange": "{{tabela_glowna.run()}}",
+  "originalBottomRow": 98,
   "originalTopRow": 8,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -357,6 +366,40 @@
       "label": "cenaporabacie",
       "notation": "standard",
       "originalId": "cenaporabacie",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "id_main_inv": {
+      "alias": "id_main_inv",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id_main_inv\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "id_main_inv",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "id_main_inv",
+      "notation": "standard",
+      "originalId": "id_main_inv",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -846,9 +889,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
+  "serverSidePaginationEnabled": true,
   "tableData": "{{tabela_glowna.data}}",
   "textSize": "0.875rem",
-  "topRow": 8,
+  "topRow": 10,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,

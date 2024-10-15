@@ -1,33 +1,30 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
+  "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "EASY ZIIIP",
+  "defaultOptionValue": "COPACO SERGE 600",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownOpen"
     }
   ],
   "isDisabled": false,
@@ -35,37 +32,38 @@
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,
-  "key": "q6bew8sxi9",
+  "key": "ki1dwtwiw3",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "SYSTEM",
+  "labelText": "Tkanina",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 5,
+  "leftColumn": 38,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 167,
+  "mobileBottomRow": 105,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 160,
+  "mobileTopRow": 98,
   "needsErrorInfo": false,
-  "onOptionChange": "{{kolor_zapytaj.run().then(() => {}).then(() => removeValue(appsmith.store.modelnapedu)).then(() => serianapedu.run()).then(() => rodzajnapedu.run());\nskrzynka_zapytaj.run();\nserianapedu.run();\nrodzajnapedu.run();}}",
+  "onDropdownOpen": "{{}}",
+  "onOptionChange": "{{tkaninawybor.run();\ndoplata.tkanina();}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 167,
-  "originalTopRow": 160,
+  "originalBottomRow": 105,
+  "originalTopRow": 98,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "Wybierz system",
+  "placeholderText": "Tkanina",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 11,
+  "rightColumn": 48,
   "serverSideFiltering": false,
-  "sourceData": "{{system_zapytaj.data.map( (obj) =>{ return  {'label': obj.system, 'value': obj.valueindeks } })}}",
+  "sourceData": "[\n   \t\n  {\n    \"label\": \"COPACO SERGE 600\",\n    \"value\": \"COPACO SERGE 600\"\n  },\n  {\n    \"label\": \"COPACO SERGE 1%\",\n    \"value\": \"COPACO SERGE 1%\"\n  },\n\t{\n    \"label\": \"COPACO LUNAR\",\n    \"value\": \"COPACO LUNAR\"\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "0jdq86a8y8",
-  "widgetName": "system_select"
+  "widgetId": "jvfoo2ygy6",
+  "widgetName": "Select9"
 }

@@ -1,17 +1,22 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 11,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": true,
+  "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
     },
     {
       "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -23,26 +28,30 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "jijcm709us",
-  "leftColumn": 52,
+  "key": "0xizktc8g4",
+  "leftColumn": 45,
   "minWidth": 120,
-  "mobileBottomRow": 37,
-  "mobileLeftColumn": 46,
-  "mobileRightColumn": 62,
-  "mobileTopRow": 33,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 46,
+  "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onClick": "{{dodajakcesoria.run().then(() => {\n  iloscsterowania.run();\n  ustawrabatsterowania.run();\n  Select_sterowania2.run();\n  closeModal(sterowania.name);\n}).catch(() => {});}}",
-  "parentId": "sb8brmf4m8",
+  "onClick": "{{linia_zapytaj.run().then(() => {\n  system_zapytaj.run();\n  kolor_zapytaj.run();\n});}}",
+  "originalBottomRow": 55,
+  "originalTopRow": 51,
+  "parentColumnSpace": 19.9375,
+  "parentId": "spyg6a4iep",
+  "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": true,
+  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 64,
-  "text": "DODAJ",
-  "topRow": 8,
+  "rightColumn": 61,
+  "text": "Submit",
+  "topRow": 7,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "fvzpohaa7o",
-  "widgetName": "Button11"
+  "widgetId": "wfsyahu0t0",
+  "widgetName": "Button24"
 }

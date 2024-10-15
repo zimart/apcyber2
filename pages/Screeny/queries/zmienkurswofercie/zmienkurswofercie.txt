@@ -1,5 +1,0 @@
-UPDATE oferty SET
- 
-    kurseuro = '{{kursinput.text}}',
-    waluta = '{{Select6.selectedOptionLabel}}'
-    WHERE  id_oferta = {{appsmith.URL.queryParams.id_oferta}}; 
