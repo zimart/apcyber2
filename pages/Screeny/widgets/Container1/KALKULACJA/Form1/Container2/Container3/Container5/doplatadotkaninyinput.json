@@ -1,0 +1,70 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "bottomRowBeforeCollapse": 7,
+  "boxShadow": "none",
+  "defaultText": "{{Number.parseFloat(powierzchnia.text*doplatatkaninam2.text).toFixed(2)||0}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{Select9.selectedOptionValue === \"COPACO LUNAR\"}}",
+  "key": "lc68vad2ei",
+  "label": "Dopłata do tkaniny",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 26,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
+  "parentColumnSpace": 18.65625,
+  "parentId": "ikmrmo799q",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 34,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "1a4uyt82ez",
+  "widgetName": "doplatadotkaninyinput"
+}

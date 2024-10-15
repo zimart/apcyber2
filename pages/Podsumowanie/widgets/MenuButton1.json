@@ -1,0 +1,83 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "configureMenuItems": {
+    "config": {
+      "id": "config",
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Menu Item"
+    },
+    "id": "config",
+    "label": "Configure menu items"
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "menuColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem1.onClick"
+    }
+  ],
+  "isCompact": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "7ji0dknpn3",
+  "label": "WYBIERZ KATEGORIĘ",
+  "leftColumn": 23,
+  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "SCREENY",
+      "onClick": "{{storeValue('id_oferta', Input1.text).then(() => {\n  navigateTo('Kalkulacja', {\n    id_oferta: appsmith.store.id_oferta\n  }, 'SAME_WINDOW');\n});}}",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "id": "menuItem2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Second Menu Item",
+      "widgetId": ""
+    },
+    "menuItem3": {
+      "id": "menuItem3",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Third Menu Item",
+      "widgetId": ""
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "PRIMARY",
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 24,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 20.21875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 39,
+  "sourceData": [],
+  "topRow": 3,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "j83cj2qam4",
+  "widgetName": "MenuButton1"
+}

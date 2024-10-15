@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "0px",
   "borderWidth": "",
-  "bottomRow": 85,
+  "bottomRow": 86,
   "boxShadow": "none",
   "childStylesheet": {
     "button": {
@@ -283,7 +283,7 @@
       "label": "DODAJ",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{storeValue('id_oferta', data_table.triggeredRow.id_oferta).then(() => {\n  storeValue('klient', data_table.triggeredRow.klient);\n  storeValue('numer', data_table.triggeredRow.numeroferty);\n  storeValue('data', data_table.triggeredRow.dataoferty);\n  navigateTo('podsumowanie2', {\n    id_oferta: appsmith.store.id_oferta,\n    klient: appsmith.store.klient,\n    data: appsmith.store.data,\n    numer: appsmith.store.numer\n  }, 'SAME_WINDOW');\n});}}",
+      "onClick": "{{storeValue('id_oferta', data_table.triggeredRow.id_oferta).then(() => {\n  storeValue('klient', data_table.triggeredRow.klient);\n  storeValue('numer', data_table.triggeredRow.numeroferty);\n  storeValue('id_klienta', Input2.text);\n  storeValue('data', data_table.triggeredRow.dataoferty);\n  navigateTo('Podsumowanie', {\n    id_oferta: appsmith.store.id_oferta,\n    klient: appsmith.store.klient,\n    data: appsmith.store.data,\n    numer: appsmith.store.numer,\n    id_klienta: appsmith.store.id_klienta\n  }, 'SAME_WINDOW');\n});}}",
       "originalId": "customColumn4",
       "sticky": "",
       "textSize": "0.875rem",
@@ -641,7 +641,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{tabela_id_klient.data}}",
   "textSize": "0.875rem",
-  "topRow": 6,
+  "topRow": 7,
   "totalRecordsCount": "30",
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",

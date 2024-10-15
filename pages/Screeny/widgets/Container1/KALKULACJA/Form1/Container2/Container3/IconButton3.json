@@ -1,0 +1,60 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "bottomRowBeforeCollapse": 6,
+  "boxShadow": "none",
+  "buttonColor": "#831843",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "plus",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{Select8.isValid;szerokosc_input.text>0;wysokosc_input.text>0}}",
+  "key": "sc24l1mhlp",
+  "leftColumn": 32,
+  "minWidth": 50,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 29,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onClick": "{{\nremoveValue('sku_value')\n.then(() => \nstoreValue('sku_value', tymczasowy.text))\n.then(() => danesku.run())\n.then(() => storeValue('cenasystemu', cena_systemu.text).catch(() => {\n  showAlert('blad', 'error')\n}))\n.then(() => storeValue('wymaganynaped', wymaganamocnaped.text))\n.then(() => napedwybrany.run())\n.then(() => cenanapeduwybranego.run())\n.then(() => storeValue('modelnapedu', Input8.text))\n.then(() => \nstoreValue('cenanapedu', cenanapedu.text))\n.then(() => doplata.kolor())\n.then(() => doplata.wkladka())\n\n\n}}",
+  "originalBottomRow": 6,
+  "originalTopRow": 2,
+  "parentColumnSpace": 18.6884765625,
+  "parentId": "er5qa5lbjh",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 36,
+  "topRow": 2,
+  "topRowBeforeCollapse": 2,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "9flzflwhoy",
+  "widgetName": "IconButton3"
+}

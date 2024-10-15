@@ -1,0 +1,66 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "",
+  "borderColor": "#b91c1c",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 6,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": "{{rabatsystem.text > 0}}",
+  "key": "4fmzq50xxk",
+  "leftColumn": 9,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "originalBottomRow": 6,
+  "originalTopRow": 2,
+  "overflow": "NONE",
+  "parentColumnSpace": 19.3125,
+  "parentId": "rlvik19e2s",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 26,
+  "shouldTruncate": false,
+  "text": "UWAGA - USTAWIONY RABAT NA SYSTEM: {{rabatsystem.text}} %",
+  "textAlign": "LEFT",
+  "textColor": "#b91c1c",
+  "topRow": 2,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "v32rahcknf",
+  "widgetName": "Text33"
+}

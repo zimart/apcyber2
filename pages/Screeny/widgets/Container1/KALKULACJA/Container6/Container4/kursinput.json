@@ -1,0 +1,60 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 36,
+  "boxShadow": "none",
+  "defaultText": "{{kurswaluta.kurs.data}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "fibgi45d8n",
+  "label": "Label",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 45,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 24,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 17,
+  "needsErrorInfo": false,
+  "originalBottomRow": 232,
+  "originalTopRow": 225,
+  "parentColumnSpace": 20.25,
+  "parentId": "esfh9fxray",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 53,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 29,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "ty6l9sxfvj",
+  "widgetName": "kursinput"
+}

@@ -1,0 +1,81 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "bottomRowBeforeCollapse": 6,
+  "boxShadow": "none",
+  "defaultText": "{{doplatakolorzapytaj.data[0].doplata||0}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": "{{doplatakolorinput.text === 4}}",
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{Input17.text===\"tak\"}}",
+  "key": "q37nnhimv1",
+  "label": "Dopłata do koloru %",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{doplata.kolor();}}",
+  "originalBottomRow": 6,
+  "originalTopRow": 0,
+  "parentColumnSpace": 19.0009765625,
+  "parentId": "ikmrmo799q",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 8,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "43bia6gryi",
+  "widgetName": "doplatakolorinput"
+}

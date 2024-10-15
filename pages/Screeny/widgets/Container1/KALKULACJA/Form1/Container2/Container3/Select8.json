@@ -1,0 +1,79 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "bottomRowBeforeCollapse": 4,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": "{{index_wys_input.text > 0}}",
+  "key": "pomnq6978w",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Skrzynka",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 27,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 87,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 80,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n\n.then(() => indekswys.run())\n\n.then(() => \nstoreValue('skrzynkawybrana', Select8.selectedOptionValue))\n\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => indekswys.run())\n.then(() => powierzchnian.m2())\n\n}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
+  "parentId": "er5qa5lbjh",
+  "parentRowSpace": 10,
+  "placeholderText": "Wybierz skrzynkę",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 32,
+  "serverSideFiltering": false,
+  "sourceData": "{{skrzynka_zapytaj.data.map( (obj) =>{ return  {'label': obj.wymiar, 'value': obj.wymiar } })}}",
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "jjk7svi5mc",
+  "widgetName": "Select8"
+}
