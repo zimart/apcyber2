@@ -109,6 +109,10 @@
     {
       "id": "Podsumowanie",
       "isDefault": false
+    },
+    {
+      "id": "podsumowanie2",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
