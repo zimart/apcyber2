@@ -3,57 +3,64 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 5,
   "boxShadow": "none",
-  "defaultText": "{{rabatsterowania.text||0}}",
+  "defaultText": "0",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
+    }
+  ],
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "iconName": "bring-data",
+  "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "aijze856dw",
-  "label": "Label",
+  "key": "rh3oz781z3",
+  "label": "Rabat - sterowania",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "",
+  "labelStyle": "BOLD",
+  "labelTextColor": "#7f1d1d",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 14,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 29,
-  "mobileLeftColumn": 40,
-  "mobileRightColumn": 60,
-  "mobileTopRow": 22,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 44,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 16,
-  "originalTopRow": 9,
-  "parentColumnSpace": 20.25,
-  "parentId": "esfh9fxray",
+  "onBlur": "{{ustawrabatsterowania.run().then(() => {\n  Select_sterowania2.run();\n  przelicz_tabele_main.run();\n});}}",
+  "onTextChanged": "",
+  "parentColumnSpace": 14.7723388671875,
+  "parentId": "ep28zqs75j",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 34,
+  "rightColumn": 10,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 9,
+  "topRow": 1,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "7fln3opknn",
-  "widgetName": "rabatsterowaniainput"
+  "widgetId": "r1p8l076y1",
+  "widgetName": "rabatsterowania"
 }

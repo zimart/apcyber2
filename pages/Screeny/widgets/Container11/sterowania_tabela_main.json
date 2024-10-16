@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 29,
+  "bottomRow": 37,
   "bottomRowBeforeCollapse": 45,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
@@ -120,12 +120,6 @@
       "key": "primaryColumns.rodzajproduktu_ster.computedValue"
     },
     {
-      "key": "primaryColumns.rabat_sterowania.label"
-    },
-    {
-      "key": "primaryColumns.cenaporabacie.label"
-    },
-    {
       "key": "primaryColumns.razemnetto.label"
     },
     {
@@ -142,9 +136,6 @@
     },
     {
       "key": "primaryColumns.kwotarabatu.computedValue"
-    },
-    {
-      "key": "primaryColumns.kwotarabatu.label"
     }
   ],
   "dynamicPropertyPathList": [
@@ -288,7 +279,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Cena po rabacie\")}}",
+      "label": "Cena po rabacie",
       "notation": "standard",
       "originalId": "cenaporabacie",
       "sticky": "",
@@ -485,7 +476,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Kwota rabatu\")}}",
+      "label": "Kwota rabatu",
       "notation": "standard",
       "originalId": "kwotarabatu",
       "sticky": "",
@@ -579,7 +570,7 @@
       "isEditable": true,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Rabat\")}}",
+      "label": "Rabat",
       "notation": "standard",
       "onSubmit": "{{przeliczrabatsterowania1.run().then(() => {\n  przeliczrabatsterowania2.run();\n  przeliczrabatsterowania3.run();\n  Select_sterowania2.run();\n});}}",
       "originalId": "rabat_sterowania",
@@ -726,7 +717,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{Select_sterowania2.data}}",
   "textSize": "0.875rem",
-  "topRow": 0,
+  "topRow": 8,
   "topRowBeforeCollapse": 3,
   "totalRecordsCount": "{{iloscsterowania.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
