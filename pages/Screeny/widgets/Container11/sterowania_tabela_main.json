@@ -141,6 +141,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -172,7 +175,7 @@
   "inlineEditingSaveOption": "CUSTOM",
   "isLoading": false,
   "isSortable": false,
-  "isVisible": true,
+  "isVisible": "true",
   "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": true,
