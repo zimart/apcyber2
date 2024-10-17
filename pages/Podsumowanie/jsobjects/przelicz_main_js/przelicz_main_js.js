@@ -9,6 +9,8 @@ ustawrabatogolny.run())
 .then(() => 
 tabela_glowna.run())
 .then(() => 
+sumarazemnetto.run())
+.then(() => 
 closeModal(LanguageLoading.name));
 
 },
