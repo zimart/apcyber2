@@ -1,10 +1,7 @@
 {
   "animateLoading": true,
-  "backgroundColor": "",
-  "borderColor": "#b91c1c",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "0",
-  "bottomRow": 6,
+  "bottomRow": 80,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -17,50 +14,42 @@
     },
     {
       "key": "text"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
+  "fontSize": "1rem",
   "fontStyle": "BOLD",
   "isLoading": false,
-  "isVisible": "{{rabatsystem.text > 0}}",
-  "key": "4fmzq50xxk",
-  "leftColumn": 8,
+  "isVisible": true,
+  "key": "d0tm34l3dc",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 6,
-  "mobileLeftColumn": 9,
-  "mobileRightColumn": 25,
-  "mobileTopRow": 2,
+  "mobileBottomRow": 26,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 9,
+  "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "originalBottomRow": 6,
-  "originalTopRow": 2,
+  "originalBottomRow": 27,
+  "originalTopRow": 22,
   "overflow": "NONE",
-  "parentColumnSpace": 19.3125,
-  "parentId": "rlvik19e2s",
+  "parentColumnSpace": 20.5625,
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 25,
+  "rightColumn": 11,
   "shouldTruncate": false,
-  "text": "UWAGA - USTAWIONY RABAT NA SYSTEM: {{rabatsystem.text}} %",
+  "text": "Razem netto : {{(sumarazemnetto.data[0][\"SUM (razemnetto)\"]/kursinput.text).toFixed(2)}} {{Select6.selectedOptionLabel}}",
   "textAlign": "LEFT",
-  "textColor": "#b91c1c",
-  "topRow": 2,
+  "textColor": "#231F20",
+  "topRow": 76,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "v32rahcknf",
-  "widgetName": "Text33"
+  "widgetId": "g97dwizduh",
+  "widgetName": "Text5"
 }

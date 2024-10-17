@@ -6,7 +6,7 @@
   "bottomRow": 22,
   "bottomRowBeforeCollapse": 22,
   "boxShadow": "none",
-  "defaultText": "4.3",
+  "defaultText": "{{appsmith.store.kurseuro ||4.3 }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,6 +16,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -54,7 +57,7 @@
   "mobileRightColumn": 53,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onBlur": "{{kurswaluta.kurs();}}",
+  "onBlur": "{{\nstoreValue('kurseuro', kurseuro.text);\nkurswaluta.kurs();}}",
   "onTextChanged": "",
   "originalBottomRow": 22,
   "originalTopRow": 15,

@@ -4,13 +4,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 20,
   "boxShadow": "none",
-  "defaultOptionValue": "23",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.vat||23))(vat.options, vat.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -44,7 +47,7 @@
   "mobileRightColumn": 32,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onOptionChange": "{{przelicz_main_js.przelicz_glowna();}}",
+  "onOptionChange": "{{storeValue('vat', vat.selectedOptionValue);\nprzelicz_main_js.przelicz_glowna();}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 22,

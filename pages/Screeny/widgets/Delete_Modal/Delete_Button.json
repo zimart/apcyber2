@@ -21,7 +21,7 @@
   "isVisible": "true",
   "labelTextSize": "0.875rem",
   "leftColumn": 46,
-  "onClick": "{{DeleteQuery_new.run().then(() => {\n  closeModal(Delete_Modal.name);\n  tabela_inventory_id_new.run();\n});}}",
+  "onClick": "{{kasujzglownej.run().then(() => {\n  DeleteQuery_new.run();\n  tabela_inventory_id_new.run();\n  closeModal(Delete_Modal.name);\n});}}",
   "parentId": "zi8fjakv8o",
   "recaptchaType": "V3",
   "rightColumn": 64,
