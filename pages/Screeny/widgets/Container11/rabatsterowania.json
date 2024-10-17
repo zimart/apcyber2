@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 4,
   "boxShadow": "none",
   "defaultText": "0",
   "dynamicBindingPathList": [
@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -23,12 +26,13 @@
       "key": "onBlur"
     }
   ],
+  "errorMessage": "WPISZ 0 lub RABAT",
   "iconAlign": "left",
   "iconName": "bring-data",
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "rh3oz781z3",
   "label": "Rabat - sterowania",
@@ -58,8 +62,10 @@
   "rightColumn": 10,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 1,
+  "tooltip": "WPISZ 0 LUB POZIOM RABATU",
+  "topRow": 0,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{rabatsterowania.text.length>0}}",
   "version": 2,
   "widgetId": "r1p8l076y1",
   "widgetName": "rabatsterowania"

@@ -120,21 +120,6 @@
       "key": "primaryColumns.rodzajproduktu_ster.computedValue"
     },
     {
-      "key": "primaryColumns.razemnetto.label"
-    },
-    {
-      "key": "primaryColumns.vat_sterowania.label"
-    },
-    {
-      "key": "primaryColumns.brutto_sterowania.label"
-    },
-    {
-      "key": "primaryColumns.customColumn1.label"
-    },
-    {
-      "key": "primaryColumns.customColumn1.alias"
-    },
-    {
       "key": "primaryColumns.kwotarabatu.computedValue"
     }
   ],
@@ -193,8 +178,8 @@
   "onPageChange": "{{\n            Select_sterowania2.run();\n            iloscsterowania.run()\n          }}",
   "onSearchTextChanged": "{{\n            Select_sterowania2.run();\n            iloscsterowania.run()\n          }}",
   "onSort": "{{\n            Select_sterowania2.run();\n            iloscsterowania.run()\n          }}",
-  "originalBottomRow": 149,
-  "originalTopRow": 138,
+  "originalBottomRow": 37,
+  "originalTopRow": 8,
   "parentId": "ep28zqs75j",
   "parentRowSpace": 10,
   "primaryColumnId": "id_sterowania",
@@ -220,7 +205,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": false,
-      "label": "{{i18n.translate(\"Brutto\")}}",
+      "label": "Brutto",
       "notation": "standard",
       "originalId": "brutto_sterowania",
       "sticky": "",
@@ -293,7 +278,7 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "{{i18n.translate(\"Usuń\")}}",
+      "alias": "Usuń",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "buttonLabel": "Kasuj",
@@ -317,7 +302,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Usuń\")}}",
+      "label": "Usuń",
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "onClick": "{{showModal(modal_usun_sterowanie.name).then(() => {});}}",
@@ -605,7 +590,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Razem netto\")}}",
+      "label": "Razem netto",
       "notation": "standard",
       "originalId": "razemnetto",
       "sticky": "",
@@ -701,7 +686,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": false,
-      "label": "{{i18n.translate(\"VAT %\")}}",
+      "label": "VAT %",
       "notation": "standard",
       "originalId": "vat_sterowania",
       "sticky": "",

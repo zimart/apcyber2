@@ -8,18 +8,24 @@ var czydoplatakolor = Input17.text;
 if (czydoplatakolor === 'tak') { doplatakolor = (cenasystemubaza*(doplatakolorinput22.text/100)); }
 //var doplatakolor = (cenasystemubaza*(doplatakolorinput22.text/100));
 //if (szerokoscm === '1') { szerm33 = podana; }
-else doplatakolor = 0;
-return doplatakolor.toFixed(2);
+else doplatakolor = '0';
+return doplatakolor;
 },
 	
 tkanina: function () {
 var kosztmetra = doplatatkaninam2.text;
-var powierzchniam2 = appsmith.store.powierzchniast;
+var powierzchniam2 = appsmith.store.powierzchnia;
 //var skrzynka = Select8.selectedOptionValue;
-var doplatatkanina = (doplatatkaninam2.text * powierzchnia.text);
+var tkaninacos = Select9.selectedOptionValue;
+//var doplatatkanina = (doplatatkaninam2.text * powierzchnia.text);
+
+if (tkaninacos === 'COPACO LUNAR') { doplatatkanina = (doplatatkaninam2.text * powierzchnia.text); }
+//var doplatakolor = (cenasystemubaza*(doplatakolorinput22.text/100));
+//if (szerokoscm === '1') { szerm33 = podana; }
+else doplatatkanina = '0';
 //if (szerokoscm === '1') { szerm33 = podana; }
 //else if (szerokoscm === '2') { szerm33 = podana ; }
-return doplatatkanina.toFixed(2);
+return doplatatkanina;
 },
 	 
 wkladka: function () {
