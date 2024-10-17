@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 22,
   "boxShadow": "none",
-  "defaultOptionValue": "PLN",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( daneoferty.data[0].waluta || PLN))(Select6.options, Select6.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "labelText"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -47,7 +50,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onOptionChange": "{{showModal(LanguageLoading.name).then(() => {\n  kurswaluta.kurs();\n  closeModal(LanguageLoading.name);\n});}}",
+  "onOptionChange": "{{showModal(LanguageLoading.name).then(() => {\n  kurswaluta.kurs();\n  zmiendaneoferty.run();\n  closeModal(LanguageLoading.name);\n});}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 22,

@@ -61,7 +61,7 @@ Brutto: (item.brutto/ currencyRate).toFixed(2)
 
 //     doc.setFont("Roboto"); // set font
 	
-      doc.setFont ("Helvetica");
+      doc.setFont ("Times");
       doc.setFontSize("10")
       doc.text ("Hello wreahtrsjytdufygj", 10, 10);
 	    doc.text("Additional Information", 15, 20);

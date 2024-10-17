@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f263e90ea81e705fc1052a_71dba9b4-8dcf-4d7d-8a1c-df6103b27bee",
-  "id": "Screeny_inventory_zmienkurswofercie",
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_1a9b3f80-5880-417b-8a27-357683264671",
+  "id": "Podsumowanie_zmiendaneoferty",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE oferty SET \n    kurseuro = '{{kursinput.text}}',\n    waluta = '{{Select6.selectedOptionLabel}}'\nWHERE  id_oferta = {{appsmith.URL.queryParams.id_oferta}}; ",
+      "body": "UPDATE oferty SET \n    kurseuro = '{{kursinput.text}}',\n    waluta = '{{Select6.selectedOptionValue}}',\n\t\tvat = '{{vat.selectedOptionValue}}',\n\t\trabat = '{{rabatogolny.text}}'\nWHERE  id_oferta = {{appsmith.URL.queryParams.id_oferta}}; ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "zmienkurswofercie",
-    "pageId": "Screeny_inventory",
+    "name": "zmiendaneoferty",
+    "pageId": "Podsumowanie",
     "userSetOnLoad": false
   }
 }

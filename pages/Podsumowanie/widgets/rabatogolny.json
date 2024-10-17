@@ -5,17 +5,27 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 23,
   "boxShadow": "none",
-  "defaultText": "0",
+  "defaultText": "{{daneoferty.data[0].rabat || 0}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
+    }
+  ],
   "iconAlign": "left",
   "iconName": "th-disconnect",
   "inputType": "NUMBER",
@@ -40,6 +50,8 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 16,
   "needsErrorInfo": false,
+  "onBlur": "{{showModal(LanguageLoading.name).then(() => {\n  ustawrabatogolny.run();\n  zmiendaneoferty.run();\n  closeModal(LanguageLoading.name);\n});}}",
+  "onTextChanged": "",
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,
