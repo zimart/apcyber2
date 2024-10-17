@@ -36,14 +36,16 @@
     "id_klient",
     "fk_klienci_oferty_id",
     "kurseuro",
-    "waluta"
+    "waluta",
+    "vat",
+    "rabat"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1728736045223,
+  "columnUpdatedAt": 1729202160195,
   "columnWidthMap": {
     "customColumn1": 102,
     "customColumn3": 111,
@@ -126,6 +128,12 @@
     },
     {
       "key": "primaryColumns.waluta.computedValue"
+    },
+    {
+      "key": "primaryColumns.vat.computedValue"
+    },
+    {
+      "key": "primaryColumns.rabat.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -566,6 +574,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "rabat": {
+      "alias": "rabat",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rabat\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "rabat",
+      "index": 11,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "rabat",
+      "notation": "standard",
+      "originalId": "rabat",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "temat": {
       "alias": "temat",
       "allowCellWrapping": false,
@@ -592,6 +634,40 @@
       "label": "Temat",
       "notation": "standard",
       "originalId": "temat",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "vat": {
+      "alias": "vat",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vat\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "vat",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "vat",
+      "notation": "standard",
+      "originalId": "vat",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
