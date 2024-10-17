@@ -50,7 +50,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 173,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nczydoplatakolor.run();\ndoplatakolorzapytaj.run();\ncena_zapytaj.run();\n}}",
+  "onOptionChange": "{{\nczydoplatakolor.run();\ndoplata.kolor();\ndoplatakolorzapytaj.run();\ncena_zapytaj.run();\n}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 180,

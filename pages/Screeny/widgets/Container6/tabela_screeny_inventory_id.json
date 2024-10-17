@@ -75,7 +75,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1728926512435,
+  "columnUpdatedAt": 1729183560213,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -272,37 +272,7 @@
       "key": "primaryColumns.customColumn2.menuColor"
     },
     {
-      "key": "primaryColumns.brutto.label"
-    },
-    {
-      "key": "primaryColumns.skrzynka.label"
-    },
-    {
-      "key": "primaryColumns.tkanina.label"
-    },
-    {
-      "key": "primaryColumns.wkladka.label"
-    },
-    {
-      "key": "primaryColumns.rodzajpomiaru.label"
-    },
-    {
-      "key": "primaryColumns.kolor.label"
-    },
-    {
-      "key": "primaryColumns.waluta.label"
-    },
-    {
-      "key": "primaryColumns.kurseuro.label"
-    },
-    {
       "key": "primaryColumns.customColumn1.menuColor"
-    },
-    {
-      "key": "primaryColumns.customColumn1.label"
-    },
-    {
-      "key": "primaryColumns.customColumn1.alias"
     },
     {
       "key": "primaryColumns.opisbezrabatow.computedValue"
@@ -529,7 +499,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": false,
-      "label": "{{i18n.translate(\"Brutto\")}}",
+      "label": "Brutto",
       "notation": "standard",
       "originalId": "brutto",
       "sticky": "",
@@ -643,7 +613,7 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "{{i18n.translate(\"Usuń\")}}",
+      "alias": "Usuń",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "buttonLabel": "kasuj",
@@ -668,7 +638,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Usuń\")}}",
+      "label": "Usuń",
       "labelColor": "#FFFFFF",
       "menuColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
@@ -1018,7 +988,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Kolor\")}}",
+      "label": "Kolor",
       "notation": "standard",
       "originalId": "kolor",
       "sticky": "",
@@ -1052,7 +1022,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": false,
-      "label": "{{i18n.translate(\"Kurs euro\")}}",
+      "label": "Kurs euro",
       "notation": "standard",
       "originalId": "kurseuro",
       "sticky": "",
@@ -1603,7 +1573,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Rodzaj pomiaru\")}}",
+      "label": "Rodzaj pomiaru",
       "notation": "standard",
       "originalId": "rodzajpomiaru",
       "sticky": "",
@@ -1671,7 +1641,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Skrzynka\")}}",
+      "label": "Skrzynka",
       "notation": "standard",
       "originalId": "skrzynka",
       "sticky": "",
@@ -1877,7 +1847,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Tkanina\")}}",
+      "label": "Tkanina",
       "notation": "standard",
       "originalId": "tkanina",
       "sticky": "",
@@ -1945,7 +1915,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": false,
-      "label": "{{i18n.translate(\"Waluta\")}}",
+      "label": "Waluta",
       "notation": "standard",
       "originalId": "waluta",
       "sticky": "",
@@ -1979,7 +1949,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "{{i18n.translate(\"Wkładka\")}}",
+      "label": "Wkładka",
       "notation": "standard",
       "originalId": "wkladka",
       "sticky": "",

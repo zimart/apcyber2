@@ -64,5 +64,5 @@ INSERT INTO inventory_screeny  (wysokosc,
 					'{{Vat.selectedOptionValue}}',
 				  '',
 					'',
-					'{{Input22.text}}'
+					'{{systemzdoplatami.text}}'
 				 );

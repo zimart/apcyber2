@@ -31,7 +31,7 @@
   "mobileRightColumn": 16,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onClick": "{{storeValue('id_oferty', Input27.text).then(() => {\n  navigateTo('Podsumowanie', {\n    id_oferta: appsmith.store.id_oferty\n  }, 'SAME_WINDOW');\n});}}",
+  "onClick": "{{storeValue('id_oferty', idofertyappsmith.text).then(() => {\n  navigateTo('Podsumowanie', {\n    id_oferta: appsmith.store.id_oferty\n  }, 'SAME_WINDOW');\n});}}",
   "parentColumnSpace": 19.90625,
   "parentId": "spyg6a4iep",
   "parentRowSpace": 10,

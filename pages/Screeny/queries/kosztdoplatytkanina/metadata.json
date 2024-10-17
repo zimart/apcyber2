@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "kosztdoplatytkanina",
     "pageId": "Screeny",
     "userSetOnLoad": false

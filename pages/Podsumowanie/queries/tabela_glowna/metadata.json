@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "tabela_glowna",
     "pageId": "Podsumowanie",
     "userSetOnLoad": false
