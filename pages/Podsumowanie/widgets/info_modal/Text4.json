@@ -1,10 +1,7 @@
 {
   "animateLoading": true,
-  "backgroundColor": "",
-  "borderColor": "#b91c1c",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "0",
-  "bottomRow": 7,
+  "bottomRow": 15,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -17,50 +14,42 @@
     },
     {
       "key": "text"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
-  "fontStyle": "BOLD",
+  "fontSize": "1rem",
+  "fontStyle": "",
   "isLoading": false,
-  "isVisible": "{{rabatsystem.text > 0}}",
-  "key": "4fmzq50xxk",
-  "leftColumn": 8,
+  "isVisible": true,
+  "key": "pnt9zdjwxy",
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 6,
-  "mobileLeftColumn": 9,
-  "mobileRightColumn": 25,
-  "mobileTopRow": 2,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 7,
-  "originalTopRow": 2,
+  "originalBottomRow": 11,
+  "originalTopRow": 6,
   "overflow": "NONE",
-  "parentColumnSpace": 19.3125,
-  "parentId": "rlvik19e2s",
+  "parentColumnSpace": 6.9375,
+  "parentId": "u0g0i1vh5r",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 25,
+  "rightColumn": 61,
   "shouldTruncate": false,
-  "text": "UWAGA - USTAWIONY RABAT NA SYSTEM: {{rabatsystem.text}} %",
+  "text": "{{glowna_tabela.triggeredRow.opisbezrabatow}}",
   "textAlign": "LEFT",
-  "textColor": "#b91c1c",
-  "topRow": 2,
+  "textColor": "#231F20",
+  "topRow": 6,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "v32rahcknf",
-  "widgetName": "Text33"
+  "widgetId": "s2dh0y6fgi",
+  "widgetName": "Text4"
 }

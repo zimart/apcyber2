@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
+  "bottomRow": 9,
   "boxShadow": "none",
   "configureMenuItems": {
     "config": {
@@ -75,7 +75,7 @@
   "renderMode": "CANVAS",
   "rightColumn": 39,
   "sourceData": [],
-  "topRow": 3,
+  "topRow": 5,
   "type": "MENU_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "j83cj2qam4",
