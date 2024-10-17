@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_6eb37309-6b93-4eee-a716-f1dff2dcbb03",
+  "id": "Podsumowanie_przelicztabeleglowna",
+  "unpublishedCollection": {
+    "name": "przelicztabeleglowna",
+    "pageId": "Podsumowanie",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}
