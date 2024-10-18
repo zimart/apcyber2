@@ -44,7 +44,7 @@
   "labelText": "{{i18n.translate(\"Język\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 51,
+  "leftColumn": 55,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,

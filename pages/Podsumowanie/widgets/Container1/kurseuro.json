@@ -3,9 +3,10 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 19,
+  "bottomRow": 5,
+  "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
-  "defaultText": "{{daneoferty.data[0].rabat || 0}}",
+  "defaultText": "{{daneoferty.data[0].kurseuro || 4.3}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,10 +15,18 @@
       "key": "borderRadius"
     },
     {
+      "key": "isVisible"
+    },
+    {
       "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
@@ -27,46 +36,44 @@
     }
   ],
   "iconAlign": "left",
-  "iconName": "th-disconnect",
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{Select6.selectedOptionLabel===\"EUR\"}}",
   "key": "m0mpv0zxsf",
-  "label": "Rabat",
+  "label": "KURS EURO",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "BOLD",
-  "labelTextColor": "#b91c1c",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 45,
+  "leftColumn": 58,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 23,
-  "mobileLeftColumn": 19,
-  "mobileRightColumn": 39,
-  "mobileTopRow": 16,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 33,
+  "mobileRightColumn": 53,
+  "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onBlur": "{{showModal(LanguageLoading.name).then(() => {\n  ustawrabatogolny.run();\n  zmiendaneoferty.run();\n  tabela_glowna.run();\n  closeModal(LanguageLoading.name);\n});}}",
+  "onBlur": "{{showModal(LanguageLoading.name).then(() => {\n  kurswaluta.kurs();\n  zmiendaneoferty.run();\n  closeModal(LanguageLoading.name);\n});}}",
   "onTextChanged": "",
-  "originalBottomRow": 19,
-  "originalTopRow": 12,
+  "originalBottomRow": 5,
+  "originalTopRow": 0,
   "parentColumnSpace": 20.5625,
-  "parentId": "0",
+  "parentId": "7tq308teo6",
   "parentRowSpace": 10,
-  "placeholderText": "WPISZ 0",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 51,
+  "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 12,
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "ru70sy7cio",
-  "widgetName": "rabatogolny"
+  "widgetId": "33snq38m0m",
+  "widgetName": "kurseuro"
 }
