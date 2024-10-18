@@ -1,0 +1,39 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "https://panel.sigma.sanok.pl/public_html/layouts/resources/Logo/logo",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "qvz4g2uk9y",
+  "leftColumn": 2,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 38,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "parentColumnSpace": 5.2649383544921875,
+  "parentId": "8rq3ao3yqz",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 26,
+  "topRow": 5,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "41nev0kffu",
+  "widgetName": "Image1"
+}

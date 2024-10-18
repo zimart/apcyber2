@@ -1714,7 +1714,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Rodzaj pomiaru",
+      "label": "rodzajpomiaru",
       "notation": "standard",
       "originalId": "rodzajpomiaru",
       "sticky": "",
