@@ -28,10 +28,13 @@
   "columnOrder": [
     "customColumn2",
     "customColumn3",
-    "id",
+    "customColumn1",
     "seq",
     "cenanetto",
     "ilosc",
+    "moc",
+    "razemnetto",
+    "id",
     "concat",
     "szerokosc",
     "wysokosc",
@@ -49,8 +52,6 @@
     "rabatmotor",
     "kwotarabatmotor",
     "priceall",
-    "moc",
-    "razemnetto",
     "vat",
     "brutto",
     "skrzynka",
@@ -65,7 +66,6 @@
     "linia",
     "system",
     "kolor",
-    "customColumn1",
     "fk_oferty_inventory_id",
     "kurseuro",
     "waluta",
@@ -77,14 +77,14 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729269957189,
+  "columnUpdatedAt": 1729289295720,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
     "concat": 148,
     "customColumn1": 60,
-    "customColumn2": 87,
-    "customColumn3": 64,
+    "customColumn2": 60,
+    "customColumn3": 60,
     "doplatakolor": 141,
     "doplatatkanina": 127,
     "doplatawkladka": 141,
@@ -495,6 +495,15 @@
     },
     {
       "key": "primaryColumns.customColumn3.menuColor"
+    },
+    {
+      "key": "primaryColumns.customColumn2.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn3.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -772,8 +781,10 @@
       "alias": "Usuń",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "buttonColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "buttonLabel": "kasuj",
       "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "SECONDARY",
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "iconButton",
       "computedValue": "",
@@ -809,12 +820,12 @@
       "width": 150
     },
     "customColumn2": {
-      "alias": "Szczegóły",
+      "alias": "Info",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "#b91c1c",
+      "buttonColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "SECONDARY",
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
@@ -838,7 +849,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Szczegóły",
+      "label": "Info",
       "labelColor": "#FFFFFF",
       "menuColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
@@ -857,7 +868,7 @@
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "#b91c1c",
+      "buttonColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "SECONDARY",
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
@@ -1461,7 +1472,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "opiszrabatami",
       "notation": "standard",
       "originalId": "opiszrabatami",
@@ -2197,7 +2208,7 @@
     }
   },
   "renderMode": "CANVAS",
-  "rightColumn": 51,
+  "rightColumn": 64,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,

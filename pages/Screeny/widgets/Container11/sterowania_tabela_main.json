@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 37,
+  "bottomRow": 29,
   "bottomRowBeforeCollapse": 45,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
@@ -33,6 +33,7 @@
     }
   },
   "columnOrder": [
+    "customColumn1",
     "customColumn2",
     "id_sterowania",
     "model",
@@ -45,13 +46,13 @@
     "seria",
     "vat_sterowania",
     "brutto_sterowania",
-    "customColumn1",
     "opis",
     "fk_oferty_inventory_id_ster",
     "rodzajproduktu_ster"
   ],
-  "columnUpdatedAt": 1728852770166,
+  "columnUpdatedAt": 1729289449989,
   "columnWidthMap": {
+    "customColumn1": 60,
     "customColumn2": 69
   },
   "compactMode": "DEFAULT",
@@ -121,6 +122,9 @@
     },
     {
       "key": "primaryColumns.kwotarabatu.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -178,8 +182,8 @@
   "onPageChange": "{{\n            Select_sterowania2.run();\n            iloscsterowania.run()\n          }}",
   "onSearchTextChanged": "{{\n            Select_sterowania2.run();\n            iloscsterowania.run()\n          }}",
   "onSort": "{{\n            Select_sterowania2.run();\n            iloscsterowania.run()\n          }}",
-  "originalBottomRow": 37,
-  "originalTopRow": 8,
+  "originalBottomRow": 55,
+  "originalTopRow": 26,
   "parentId": "ep28zqs75j",
   "parentRowSpace": 10,
   "primaryColumnId": "id_sterowania",
@@ -281,8 +285,10 @@
       "alias": "Usuń",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "buttonColor": "{{sterowania_tabela_main.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "buttonLabel": "Kasuj",
       "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "SECONDARY",
       "columnType": "iconButton",
       "computedValue": "",
       "currencyCode": "USD",
@@ -705,7 +711,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{Select_sterowania2.data}}",
   "textSize": "0.875rem",
-  "topRow": 8,
+  "topRow": 0,
   "topRowBeforeCollapse": 3,
   "totalRecordsCount": "{{iloscsterowania.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
