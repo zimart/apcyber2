@@ -4,7 +4,7 @@
   "bottomRow": 13,
   "boxShadow": "none",
   "buttonColor": "#264a80",
-  "buttonVariant": "PRIMARY",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -21,7 +21,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "pz5fyr5x9t",
-  "leftColumn": 23,
+  "leftColumn": 20,
   "minWidth": 120,
   "mobileBottomRow": 7,
   "mobileLeftColumn": 16,

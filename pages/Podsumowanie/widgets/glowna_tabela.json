@@ -58,18 +58,19 @@
     "id_main_inv",
     "rodzajmotor"
   ],
-  "columnUpdatedAt": 1729285979519,
+  "columnUpdatedAt": 1729286583573,
   "columnWidthMap": {
     "Ilosc": 72,
     "Produkt": 139,
     "cenanetto": 114,
     "customColumn1": 64,
     "customColumn2": 64,
-    "customColumn3": 115,
+    "customColumn3": 184,
     "customColumn4": 89,
     "kwotarabatogolny": 136,
     "rabatogolny": 84,
-    "vat": 78
+    "razemnetto": 186,
+    "vat": 125
   },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
@@ -812,7 +813,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "opiszrabatami",
       "notation": "standard",
       "originalId": "opiszrabatami",

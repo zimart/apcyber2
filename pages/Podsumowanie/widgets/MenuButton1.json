@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 11,
+  "bottomRow": 13,
   "boxShadow": "none",
   "configureMenuItems": {
     "config": {
@@ -30,7 +30,7 @@
   "key": "7ji0dknpn3",
   "label": "WYBIERZ KATEGORIĘ/ EDYTUJ POZYCJE Z KATEGORII",
   "leftColumn": 0,
-  "menuColor": "#30a37d",
+  "menuColor": "#2d8e65",
   "menuItems": {
     "menuItem1": {
       "id": "menuItem1",
@@ -65,16 +65,16 @@
   "mobileRightColumn": 40,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "originalBottomRow": 13,
-  "originalTopRow": 9,
+  "originalBottomRow": 11,
+  "originalTopRow": 7,
   "parentColumnSpace": 20.21875,
   "parentId": "0",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "renderMode": "CANVAS",
-  "rightColumn": 23,
+  "rightColumn": 20,
   "sourceData": [],
-  "topRow": 7,
+  "topRow": 9,
   "type": "MENU_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "j83cj2qam4",
