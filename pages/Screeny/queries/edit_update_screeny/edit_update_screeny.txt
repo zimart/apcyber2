@@ -1,0 +1,6 @@
+UPDATE inventory_screeny SET
+    wysokosc = '{{edit_wysokosc.text}}',
+    szerokosc = '{{edit_szerokosc.text}}',
+    ilosc = '{{edit_ilosc.text}}'
+   
+  WHERE id = {{tabela_screeny_inventory_id.triggeredRow.id}}
