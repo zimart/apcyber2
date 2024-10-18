@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( daneoferty.data[0].vat || 23))(vat.options, vat.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( daneoferty.data[0].vat || \"23\" ))(vat.options, vat.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

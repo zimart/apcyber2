@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 99,
+  "bottomRow": 114,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -66,7 +66,7 @@
     "customColumn1": 64,
     "customColumn2": 64,
     "customColumn3": 184,
-    "customColumn4": 89,
+    "customColumn4": 60,
     "kwotarabatogolny": 136,
     "rabatogolny": 84,
     "razemnetto": 186,
@@ -225,6 +225,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn4.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -270,8 +273,8 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onPageChange": "{{tabela_glowna.run()}}",
-  "originalBottomRow": 99,
-  "originalTopRow": 25,
+  "originalBottomRow": 114,
+  "originalTopRow": 24,
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
@@ -591,8 +594,9 @@
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "#831843",
+      "buttonColor": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "SECONDARY",
       "columnType": "iconButton",
       "computedValue": "",
       "currencyCode": "USD",
@@ -1177,7 +1181,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{tabela_glowna.data}}",
   "textSize": "0.875rem",
-  "topRow": 25,
+  "topRow": 24,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
