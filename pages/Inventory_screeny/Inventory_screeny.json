@@ -1,12 +1,11 @@
 {
-  "gitSyncId": "670a2c74cb4eb2140bfd1e60_c953975b-5a0d-424c-8c95-eeb95a20d8c6",
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_f4d80fc3-8f93-4836-9e4c-c6e8c32894fa",
   "unpublishedPage": {
-    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 2980,
+          "bottomRow": 890,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Screeny",
-    "slug": "screeny"
+    "name": "Inventory_screeny",
+    "slug": "inventory-screeny"
   }
 }

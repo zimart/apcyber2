@@ -113,6 +113,10 @@
     {
       "id": "Screeny",
       "isDefault": false
+    },
+    {
+      "id": "Inventory_screeny",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
