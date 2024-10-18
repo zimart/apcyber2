@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -20,7 +23,7 @@
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "ocgqaoimtm",
   "label": "Cena netto - PLN !!!",
@@ -49,7 +52,8 @@
   "showStepArrows": false,
   "topRow": 7,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{cena_pozycja.text.length>0}}",
   "version": 2,
   "widgetId": "osl7mvifpw",
-  "widgetName": "Input2"
+  "widgetName": "cena_pozycja"
 }

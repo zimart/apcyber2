@@ -12,15 +12,18 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "ocgqaoimtm",
   "label": "Ilość",
@@ -32,6 +35,7 @@
   "leftColumn": 35,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "minNum": "1",
   "minWidth": 450,
   "mobileBottomRow": 14,
   "mobileLeftColumn": 36,
@@ -45,10 +49,12 @@
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 45,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 7,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{iloscpozycja.text.length>0}}",
   "version": 2,
   "widgetId": "oqyd1u7j2k",
-  "widgetName": "Input1"
+  "widgetName": "iloscpozycja"
 }

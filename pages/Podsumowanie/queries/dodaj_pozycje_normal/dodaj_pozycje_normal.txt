@@ -1,0 +1,2 @@
+INSERT INTO inventory_main (moc, rodzajmotor, fk_oferty_inventory_id, ilosc, cena)
+  VALUES ({{nazwapozycji.text}}, '21', '{{idoferty_appsmith.text}}', '{{iloscpozycja.text}}', '{{cena_pozycja.text}}');

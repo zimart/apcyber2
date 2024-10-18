@@ -52,6 +52,8 @@
   "needsErrorInfo": false,
   "onBlur": "{{showModal(LanguageLoading.name).then(() => {\n  ustawrabatogolny.run();\n  zmiendaneoferty.run();\n  tabela_glowna.run();\n  closeModal(LanguageLoading.name);\n});}}",
   "onTextChanged": "",
+  "originalBottomRow": 19,
+  "originalTopRow": 12,
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,

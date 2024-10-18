@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -20,7 +23,7 @@
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "ocgqaoimtm",
   "label": "Nazwa pozycji",
@@ -48,6 +51,7 @@
   "showStepArrows": false,
   "topRow": 7,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{nazwapozycji.text.length>0}}",
   "version": 2,
   "widgetId": "iy12sxuk4m",
   "widgetName": "nazwapozycji"

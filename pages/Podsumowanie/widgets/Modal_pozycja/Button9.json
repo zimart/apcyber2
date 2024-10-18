@@ -15,7 +15,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
@@ -28,6 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
+  "onClick": "{{dodaj_pozycje_normal.run().then(() => {\n  przelicz_main_js.przelicz_glowna();\n});}}",
   "parentId": "6ntg69q3k7",
   "placement": "CENTER",
   "recaptchaType": "V3",
