@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 12,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -44,7 +44,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 7,
   "text": "Wróć do ofert",
-  "topRow": 10,
+  "topRow": 8,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "2314zwvv3y",

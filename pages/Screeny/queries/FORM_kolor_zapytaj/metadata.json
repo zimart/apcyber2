@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT kolorm FROM screeny_kolor where system = {{update_form.formData.system}}",
+      "body": "SELECT kolorm FROM screeny_kolor where system = {{edit_system.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "FORM_kolor_zapytaj",
     "pageId": "Screeny",
     "userSetOnLoad": true

@@ -1,1 +1,1 @@
-SELECT kolorm FROM screeny_kolor where system = {{update_form.formData.system}}
+SELECT kolorm FROM screeny_kolor where system = {{edit_system.selectedOptionLabel}};

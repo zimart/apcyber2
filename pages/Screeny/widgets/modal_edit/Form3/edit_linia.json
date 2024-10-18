@@ -4,22 +4,22 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "1",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tabela_screeny_inventory_id.triggeredRow.linia))(edit_linia.options, edit_linia.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -30,41 +30,38 @@
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
-  "key": "pomnq6978w",
+  "key": "awmuorqyqr",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Podawana wysokość",
+  "labelText": "Label",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 11,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 8,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 6,
-  "mobileTopRow": 1,
+  "mobileBottomRow": 32,
+  "mobileLeftColumn": 5,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => indekswys.run())\n.then(() => skrzynka_zapytaj.run())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => powierzchnian.m2()) \n\n}}",
+  "onOptionChange": "{{FORM_system_zapytaj.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 7,
-  "originalTopRow": 0,
-  "parentColumnSpace": 19.59375,
-  "parentId": "er5qa5lbjh",
+  "parentColumnSpace": 9.12109375,
+  "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 21,
+  "rightColumn": 14,
   "serverSideFiltering": false,
-  "shouldScrollContents": true,
-  "sourceData": "[\n  {\n    \"label\": \"Wysokość całkowita\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"Wysokość okna\",\n    \"value\": \"2\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"label\": \"PREMIUM\",\n    \"value\": \"PREMIUM\"\n  },\n  {\n    \"label\": \"STANDARD\",\n    \"value\": \"STANDARD\"\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "jb2rfypdp1",
-  "widgetName": "rodzajwysokosci"
+  "widgetId": "cmkh7dz64q",
+  "widgetName": "edit_linia"
 }

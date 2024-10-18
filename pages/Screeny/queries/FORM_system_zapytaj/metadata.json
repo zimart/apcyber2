@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT system,valueindeks FROM screeny_system where linia = {{update_form.formData.linia}} \nORDER BY seq ASC;",
+      "body": "SELECT system,valueindeks FROM screeny_system where linia = {{edit_linia.selectedOptionLabel}}\nORDER BY seq ASC;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
