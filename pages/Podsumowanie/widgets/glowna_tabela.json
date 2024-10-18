@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 98,
+  "bottomRow": 99,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -222,6 +222,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn2.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -267,8 +270,8 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onPageChange": "{{tabela_glowna.run()}}",
-  "originalBottomRow": 98,
-  "originalTopRow": 24,
+  "originalBottomRow": 99,
+  "originalTopRow": 25,
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
@@ -515,7 +518,7 @@
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "#831843",
+      "buttonColor": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "SECONDARY",
       "columnType": "iconButton",
@@ -1174,7 +1177,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{tabela_glowna.data}}",
   "textSize": "0.875rem",
-  "topRow": 24,
+  "topRow": 25,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
