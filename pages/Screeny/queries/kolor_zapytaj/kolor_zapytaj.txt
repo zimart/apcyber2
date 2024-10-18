@@ -1,1 +1,1 @@
-SELECT kolorm FROM screeny_kolor where system = {{system_select.selectedOptionLabel}}
+SELECT kolorm FROM screeny_kolor where system = {{system_select.selectedOptionValue}}

@@ -885,7 +885,7 @@
       "labelColor": "#FFFFFF",
       "menuColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
-      "onClick": "{{showModal(modal_edit.name);}}",
+      "onClick": "{{showModal(modal_edit.name).then(() => {\n  form_screeny_trigered.run();\n  FORM_system_zapytaj.run();\n  FORM_kolor_zapytaj.run();\n});}}",
       "originalId": "customColumn3",
       "sticky": "",
       "textSize": "0.875rem",

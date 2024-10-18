@@ -62,7 +62,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 11,
   "serverSideFiltering": false,
-  "sourceData": "{{system_zapytaj.data.map( (obj) =>{ return  {'label': obj.system, 'value': obj.valueindeks } })}}",
+  "sourceData": "{{system_zapytaj.data.map( (obj) =>{ return  {'label': obj.system, 'value': obj.system } })}}",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
