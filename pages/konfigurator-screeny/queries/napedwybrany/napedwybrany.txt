@@ -1,0 +1,1 @@
+SELECT model,cenakatalogowanaped FROM screeny_napedy where moc >={{appsmith.store.wymaganynaped}} and seria = {{naped_seria_select.selectedOptionLabel}} and rodzaj = {{rodzaj_nap.selectedOptionLabel}} and typ = "naped" ORDER BY moc ASC LIMIT 1;

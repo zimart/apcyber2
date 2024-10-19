@@ -1,0 +1,9 @@
+UPDATE inventory_screeny SET
+     rabatsystem =  '{{tabela_screeny_inventory_id.updatedRow.rabatsystem}}',
+		 kwotarabatsystem = '{{tabela_screeny_inventory_id.updatedRow.systemzdoplata*(tabela_screeny_inventory_id.updatedRow.rabatsystem/100)}}',
+rabatmotor = '{{tabela_screeny_inventory_id.updatedRow.rabatmotor}}',
+systemporabacie = '{{tabela_screeny_inventory_id.updatedRow.systemzdoplata-tabela_screeny_inventory_id.updatedRow.kwotarabatsystem}}',
+kwotarabatmotor = '{{tabela_screeny_inventory_id.updatedRow.price_motor*(tabela_screeny_inventory_id.updatedRow.rabatmotor/100)}}',
+priceall = '{{tabela_screeny_inventory_id.updatedRow.price_motor - tabela_screeny_inventory_id.updatedRow.rabatmotor}}',
+cenanetto = '{{tabela_screeny_inventory_id.updatedRow.priceall}}'
+WHERE id = {{tabela_screeny_inventory_id.updatedRow.id}}; 

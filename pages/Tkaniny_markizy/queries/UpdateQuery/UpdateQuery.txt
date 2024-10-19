@@ -1,0 +1,5 @@
+UPDATE tkaniny_markizy SET
+		nazwa = '{{update_form.fieldState.nazwa.isVisible ? update_form.formData.nazwa : update_form.sourceData.nazwa}}',
+		miniatura = '{{update_form.fieldState.miniatura.isVisible ? update_form.formData.miniatura : update_form.sourceData.miniatura}}',
+    base = '{{update_form.fieldState.base.isVisible ? update_form.formData.base : update_form.sourceData.base}}'
+WHERE id = {{data_table.selectedRow.id}};

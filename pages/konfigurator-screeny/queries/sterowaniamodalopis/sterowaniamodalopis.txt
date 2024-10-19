@@ -1,0 +1,1 @@
+SELECT cenakatalogowanaped,opis FROM  screeny_napedy where model = {{Select15.selectedOptionLabel}} ;

@@ -200,9 +200,6 @@
       "key": "borderColor"
     },
     {
-      "key": "schema.__root_schema__.children.numeroferty.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.vat.defaultValue"
     },
     {
@@ -300,6 +297,9 @@
     },
     {
       "key": "schema.__root_schema__.children.sumarabatu.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.numeroferty.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -334,7 +334,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_id_klient.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 158,
+  "originalBottomRow": 67,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "x3oj14smam",
@@ -419,8 +419,7 @@
           "label": "Datawaznosci",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "datawaznosci",
-          "position": 15,
-          "sourceData": null
+          "position": 15
         },
         "fk_klienci_oferty_id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -528,8 +527,7 @@
           "label": "Komentarz",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "komentarz",
-          "position": 12,
-          "sourceData": null
+          "position": 12
         },
         "kurseuro": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -564,7 +562,7 @@
           "iconAlign": "left",
           "identifier": "numeroferty",
           "isCustomField": false,
-          "isDisabled": true,
+          "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
@@ -572,7 +570,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "numeroferty",
           "position": 6,
-          "sourceData": "OF/2024/10/160"
+          "sourceData": "OF/2024/10/200"
         },
         "rabat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -615,8 +613,7 @@
           "label": "Sugerowanyzadatek",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "sugerowanyzadatek",
-          "position": 19,
-          "sourceData": null
+          "position": 19
         },
         "sumabrutto": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -637,8 +634,7 @@
           "label": "Sumabrutto",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "sumabrutto",
-          "position": 18,
-          "sourceData": null
+          "position": 18
         },
         "sumanetto": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -659,8 +655,7 @@
           "label": "Sumanetto",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "sumanetto",
-          "position": 17,
-          "sourceData": null
+          "position": 17
         },
         "sumarabatu": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -768,8 +763,7 @@
           "label": "Warunkiplatnosci",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "warunkiplatnosci",
-          "position": 16,
-          "sourceData": null
+          "position": 16
         },
         "wymaganyzadatek": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -790,8 +784,7 @@
           "label": "Wymaganyzadatek",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "wymaganyzadatek",
-          "position": 14,
-          "sourceData": null
+          "position": 14
         },
         "wymaganyzadatekprocent": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -812,8 +805,7 @@
           "label": "Wymaganyzadatekprocent",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "wymaganyzadatekprocent",
-          "position": 13,
-          "sourceData": null
+          "position": 13
         }
       },
       "dataType": "object",

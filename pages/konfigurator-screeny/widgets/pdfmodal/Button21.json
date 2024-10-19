@@ -1,0 +1,64 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 17,
+  "bottomRowBeforeCollapse": 17,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "document",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{wybierzjezykpdf.selectedOptionValue===\"polski\"}}",
+  "key": "se9pazebr0",
+  "leftColumn": 2,
+  "minWidth": 120,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 13,
+  "needsErrorInfo": false,
+  "onClick": "{{pdf_polski_z_rabatami_pobierz.BuildPDF();\ncloseModal(pdfmodal.name);}}",
+  "originalBottomRow": 17,
+  "originalTopRow": 13,
+  "parentColumnSpace": 5.53125,
+  "parentId": "4dz2r3feri",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "PDF/ polski z rabatami",
+  "topRow": 13,
+  "topRowBeforeCollapse": 13,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "lbg5lsn5q3",
+  "widgetName": "Button21"
+}

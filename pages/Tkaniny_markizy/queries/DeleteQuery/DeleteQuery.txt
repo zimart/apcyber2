@@ -1,0 +1,2 @@
+DELETE FROM tkaniny_markizy
+  WHERE id = {{data_table.triggeredRow.id}};

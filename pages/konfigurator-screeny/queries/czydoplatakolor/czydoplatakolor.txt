@@ -1,0 +1,1 @@
+SELECT czydoplata FROM screeny_kolor WHERE kolorm = {{kolor_select.selectedOptionLabel}} and system = {{system_select.selectedOptionLabel}};

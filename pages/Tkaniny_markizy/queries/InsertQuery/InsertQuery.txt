@@ -1,0 +1,8 @@
+INSERT INTO tkaniny_markizy (
+	nazwa,
+	miniatura,
+	base)
+VALUES (
+	'{{nazwa.text}}',
+	'{{Input3.text}}',
+	'');

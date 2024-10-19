@@ -1,0 +1,2 @@
+UPDATE screeny_inventory SET
+systemporabacie = systemzdoplata -kwotarabatsystem WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}; 

@@ -1,0 +1,9 @@
+UPDATE sterowania SET
+    ilosc = ilosc,
+    cena = cena,
+		rabat_sterowania = rabat_sterowania,
+		kwotarabatu = kwotarabatu,
+		cenaporabacie = cenaporabacie,
+    razemnetto = ilosc * cenaporabacie 
+   
+    WHERE fk_oferty_inventory_id_ster = {{appsmith.URL.queryParams.id_oferta}}; 

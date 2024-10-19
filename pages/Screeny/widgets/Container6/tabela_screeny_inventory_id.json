@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 69,
+  "bottomRow": 67,
   "bottomRowBeforeCollapse": 128,
   "boxShadow": "none",
   "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
@@ -70,14 +70,16 @@
     "kurseuro",
     "waluta",
     "opisbezrabatow",
-    "opiszrabatami"
+    "opiszrabatami",
+    "serianapedu",
+    "rodzajnapedu"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729289295720,
+  "columnUpdatedAt": 1729351378753,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -504,6 +506,12 @@
     },
     {
       "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.serianapedu.computedValue"
+    },
+    {
+      "key": "primaryColumns.rodzajnapedu.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -610,6 +618,9 @@
     },
     {
       "key": "primaryColumns.customColumn3.onClick"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
   "enableClientSideSearch": true,
@@ -632,6 +643,7 @@
   "leftColumn": 0,
   "onPageChange": "{{tabela_inventory_id_new.run()}}",
   "onPageSizeChange": "{{tabela_inventory_id_new.run()}}",
+  "onRowSelected": "{{storeValue('numerkoloru', tabela_screeny_inventory_id.selectedRow.kolor);}}",
   "onSearchTextChanged": "{{tabela_inventory_id_new.run()}}",
   "onSort": "{{tabela_inventory_id_new.run()}}",
   "originalBottomRow": 111,
@@ -812,7 +824,7 @@
       "notation": "standard",
       "onClick": "{{showModal(Delete_Modal.name);}}",
       "originalId": "customColumn1",
-      "sticky": "",
+      "sticky": "left",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -896,9 +908,9 @@
       "labelColor": "#FFFFFF",
       "menuColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
-      "onClick": "{{showModal(modal_edit.name).then(() => {\n  form_screeny_trigered.run();\n  FORM_system_zapytaj.run();\n  FORM_kolor_zapytaj.run();\n});}}",
+      "onClick": "{{showModal(modal_edit.name).then(() => {\n  form_screeny_trigered.run();\n  FORM_system_zapytaj.run();\n  FORM_kolor_zapytaj.run();\n  FORM_serianapedu.run();\n});}}",
       "originalId": "customColumn3",
-      "sticky": "",
+      "sticky": "left",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -1762,6 +1774,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "rodzajnapedu": {
+      "alias": "rodzajnapedu",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rodzajnapedu\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "rodzajnapedu",
+      "index": 43,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "rodzajnapedu",
+      "notation": "standard",
+      "originalId": "rodzajnapedu",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "rodzajpomiaru": {
       "alias": "rodzajpomiaru",
       "allowCellWrapping": false,
@@ -1822,6 +1868,40 @@
       "label": "Lp.",
       "notation": "standard",
       "originalId": "seq",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "serianapedu": {
+      "alias": "serianapedu",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"serianapedu\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "serianapedu",
+      "index": 42,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "serianapedu",
+      "notation": "standard",
+      "originalId": "serianapedu",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

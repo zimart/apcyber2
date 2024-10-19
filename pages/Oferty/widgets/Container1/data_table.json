@@ -650,7 +650,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'OF/' + numerofertmiesiac.miesiac.data + '/' + currentRow.id_oferta))}}",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow.numeroferty))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,

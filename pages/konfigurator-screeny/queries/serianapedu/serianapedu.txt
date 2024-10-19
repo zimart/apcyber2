@@ -1,0 +1,1 @@
+SELECT serianapedu FROM screeny_wyborserii WHERE system = {{system_select.selectedOptionLabel}};

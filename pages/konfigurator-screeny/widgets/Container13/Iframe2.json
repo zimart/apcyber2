@@ -1,0 +1,41 @@
+{
+  "animateLoading": false,
+  "borderOpacity": "0",
+  "borderRadius": "0px",
+  "borderWidth": "0",
+  "bottomRow": 81,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "source"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "k9d3usg46r",
+  "leftColumn": 0,
+  "mobileBottomRow": 32,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onSrcDocChanged": "{{}}",
+  "parentColumnSpace": 16.7158203125,
+  "parentId": "74ng7dd1ha",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "source": "https://serwer.hosting-sanok.pl/suri.html?tkanina={{tkanina_list.klik.data}}",
+  "topRow": 0,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "0z27obqvz5",
+  "widgetName": "Iframe2"
+}

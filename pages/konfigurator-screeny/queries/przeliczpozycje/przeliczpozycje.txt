@@ -1,0 +1,15 @@
+UPDATE inventory_screeny SET 
+    kwotarabatsystem = systemzdoplata*(rabatsystem/100),
+    systemporabacie = systemzdoplata-kwotarabatsystem,
+    priceall = price_motor - (price_motor*(rabatmotor/100)),
+		cenanetto = systemporabacie + priceall,
+		kwotarabatmotor = price_motor*(rabatmotor/100),
+	  razemnetto = cenanetto * ilosc,
+		moc = concat("Roleta","-",system,"/",skrzynka,"/",kolor," ", szerokosc,"x",wysokosc," ",tkanina),
+		opisbezrabatow = CONCAT("System:",system," | Skrzynka:",skrzynka," | Kolor:",kolor," | Szer:", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata kolor:",procentdoplatakolor,"%"," | Kwota doplaty:",doplatakolor," | Doplata tkanina:",doplatatkanina," | Doplata do wkladki:",doplatawkladka," | Cena rolety z doplatami:",systemzdoplata," | Cena napedu:",priceall,"| Roleta kompletna:", cenanetto),
+		opiszrabatami = CONCAT("System:",system," | Skrzynka:",skrzynka," | Kolor:",kolor," | Szer:", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata kolor:",procentdoplatakolor,"%"," | Kwota doplaty:",doplatakolor," | Doplata tkanina:",doplatatkanina," | Doplata do wkladki:",doplatawkladka," | Cena rolety z doplatami:",systemzdoplata," | Rabat system:",rabatsystem,"%"," | System po rabacie:",systemporabacie," | Cena napedu:",priceall," | Rabat naped:",rabatmotor,"%","  Naped po rabacie",priceall,"| Roleta kompletna:", cenanetto)
+	
+			
+WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};
+
+

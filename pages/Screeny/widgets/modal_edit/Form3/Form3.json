@@ -1,10 +1,10 @@
 {
   "animateLoading": true,
-  "backgroundColor": "#f4f4f5",
+  "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 45,
+  "bottomRow": 39,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -56,6 +56,9 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "backgroundColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -65,7 +68,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "vk433wyowk",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
@@ -74,17 +77,17 @@
   "mobileRightColumn": 24,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "originalBottomRow": 45,
-  "originalTopRow": 6,
+  "originalBottomRow": 39,
+  "originalTopRow": 0,
   "parentColumnSpace": 14.375,
   "parentId": "0yds80ql5p",
   "parentRowSpace": 10,
   "positioning": "fixed",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 61,
+  "rightColumn": 64,
   "shouldScrollContents": true,
-  "topRow": 6,
+  "topRow": 0,
   "type": "FORM_WIDGET",
   "widgetId": "y17bpooaf2",
   "widgetName": "Form3"
