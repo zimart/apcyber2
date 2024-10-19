@@ -10,7 +10,7 @@ const Roboto = Input1.text;
 // Custom headers
 const columns = [
 { header: 'Produkt', dataKey: 'Produkt' },
-{ header: 'Ilosc', dataKey: 'Ilosc' },
+{ header: 'Ilość', dataKey: 'Ilosc' },
 { header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
 { header: 'Rabat %', dataKey: 'Rabatprocent' } ,// Custom header with currency
 { header: 'Rabat', dataKey: 'Rabat' } ,// Custom header with currency
@@ -67,10 +67,11 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 	    doc.setFontSize("10")
 	    doc.text ("OFERTA", 15, 40);
 	    doc.setFontSize("9")
-	    doc.text (i18n.translate(Text10.text), 15, 60);
-	   
+	    doc.text (Text10.text, 15, 60);
+	    doc.text (Text12.text, 15, 63);
 	    doc.text (Text11.text, 15, 70);
 	    doc.text(Text1.text, 15, 45);
+	    doc.addImage(Text13.text,'PNG',170, 15,25,25);
 	
 //fault_1 (doc, {
 //columnStyles: { europe: { halign: 'center' },

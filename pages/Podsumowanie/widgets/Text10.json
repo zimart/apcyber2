@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 142,
+  "bottomRow": 179,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -19,9 +22,9 @@
   "fontSize": "0.875rem",
   "fontStyle": "",
   "isLoading": false,
-  "isVisible": false,
+  "isVisible": true,
   "key": "meqdv5n5nd",
-  "leftColumn": 6,
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -30,20 +33,20 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 132,
   "needsErrorInfo": false,
-  "originalBottomRow": 143,
-  "originalTopRow": 132,
+  "originalBottomRow": 179,
+  "originalTopRow": 154,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 22,
+  "rightColumn": 6,
   "shouldTruncate": false,
-  "text": "Serdecznie dziękujemy za zainteresowanie naszą ofertą handlową. Mamy nadzieję, że dokonają Państwo trafnego wyboru.\nPoniżej znajdziecie Państwo szczegóły naszej oferty.",
+  "text": "{{i18n.translate(\"Serdecznie dziękujemy za zainteresowanie naszą ofertą handlową. Mamy nadzieję, że dokonają Państwo trafnego wyboru.\")}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 132,
+  "topRow": 154,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
