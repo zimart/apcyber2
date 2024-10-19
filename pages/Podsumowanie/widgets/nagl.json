@@ -1,0 +1,49 @@
+{
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 131,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "Open Sans",
+  "fontSize": "0.875rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": false,
+  "key": "meqdv5n5nd",
+  "leftColumn": 6,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 122,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 118,
+  "needsErrorInfo": false,
+  "originalBottomRow": 131,
+  "originalTopRow": 118,
+  "overflow": "NONE",
+  "parentColumnSpace": 20.5625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 22,
+  "shouldTruncate": false,
+  "text": "SIGMA SYSTEMY OSŁONOWE\nul.Czerteż 208, 38-500 Sanok\nTEL/FAX: +48 13 46 34 100 | email:biuro@sigma.sanok.pl | www.sigma.sanok.pl\nNIP: PL6871014735\nNR BDO 000474735",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 118,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "g6t0i62uwd",
+  "widgetName": "nagl"
+}
