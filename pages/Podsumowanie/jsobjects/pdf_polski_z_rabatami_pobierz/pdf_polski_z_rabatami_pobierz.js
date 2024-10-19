@@ -2,7 +2,7 @@ export default {
 async BuildPDF () {
 const doc = jspdf.jsPDF();
 const data2 = glowna_tabela.tableData;
-const Roboto ="";
+const Roboto = Input1.text;
 
 //const data = tabela_glowna.tableData;
 //const waluta = netto+walutaskrot.text;	
@@ -56,12 +56,12 @@ Brutto: (item.brutto/ currencyRate).toFixed(2)
 
  // doc.setFont("Amiri"); // set font
 	
-//doc.addFileToVFS("RobotoCondensed-Regular.ttf", Roboto);
-//doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
+doc.addFileToVFS("RobotoCondensed-Regular.ttf", Roboto);
+doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 
-//     doc.setFont("Roboto"); // set font
+     doc.setFont("Roboto"); // set font
 	
-      doc.setFont ("Times");
+    //  doc.setFont ("Helvetica");
       doc.setFontSize("10")
       doc.text ("Hello wreahtrsjytdufygj", 10, 10);
 	    doc.text("Additional Information", 15, 20);
@@ -115,6 +115,7 @@ default_1(doc, {
 					 textColor:0,
 					 //font: 'Amiri',
 					 font: 'Roboto',
+					//  font:'Helvetica',
            // lineColor: 'black',
 					 cellWidth: 'auto',
 					overflow: 'linebreak',

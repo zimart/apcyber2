@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tabela_screeny_inventory_id.triggeredRow.serianapedu))(Select17.options, Select17.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].serianapedu))(Select17.options, Select17.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

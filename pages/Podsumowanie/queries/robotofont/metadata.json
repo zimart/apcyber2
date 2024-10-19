@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "670a2c74cb4eb2140bfd1e60_51664122-a91a-416f-8c8c-64b0586b5542",
-  "id": "Screeny_FORM_serianapedu",
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_b1e4952f-404e-4643-a844-3f9ff7cbd4f5",
+  "id": "Podsumowanie_robotofont",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT serianapedu FROM screeny_wyborserii WHERE system = {{edit_system.selectedOptionLabel}};",
+      "body": "SELECT base FROM font where nazwa = \"Roboto\";",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,14 +22,10 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "FORM_serianapedu",
-    "pageId": "Screeny",
-    "userSetOnLoad": true
+    "name": "robotofont",
+    "pageId": "Podsumowanie",
+    "userSetOnLoad": false
   }
 }

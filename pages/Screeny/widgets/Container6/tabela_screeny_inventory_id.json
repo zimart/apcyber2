@@ -908,7 +908,7 @@
       "labelColor": "#FFFFFF",
       "menuColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
-      "onClick": "{{showModal(modal_edit.name).then(() => {\n  form_screeny_trigered.run();\n  FORM_system_zapytaj.run();\n  FORM_kolor_zapytaj.run();\n  FORM_serianapedu.run();\n});}}",
+      "onClick": "{{showModal(modal_edit.name).then(() => {\n  form_screeny_trigered.run().then(() => {\n    showAlert('success');\n  });\n  FORM_system_zapytaj.run();\n  FORM_kolor_zapytaj.run();\n  FORM_serianapedu.run();\n});}}",
       "originalId": "customColumn3",
       "sticky": "left",
       "textSize": "0.875rem",
