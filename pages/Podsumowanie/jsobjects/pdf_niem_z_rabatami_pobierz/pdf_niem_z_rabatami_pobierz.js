@@ -2,6 +2,7 @@ export default {
 async BuildPDF () {
 const doc = jspdf.jsPDF();
 const data2 = glowna_tabela.tableData;
+const numer = idoferty_appsmith;
 const Roboto = Input1.text;
 
 //const data = tabela_glowna.tableData;
@@ -10,7 +11,7 @@ const Roboto = Input1.text;
 // Custom headers
 const columns = [
 { header: 'Produkt', dataKey: 'Produkt' },
-{ header: 'Ilość', dataKey: 'Ilosc' },
+{ header: 'Menge', dataKey: 'Ilosc' },
 { header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
 { header: 'Rabat %', dataKey: 'Rabatprocent' } ,// Custom header with currency
 { header: 'Rabat', dataKey: 'Rabat' } ,// Custom header with currency
@@ -27,7 +28,7 @@ const columns = [
 const currencyRate = kursinput.text; // Example currency rate for conversion
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
-Produkt: item.Produkt +"\n"+item.opisbezrabatow,
+Produkt: item.Produkt +"\n"+item.opiszrabatami_de,
 Ilosc: item.Ilosc,
 cenanetto: (item.cenanetto / currencyRate).toFixed(2),// Convert price using currency rate
 //Opis: item.opiszrabatami,
@@ -166,8 +167,8 @@ valign: 'middle'
 // Add text below the table
 const finalY = doc.lastAutoTable.finalY; // The y position where the table ends
 doc.text(opisoferty.text, 14, finalY + 10);
-return doc.output("dataurlstring");
-//	download(doc.output(), 'oferta.pdf');
+//return doc.output("dataurlstring");
+	download(doc.output(), 'angebot_numer.pdf');
 //doc.save('table.pdf');
 }
 }

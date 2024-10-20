@@ -3,7 +3,8 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 22,
+  "bottomRow": 25,
+  "bottomRowBeforeCollapse": 30,
   "boxShadow": "none",
   "defaultText": " ",
   "dynamicBindingPathList": [
@@ -12,36 +13,44 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "MULTI_LINE_TEXT",
+  "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{Select6.selectedOptionLabel===\"EUR\"}}",
   "key": "fs65bs2u18",
-  "label": "Komentarz",
+  "label": "Wpisz żądaną cenę w Euro",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 48,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 19,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 19,
-  "mobileTopRow": 12,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 29,
+  "mobileRightColumn": 49,
+  "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "originalBottomRow": 22,
-  "originalTopRow": 12,
+  "originalBottomRow": 25,
+  "originalTopRow": 18,
   "parentColumnSpace": 13.4375,
-  "parentId": "6ntg69q3k7",
+  "parentId": "f2dt60ix92",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -49,9 +58,10 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 12,
+  "topRow": 18,
+  "topRowBeforeCollapse": 23,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "o38fg0sbau",
-  "widgetName": "komentarz"
+  "widgetId": "qprmyymkh5",
+  "widgetName": "Input2"
 }

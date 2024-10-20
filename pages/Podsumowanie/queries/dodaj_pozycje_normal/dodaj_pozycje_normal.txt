@@ -1,2 +1,2 @@
-INSERT INTO inventory_main (moc, rodzajmotor, fk_oferty_inventory_id, ilosc, cena,cenanetto,opisbezrabatow,opiszrabatami)
-  VALUES ({{nazwapozycji.text}}, '21', '{{idoferty_appsmith.text}}', '{{iloscpozycja.text}}', '{{cena_pozycja.text}}','{{cena_pozycja.text}}','{{komentarz.text}}','{{komentarz.text}}');
+INSERT INTO inventory_main (moc, rodzajmotor, fk_oferty_inventory_id, ilosc, cena,cenanetto,opisbezrabatow,opiszrabatami,opisbezrabatow_de,opiszrabatami_de,opisbezrabatow_en,opiszrabatami_en)
+  VALUES ({{nazwapozycji.text}}, '21', '{{idoferty_appsmith.text}}', '{{iloscpozycja.text}}', '{{cena_pozycja.text}}','{{cena_pozycja.text}}','{{komentarz.text}}','{{komentarz.text}}','{{komentarz.text}}','{{komentarz.text}}','{{komentarz.text}}','{{komentarz.text}}');

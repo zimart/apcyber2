@@ -1,11 +1,10 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 30,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonStyle": "PRIMARY_BUTTON",
-  "buttonVariant": "PRIMARY",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -15,37 +14,31 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "mljre0oiyp",
-  "leftColumn": 48,
+  "key": "ufu47vxd4q",
+  "leftColumn": 32,
   "minWidth": 120,
-  "mobileBottomRow": 22,
-  "mobileLeftColumn": 47,
-  "mobileRightColumn": 63,
-  "mobileTopRow": 18,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 46,
+  "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{dodaj_pozycje_normal.run().then(() => {\n  przelicz_main_js.przelicz_glowna();\n});}}",
-  "originalBottomRow": 34,
-  "originalTopRow": 30,
-  "parentId": "6ntg69q3k7",
+  "originalBottomRow": 30,
+  "originalTopRow": 26,
+  "parentId": "f2dt60ix92",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": false,
+  "resetFormOnClick": true,
   "responsiveBehavior": "hug",
-  "rightColumn": 64,
-  "text": "Dodaj",
-  "topRow": 30,
+  "rightColumn": 48,
+  "text": "Reset",
+  "topRow": 26,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "itti8kehxo",
-  "widgetName": "Button9"
+  "widgetId": "jnx2mnewqc",
+  "widgetName": "Button19"
 }

@@ -11,9 +11,11 @@ export default {
 		if (!this.resources[lang]){
 			showModal(LanguageLoading.name);
 			await getLanguageValuesAI.run();
+	
 			closeModal(LanguageLoading.name);
 			this.resources[lang] = {
 				translation: JSON.parse(getLanguageValuesAI.data.response)
+			
 			};
 			this.setup(lang);
 		} else {

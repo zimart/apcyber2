@@ -17,9 +17,16 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -40,6 +47,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
+  "onOptionChange": "{{i18n.selectLanguage();}}",
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 6.9375,

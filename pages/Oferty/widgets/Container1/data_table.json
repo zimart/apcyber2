@@ -47,14 +47,16 @@
     "datawaznosci",
     "warunkiplatnosci",
     "sugerowanyzadatek",
-    "sumarabatu"
+    "sumarabatu",
+    "tabelanbpkurs",
+    "kurswgtabeli"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729415016929,
+  "columnUpdatedAt": 1729453472810,
   "columnWidthMap": {
     "customColumn1": 102,
     "customColumn2": 80,
@@ -171,6 +173,12 @@
     },
     {
       "key": "primaryColumns.customColumn2.menuColor"
+    },
+    {
+      "key": "primaryColumns.tabelanbpkurs.computedValue"
+    },
+    {
+      "key": "primaryColumns.kurswgtabeli.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -219,7 +227,7 @@
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
   "originalBottomRow": 86,
-  "originalTopRow": 7,
+  "originalTopRow": 5,
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -645,6 +653,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "kurswgtabeli": {
+      "alias": "kurswgtabeli",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kurswgtabeli\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "kurswgtabeli",
+      "index": 22,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "kurswgtabeli",
+      "notation": "standard",
+      "originalId": "kurswgtabeli",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "numeroferty": {
       "alias": "numeroferty",
       "allowCellWrapping": false,
@@ -841,6 +883,40 @@
       "label": "sumarabatu",
       "notation": "standard",
       "originalId": "sumarabatu",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "tabelanbpkurs": {
+      "alias": "tabelanbpkurs",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tabelanbpkurs\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "tabelanbpkurs",
+      "index": 21,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "tabelanbpkurs",
+      "notation": "standard",
+      "originalId": "tabelanbpkurs",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

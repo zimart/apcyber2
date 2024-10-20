@@ -6,7 +6,7 @@
   "bottomRow": 5,
   "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
-  "defaultText": "{{daneoferty.data[0].kurseuro || kursnbp.data.rates[0].mid }}",
+  "defaultText": "{{daneoferty.data[0].kurseuro ||kursnbp.data.rates[0].mid}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

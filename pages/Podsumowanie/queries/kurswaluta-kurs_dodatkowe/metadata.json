@@ -26,6 +26,6 @@
     "fullyQualifiedName": "kurswaluta.kurs_dodatkowe",
     "name": "kurs_dodatkowe",
     "pageId": "Podsumowanie",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

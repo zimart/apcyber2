@@ -5,7 +5,7 @@
   "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 48,
+  "bottomRow": 63,
   "bottomRowBeforeCollapse": 89,
   "boxShadow": "none",
   "childStylesheet": {
@@ -300,6 +300,24 @@
     },
     {
       "key": "schema.__root_schema__.children.numeroferty.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.tabelanbpkurs.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.tabelanbpkurs.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.tabelanbpkurs.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.kurswgtabeli.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.kurswgtabeli.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.kurswgtabeli.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -334,8 +352,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_id_klient.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 48,
-  "originalTopRow": 4,
+  "originalBottomRow": 67,
+  "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "x3oj14smam",
   "parentRowSpace": 10,
@@ -550,6 +568,28 @@
           "originalIdentifier": "kurseuro",
           "position": 8
         },
+        "kurswgtabeli": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "kurswgtabeli",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kurswgtabeli))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "kurswgtabeli",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Kurswgtabeli",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "kurswgtabeli",
+          "position": 22,
+          "sourceData": 4.3048
+        },
         "numeroferty": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "numeroferty",
@@ -678,6 +718,28 @@
           "originalIdentifier": "sumarabatu",
           "position": 20,
           "sourceData": ""
+        },
+        "tabelanbpkurs": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "tabelanbpkurs",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.tabelanbpkurs))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "tabelanbpkurs",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Tabelanbpkurs",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "tabelanbpkurs",
+          "position": 21,
+          "sourceData": "204/A/NBP/2024"
         },
         "temat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

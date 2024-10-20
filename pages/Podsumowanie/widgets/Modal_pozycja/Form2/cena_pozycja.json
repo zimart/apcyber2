@@ -3,10 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 30,
-  "bottomRowBeforeCollapse": 30,
+  "bottomRow": 7,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{Input2.text* kursinput.text}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,42 +14,40 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
+      "key": "validation"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
-  "isVisible": "{{Select6.selectedOptionLabel===\"EUR\"}}",
-  "key": "fs65bs2u18",
-  "label": "Cena w Euro",
+  "isRequired": true,
+  "isVisible": true,
+  "key": "ocgqaoimtm",
+  "label": "Cena netto - PLN !!!",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 49,
+  "leftColumn": 50,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 12,
-  "mobileLeftColumn": 29,
-  "mobileRightColumn": 49,
-  "mobileTopRow": 5,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 45,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "originalBottomRow": 30,
-  "originalTopRow": 23,
+  "originalBottomRow": 19,
+  "originalTopRow": 12,
   "parentColumnSpace": 13.4375,
-  "parentId": "6ntg69q3k7",
+  "parentId": "f2dt60ix92",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -58,10 +55,10 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 23,
-  "topRowBeforeCollapse": 23,
+  "topRow": 0,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{cena_pozycja.text>0}}",
   "version": 2,
-  "widgetId": "qprmyymkh5",
-  "widgetName": "Input2"
+  "widgetId": "osl7mvifpw",
+  "widgetName": "cena_pozycja"
 }

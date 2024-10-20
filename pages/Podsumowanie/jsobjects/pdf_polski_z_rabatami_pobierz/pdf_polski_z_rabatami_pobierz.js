@@ -10,7 +10,7 @@ const Roboto = Input1.text;
 // Custom headers
 const columns = [
 { header: 'Produkt', dataKey: 'Produkt' },
-{ header: 'Ilosc', dataKey: 'Ilosc' },
+{ header: 'Ilość', dataKey: 'Ilosc' },
 { header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
 { header: 'Rabat %', dataKey: 'Rabatprocent' } ,// Custom header with currency
 { header: 'Rabat', dataKey: 'Rabat' } ,// Custom header with currency
@@ -62,11 +62,19 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
      doc.setFont("Roboto"); // set font
 	
     //  doc.setFont ("Helvetica");
-      doc.setFontSize("10")
-      doc.text ("Hello wreahtrsjytdufygj", 10, 10);
-	    doc.text("Additional Information", 15, 20);
-	
-	     doc.text(Text1.text, 15, 40);
+      doc.setFontSize("9")
+      doc.text (nagl.text, 15, 20);
+	    doc.setFontSize("10")
+	    doc.text ("OFERTA", 15, 42);
+	    doc.setFontSize("9")
+	    doc.text (Text10.text, 15, 65);
+	    doc.text (Text12.text, 15, 68);
+	    doc.text (Text11.text, 15, 74);
+	    doc.text(Text1.text, 15, 48);
+	    doc.addImage(Text13.text,'PNG',175,15,20,20);
+	    doc.setDrawColor(255,152,0);
+	    doc.setLineWidth(1.5);
+      doc.line(15, 15, 170, 15);
 	
 //fault_1 (doc, {
 //columnStyles: { europe: { halign: 'center' },
@@ -102,7 +110,7 @@ default_1(doc, {
 							 fontSize: 9,
 							 fontStyle: 'bold',
 							},
-	startY: 50,
+	startY: 75,
 	columnStyles: { europe: { halign: 'center',valign: 'middle' },
              Produkt: {
        //fontStyle: 'bold',
@@ -157,7 +165,9 @@ valign: 'middle'
 
 // Add text below the table
 const finalY = doc.lastAutoTable.finalY; // The y position where the table ends
-doc.text("Additional Information", 14, finalY + 10);
+doc.text( "Netto", 15, finalY + 10);
+doc.setFontSize("12")
+doc.text(Text5.text, 15, finalY + 15);
 //return doc.output("dataurlstring");
 	download(doc.output(), 'oferta.pdf');
 //doc.save('table.pdf');

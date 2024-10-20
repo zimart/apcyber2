@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "shouldTruncate": false,
-  "text": "Razem netto : {{(sumarazemnetto.data[0][\"SUM (razemnetto)\"]/kursinput.text).toFixed(2)}} {{Select6.selectedOptionLabel}}",
+  "text": "Razem netto : {{(sumarazemnetto.data[0][\"SUM (razemnetto)\"]/kursinput.text).toFixed(2)||\"\"}} {{Select6.selectedOptionLabel}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 8,

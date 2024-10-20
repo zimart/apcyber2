@@ -50,7 +50,7 @@
         }
       },
       "paginationType": "NONE",
-      "timeoutInMillisecond": 60000
+      "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
     "datasource": {
@@ -67,6 +67,6 @@
     "executeOnLoad": false,
     "name": "getLanguageValuesAI",
     "pageId": "Podsumowanie",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

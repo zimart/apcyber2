@@ -1,6 +1,6 @@
 {
   "gitSyncId": "670a2c74cb4eb2140bfd1e60_63fae12a-02fc-4a46-867c-25c687b86dcf",
-  "id": "Podsumowanie_kurs",
+  "id": "Podsumowanie_tlumaczenie",
   "pluginId": "Appsmith AI",
   "pluginType": "AI",
   "unpublishedAction": {
@@ -37,7 +37,7 @@
         },
         "textGeneration": {
           "input": {
-            "data": "Jaki jest średni kurs polskiego złotego wg NBP z dnia wczorajszego."
+            "data": "Przetłumacz zawartość pola {{Input4.text}} na język wybrany w polu {{Select1.selectedOptionLabel}}"
           }
         },
         "textSummary": {
@@ -59,10 +59,14 @@
       "name": "Appsmith AI",
       "pluginId": "Appsmith AI"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.textGeneration.input.data"
+      }
+    ],
     "executeOnLoad": false,
-    "name": "kurs",
+    "name": "tlumaczenie",
     "pageId": "Podsumowanie",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
