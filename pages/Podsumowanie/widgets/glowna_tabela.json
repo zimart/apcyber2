@@ -691,7 +691,7 @@
       "label": "{{i18n.translate(\"Edytuj\")}}",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{showModal(edycja_glownej.name);}}",
+      "onClick": "{{showModal(edycja_glownej.name).then(() => {\n  main_trigered.run();\n});}}",
       "originalId": "customColumn5",
       "sticky": "left",
       "textSize": "0.875rem",

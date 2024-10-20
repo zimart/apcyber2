@@ -1,0 +1,1 @@
+SELECT cenanetto FROM inventory_main where id_main_inv={{glowna_tabela.triggeredRow.id_main_inv}};

@@ -3,9 +3,10 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 30,
+  "bottomRowBeforeCollapse": 30,
   "boxShadow": "none",
-  "defaultText": "{{Input2.text* kursinput.text}}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,22 +15,24 @@
       "key": "borderRadius"
     },
     {
-      "key": "validation"
-    },
-    {
-      "key": "defaultText"
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": true,
-  "isVisible": true,
-  "key": "ocgqaoimtm",
-  "label": "Cena netto - PLN !!!",
+  "isRequired": false,
+  "isVisible": "{{Select6.selectedOptionLabel===\"EUR\"}}",
+  "key": "fs65bs2u18",
+  "label": "Cena w Euro",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -39,26 +42,26 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 15,
-  "mobileLeftColumn": 45,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 8,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 29,
+  "mobileRightColumn": 49,
+  "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "originalBottomRow": 19,
-  "originalTopRow": 12,
+  "originalBottomRow": 30,
+  "originalTopRow": 23,
   "parentColumnSpace": 13.4375,
   "parentId": "6ntg69q3k7",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 5,
+  "topRow": 23,
+  "topRowBeforeCollapse": 23,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{cena_pozycja.text.length>0}}",
   "version": 2,
-  "widgetId": "osl7mvifpw",
-  "widgetName": "cena_pozycja"
+  "widgetId": "qprmyymkh5",
+  "widgetName": "Input2"
 }

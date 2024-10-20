@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 29,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -13,43 +13,48 @@
       "key": "borderRadius"
     },
     {
-      "key": "text"
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "0.875rem",
   "fontStyle": "",
   "isLoading": false,
-  "isVisible": true,
-  "key": "otwb72mo8v",
-  "leftColumn": 0,
+  "isVisible": "{{Select6.selectedOptionLabel===\"EUR\"}}",
+  "key": "cavtlzzmgo",
+  "leftColumn": 33,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 4,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 15,
-  "mobileTopRow": 0,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 32,
+  "mobileRightColumn": 48,
+  "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "originalBottomRow": 7,
-  "originalTopRow": 0,
+  "originalBottomRow": 29,
+  "originalTopRow": 25,
   "overflow": "NONE",
-  "parentColumnSpace": 20.21875,
-  "parentId": "0",
+  "parentColumnSpace": 13.4375,
+  "parentId": "6ntg69q3k7",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 15,
+  "rightColumn": 49,
   "shouldTruncate": false,
-  "text": "Klient: {{appsmith.URL.queryParams.klient}}\nNumer oferty: {{appsmith.URL.queryParams.numer}}\nz dnia: {{appsmith.URL.queryParams.data}}- id {{appsmith.URL.queryParams.id_oferta}}, id-klienta: {{appsmith.URL.queryParams.id_klienta}}",
-  "textAlign": "LEFT",
+  "text": "Wpisz żądaną cenę w Euro",
+  "textAlign": "RIGHT",
   "textColor": "#231F20",
-  "topRow": 0,
+  "topRow": 25,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "gkhs3yqifk",
-  "widgetName": "Text1"
+  "widgetId": "sel1dbuk1k",
+  "widgetName": "Text15"
 }
