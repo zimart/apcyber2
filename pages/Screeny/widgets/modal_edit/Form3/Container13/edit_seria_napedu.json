@@ -2,21 +2,32 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
+  "bottomRow": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].serianapedu))(edit_seria_napedu.options, edit_seria_napedu.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
     }
   ],
   "isDisabled": false,
@@ -27,32 +38,33 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "Seria napędu",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 56,
+  "leftColumn": 31,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 15,
-  "mobileLeftColumn": 43,
-  "mobileRightColumn": 63,
-  "mobileTopRow": 8,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
+  "onOptionChange": "{{form_rodzajnapedu.run()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
   "parentColumnSpace": 18.09375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 39,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Blue\",\n    \"code\": \"BLUE\"\n  },\n  {\n    \"name\": \"Green\",\n    \"code\": \"GREEN\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "sourceData": "{{FORM_serianapedu.data.map( (obj) =>{ return  {'label': obj.serianapedu, 'value': obj.serianapedu } })}}",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "gbhqqo17xu",
-  "widgetName": "Select20"
+  "widgetId": "oc7rw1b1mk",
+  "widgetName": "edit_seria_napedu"
 }

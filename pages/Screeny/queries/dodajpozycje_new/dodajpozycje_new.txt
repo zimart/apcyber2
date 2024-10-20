@@ -29,7 +29,7 @@ INSERT INTO inventory_screeny  (wysokosc,
 														 	ilosc,
 															kurseuro,
 															waluta,
-															vat,opisbezrabatow,opiszrabatami,systemzdoplata,serianapedu,rodzajnapedu)
+															vat,opisbezrabatow,opiszrabatami,systemzdoplata,serianapedu,rodzajnapedu,referencja)
   VALUES ('{{wysokosc_input.text}}',
 					'{{szerokosc_input.text}}', 
 					{{index_szer_input.text}},
@@ -43,7 +43,7 @@ INSERT INTO inventory_screeny  (wysokosc,
 					'{{system_select.selectedOptionLabel}}',
 					'{{Select8.selectedOptionValue}}',
 					'{{kolor_select.selectedOptionValue}}', 
-					'{{Select9.selectedOptionLabel + '/' + Select10.selectedOptionValue}}',
+					'{{Select9.selectedOptionLabel}}',
 					'{{wkladkaselect.selectedOptionLabel}}',
 					'Roleta Screen',
 					'{{Input13.text}}',
@@ -66,5 +66,6 @@ INSERT INTO inventory_screeny  (wysokosc,
 					'',
 					'{{systemzdoplatami.text}}',
 					'{{naped_seria_select.selectedOptionLabel}}',
-					'{{rodzaj_nap.selectedOptionLabel}}'
+					'{{rodzaj_nap.selectedOptionLabel}}',
+					'{{Select10.selectedOptionLabel}}'
 				 );

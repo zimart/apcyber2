@@ -2,18 +2,15 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17,
+  "bottomRow": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].skrzynka))(Select16.options, Select16.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].tkanina))(edit_tkanina.options, edit_tkanina.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "sourceData"
     },
     {
       "key": "defaultOptionValue"
@@ -25,7 +22,11 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -34,34 +35,33 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Skrzynka",
+  "labelText": "Tkanina",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 32,
+  "leftColumn": 47,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 17,
-  "mobileLeftColumn": 33,
-  "mobileRightColumn": 53,
-  "mobileTopRow": 10,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 45,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 2,
   "needsErrorInfo": false,
+  "onOptionChange": "{{form_tkaninawybor.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 17,
-  "originalTopRow": 10,
-  "parentColumnSpace": 18.40625,
-  "parentId": "jnoi6scv56",
+  "parentColumnSpace": 18.09375,
+  "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 40,
+  "rightColumn": 56,
   "serverSideFiltering": false,
-  "sourceData": "{{FORM_skrzynka_zapytaj.data.map( (obj) =>{ return  {'label': obj.wymiar, 'value': obj.wymiar } })}}",
-  "topRow": 10,
+  "sourceData": "[\n   \t\n  {\n    \"label\": \"COPACO SERGE 600\",\n    \"value\": \"COPACO SERGE 600\"\n  },\n  {\n    \"label\": \"COPACO SERGE 1%\",\n    \"value\": \"COPACO SERGE 1%\"\n  },\n\t{\n    \"label\": \"COPACO LUNAR\",\n    \"value\": \"COPACO LUNAR\"\n  }\n]",
+  "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "g5g3oqxcyu",
-  "widgetName": "Select16"
+  "widgetId": "0gjt1qwxuk",
+  "widgetName": "edit_tkanina"
 }

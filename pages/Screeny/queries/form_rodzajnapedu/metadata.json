@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "670a2c74cb4eb2140bfd1e60_51664122-a91a-416f-8c8c-64b0586b5542",
-  "id": "Screeny_FORM_serianapedu",
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_08155c92-ff6f-4488-aecf-3a0ecf2c9159",
+  "id": "Screeny_form_rodzajnapedu",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT serianapedu FROM screeny_wyborserii WHERE system = {{edit_system.selectedOptionLabel}};",
+      "body": "SELECT DISTINCT rodzaj FROM screeny_napedy WHERE seria={{edit_seria_napedu.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "FORM_serianapedu",
+    "name": "form_rodzajnapedu",
     "pageId": "Screeny",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

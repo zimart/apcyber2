@@ -14,7 +14,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
@@ -27,8 +31,9 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "originalBottomRow": 37,
-  "originalTopRow": 33,
+  "onClick": "{{update_dodatkowe_modal.run().then(() => {\n  przelicz_main_js.przelicz_glowna();\n  tabela_glowna.run();\n});\ncloseModal(edycja_glownej.name);}}",
+  "originalBottomRow": 23,
+  "originalTopRow": 19,
   "parentId": "msds2f0ug2",
   "placement": "CENTER",
   "recaptchaType": "V3",

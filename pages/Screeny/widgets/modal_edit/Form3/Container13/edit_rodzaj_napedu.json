@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].serianapedu))(Select17.options, Select17.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].rodzajnapedu))(edit_rodzaj_napedu.options, edit_rodzaj_napedu.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,10 +13,10 @@
       "key": "borderRadius"
     },
     {
-      "key": "sourceData"
+      "key": "defaultOptionValue"
     },
     {
-      "key": "defaultOptionValue"
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -34,16 +34,16 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Seria napędu",
+  "labelText": "Rodzaj napędu",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 31,
+  "leftColumn": 39,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 6,
-  "mobileLeftColumn": 30,
-  "mobileRightColumn": 50,
+  "mobileLeftColumn": 37,
+  "mobileRightColumn": 57,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "optionLabel": "label",
@@ -54,12 +54,12 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 39,
+  "rightColumn": 47,
   "serverSideFiltering": false,
-  "sourceData": "{{FORM_serianapedu.data.map( (obj) =>{ return  {'label': obj.serianapedu, 'value': obj.serianapedu } })}}",
+  "sourceData": "{{form_rodzajnapedu.data.map( (obj) =>{ return  {'label': obj.rodzaj, 'value': obj.rodzaj } })}}",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "oc7rw1b1mk",
-  "widgetName": "Select17"
+  "widgetId": "vfg4vbzjye",
+  "widgetName": "edit_rodzaj_napedu"
 }

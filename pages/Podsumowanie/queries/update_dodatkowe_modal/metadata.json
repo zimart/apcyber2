@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE inventory_main SET\n    id_main_inv = 1,\n    wysokosc = '',\n    szerokosc = '',\n    indexszer = '',\n    indexwys = '',\n    skugen = '',\n    cena = '',\n    procentdoplatakolor = '',\n    doplatatkanina = '',\n    doplatakolor = '',\n    systemzdoplata = '',\n    rabatsystem = '',\n    kwotarabatsystem = '',\n    systemporabacie = '',\n    linia = '',\n    system = '',\n    skrzynka = '',\n    kolor = '',\n    tkanina = '',\n    wkladka = '',\n    moc = '',\n    naped = '',\n    price_motor = '',\n    rabatmotor = '',\n    priceall = '',\n    doplatawkladka = '',\n    rodzajmotor = '',\n    seq = '',\n    fk_oferty_inventory_id = '',\n    powierzchnia = '',\n    ilosc = '',\n    concat = '',\n    cenanetto = '',\n    vat = '',\n    rodzajpomiaru = '',\n    kurseuro = '',\n    waluta = '',\n    razemnetto = '',\n    brutto = '',\n    kwotarabatmotor = '',\n    id_wiersz = '',\n    opisbezrabatow = '',\n    opiszrabatami = '',\n    rabatogolny = '',\n    kwotarabatogolny = '',\n    cenaporabacie = ''\n  WHERE 1 = 0; -- Specify a valid condition here. Removing the condition may update every row in the table!",
+      "body": "UPDATE inventory_main SET\n   \n    moc = '{{edit_produkt_modal.text}}',\n    ilosc = '{{edit_ilosc_modal.text}}',\n    cenanetto = '{{edit_cena_modal.text}}',\n    opisbezrabatow = '{{edit_komentarz_modal.text}}',\n    opiszrabatami = '{{edit_komentarz_modal.text}}'\n   \n  WHERE  \tid_main_inv ={{glowna_tabela.triggeredRow.id_main_inv}}; -- Specify a valid condition here. Removing the condition may update every row in the table!",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,11 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
     "name": "update_dodatkowe_modal",
     "pageId": "Podsumowanie",

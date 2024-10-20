@@ -72,14 +72,15 @@
     "opisbezrabatow",
     "opiszrabatami",
     "serianapedu",
-    "rodzajnapedu"
+    "rodzajnapedu",
+    "referencja"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729351378753,
+  "columnUpdatedAt": 1729435033758,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -512,6 +513,9 @@
     },
     {
       "key": "primaryColumns.rodzajnapedu.computedValue"
+    },
+    {
+      "key": "primaryColumns.referencja.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -580,6 +584,9 @@
     },
     {
       "key": "cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn3.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -908,7 +915,7 @@
       "labelColor": "#FFFFFF",
       "menuColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
-      "onClick": "{{showModal(modal_edit.name).then(() => {\n  form_screeny_trigered.run().then(() => {\n    showAlert('success');\n  });\n  FORM_system_zapytaj.run();\n  FORM_kolor_zapytaj.run();\n  FORM_serianapedu.run();\n});}}",
+      "onClick": "{{showModal(modal_edit.name).then(() => \nform_screeny_trigered.run())\n.then(() => \n  FORM_system_zapytaj.run())\n.then(() => \n  FORM_kolor_zapytaj.run())\n.then(() => \n  FORM_skrzynka_zapytaj.run())\n.then(() => \n  FORM_serianapedu.run())\n.then(() => \n  form_rodzajnapedu.run())\n.then(() => \n\tform_tkaninawybor.run())\n}}",
       "originalId": "customColumn3",
       "sticky": "left",
       "textSize": "0.875rem",
@@ -1734,6 +1741,40 @@
       "originalId": "razemnetto",
       "sticky": "",
       "textColor": "#b91c1c",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "referencja": {
+      "alias": "referencja",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"referencja\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "referencja",
+      "index": 44,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "referencja",
+      "notation": "standard",
+      "originalId": "referencja",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
