@@ -2,7 +2,7 @@
   "borderColor": "#d4d4d8",
   "borderRadius": "0px",
   "borderWidth": "",
-  "bottomRow": 4,
+  "bottomRow": 8,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -31,7 +31,7 @@
   "parentRowSpace": 10,
   "rightColumn": 15,
   "shouldScrollContents": true,
-  "text": "id:{{appsmith.URL.queryParams.id_oferta}}",
+  "text": "Klient: {{appsmith.URL.queryParams.d_oferta}}\nNumer oferty: \nTemat:",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,

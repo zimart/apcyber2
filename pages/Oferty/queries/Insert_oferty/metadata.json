@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO oferty (\n\ttemat,\n\tklient,\n\tnumeroferty,\n\tkategoria,\n\tid_klient,\n\tfk_klienci_oferty_id,\n\tdataoferty)\nVALUES (\n\t'{{insert_form.formData.tematinput}}',\n\t'{{zapytaj_klient.data[0].accountname}}',\n\t'\"OF\"',\n\t'{{insert_form.formData.kategoriainput}}',\n\t'{{appsmith.URL.queryParams.id_klienta}}',\n\t'{{appsmith.URL.queryParams.id_klienta}}',\n\t'{{datepobierz.dzisiaj.data}}');",
+      "body": "INSERT INTO oferty (\n\ttemat,\n\tklient,\n\tnumeroferty,\n\tkategoria,\n\tid_klient,\n\tfk_klienci_oferty_id,\n\tdataoferty)\nVALUES (\n\t'{{insert_form.formData.tematinput}}',\n\t'{{zapytaj_klient.data[0].accountname}}',\n\t'',\n\t'{{insert_form.formData.kategoriainput}}',\n\t'{{appsmith.URL.queryParams.id_klienta}}',\n\t'{{appsmith.URL.queryParams.id_klienta}}',\n\t'{{datepobierz.dzisiaj.data}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

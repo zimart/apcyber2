@@ -54,7 +54,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 29,
+  "rightColumn": 31,
   "serverSideFiltering": false,
   "sourceData": "{{FORM_kolor_zapytaj.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
   "topRow": 0,

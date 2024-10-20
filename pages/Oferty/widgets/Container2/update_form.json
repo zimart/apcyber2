@@ -334,7 +334,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_id_klient.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 48,
+  "originalBottomRow": 63,
   "originalTopRow": 4,
   "parentColumnSpace": 16.3125,
   "parentId": "x3oj14smam",
@@ -562,7 +562,7 @@
           "iconAlign": "left",
           "identifier": "numeroferty",
           "isCustomField": false,
-          "isDisabled": false,
+          "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
@@ -663,9 +663,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.sumarabatu))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "sumarabatu",
           "isCustomField": false,
@@ -677,7 +677,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "sumarabatu",
           "position": 20,
-          "sourceData": 0
+          "sourceData": ""
         },
         "temat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

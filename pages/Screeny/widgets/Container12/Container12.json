@@ -54,14 +54,22 @@
   "dynamicBindingPathList": [
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{iloscsterowania.data[0][\"COUNT(model)\"] > 0}}",
   "key": "3iqsbq3mny",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
