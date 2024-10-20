@@ -3,15 +3,21 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
+  "bottomRow": 6,
   "boxShadow": "none",
-  "defaultText": "50",
+  "defaultText": "{{Number(Input5.text).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "label"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -23,35 +29,33 @@
   "isRequired": false,
   "isVisible": true,
   "key": "fs65bs2u18",
-  "label": "Wymagany % zadatku",
+  "label": "Kwota wymaganego zadatku {{Select6.selectedOptionLabel}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 17,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 140,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 7,
-  "mobileTopRow": 133,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 37,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 156,
-  "originalTopRow": 149,
-  "parentColumnSpace": 20.5625,
+  "parentColumnSpace": 20.25,
   "parentId": "4dusi33tfp",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 8,
+  "rightColumn": 29,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "giwbnepqdi",
-  "widgetName": "Input4"
+  "widgetId": "ucnfi1svml",
+  "widgetName": "wymaganyzadatek"
 }

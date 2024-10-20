@@ -53,7 +53,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onOptionChange": "{{showModal(LanguageLoading.name).then(() => {\n  kurswaluta.kurs();\n  zmiendaneoferty.run();\n  kursnbp.run(); closeModal(LanguageLoading.name);\n \n});}}",
+  "onOptionChange": "{{showModal(LanguageLoading.name).then(() => {\n  kurswaluta.kurs();\n  zmiendaneoferty.run();\n  kursnbp.run(); \n\tnumerkonta.run();\n\tcloseModal(LanguageLoading.name);\n \n});}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 22,

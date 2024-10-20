@@ -37,7 +37,7 @@
         },
         "textGeneration": {
           "input": {
-            "data": "Przetłumacz zawartość pola {{Input4.text}} na język wybrany w polu {{Select1.selectedOptionLabel}}"
+            "data": "Przetłumacz zawartość pola {{wymaganyzadatekprocent.text}} na język wybrany w polu {{Select1.selectedOptionLabel}}"
           }
         },
         "textSummary": {
