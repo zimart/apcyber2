@@ -2,5 +2,8 @@ UPDATE oferty SET
     kurseuro = '{{kursinput.text}}',
     waluta = '{{Select6.selectedOptionValue}}',
 		vat = '{{vat.selectedOptionValue}}',
-		rabat = '{{rabatogolny.text}}'
+		rabat = '{{rabatogolny.text}}',
+		tabelanbpkurs = '{{tabelanbpkurs.text}}',
+		kurswgtabeli = '{{kurstabela.text}}'
+		
 WHERE  id_oferta = {{appsmith.URL.queryParams.id_oferta}}; 

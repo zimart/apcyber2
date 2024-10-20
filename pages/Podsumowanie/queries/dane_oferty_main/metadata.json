@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "670a2c74cb4eb2140bfd1e60_1a9b3f80-5880-417b-8a27-357683264671",
-  "id": "Podsumowanie_zmiendaneoferty",
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_52e3ca71-5e23-4651-bbe4-c6e298930e73",
+  "id": "Podsumowanie_dane_oferty_main",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE oferty SET \n    kurseuro = '{{kursinput.text}}',\n    waluta = '{{Select6.selectedOptionValue}}',\n\t\tvat = '{{vat.selectedOptionValue}}',\n\t\trabat = '{{rabatogolny.text}}',\n\t\ttabelanbpkurs = '{{tabelanbpkurs.text}}',\n\t\tkurswgtabeli = '{{kurstabela.text}}'\n\t\t\nWHERE  id_oferta = {{appsmith.URL.queryParams.id_oferta}}; ",
+      "body": "SELECT * FROM oferty WHERE id_oferta = {{appsmith.URL.queryParams.id_oferta}} ;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "zmiendaneoferty",
+    "executeOnLoad": true,
+    "name": "dane_oferty_main",
     "pageId": "Podsumowanie",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
