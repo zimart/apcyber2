@@ -27,7 +27,7 @@ const columns = [
 const currencyRate = kursinput.text; // Example currency rate for conversion
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
-Produkt: item.Produkt +"\n"+"\n"+item.opisbezrabatow,
+Produkt: item.Produkt +"\n"+item.opisbezrabatow,
 Ilosc: item.Ilosc,
 cenanetto: (item.cenanetto / currencyRate).toFixed(2),// Convert price using currency rate
 //Opis: item.opiszrabatami,
@@ -63,15 +63,18 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 	
     //  doc.setFont ("Helvetica");
       doc.setFontSize("9")
-      doc.text (nagl.text, 15, 15);
+      doc.text (nagl.text, 15, 20);
 	    doc.setFontSize("10")
-	    doc.text ("OFERTA", 15, 40);
+	    doc.text ("OFERTA", 15, 42);
 	    doc.setFontSize("9")
-	    doc.text (Text10.text, 15, 60);
-	    doc.text (Text12.text, 15, 63);
+	    doc.text (Text10.text, 15, 61);
+	    doc.text (Text12.text, 15, 64);
 	    doc.text (Text11.text, 15, 70);
-	    doc.text(Text1.text, 15, 45);
-	    doc.addImage(Text13.text,'PNG',170, 15,25,25);
+	    doc.text(Text1.text, 15, 48);
+	    doc.addImage(Text13.text,'PNG',175,15,20,20);
+	    doc.setDrawColor(255,152,0);
+	    doc.setLineWidth(1.5);
+      doc.line(15, 15, 170, 15);
 	
 //fault_1 (doc, {
 //columnStyles: { europe: { halign: 'center' },

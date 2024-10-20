@@ -33,6 +33,7 @@
   "columnOrder": [
     "customColumn2",
     "customColumn4",
+    "customColumn5",
     "customColumn1",
     "Produkt",
     "Ilosc",
@@ -58,7 +59,7 @@
     "id_main_inv",
     "rodzajmotor"
   ],
-  "columnUpdatedAt": 1729365175174,
+  "columnUpdatedAt": 1729421901443,
   "columnWidthMap": {
     "Ilosc": 72,
     "Produkt": 139,
@@ -67,6 +68,7 @@
     "customColumn2": 64,
     "customColumn3": 184,
     "customColumn4": 60,
+    "customColumn5": 60,
     "kwotarabatogolny": 136,
     "rabatogolny": 84,
     "razemnetto": 186,
@@ -228,6 +230,30 @@
     },
     {
       "key": "primaryColumns.customColumn4.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn5.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn5.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn5.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn4.label"
+    },
+    {
+      "key": "primaryColumns.customColumn4.alias"
+    },
+    {
+      "key": "primaryColumns.customColumn5.label"
+    },
+    {
+      "key": "primaryColumns.customColumn5.alias"
+    },
+    {
+      "key": "primaryColumns.customColumn5.isCellVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -239,6 +265,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn5.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -250,6 +279,9 @@
     },
     {
       "key": "primaryColumns.customColumn4.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn5.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -548,7 +580,7 @@
       "notation": "standard",
       "onClick": "{{showModal(info_modal.name);}}",
       "originalId": "customColumn2",
-      "sticky": "",
+      "sticky": "left",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -589,7 +621,7 @@
       "width": 150
     },
     "customColumn4": {
-      "alias": "USUŃ",
+      "alias": "{{i18n.translate(\"Usuń\")}}",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
@@ -616,12 +648,52 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "USUŃ",
+      "label": "{{i18n.translate(\"Usuń\")}}",
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "onClick": "{{showModal(Modal_usun.name).then(() => {});}}",
       "originalId": "customColumn4",
-      "sticky": "",
+      "sticky": "left",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn5": {
+      "alias": "{{i18n.translate(\"Edytuj\")}}",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "SECONDARY",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "edit",
+      "id": "customColumn5",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( currentRow.rodzajmotor === \"21\"||currentRow.rodzajmotor === \"19\"))}}",
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "{{i18n.translate(\"Edytuj\")}}",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{showModal(edycja_glownej.name);}}",
+      "originalId": "customColumn5",
+      "sticky": "left",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

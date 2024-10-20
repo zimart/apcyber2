@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 11,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": " ",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -32,7 +32,7 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 45,
+  "leftColumn": 49,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -50,7 +50,7 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 7,
+  "topRow": 4,
   "type": "INPUT_WIDGET_V2",
   "validation": "{{cena_pozycja.text.length>0}}",
   "version": 2,

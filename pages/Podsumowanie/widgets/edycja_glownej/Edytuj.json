@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 200,
+  "bottomRow": 5,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,9 +11,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -22,34 +19,30 @@
   "fontSize": "1rem",
   "fontStyle": "",
   "isLoading": false,
-  "isVisible": false,
-  "key": "meqdv5n5nd",
-  "leftColumn": 2,
+  "isVisible": true,
+  "key": "cavtlzzmgo",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 148,
-  "mobileLeftColumn": 6,
-  "mobileRightColumn": 22,
-  "mobileTopRow": 144,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 200,
-  "originalTopRow": 195,
   "overflow": "NONE",
-  "parentColumnSpace": 20.5625,
-  "parentId": "0",
-  "parentRowSpace": 10,
+  "parentId": "gdqlzx6bbb",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 6,
+  "rightColumn": 41,
   "shouldTruncate": false,
-  "text": "{{i18n.translate(\"WALUTA\")}} : {{Select6.selectedOptionLabel}}",
+  "text": "Edytuj - uwaga wpisać ceny w PLN !!!",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 195,
+  "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "oi8p8gofcd",
-  "widgetName": "Text11"
+  "widgetId": "omd870u8f1",
+  "widgetName": "Edytuj"
 }
