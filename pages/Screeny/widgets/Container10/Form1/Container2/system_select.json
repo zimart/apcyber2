@@ -50,7 +50,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 160,
   "needsErrorInfo": false,
-  "onOptionChange": "{{kolor_zapytaj.run().then(() => {}).then(() => removeValue(appsmith.store.modelnapedu)).then(() => serianapedu.run()).then(() => rodzajnapedu.run());\nskrzynka_zapytaj.run();\nserianapedu.run();\nrodzajnapedu.run();}}",
+  "onOptionChange": "{{clearStore().then(() => kolor_zapytaj.run()).then(() => removeValue(appsmith.store.modelnapedu)).then(() => \nresetWidget(\"sku_input\", true))\t.then(() => \t\t\t\t\t\t\t\t\t\t\t\t\t\t\tskrotsystem.run()).then(() => serianapedu.run()).then(() => \n\t\t\t\t\t\t\t\trodzajnapedu.run())\n.then(() => \nskrzynka_zapytaj.run())\n.then(() => \nserianapedu.run())\n.then(() => \nrodzajnapedu.run());\n}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 167,

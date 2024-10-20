@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( daneoferty.data[0].waluta || PLN))(Select6.options, Select6.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( daneoferty.data[0].waluta || \"PLN\"))(Select6.options, Select6.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
