@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "FORM_kolor_zapytaj",
     "pageId": "Screeny",
     "userSetOnLoad": true
