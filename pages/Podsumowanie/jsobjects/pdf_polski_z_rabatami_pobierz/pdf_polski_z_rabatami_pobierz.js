@@ -2,6 +2,7 @@ export default {
 async BuildPDF () {
 const doc = jspdf.jsPDF();
 const data2 = glowna_tabela.tableData;
+
 const Roboto = Input1.text;
 
 //const data = tabela_glowna.tableData;

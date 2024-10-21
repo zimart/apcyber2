@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE inventory_main\nJOIN inventory_screeny ON inventory_main.id_wiersz = inventory_screeny.id \nSET inventory_main.opiszrabatami = CONCAT({{i18n.translate(\"cena\")}},inventory_screeny.cenanetto/{{kursinput.text}},\"Szerokość\");\n",
+      "body": "UPDATE inventory_main\nJOIN inventory_screeny ON inventory_main.id_wiersz = inventory_screeny.id \nSET inventory_main.opiszrabatami = CONCAT(\"cena: \",inventory_screeny.cenanetto/{{kursinput.text}},\" Szerokość..itd\");\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
