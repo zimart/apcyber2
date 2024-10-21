@@ -28,7 +28,7 @@ const columns = [
 const currencyRate = kursinput.text; // Example currency rate for conversion
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
-Produkt: item.Produkt +"\n"+item.opisbezrabatow,
+Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Ilosc: item.Ilosc,
 cenanetto: (item.cenanetto / currencyRate).toFixed(2),// Convert price using currency rate
 //Opis: item.opiszrabatami,
