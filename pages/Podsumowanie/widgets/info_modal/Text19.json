@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 27,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "text"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -27,34 +30,34 @@
   "fontSize": "1rem",
   "fontStyle": "",
   "isLoading": false,
-  "isVisible": "true",
-  "key": "pnt9zdjwxy",
+  "isVisible": "{{Select1.selectedOptionLabel===\"Deutch\"}}",
+  "key": "bbkkunzpog",
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 10,
+  "mobileBottomRow": 22,
   "mobileLeftColumn": 1,
   "mobileRightColumn": 17,
-  "mobileTopRow": 6,
+  "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "originalBottomRow": 17,
-  "originalTopRow": 6,
+  "originalBottomRow": 31,
+  "originalTopRow": 18,
   "overflow": "NONE",
-  "parentColumnSpace": 6.9375,
+  "parentColumnSpace": 10.40625,
   "parentId": "u0g0i1vh5r",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "System:{{pobierzdanescreeny.data[0].system}} | {{i18n.translate(\"Skrzynka\")}}:{{pobierzdanescreeny.data[0].skrzynka}} | {{i18n.translate(\"Kolor\")}}:{{pobierzdanescreeny.data[0].kolor}} | {{i18n.translate(\"Szerokość\")}}:{{pobierzdanescreeny.data[0].szerokosc}} | \n{{i18n.translate(\"Wysokość\")}}:{{pobierzdanescreeny.data[0].wysokosc}} | {{i18n.translate(\"Tkanina\")}}:{{pobierzdanescreeny.data[0].tkanina}} - {{pobierzdanescreeny.data[0].referencja}} | {{i18n.translate(\"Cena katalogowa systemu\")}}: {{(pobierzdanescreeny.data[0].cena/kursinput.text).toFixed(2)}} {{Select6.selectedOptionLabel}}\n",
+  "text": "{{glowna_tabela.triggeredRow.opiszrabatami_de}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 6,
+  "topRow": 14,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "s2dh0y6fgi",
-  "widgetName": "Text4"
+  "widgetId": "daya4ztjai",
+  "widgetName": "Text19"
 }

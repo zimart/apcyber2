@@ -6,7 +6,7 @@
   "bottomRow": 5,
   "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
-  "defaultText": "{{daneoferty.data[0].kurseuro ||kursnbp.data.rates[0].mid}}",
+  "defaultText": "{{kursnbp.data.rates[0].mid}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -60,7 +60,7 @@
   "mobileRightColumn": 53,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onBlur": "{{showModal(LanguageLoading.name).then(() => {\n  kurswaluta.kurs();\n  zmiendaneoferty.run();\n\tdane_oferty_main.run();\n  closeModal(LanguageLoading.name);\n});}}",
+  "onBlur": "{{showModal(LanguageLoading.name).then(() => \n  kurswaluta.kurs())\n.then(() =>\n \tdane_oferty_main.run())\n.then(() =>\n  updateopismainkurs.run())\n.then(() =>\n\tprzelicz_main_js.przelicz_glowna())\n.then(() =>\ncloseModal(LanguageLoading.name))\n;}}",
   "onTextChanged": "",
   "originalBottomRow": 5,
   "originalTopRow": 0,

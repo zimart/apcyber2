@@ -1,0 +1,3 @@
+UPDATE inventory_screeny
+JOIN inventory_main ON inventory_screeny.id=inventory_main.id_wiersz
+SET inventory_screeny.cenanetto = inventory_main.cenanetto/{{kursinput.text}},inventory_screeny.cena = inventory_main.cena/{{kursinput.text}}

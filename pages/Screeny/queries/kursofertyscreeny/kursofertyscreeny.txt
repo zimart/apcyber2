@@ -1,0 +1,1 @@
+SELECT kurseuro,waluta FROM oferty where id_oferta={{idofertyappsmith.text}}

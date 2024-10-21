@@ -31,7 +31,7 @@
   "parentRowSpace": 10,
   "rightColumn": 15,
   "shouldScrollContents": true,
-  "text": "Klient: {{appsmith.URL.queryParams.d_oferta}}\nNumer oferty: \nTemat:",
+  "text": "Klient: {{appsmith.URL.queryParams.id_oferta}}\nNumer oferty: \nTemat:",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,

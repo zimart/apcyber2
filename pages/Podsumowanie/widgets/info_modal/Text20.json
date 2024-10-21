@@ -1,49 +1,55 @@
 {
-  "animateLoading": false,
+  "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 261,
+  "bottomRow": 32,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
+      "key": "fontFamily"
+    },
+    {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "fontFamily": "Open Sans",
-  "fontSize": "0.875rem",
-  "fontStyle": "",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
-  "isVisible": false,
-  "key": "meqdv5n5nd",
-  "leftColumn": 12,
+  "isVisible": true,
+  "key": "bbkkunzpog",
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 122,
-  "mobileLeftColumn": 6,
-  "mobileRightColumn": 22,
-  "mobileTopRow": 118,
+  "mobileBottomRow": 27,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 23,
   "needsErrorInfo": false,
-  "originalBottomRow": 266,
-  "originalTopRow": 192,
+  "originalBottomRow": 36,
+  "originalTopRow": 32,
   "overflow": "NONE",
-  "parentColumnSpace": 20.5625,
-  "parentId": "0",
+  "parentColumnSpace": 10.40625,
+  "parentId": "u0g0i1vh5r",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 14,
+  "rightColumn": 18,
   "shouldTruncate": false,
-  "text": "SIGMA SYSTEMY OSŁONOWE\nul.Czerteż 208, 38-500 Sanok\nTEL/FAX: +48 13 46 34 100 | email:biuro@sigma.sanok.pl | www.sigma.sanok.pl\nNIP: PL6871014735\nNR BDO 000474735",
+  "text": "{{(pobierzdanescreeny.data[0].cena/kursinput.text).toFixed(2)}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 187,
+  "topRow": 28,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "g6t0i62uwd",
-  "widgetName": "nagl"
+  "widgetId": "70whx1hz06",
+  "widgetName": "Text20"
 }

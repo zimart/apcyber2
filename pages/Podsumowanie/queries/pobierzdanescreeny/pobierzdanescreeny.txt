@@ -1,0 +1,1 @@
+SELECT * FROM inventory_screeny where id = {{glowna_tabela.triggeredRow.id_wiersz}};

@@ -1,0 +1,3 @@
+UPDATE inventory_main
+JOIN inventory_screeny ON inventory_main.id_wiersz = inventory_screeny.id 
+SET inventory_main.opiszrabatami = CONCAT({{i18n.translate("cena")}},inventory_screeny.cenanetto/{{kursinput.text}},"Szerokość");
