@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 13,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 21,
   "shouldTruncate": false,
-  "text": "Klient:\n{{dane_oferty_main.data[0].klient}}\nNumer oferty: {{appsmith.URL.queryParams.numer}}\nz dnia: {{appsmith.URL.queryParams.data}}- id {{appsmith.URL.queryParams.id_oferta}}, id-klienta: {{appsmith.URL.queryParams.id_klienta}}",
+  "text": "Klient:\n{{dane_oferty_main.data[0].klient ||\"\"}}\n{{adresklienta.data[0].ulica ||\"\"}}\n\n\nNumer oferty: {{appsmith.URL.queryParams.numer}}\nz dnia: {{appsmith.URL.queryParams.data}}- id {{appsmith.URL.queryParams.id_oferta}}, id-klienta: {{appsmith.URL.queryParams.id_klienta}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,

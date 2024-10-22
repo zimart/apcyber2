@@ -7,6 +7,8 @@ showModal(LanguageLoading.name)
 .then(() => 
 ustawrabatogolny.run())
 .then(() => 
+updateopismainkurs.run())
+.then(() =>
 tabela_glowna.run())
 .then(() => 
 sumarazemnetto.run())

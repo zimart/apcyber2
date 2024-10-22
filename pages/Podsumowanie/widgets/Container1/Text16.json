@@ -51,7 +51,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 54,
   "shouldTruncate": false,
-  "text": "Kurs oferty: {{dane_oferty_main.data[0].kurseuro}} Obecny kurs : {{kursnbp.data.rates[0].no}} - {{kursnbp.data.rates[0].mid}}",
+  "text": "Kurs oferty: {{dane_oferty_main.data[0].kurseuro || \"Zapisz kurs\"}} Obecny kurs : {{kursnbp.data.rates[0].no}} - {{kursnbp.data.rates[0].mid}}",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
   "topRow": 7,

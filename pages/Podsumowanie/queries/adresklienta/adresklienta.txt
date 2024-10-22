@@ -1,0 +1,1 @@
+SELECT * FROM klienci where accountname = {{dane_oferty_main.data[0].klient}};
