@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -21,7 +24,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "pnt9zdjwxy",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -30,13 +33,15 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
+  "originalBottomRow": 5,
+  "originalTopRow": 1,
   "overflow": "NONE",
   "parentId": "u0g0i1vh5r",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 41,
   "shouldTruncate": false,
-  "text": " Szczegóły pozycji - Ceny PLN",
+  "text": "{{i18n.translate(\"Szczegóły pozycji\")}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

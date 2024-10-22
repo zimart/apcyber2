@@ -3,64 +3,58 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10,
+  "bottomRow": 159,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{tlumaczenie.data.response}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChanged"
-    },
-    {
-      "key": "onBlur"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "MULTI_LINE_TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "fs65bs2u18",
-  "label": "Opis oferty",
+  "key": "t7dklpn0up",
+  "label": "Label",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 30,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 7,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 9,
-  "mobileTopRow": 0,
+  "mobileBottomRow": 156,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 149,
   "needsErrorInfo": false,
-  "onBlur": "{{tlumaczenie.run()}}",
-  "onTextChanged": "",
-  "originalBottomRow": 10,
-  "originalTopRow": 0,
-  "parentColumnSpace": 20.25,
-  "parentId": "0zmoxd1vaw",
+  "originalBottomRow": 159,
+  "originalTopRow": 149,
+  "parentColumnSpace": 20.5625,
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 50,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 0,
+  "topRow": 149,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "9p8jqir9f9",
-  "widgetName": "opisoferty"
+  "widgetId": "fz1eotj5nc",
+  "widgetName": "Input6"
 }

@@ -21,7 +21,9 @@ export default {
 		"Oferta":"Oferta",
 		"Razem netto":"Razem netto",
 		"Podatek VAT":"Podatek VAT",
-		"Warunki płatności":"Warunki płatności"
+		"Warunki płatności":"Warunki płatności",
+		"Montaż":"Montaż",
+		"Pilot 1-kanałowy ręczny":"Pilot 1-kanałowy ręczny"
 				
 	},
 	languageOptions: [

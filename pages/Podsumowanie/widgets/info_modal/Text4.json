@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 18,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "text"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -27,9 +30,9 @@
   "fontSize": "1rem",
   "fontStyle": "",
   "isLoading": false,
-  "isVisible": "true",
+  "isVisible": "{{Select1.selectedOptionLabel===\"Polski\"}}",
   "key": "pnt9zdjwxy",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -38,20 +41,20 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 17,
-  "originalTopRow": 6,
+  "originalBottomRow": 18,
+  "originalTopRow": 5,
   "overflow": "NONE",
   "parentColumnSpace": 6.9375,
   "parentId": "u0g0i1vh5r",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "shouldTruncate": false,
-  "text": "System:{{pobierzdanescreeny.data[0].system}} | {{i18n.translate(\"Skrzynka\")}}:{{pobierzdanescreeny.data[0].skrzynka}} | {{i18n.translate(\"Kolor\")}}:{{pobierzdanescreeny.data[0].kolor}} | {{i18n.translate(\"Szerokość\")}}:{{pobierzdanescreeny.data[0].szerokosc}} | \n{{i18n.translate(\"Wysokość\")}}:{{pobierzdanescreeny.data[0].wysokosc}} | {{i18n.translate(\"Tkanina\")}}:{{pobierzdanescreeny.data[0].tkanina}} - {{pobierzdanescreeny.data[0].referencja}} | {{i18n.translate(\"Cena katalogowa systemu\")}}: {{(pobierzdanescreeny.data[0].cena/kursinput.text).toFixed(2)}} {{Select6.selectedOptionLabel}}\n",
+  "text": "{{glowna_tabela.triggeredRow.opiszrabatami}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 6,
+  "topRow": 5,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
