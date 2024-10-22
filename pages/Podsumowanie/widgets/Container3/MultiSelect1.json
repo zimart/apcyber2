@@ -4,10 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultOptionValue": [
-    "GREEN",
-    "RED"
-  ],
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( dane_oferty_main.data[0].warunkiplatnosci))(MultiSelect1.options, MultiSelect1.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -17,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -56,7 +56,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 50,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"label\": \"{{i18n.translate(\"Przedpłata 100%\")}}\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"name\": \"Green\",\n    \"code\": \"GREEN\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"label\": \"{{i18n.translate(\"Przedpłata 100%\")}}\",\n    \"value\": \"{{i18n.translate(\"Przedpłata 100%\")}}\"\n  },\n\t{\n    \"label\": \"{{i18n.translate(\"Wymagany zadatek\")}}\",\n    \"value\": \"{{i18n.translate(\"Wymagany zadatek\")}}\"\n  }\n  \n]",
   "topRow": 0,
   "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,

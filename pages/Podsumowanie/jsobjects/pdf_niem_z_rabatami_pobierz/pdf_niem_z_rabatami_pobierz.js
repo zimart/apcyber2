@@ -2,7 +2,7 @@ export default {
 async BuildPDF () {
 const doc = jspdf.jsPDF();
 const data2 = glowna_tabela.tableData;
-const numer = idoferty_appsmith;
+const numer = idoferty_appsmith.text;
 const Roboto = Input1.text;
 
 //const data = tabela_glowna.tableData;
@@ -13,19 +13,27 @@ const columns = [
 { header: 'Produkt', dataKey: 'Produkt' },
 { header: 'Menge', dataKey: 'Ilosc' },
 { header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
-{ header: 'Rabat %', dataKey: 'Rabatprocent' } ,// Custom header with currency
-{ header: 'Rabat', dataKey: 'Rabat' } ,// Custom header with currency
-{ header: 'Netto po rabacie', dataKey: 'nettopo' } ,// Custom header with currency
+{ header: 'Rabatt %', dataKey: 'Rabatprocent' } ,// Custom header with currency
+{ header: 'Rabattbetrag', dataKey: 'Rabat' } ,// Custom header with currency
+{ header: 'Netto nach Abzug', dataKey: 'nettopo' } ,// Custom header with currency
 //{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
-{ header: 'Razem netto', dataKey: 'razemnetto' }, // Custom header with currency
-{ header: 'VAT %', dataKey: 'vat' }, // Custom header with currency
-{ header: 'VAT', dataKey: 'vatkwota' }, // Custom header with currency
-{ header: 'Brutto', dataKey: 'Brutto' } // Custom header with currency
+{ header: 'Nettosumme', dataKey: 'razemnetto' }, // Custom header with currency
+{ header: 'Steuer %', dataKey: 'vat' }, // Custom header with currency
+{ header: 'Steuerbetrag', dataKey: 'vatkwota' }, // Custom header with currency
+{ header: 'Zu bezahlen', dataKey: 'Brutto' } // Custom header with currency
 ];	
+	
+	
+	
+const columns2 = [
+{ header: 'szczegoly', dataKey: 'szczegoly' }
+];	
+const data3 = opisoferty.text;	
 	
 // Example data with computed values
 
 const currencyRate = kursinput.text; // Example currency rate for conversion
+
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Produkt: item.Produkt +"\n"+item.opiszrabatami_de,
@@ -40,7 +48,12 @@ vat: item.vat,
 vatkwota: (item.razemnetto*(item.vat/100)).toFixed(2),
 Brutto: (item.brutto/ currencyRate).toFixed(2)
 }));	
+	
 
+	
+	
+	
+	///koniec tabeliglownej
 //const columns2 = tabela_glowna.tableHeaders;
 	
 // Example data
@@ -63,42 +76,105 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
      doc.setFont("Roboto"); // set font
 	
     //  doc.setFont ("Helvetica");
-      doc.setFontSize("9")
-      doc.text (nagl.text, 15, 20);
-	    doc.setFontSize("10")
-	    doc.text ("OFERTA", 15, 42);
-	    doc.setFontSize("9")
-	    doc.text (Text10.text, 15, 65);
-	    doc.text (Text12.text, 15, 68);
-	    doc.text (Text11.text, 15, 74);
-	    doc.text(Text1.text, 15, 48);
 	    doc.addImage(Text13.text,'PNG',175,15,20,20);
 	    doc.setDrawColor(255,152,0);
 	    doc.setLineWidth(1.5);
       doc.line(15, 15, 170, 15);
 	
-//fault_1 (doc, {
-//columnStyles: { europe: { halign: 'center' },
-//						},
-//tyles: { 
-//        
-//        fontSize: 8,
- //       cellWidth: 'auto',
-//        halign: 'center',
-         //fillColor: [225, 197, 238]
-//     }, 
+	        doc.setDrawColor(247, 247, 247);
+	    doc.setLineWidth(8);
+      doc.line(15, 46, 198, 46);
+	
+	
+	    doc.setFontSize("9")
+      doc.text (nagl.text, 15, 20);
+	
+	    doc.setFontSize("12");
+	    doc.text ("ANGEBOT", 17, 48);
+	    doc.text (Text22.text, 35, 48);
+	
+	    doc.setFontSize("10");
+	    doc.text ("Kunde: ", 15, 58);
+	    doc.text(klient.text, 15, 63);
+	 
+	    doc.setFontSize("10")
+	   doc.text (ponizej.text, 15, 80);
+	   doc.text (dziekujemy.text, 15, 85);
+	
+	//tabela_opis
+	
+
+//const finalY = doc.lastAutoTable.finalY; // The y position where the table ends
+//doc.text(opisoferty.text, 15, finalY + 10);
+
+	   
+	    
+	
+default_1 (doc, {
+theme: 'grid',
+	headStyles: { 
+		fillColor:  [255, 255, 255] ,
+           // lineColor: 'black',
+							 lineWidth: 0,
+            //lineColor: 'black'
+							 fontSize: 10,
+							 fontStyle: 'bold',
+							},
+	startY: 90,
+	columnStyles: { europe: { halign: 'left',valign: 'middle' },
+             Produkt: {
+       //fontStyle: 'bold',
+							 halign: 'left',
+							 valign: 'middle',
+							 lineWidth: 0,
+      },
+								
+								},
+	styles: { cellPadding: 1, fontSize: 10,
+					 textColor:0,
+					 //font: 'Amiri',
+					 font: 'Roboto',
+					//  font:'Helvetica',
+           // lineColor: 'black',
+					 cellWidth: 'auto',
+					overflow: 'linebreak',
+//					overflow: 'linebreak'|'ellipsize'|'visible'|'hidden' = 'linebreak'
+//fillColor: 255,
+//textColor: Color? = 20
+//cellWidth: 'auto'|'wrap'|number = 'auto'
+minCellWidth: 5,
+minCellHeight:5,
+//minCellHeight: number = 0
+halign: 'left',
+valign: 'middle',
+//	halign: 'left'|'center'|'right' = 'left'
+//valign: 'top'|'middle'|'bottom' = 'top'
+//fontSize: number = 10
+//cellPadding: Padding = 10
+//lineColor: Color = 10
+lineWidth: border = 0 // If 0, no border is drawn
+				
+					
+					
+					
+					},		
 	
 	// European countries centered
-//body: [
- // { europe: 'Sweden', america: 'Canada', asia: 'China' },
-//  { europe: 'Norway', america: 'Mexico', asia: 'Japan' },
-//],
-//columns: [
-//  { header: 'Europe', dataKey: 'europe' },
-//  { header: 'Asia', dataKey: 'asia' },
-//],
-//};
+body: [
+  { opis: opisoferty.text },
+ 
+],
+columns: [
+  { header: 'Opis oferty', dataKey: 'opis' },
+ 
+]
+
+});
 	
+const finalY1 = doc.lastAutoTable.finalY; // The y position where the table ends	
+ doc.setFontSize("10");
+ doc.text (walutatekst.text, 15, finalY1+8);	
+
 	
 	
 // Add a table with auto columns
@@ -111,7 +187,7 @@ default_1(doc, {
 							 fontSize: 9,
 							 fontStyle: 'bold',
 							},
-	startY: 75,
+	startY: finalY1+10,
 	columnStyles: { europe: { halign: 'center',valign: 'middle' },
              Produkt: {
        //fontStyle: 'bold',
@@ -160,15 +236,20 @@ valign: 'middle'
 });
 	
 
-	
 	// Add a table with auto columns
 //default_1(doc,tabela_glowna.tableData);
 
 // Add text below the table
-const finalY = doc.lastAutoTable.finalY; // The y position where the table ends
-doc.text(opisoferty.text, 14, finalY + 10);
+const finalY2 = doc.lastAutoTable.finalY; // The y position where the table ends
+doc.text("tekst", 15, finalY2 + 10);
+	
+		
+	
+	
+	
+	
 //return doc.output("dataurlstring");
-	download(doc.output(), 'angebot_numer.pdf');
+	download(doc.output(), 'angebot_.pdf');
 //doc.save('table.pdf');
 }
 }

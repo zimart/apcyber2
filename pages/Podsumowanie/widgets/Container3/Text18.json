@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 28,
+  "bottomRow": 30,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -24,7 +24,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "cavtlzzmgo",
-  "leftColumn": 10,
+  "leftColumn": 11,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -33,7 +33,7 @@
   "mobileRightColumn": 29,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "originalBottomRow": 28,
+  "originalBottomRow": 32,
   "originalTopRow": 8,
   "overflow": "NONE",
   "parentColumnSpace": 20.25,
@@ -41,9 +41,9 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 30,
+  "rightColumn": 48,
   "shouldTruncate": false,
-  "text": "Suma netto katalogowo :\nSuma rabatu:\nSuma netto po rabacie:\nPodatek %:\nSuma podatku :\nWaluta dokumentu :\nNumer konta bankowego :{{numerkonta.data[0].konto}}\n\nWymagana kwota zadatku: \nData ważności oferty:",
+  "text": "Suma netto katalogowo : <B>{{(sumarazemnetto.data[0][\"SUM (razemnetto)\"]/kursinput.text).toFixed(2) ||\" \"}} {{Select6.selectedOptionLabel}}</B>\nSuma rabatu:\nSuma netto po rabacie:\nPodatek %:\nSuma podatku :\nWaluta dokumentu :\nNumer konta bankowego :{{numerkonta.data[0].konto}}\nWarunki płatności: {{MultiSelect1.selectedOptionLabels[0]||\"\"}}  {{MultiSelect1.selectedOptionLabels[1]||\"\"}} {{MultiSelect1.selectedOptionLabels[2]||\"\"}} {{MultiSelect1.selectedOptionLabels[3]||\"\"}} {{MultiSelect1.selectedOptionLabels[4]||\"\"}} {{MultiSelect1.selectedOptionLabels[5]||\"\"}} {{MultiSelect1.selectedOptionLabels[6]||\"\"}}\n\nWymagana kwota zadatku: \nData ważności oferty:",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 8,

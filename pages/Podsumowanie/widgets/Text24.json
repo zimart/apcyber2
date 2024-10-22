@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 149,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -13,48 +13,43 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
   "fontStyle": "BOLD",
   "isLoading": false,
-  "isVisible": "{{kurseuro.text=== 1}}",
-  "key": "cavtlzzmgo",
-  "leftColumn": 56,
+  "isVisible": true,
+  "key": "41ir1ekn2n",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 15,
-  "mobileLeftColumn": 48,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 11,
+  "mobileBottomRow": 153,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 149,
   "needsErrorInfo": false,
-  "originalBottomRow": 14,
-  "originalTopRow": 10,
+  "originalBottomRow": 149,
+  "originalTopRow": 145,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 16,
   "shouldTruncate": false,
-  "text": "Ustaw kurs EURO !!! ",
-  "textAlign": "RIGHT",
-  "textColor": "#b91c1c",
-  "topRow": 10,
+  "text": "{{MultiSelect1.selectedOptionLabels[0]||\"\"}}  {{MultiSelect1.selectedOptionLabels[1]||\"\"}} {{MultiSelect1.selectedOptionLabels[2]||\"\"}} {{MultiSelect1.selectedOptionLabels[3]||\"\"}} {{MultiSelect1.selectedOptionLabels[4]||\"\"}} {{MultiSelect1.selectedOptionLabels[5]||\"\"}} {{MultiSelect1.selectedOptionLabels[6]||\"\"}}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 145,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "2y7gzi1ah4",
-  "widgetName": "Text14"
+  "widgetId": "o3ml6c4v4i",
+  "widgetName": "Text24"
 }

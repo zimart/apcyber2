@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 96,
+  "bottomRow": 95,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -323,8 +323,8 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onPageChange": "{{tabela_glowna.run()}}",
-  "originalBottomRow": 96,
-  "originalTopRow": 28,
+  "originalBottomRow": 95,
+  "originalTopRow": 27,
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
@@ -1441,7 +1441,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{tabela_glowna.data}}",
   "textSize": "0.875rem",
-  "topRow": 28,
+  "topRow": 27,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,

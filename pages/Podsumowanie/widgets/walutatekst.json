@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 247,
+  "bottomRow": 262,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -19,7 +19,7 @@
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
+  "fontSize": "1rem",
   "fontStyle": "",
   "isLoading": false,
   "isVisible": false,
@@ -28,13 +28,13 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 142,
+  "mobileBottomRow": 148,
   "mobileLeftColumn": 6,
   "mobileRightColumn": 22,
-  "mobileTopRow": 138,
+  "mobileTopRow": 144,
   "needsErrorInfo": false,
-  "originalBottomRow": 255,
-  "originalTopRow": 244,
+  "originalBottomRow": 262,
+  "originalTopRow": 257,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
   "parentId": "0",
@@ -43,13 +43,13 @@
   "responsiveBehavior": "fill",
   "rightColumn": 6,
   "shouldTruncate": false,
-  "text": "{{i18n.translate(\"Poniżej znajdziecie Państwo szczegóły naszej oferty.\")}}",
+  "text": "{{i18n.translate(\"Waluta\")}} : {{Select6.selectedOptionLabel}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 237,
+  "topRow": 257,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "8rudf3xvb8",
-  "widgetName": "Text12"
+  "widgetId": "oi8p8gofcd",
+  "widgetName": "walutatekst"
 }

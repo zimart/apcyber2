@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 17,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -13,48 +13,43 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "0.875rem",
   "fontStyle": "BOLD",
   "isLoading": false,
-  "isVisible": "{{kurseuro.text=== 1}}",
-  "key": "cavtlzzmgo",
-  "leftColumn": 56,
+  "isVisible": true,
+  "key": "41ir1ekn2n",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 15,
-  "mobileLeftColumn": 48,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 11,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 7,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "originalBottomRow": 14,
-  "originalTopRow": 10,
+  "originalBottomRow": 17,
+  "originalTopRow": 13,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
-  "parentId": "0",
+  "parentId": "4dusi33tfp",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 9,
   "shouldTruncate": false,
-  "text": "Ustaw kurs EURO !!! ",
-  "textAlign": "RIGHT",
-  "textColor": "#b91c1c",
-  "topRow": 10,
+  "text": "{{dane_oferty_main.data[0].numeroferty ||\"\"}}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 13,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "2y7gzi1ah4",
-  "widgetName": "Text14"
+  "widgetId": "yldsufpni3",
+  "widgetName": "Text22"
 }

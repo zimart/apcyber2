@@ -1,4 +1,10 @@
 export default {
+
+nazwapliku() {
+	const data=Text21.text;
+	return data;
+},
+	
 async BuildPDF () {
 const doc = jspdf.jsPDF();
 const data2 = glowna_tabela.tableData;
@@ -59,6 +65,7 @@ Brutto: (item.brutto/ currencyRate).toFixed(2)
 	
 doc.addFileToVFS("RobotoCondensed-Regular.ttf", Roboto);
 doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
+doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "bold");
 
      doc.setFont("Roboto"); // set font
 	
@@ -66,12 +73,23 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
       doc.setFontSize("9")
       doc.text (nagl.text, 15, 20);
 	    doc.setFontSize("10")
-	    doc.text ("OFERTA", 15, 42);
-	    doc.setFontSize("9")
-	    doc.text (Text10.text, 15, 65);
-	    doc.text (Text12.text, 15, 68);
-	    doc.text (Text11.text, 15, 74);
-	    doc.text(Text1.text, 15, 48);
+	    doc.text (i18n.translate("Oferta"), 15, 42);
+	    doc.setFontSize("10")
+	    doc.text (dziekujemy.text, 15, 65);
+	    doc.text (ponizej.text, 15, 68);
+	    doc.text (walutatekst.text, 15, 74);
+	    doc.setFontSize("10");
+	  //  doc.setFontType('bold');
+	    doc.text(klient.text, 15, 48);
+	 
+	  // doc.setFont("helvetica","bold");
+     //doc.text(20, 50, 'This is helvetica bold.');
+		  
+     doc.setTextColor(255,0,0);
+     doc.text(20, 40, opisoferty.text);
+	   doc.setTextColor(0,0,0);
+	
+	
 	    doc.addImage(Text13.text,'PNG',175,15,20,20);
 	    doc.setDrawColor(255,152,0);
 	    doc.setLineWidth(1.5);
@@ -163,15 +181,22 @@ valign: 'middle'
 	
 	// Add a table with auto columns
 //default_1(doc,tabela_glowna.tableData);
-
+const nazwa = Text21.text;
+	
 // Add text below the table
 const finalY = doc.lastAutoTable.finalY; // The y position where the table ends
-doc.text( "Netto", 15, finalY + 10);
+doc.text(i18n.translate("Razem netto"), 15, finalY + 10);
 doc.setFontSize("12")
 doc.text(Text5.text, 15, finalY + 15);
 //return doc.output("dataurlstring");
-	download(doc.output(), 'oferta.pdf');
+download(doc.output(),'oferta.pdf');
+	
+	
 //doc.save('table.pdf');
 }
+	
+
+	
+	
 }
 	

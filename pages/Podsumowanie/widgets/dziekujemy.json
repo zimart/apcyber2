@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 221,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -13,48 +13,43 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
-  "fontStyle": "BOLD",
+  "fontSize": "0.875rem",
+  "fontStyle": "",
   "isLoading": false,
-  "isVisible": "{{kurseuro.text=== 1}}",
-  "key": "cavtlzzmgo",
-  "leftColumn": 56,
+  "isVisible": false,
+  "key": "meqdv5n5nd",
+  "leftColumn": 30,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 15,
-  "mobileLeftColumn": 48,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 11,
+  "mobileBottomRow": 136,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 132,
   "needsErrorInfo": false,
-  "originalBottomRow": 14,
-  "originalTopRow": 10,
+  "originalBottomRow": 221,
+  "originalTopRow": 213,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 58,
   "shouldTruncate": false,
-  "text": "Ustaw kurs EURO !!! ",
-  "textAlign": "RIGHT",
-  "textColor": "#b91c1c",
-  "topRow": 10,
+  "text": "{{i18n.translate(\"Serdecznie dziękujemy za zainteresowanie naszą ofertą handlową. Mamy nadzieję, że dokonają Państwo trafnego wyboru.\")}}\n\n{{opisoferty.text}}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 213,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "2y7gzi1ah4",
-  "widgetName": "Text14"
+  "widgetId": "j5dycb5agc",
+  "widgetName": "dziekujemy"
 }

@@ -67,10 +67,10 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 	    doc.setFontSize("10")
 	    doc.text ("OFERTA", 15, 42);
 	    doc.setFontSize("9")
-	    doc.text (Text10.text, 15, 65);
-	    doc.text (Text12.text, 15, 68);
-	    doc.text (Text11.text, 15, 74);
-	    doc.text(Text1.text, 15, 48);
+	    doc.text (dziekujemy.text, 15, 65);
+	    doc.text (ponizej.text, 15, 68);
+	    doc.text (walutatekst.text, 15, 74);
+	    doc.text(klient.text, 15, 48);
 	    doc.addImage(Text13.text,'PNG',175,15,20,20);
 	    doc.setDrawColor(255,152,0);
 	    doc.setLineWidth(1.5);

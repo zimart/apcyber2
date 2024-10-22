@@ -4,6 +4,12 @@ UPDATE oferty SET
 		vat = '{{vat.selectedOptionValue}}',
 		rabat = '{{rabatogolny.text}}',
 		tabelanbpkurs = '{{tabelanbpkurs.text}}',
-		kurswgtabeli = '{{kurstabela.text}}'
+		kurswgtabeli = '{{kurstabela.text}}',
+		komentarz = '{{opisoferty.text}}',
+		wymaganyzadatekprocent = '{{wymaganyzadatekprocent.text}}',
+		datawaznosci='',
+		warunkiplatnosci = '{{MultiSelect1.selectedOptionLabels}}',
+	
+		sugerowanyzadatek ='{{wymaganyzadatek.text}}'
 		
 WHERE  id_oferta = {{appsmith.URL.queryParams.id_oferta}}; 

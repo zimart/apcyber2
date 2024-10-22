@@ -1,32 +1,34 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 20,
+  "bottomRow": 6,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#b91c1c",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
-    },
-    {
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "ufu47vxd4q",
-  "leftColumn": 48,
+  "leftColumn": 51,
   "minWidth": 120,
   "mobileBottomRow": 126,
   "mobileLeftColumn": 48,
   "mobileRightColumn": 64,
   "mobileTopRow": 122,
   "needsErrorInfo": false,
+  "onClick": "{{zmiendaneoferty.run()}}",
   "originalBottomRow": 148,
   "originalTopRow": 144,
   "parentColumnSpace": 20.5625,
@@ -37,9 +39,9 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "text": "ZAPISZ SZCZEGÓŁY OFERTY",
-  "topRow": 16,
+  "topRow": 2,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "7uaw1ggcjc",
