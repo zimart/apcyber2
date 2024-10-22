@@ -84,7 +84,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729458125109,
+  "columnUpdatedAt": 1729599589890,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -1575,7 +1575,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "opiszrabatami",
       "notation": "standard",
       "originalId": "opiszrabatami",

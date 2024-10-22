@@ -62,11 +62,9 @@
     "opiszrabatami_de",
     "opisbezrabatow_en",
     "opiszrabatami_en",
-    "customColumn6",
-    "id_wiersz",
-    "customColumn7"
+    "id_wiersz"
   ],
-  "columnUpdatedAt": 1729530576881,
+  "columnUpdatedAt": 1729599927943,
   "columnWidthMap": {
     "Ilosc": 72,
     "Produkt": 273,
@@ -270,13 +268,7 @@
       "key": "primaryColumns.opiszrabatami_en.computedValue"
     },
     {
-      "key": "primaryColumns.customColumn6.buttonColor"
-    },
-    {
       "key": "primaryColumns.id_wiersz.computedValue"
-    },
-    {
-      "key": "primaryColumns.customColumn7.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -305,9 +297,6 @@
     },
     {
       "key": "primaryColumns.customColumn5.onClick"
-    },
-    {
-      "key": "primaryColumns.customColumn6.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -726,77 +715,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "customColumn6": {
-      "alias": "customColumn6",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "buttonColor": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "iconButton",
-      "computedValue": "",
-      "currencyCode": "USD",
-      "customAlias": "",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "iconName": "info-sign",
-      "id": "customColumn6",
-      "index": 10,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "customColumn6",
-      "labelColor": "#FFFFFF",
-      "menuItemsSource": "STATIC",
-      "notation": "standard",
-      "onClick": "{{showModal(info_modal.name);}}",
-      "originalId": "customColumn6",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "customColumn7": {
-      "alias": "customColumn7",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "text",
-      "computedValue": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( 'System:' + pobierzdanescreeny.data[0].system + ' | ' + i18n.translate(\"Skrzynka\") + ':' + pobierzdanescreeny.data[0].skrzynka + ' | ' + i18n.translate(\"Kolor\") + ':' + pobierzdanescreeny.data[0].kolor + ' | ' + i18n.translate(\"Szerokość\") + ':' + pobierzdanescreeny.data[0].szerokosc + ' | \n' + i18n.translate(\"Wysokość\") + ':' + pobierzdanescreeny.data[0].wysokosc + ' | ' + i18n.translate(\"Tkanina\") + ':' + pobierzdanescreeny.data[0].tkanina + ' - ' + pobierzdanescreeny.data[0].referencja + ' | ' + i18n.translate(\"Cena katalogowa systemu\") + ': ' + (pobierzdanescreeny.data[0].cena/kursinput.text).toFixed(2) + ' {{Select6.selectedOptionLabel}'))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "customColumn7",
-      "index": 10,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "customColumn7",
-      "labelColor": "#FFFFFF",
-      "notation": "standard",
-      "originalId": "customColumn7",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "id_main_inv": {
       "alias": "id_main_inv",
       "allowCellWrapping": false,
@@ -853,7 +771,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "id_wiersz",
       "notation": "standard",
       "originalId": "id_wiersz",

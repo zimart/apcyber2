@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 33,
+  "bottomRow": 32,
   "boxShadow": "none",
   "buttonColor": "#831843",
   "buttonVariant": "SECONDARY",
@@ -34,7 +34,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 56,
   "text": "RESETUJ",
-  "topRow": 29,
+  "topRow": 28,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "lfgk2u1yyl",
