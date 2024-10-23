@@ -25,10 +25,12 @@ export default {
 
 		if (user && this.verifyHash(password, user?.password_hash)) {
 			storeValue('token', await this.createToken(user))
-				.then(() => updateLogin.run({
-				id: user.id
-			}))
-				.then(() => showAlert('Register Success', 'success'))
+	//			.then(() => updateLogin.run({
+	//			id: user.id
+	//		}))
+				.then(() => showAlert('zalogowano', 'success'))
+			.then(() => navigateTo('Klienci', {}, 'SAME_WINDOW'))		 	
+			  
 		} else {
 			return showAlert('Invalid emaill/password combination', 'error');
 		}

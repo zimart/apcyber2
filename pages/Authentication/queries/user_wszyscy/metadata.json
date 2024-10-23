@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "670a2c74cb4eb2140bfd1e60_493e4166-de6d-45d6-a649-33c94c095fce",
-  "id": "Authentication_findUserByEmail",
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_8e995563-8b76-4fe7-aaa4-7ef079a61b82",
+  "id": "Authentication_user_wszyscy",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM user_auth WHERE email = {{inp_email.text}};",
+      "body": "SELECT * FROM user_auth;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,13 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": false,
-    "name": "findUserByEmail",
+    "name": "user_wszyscy",
     "pageId": "Authentication",
     "userSetOnLoad": false
   }
