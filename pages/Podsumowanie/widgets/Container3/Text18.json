@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 48,
   "shouldTruncate": false,
-  "text": "Suma netto katalogowo : <B>{{(sumarazemnetto.data[0][\"SUM (razemnetto)\"]/kursinput.text).toFixed(2) ||\" \"}} {{Select6.selectedOptionLabel}}</B>\nSuma rabatu:\nSuma netto po rabacie:\nPodatek %:\nSuma podatku :\nWaluta dokumentu :\nNumer konta bankowego :{{numerkonta.data[0].konto}}\nWarunki płatności: {{MultiSelect1.selectedOptionLabels[0]||\"\"}}  {{MultiSelect1.selectedOptionLabels[1]||\"\"}} {{MultiSelect1.selectedOptionLabels[2]||\"\"}} {{MultiSelect1.selectedOptionLabels[3]||\"\"}} {{MultiSelect1.selectedOptionLabels[4]||\"\"}} {{MultiSelect1.selectedOptionLabels[5]||\"\"}} {{MultiSelect1.selectedOptionLabels[6]||\"\"}}\n\nWymagana kwota zadatku: \nData ważności oferty:",
+  "text": "Suma netto katalogowo : <B>{{(sumarazemnetto.data[0][\"SUM (razemnetto)\"]/kursinput.text).toFixed(2) ||\" \"}} {{Select6.selectedOptionLabel}}</B>\nSuma rabatu:\nSuma netto po rabacie:\nPodatek %:\nSuma podatku :\nWaluta dokumentu :\nNumer konta bankowego :{{numerkonta.data[0].konto}}\nWarunki płatności: {{i18n.translate(MultiSelect1.selectedOptionLabels[0])||\"\"}}  {{MultiSelect1.selectedOptionLabels[1]||\"\"}} {{MultiSelect1.selectedOptionLabels[2]||\"\"}} {{MultiSelect1.selectedOptionLabels[3]||\"\"}} {{MultiSelect1.selectedOptionLabels[4]||\"\"}} {{MultiSelect1.selectedOptionLabels[5]||\"\"}} {{MultiSelect1.selectedOptionLabels[6]||\"\"}}\n\nWymagana kwota zadatku: \nData ważności oferty:",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 8,

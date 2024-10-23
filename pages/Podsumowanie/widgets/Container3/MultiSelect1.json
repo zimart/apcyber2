@@ -13,13 +13,10 @@
       "key": "borderRadius"
     },
     {
-      "key": "sourceData"
-    },
-    {
       "key": "defaultOptionValue"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
@@ -48,6 +45,8 @@
   "needsErrorInfo": false,
   "optionLabel": "label",
   "optionValue": "value",
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
   "parentColumnSpace": 20.25,
   "parentId": "4dusi33tfp",
   "parentRowSpace": 10,
@@ -56,7 +55,8 @@
   "responsiveBehavior": "fill",
   "rightColumn": 50,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"label\": \"{{i18n.translate(\"Przedpłata 100%,\")}}\",\n    \"value\": \"{{i18n.translate(\"Przedpłata 100%,\")}}\"\n  },\n\t{\n    \"label\": \"{{i18n.translate(\"Wymagany zadatek w wysokości podanej na ofercie,\")}}\",\n    \"value\": \"{{i18n.translate(\"Wymagany zadatek w wysokości podanej na ofercie,\")}}\"\n  }\n  \n]",
+  "shouldScrollContents": true,
+  "sourceData": "[\n  {\n    \"label\": \"Przedpłata 100%,\",\n    \"value\": \"Przedpłata 100%\"\n  },\n\t{\n    \"label\": \"Wymagany zadatek w wysokości podanej na ofercie,\",\n    \"value\": \"Wymagany zadatek w wysokości podanej na ofercie\"\n  }\n  \n]",
   "topRow": 0,
   "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,
