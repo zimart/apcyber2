@@ -36,11 +36,11 @@
   "pages": [
     {
       "id": "Authentication",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "Klienci",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "Oferty",
