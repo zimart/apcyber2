@@ -1,17 +1,12 @@
 {
-  "gitSyncId": "670a2c74cb4eb2140bfd1e60_22cefdf8-af49-4e5f-aa81-5907c3d1227b",
-  "id": "Podsumowanie_xml.jsonToXML",
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_0589560d-6c84-4cdc-b46e-120fb6364e3f",
+  "id": "Podsumowanie_xml.parsuj",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
-      "jsArguments": [
-        {
-          "name": "json",
-          "value": "{{{\"abc\": \"def\"}}}"
-        }
-      ],
+      "jsArguments": [],
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
@@ -28,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "xml.jsonToXML",
-    "name": "jsonToXML",
+    "fullyQualifiedName": "xml.parsuj",
+    "name": "parsuj",
     "pageId": "Podsumowanie",
     "userSetOnLoad": false
   }

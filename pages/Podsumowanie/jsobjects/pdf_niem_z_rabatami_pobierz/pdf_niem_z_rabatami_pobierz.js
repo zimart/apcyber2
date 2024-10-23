@@ -10,16 +10,17 @@ const Roboto = Input1.text;
 
 // Custom headers
 const columns = [
+//{ header: 'Lp', dataKey: 'Lp' },
 { header: 'Produkt', dataKey: 'Produkt' },
 { header: 'Menge', dataKey: 'Ilosc' },
 { header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
 { header: 'Rabatt %', dataKey: 'Rabatprocent' } ,// Custom header with currency
-{ header: 'Rabattbetrag', dataKey: 'Rabat' } ,// Custom header with currency
+//{header: 'Rabattbetrag', dataKey: 'Rabat' } ,// Custom header with currency
 { header: 'Netto nach Abzug', dataKey: 'nettopo' } ,// Custom header with currency
 //{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
 { header: 'Nettosumme', dataKey: 'razemnetto' }, // Custom header with currency
 { header: 'Steuer %', dataKey: 'vat' }, // Custom header with currency
-{ header: 'Steuerbetrag', dataKey: 'vatkwota' }, // Custom header with currency
+//{ header: 'Steuerbetrag', dataKey: 'vatkwota' }, // Custom header with currency
 { header: 'Zu bezahlen', dataKey: 'Brutto' } // Custom header with currency
 ];	
 	
@@ -36,10 +37,12 @@ const currencyRate = kursinput.text; // Example currency rate for conversion
 
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
-Produkt: item.Produkt +"\n"+item.opiszrabatami_de,
+Lp:item.Ilosc,
+//Produkt: item.Produkt +"\n"+item.opiszrabatami_de,
+Produkt: item.Produkt,
 Ilosc: item.Ilosc,
 cenanetto: (item.cenanetto / currencyRate).toFixed(2),// Convert price using currency rate
-//Opis: item.opiszrabatami,
+Opis: item.opiszrabatami,
 Rabatprocent: item.rabatogolny,
 Rabat: (item.kwotarabatogolny/currencyRate).toFixed(2),
 nettopo: (item.cenaporabacie / currencyRate).toFixed(2),
@@ -49,7 +52,6 @@ vatkwota: (item.razemnetto*(item.vat/100)).toFixed(2),
 Brutto: (item.brutto/ currencyRate).toFixed(2)
 }));	
 	
-
 	
 	
 	
@@ -241,11 +243,10 @@ valign: 'middle'
 
 // Add text below the table
 const finalY2 = doc.lastAutoTable.finalY; // The y position where the table ends
-doc.text("tekst", 15, finalY2 + 10);
-	
-		
-	
-	
+doc.text("tutaj netto", 15, finalY2 + 10);
+doc.addPage();
+//doc.text(textpdfdlugi.text, 15, finalY2 + 30);	
+doc.text(textpdfdlugi.text, 15, 15);		
 	
 	
 //return doc.output("dataurlstring");

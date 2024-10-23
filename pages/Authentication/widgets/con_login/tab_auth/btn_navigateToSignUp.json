@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 51,
+  "bottomRow": 24,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
@@ -50,7 +50,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 58,
+  "rightColumn": 62,
   "searchTags": [
     "click",
     "submit"
@@ -59,7 +59,7 @@
     "Buttons"
   ],
   "text": "Don't have an account? Sign Up",
-  "topRow": 47,
+  "topRow": 20,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "6mx5oq7on0",

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 16,
   "bottomRowBeforeCollapse": 16,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -43,7 +43,7 @@
   "mobileTopRow": 12,
   "needsErrorInfo": false,
   "onClick": "{{pdf_polski_z_rabatami_pobierz.BuildPDF();\ncloseModal(pdf_modal.name);}}",
-  "originalBottomRow": 16,
+  "originalBottomRow": 12,
   "originalTopRow": 12,
   "parentColumnSpace": 6.9375,
   "parentId": "c6v5y6fyw0",

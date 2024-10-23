@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE inventory_main SET\n    rabatogolny = '{{rabatogolny.text}}',\n\t\tvat = {{vat.selectedOptionValue}},\n    kwotarabatogolny = cenanetto*(rabatogolny/100),\n\t\tcenaporabacie = cenanetto-kwotarabatogolny,\n\t\trazemnetto = ilosc*cenaporabacie,\n\t\tbrutto = razemnetto*((vat/100)+1)\nWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
+      "body": "UPDATE inventory_main SET\n    rabatogolny = '{{rabatogolny.text}}',\n\t\tvat = {{vat.selectedOptionValue}},\n    kwotarabatogolny = cenanetto*(rabatogolny/100),\n\t\tcenaporabacie = cenanetto-kwotarabatogolny,\n\t\trazemnetto = ilosc*cenaporabacie,\n\t\tbrutto = razemnetto*((vat/100)+1)\n\t\t\nWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
