@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 190,
   "boxShadow": "none",
-  "defaultText": "{{netto.text+podatek.text}}",
+  "defaultText": "{{(netto.text+podatek.text).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -56,5 +56,5 @@
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "kalgxvt84b",
-  "widgetName": "Input8"
+  "widgetName": "bruttozad"
 }

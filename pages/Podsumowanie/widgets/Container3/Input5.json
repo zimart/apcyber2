@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultText": "{{((sumarazemnetto.data[0][\"SUM (razemnetto)\"]/kursinput.text)*(wymaganyzadatekprocent.text/100)).toFixed(2)}}",
+  "defaultText": "{{(bruttozad.text*(wymaganyzadatekprocent.text/100)).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

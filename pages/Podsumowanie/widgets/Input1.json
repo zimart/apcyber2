@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 713,
-  "bottomRowBeforeCollapse": 716,
+  "bottomRowBeforeCollapse": 713,
   "boxShadow": "none",
   "defaultText": "{{robotofont.data[0].base}}",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 219,
-  "topRowBeforeCollapse": 222,
+  "topRowBeforeCollapse": 219,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "eopy70dgdk",

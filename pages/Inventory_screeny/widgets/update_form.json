@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 158,
+  "bottomRow": 60,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -500,6 +500,69 @@
     },
     {
       "key": "schema.__root_schema__.children.id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.serianapedu.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.serianapedu.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.serianapedu.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.rodzajnapedu.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.rodzajnapedu.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.rodzajnapedu.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.referencja.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.referencja.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.referencja.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.opisbezrabatow_de.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.opisbezrabatow_de.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.opisbezrabatow_de.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.opiszrabatami_de.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.opiszrabatami_de.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.opiszrabatami_de.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.opisbezrabatow_en.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.opisbezrabatow_en.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.opisbezrabatow_en.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.opiszrabatami_en.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.opiszrabatami_en.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.opiszrabatami_en.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -540,7 +603,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 89,
+  "originalBottomRow": 158,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "0",
@@ -1014,6 +1077,49 @@
           "position": 39,
           "sourceData": "System:ZiiiP | Skrzynka:125 | Kolor:RAL SPECJALNY  | Szer:3333 | Wys: 2222 | Tkanina: COPACO LUNAR/ | Cena bazowa: 3572.00 | Doplata kolor:10% | Kwota doplaty:357.2 | Doplata tkanina:518.70 | Doplata do wkladki:0 | Cena rolety z doplatami:4447.9 | Cena napedu:1017.45| Roleta kompletna:4798.16"
         },
+        "opisbezrabatow_de": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "opisbezrabatow_de",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.opisbezrabatow_de))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "opisbezrabatow_de",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Opisbezrabatow De",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "opisbezrabatow_de",
+          "position": 45,
+          "sourceData": "System:EASY ZIIIP Skrzynka:85 | Kolor:RAL 7016 Szerokość:1444 | Wys: 1455 | Tkanina: COPACO SERGE 600 | Cena bazowa: 1509.00 | Doplata kolor:0% | Kwota doplaty:0 | Doplata tkanina:0.00 | Doplata do wkladki:0 | Cena rolety z doplatami:1509 | Cena napedu:940.5| Roleta kompletna:2298.60"
+        },
+        "opisbezrabatow_en": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "opisbezrabatow_en",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.opisbezrabatow_en))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "opisbezrabatow_en",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Opisbezrabatow En",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "opisbezrabatow_en",
+          "position": 47
+        },
         "opiszrabatami": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "opiszrabatami",
@@ -1035,6 +1141,49 @@
           "originalIdentifier": "opiszrabatami",
           "position": 40,
           "sourceData": "System:ZiiiP | Skrzynka:125 | Kolor:RAL SPECJALNY  | Szer:3333 | Wys: 2222 | Tkanina: COPACO LUNAR/ | Cena bazowa: 3572.00 | Doplata kolor:10% | Kwota doplaty:357.2 | Doplata tkanina:518.70 | Doplata do wkladki:0 | Cena rolety z doplatami:4447.9 | Rabat system:15% | System po rabacie:3780.71 | Cena napedu:1017.45 | Rabat naped:15%  Naped po rabacie1017.45| Roleta kompletna:4798.16"
+        },
+        "opiszrabatami_de": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "opiszrabatami_de",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.opiszrabatami_de))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "opiszrabatami_de",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Opiszrabatami De",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "opiszrabatami_de",
+          "position": 46,
+          "sourceData": "System:EASY ZIIIP Kasten:85 | Farbe:RAL 7016 Breite:1444 | Wys: 1455 | Stoff: COPACO SERGE 600-WHITE-WHITE 002 002 | Katalogpreis: 1509.00 | Farbzuschlag:0% |Zuschlagsbetrag:0 | Stoffzuschlag:0.00 | Aufpreis für die ZIIIP-Einlage:0 | Preis für system mit Zuschlägen:1509 | Systemrabatt:10% | System nach Rabatt:1358.10 | Motor:Maestria 6/17 IO | Fahrpreis:940.5 | Motorrabatt:10%  Motor nach einem Rabatt940.5| Preis des Komplettsystems:2298.60"
+        },
+        "opiszrabatami_en": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "opiszrabatami_en",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.opiszrabatami_en))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "opiszrabatami_en",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Opiszrabatami En",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "opiszrabatami_en",
+          "position": 48
         },
         "powierzchnia": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1190,6 +1339,28 @@
           "position": 36,
           "sourceData": 4798.16
         },
+        "referencja": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "referencja",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.referencja))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "referencja",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Referencja",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "referencja",
+          "position": 44,
+          "sourceData": "WHITE-WHITE 002 002"
+        },
         "rodzajmotor": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "rodzajmotor",
@@ -1211,6 +1382,28 @@
           "originalIdentifier": "rodzajmotor",
           "position": 25,
           "sourceData": "1"
+        },
+        "rodzajnapedu": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "rodzajnapedu",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rodzajnapedu))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "rodzajnapedu",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Rodzajnapedu",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "rodzajnapedu",
+          "position": 43,
+          "sourceData": "IO"
         },
         "rodzajpomiaru": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1255,6 +1448,28 @@
           "originalIdentifier": "seq",
           "position": 26,
           "sourceData": ""
+        },
+        "serianapedu": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "serianapedu",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.serianapedu))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "serianapedu",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Serianapedu",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "serianapedu",
+          "position": 42,
+          "sourceData": "SOMFY"
         },
         "skrzynka": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

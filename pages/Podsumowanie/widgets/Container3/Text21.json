@@ -41,7 +41,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 11,
+  "rightColumn": 6,
   "shouldTruncate": false,
   "text": "{{dane_oferty_main.data[0].dataoferty ||\"\"}}",
   "textAlign": "LEFT",

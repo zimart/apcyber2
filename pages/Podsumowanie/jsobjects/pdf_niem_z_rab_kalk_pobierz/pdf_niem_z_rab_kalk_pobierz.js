@@ -5,8 +5,7 @@ const data2 = glowna_tabela.tableData;
 const numer = idoferty_appsmith.text;
 const Roboto = Input1.text;
 
-//const data = tabela_glowna.tableData;
-//const waluta = netto+walutaskrot.text;	
+
 
 // Custom headers
 const columns = [
@@ -15,12 +14,12 @@ const columns = [
 { header: 'Menge', dataKey: 'Ilosc' },
 { header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
 { header: 'Rabatt %', dataKey: 'Rabatprocent' } ,// Custom header with currency
-//{header: 'Rabattbetrag', dataKey: 'Rabat' } ,// Custom header with currency
+{header: 'Rabattbetrag', dataKey: 'Rabat' } ,// Custom header with currency
 { header: 'Netto nach Abzug', dataKey: 'nettopo' } ,// Custom header with currency
 //{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
 { header: 'Nettosumme', dataKey: 'razemnetto' }, // Custom header with currency
 { header: 'Steuer %', dataKey: 'vat' }, // Custom header with currency
-//{ header: 'Steuerbetrag', dataKey: 'vatkwota' }, // Custom header with currency
+{ header: 'Steuerbetrag', dataKey: 'vatkwota' }, // Custom header with currency
 { header: 'Zu bezahlen', dataKey: 'Brutto' } // Custom header with currency
 ];	
 	
@@ -29,10 +28,12 @@ const columns = [
 const columns2 = [
 { header: 'szczegoly', dataKey: 'szczegoly' }
 ];	
-const data3 = opisoferty.text;	
-	
-// Example data with computed values
 
+const columns3 = [
+{ header: 'szczegoly', dataKey: 'szczegoly' }
+];	
+
+	
 const currencyRate = kursinput.text; // Example currency rate for conversion
 
 const data = glowna_tabela.tableData.map(item => ({
@@ -52,25 +53,7 @@ vatkwota: (item.razemnetto*(item.vat/100)).toFixed(2),
 Brutto: (item.brutto/ currencyRate).toFixed(2)
 }));	
 	
-	
-	
-	
-	///koniec tabeliglownej
-//const columns2 = tabela_glowna.tableHeaders;
-	
-// Example data
-//const data = [
-//{ id: 1, name: "John Doe", country: "USA" },
-//{ id: 2, name: "Anna Smith", country: "UK" },
-//{ id: 3, name: "Peter Jones", country: "Canada" }
-//];
 
-//const columns = Object.keys(data[0]).map(key => ({ header: key, dataKey: key }));	
-
- // doc.addFileToVFS("Amiri-Regular.ttf", AmiriRegular);
- //doc.addFont("Amiri-Regular.ttf", "Amiri", "normal");
-
- // doc.setFont("Amiri"); // set font
 	
 doc.addFileToVFS("RobotoCondensed-Regular.ttf", Roboto);
 doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
@@ -103,14 +86,7 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 	   doc.text (ponizej.text, 15, 80);
 	   doc.text (dziekujemy.text, 15, 85);
 	
-	//tabela_opis
 	
-
-//const finalY = doc.lastAutoTable.finalY; // The y position where the table ends
-//doc.text(opisoferty.text, 15, finalY + 10);
-
-	   
-	    
 	
 default_1 (doc, {
 theme: 'grid',
@@ -246,8 +222,11 @@ const finalY2 = doc.lastAutoTable.finalY; // The y position where the table ends
 doc.text("tutaj netto", 15, finalY2 + 10);
 doc.addPage();
 //doc.text(textpdfdlugi.text, 15, finalY2 + 30);	
-doc.text(textpdfdlugi.text, 15, 15);		
 	
+const finalY3 = doc.lastAutoTable.finalY; // The y position where the table ends		
+doc.text(textpdfdlugi.text, 15, finalY3 + 10);		
+	
+
 	
 //return doc.output("dataurlstring");
 	download(doc.output(), 'angebot_.pdf');
