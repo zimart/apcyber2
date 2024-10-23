@@ -25,9 +25,9 @@ export default {
 
 		if (user && this.verifyHash(password, user?.password_hash)) {
 			storeValue('token', await this.createToken(user))
-	//			.then(() => updateLogin.run({
-	//			id: user.id
-	//		}))
+				.then(() => updateLogin.run({
+				id: user.id
+			}))
 				.then(() => showAlert('zalogowano', 'success'))
 				.then(() => navigateTo('Klienci', {}, 'SAME_WINDOW'))	 	
 			  

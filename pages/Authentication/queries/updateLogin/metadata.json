@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE user_auth\n  SET last_login = {{new Date().toISOString()}}\n  WHERE id = {{this.params.id}};",
+      "body": "UPDATE user_auth  SET last_login = {{new Date().toISOString()}}\n  WHERE id_user = {{this.params.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
