@@ -4,12 +4,12 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "0px",
   "borderWidth": "0",
-  "bottomRow": 26,
+  "bottomRow": 27,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 190,
+      "bottomRow": 200,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",

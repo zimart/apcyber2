@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 13,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -19,7 +19,7 @@
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
+  "fontSize": "1rem",
   "fontStyle": "",
   "isLoading": false,
   "isVisible": true,
@@ -33,7 +33,7 @@
   "mobileRightColumn": 15,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 16,
+  "originalBottomRow": 17,
   "originalTopRow": 6,
   "overflow": "NONE",
   "parentColumnSpace": 15.125,
@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "System : {{tabela_screeny_inventory_id.triggeredRow.system}}\nDane:\n{{tabela_screeny_inventory_id.triggeredRow.opiszrabatami}}\n",
+  "text": "{{tabela_screeny_inventory_id.triggeredRow.opiszrabatami}}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 6,

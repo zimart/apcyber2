@@ -11,6 +11,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -28,7 +29,7 @@
   "mobileRightColumn": 16,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onClick": "{{storeValue('id_oferty', idofertyappsmith.text).then(() => {\n  navigateTo('Podsumowanie', {\n    id_oferta: appsmith.store.id_oferty\n  }, 'SAME_WINDOW');\n});}}",
+  "onClick": "{{storeValue('uzytkownik', Input29.text);\nstoreValue('id_oferty', idofertyappsmith.text).then(() => {\n  navigateTo('Podsumowanie', {\n    id_oferta: appsmith.store.id_oferty,\n    uzytkownik: appsmith.store.uzytkownik\n  }, 'SAME_WINDOW');\n});}}",
   "originalBottomRow": 14,
   "originalTopRow": 10,
   "parentColumnSpace": 19.90625,

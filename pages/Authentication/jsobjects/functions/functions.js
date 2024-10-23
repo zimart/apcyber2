@@ -15,7 +15,7 @@ export default {
 	},
 
 	createToken: async (user) => {
-		return jsonwebtoken.sign(user, 'secret', {expiresIn: 1*1});
+		return jsonwebtoken.sign(user, 'secret', {expiresIn: 60*60});
 	},
 
 	signIn: async () => {
@@ -24,12 +24,14 @@ export default {
 		const [user] = await findUserByEmail.run();
 
 		if (user && this.verifyHash(password, user?.password_hash)) {
+		
 			storeValue('token', await this.createToken(user))
-				.then(() => updateLogin.run({
-				id: user.id
-			}))
+			storeValue('uzytkownik',inp_email.text )
+		//		.then(() => updateLogin.run({
+	//			id_user: user.id
+	//		}))
 				.then(() => showAlert('zalogowano', 'success'))
-			//	.then(() => navigateTo('Klienci', {}, 'SAME_WINDOW'))	 	
+				.then(() => navigateTo('Klienci', {}, 'SAME_WINDOW'))	; 	
 			  
 		} else {
 			return showAlert('Invalid emaill/password combination', 'error');

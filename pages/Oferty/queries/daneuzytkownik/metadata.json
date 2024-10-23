@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "670a2c74cb4eb2140bfd1e60_d0dea1ce-88c8-424d-bdb3-9f1733212fd4",
-  "id": "Authentication_updateLogin",
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_74793fb0-a6b8-4226-ac51-99e316bfd067",
+  "id": "Oferty_daneuzytkownik",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE user_auth  SET last_login = {{new Date().toISOString()}}\n  WHERE id = {{this.user.id}};",
+      "body": "SELECT first_name,last_name,user_id FROM user_auth WHERE email = {{appsmith.store.uzytkownik}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "updateLogin",
-    "pageId": "Authentication",
-    "userSetOnLoad": false
+    "executeOnLoad": true,
+    "name": "daneuzytkownik",
+    "pageId": "Oferty",
+    "userSetOnLoad": true
   }
 }

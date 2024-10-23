@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "0px",
   "borderWidth": "",
-  "bottomRow": 86,
+  "bottomRow": 89,
   "boxShadow": "none",
   "childStylesheet": {
     "button": {
@@ -226,8 +226,8 @@
   "onPageSizeChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
-  "originalBottomRow": 86,
-  "originalTopRow": 5,
+  "originalBottomRow": 89,
+  "originalTopRow": 10,
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -1136,7 +1136,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{tabela_id_klient.data}}",
   "textSize": "0.875rem",
-  "topRow": 7,
+  "topRow": 10,
   "totalRecordsCount": "30",
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",

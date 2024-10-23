@@ -18,6 +18,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "menuItems.menuItem1.onClick"
@@ -38,7 +39,7 @@
       "isDisabled": false,
       "isVisible": true,
       "label": "SCREENY",
-      "onClick": "{{storeValue('id_oferta', idoferty_appsmith.text).then(() => {\n  navigateTo('Screeny', {\n    id_oferta: appsmith.store.id_oferta\n  }, 'SAME_WINDOW');\n});}}",
+      "onClick": "{{storeValue('id_oferta', idoferty_appsmith.text);\nstoreValue('uzytkownik', uzytkownik.text).then(() => {\n  navigateTo('Screeny', {\n    id_oferta: appsmith.store.id_oferta,\n    uzytkownik: appsmith.store.uzytkownik\n  }, 'SAME_WINDOW');\n});}}",
       "widgetId": ""
     },
     "menuItem2": {
