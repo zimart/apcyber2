@@ -15,7 +15,7 @@ export default {
 	},
 
 	createToken: async (user) => {
-		return jsonwebtoken.sign(user, 'secret', {expiresIn: 60*60});
+		return jsonwebtoken.sign(user, 'secret', {expiresIn: 1*1});
 	},
 
 	signIn: async () => {
@@ -29,7 +29,7 @@ export default {
 				id: user.id
 			}))
 				.then(() => showAlert('zalogowano', 'success'))
-				.then(() => navigateTo('Klienci', {}, 'SAME_WINDOW'))	 	
+			//	.then(() => navigateTo('Klienci', {}, 'SAME_WINDOW'))	 	
 			  
 		} else {
 			return showAlert('Invalid emaill/password combination', 'error');
