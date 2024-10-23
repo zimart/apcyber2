@@ -15,11 +15,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -34,7 +30,7 @@
   "isVisible": true,
   "key": "d80868s2dr",
   "leftColumn": 2,
-  "onClick": "{{functions.signIn();\nnavigateTo('Klienci', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{functions.signIn();}}",
   "originalBottomRow": 46,
   "originalTopRow": 40,
   "parentColumnSpace": 18.1875,

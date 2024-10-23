@@ -29,7 +29,7 @@ export default {
 	//			id: user.id
 	//		}))
 				.then(() => showAlert('zalogowano', 'success'))
-			.then(() => navigateTo('Klienci', {}, 'SAME_WINDOW'))		 	
+				.then(() => navigateTo('Klienci', {}, 'SAME_WINDOW'))	 	
 			  
 		} else {
 			return showAlert('Invalid emaill/password combination', 'error');
