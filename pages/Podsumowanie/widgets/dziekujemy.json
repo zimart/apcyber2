@@ -22,7 +22,7 @@
   "fontSize": "0.875rem",
   "fontStyle": "",
   "isLoading": false,
-  "isVisible": false,
+  "isVisible": true,
   "key": "meqdv5n5nd",
   "leftColumn": 30,
   "maxDynamicHeight": 9000,

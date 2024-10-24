@@ -268,6 +268,18 @@
     },
     {
       "key": "schema.__root_schema__.children.sumarabatu.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.tabelanbpkurs.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.tabelanbpkurs.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.kurswgtabeli.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.kurswgtabeli.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -305,7 +317,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{Insert_oferty.run().then(() => zapisznumeroferty.run()).then(() => tabela_id_klient.run()).then(() => closeModal(Insert_Modal.name));\n}}",
-  "originalBottomRow": 27,
+  "originalBottomRow": 58,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "9rhv3ioohq",
@@ -498,6 +510,28 @@
           "originalIdentifier": "kurseuro",
           "position": 7
         },
+        "kurswgtabeli": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "kurswgtabeli",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "kurswgtabeli",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Kurswgtabeli",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "kurswgtabeli",
+          "position": 21,
+          "sourceData": 4.3396
+        },
         "numeroferty": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "numeroferty",
@@ -625,6 +659,28 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "sumarabatu",
           "position": 19
+        },
+        "tabelanbpkurs": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "tabelanbpkurs",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "tabelanbpkurs",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Tabelanbpkurs",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "tabelanbpkurs",
+          "position": 20,
+          "sourceData": "208/A/NBP/2024"
         },
         "temat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
