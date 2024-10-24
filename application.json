@@ -125,6 +125,10 @@
     {
       "id": "Tkaniny_markizy",
       "isDefault": false
+    },
+    {
+      "id": "Warunki",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

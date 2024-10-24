@@ -1,0 +1,3 @@
+UPDATE warunki SET
+		warunki_pl = '{{update_form.fieldState.warunki_pl.isVisible ? update_form.formData.warunki_pl : update_form.sourceData.warunki_pl}}'
+WHERE id_warunki = {{data_table.selectedRow.id_warunki}};

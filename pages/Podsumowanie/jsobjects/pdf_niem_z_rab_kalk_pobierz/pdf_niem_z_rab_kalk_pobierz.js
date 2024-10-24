@@ -33,7 +33,6 @@ const columns3 = [
 { header: 'szczegoly', dataKey: 'szczegoly' }
 ];	
 
-	
 const currencyRate = kursinput.text; // Example currency rate for conversion
 
 const data = glowna_tabela.tableData.map(item => ({
@@ -74,17 +73,19 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 	    doc.setFontSize("9")
       doc.text (nagl.text, 15, 20);
 	
-	    doc.setFontSize("12");
-	    doc.text ("ANGEBOT", 17, 48);
+	    doc.setFontSize("11");
+	    doc.text ("ANGEBOT", 16, 48);
 	    doc.text (Text22.text, 35, 48);
+	    doc.text (Text21.text, 175, 48);
+	    
 	
 	    doc.setFontSize("10");
 	    doc.text ("Kunde: ", 15, 58);
 	    doc.text(klient.text, 15, 63);
 	 
 	    doc.setFontSize("10")
-	   doc.text (ponizej.text, 15, 80);
-	   doc.text (dziekujemy.text, 15, 85);
+	   doc.text (ponizej.text, 15, 84);
+	   doc.text (dziekujemy.text, 15, 80);
 	
 	
 	
@@ -143,7 +144,7 @@ body: [
  
 ],
 columns: [
-  { header: 'Opis oferty', dataKey: 'opis' },
+  { header: i18n.translate("Opis oferty"), dataKey: 'opis' },
  
 ]
 

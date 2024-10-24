@@ -1,0 +1,4 @@
+INSERT INTO warunki (
+	warunki_pl)
+VALUES (
+	'{{insert_form.formData.warunki_pl}}');

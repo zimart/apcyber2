@@ -4,6 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 96,
+  "bottomRowBeforeCollapse": 96,
   "boxShadow": "none",
   "defaultText": "{{numerofertmiesiac.miesiac.data}}",
   "dynamicBindingPathList": [
@@ -52,6 +53,7 @@
   "rightColumn": 20,
   "showStepArrows": false,
   "topRow": 89,
+  "topRowBeforeCollapse": 89,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "3z60by1u0d",

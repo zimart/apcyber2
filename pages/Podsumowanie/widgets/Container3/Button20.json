@@ -28,7 +28,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 122,
   "needsErrorInfo": false,
-  "onClick": "{{zmiendaneoferty.run()}}",
+  "onClick": "{{zmiendaneoferty.run().then(() => {\n  dane_oferty_main.run();\n  warunki.run();\n});}}",
   "originalBottomRow": 148,
   "originalTopRow": 144,
   "parentColumnSpace": 20.5625,

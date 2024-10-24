@@ -8,7 +8,7 @@ UPDATE oferty SET
 		komentarz = '{{opisoferty.text}}',
 		wymaganyzadatekprocent = '{{wymaganyzadatekprocent.text}}',
 		datawaznosci='',
-		warunkiplatnosci = '{{MultiSelect1.selectedOptionLabels}}',
+		warunkiplatnosci = '{{MultiSelect1.selectedOptionValues}}',
 	
 		sugerowanyzadatek ='{{wymaganyzadatek.text}}'
 		

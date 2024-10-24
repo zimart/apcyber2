@@ -1,0 +1,2 @@
+DELETE FROM warunki
+  WHERE id_warunki = {{data_table.triggeredRow.id_warunki}};

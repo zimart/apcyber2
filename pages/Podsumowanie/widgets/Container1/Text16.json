@@ -28,7 +28,7 @@
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
-  "fontStyle": "BOLD",
+  "fontStyle": "",
   "isLoading": false,
   "isVisible": "{{Select6.selectedOptionLabel===\"EUR\"}}",
   "key": "cavtlzzmgo",
