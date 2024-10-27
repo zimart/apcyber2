@@ -13,6 +13,10 @@ tabela_glowna.run())
 .then(() => 
 sumarazemnetto.run())
 .then(() => 
+sumarabatu.run())
+.then(() => 
+razemnettoporabacie.run())
+.then(() => 
 closeModal(LanguageLoading.name));
 
 },

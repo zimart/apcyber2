@@ -10,6 +10,9 @@ UPDATE oferty SET
 		datawaznosci='',
 		warunkiplatnosci = '{{MultiSelect1.selectedOptionValues}}',
 	
-		sugerowanyzadatek ='{{wymaganyzadatek.text}}'
+		wymaganyzadatek ='{{wymaganyzadatek.text}}',
+		sumanetto = '{{(netto.text).toFixed(2)}}',
+		sumabrutto = '{{bruttozad.text}}',
+		sumarabatu = '{{(sumarabatu.data[0]["SUM (kwotarabatogolny)"]).toFixed(2)}}'
 		
 WHERE  id_oferta = {{appsmith.URL.queryParams.id_oferta}}; 

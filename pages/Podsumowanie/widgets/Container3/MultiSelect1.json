@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( warunki.data[0].warunkiplatnosci||\"Wymagany zadatek\"))(MultiSelect1.options, MultiSelect1.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( warunki.data[0].warunkiplatnosci||\"Wymagany zadatek w wysokości wykazanej poniżej przy przyjęciu zamówienia\"))(MultiSelect1.options, MultiSelect1.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

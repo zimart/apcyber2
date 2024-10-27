@@ -1,0 +1,2 @@
+SELECT SUM (kwotarabatogolny)
+FROM inventory_main WHERE fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}};

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 255,
+  "bottomRow": 271,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,8 +33,8 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 144,
   "needsErrorInfo": false,
-  "originalBottomRow": 255,
-  "originalTopRow": 250,
+  "originalBottomRow": 269,
+  "originalTopRow": 264,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
   "parentId": "0",
@@ -46,7 +46,7 @@
   "text": "{{i18n.translate(\"Waluta\")}} : {{Select6.selectedOptionLabel}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 250,
+  "topRow": 266,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE oferty SET \n    kurseuro = '{{kursinput.text}}',\n    waluta = '{{Select6.selectedOptionValue}}',\n\t\tvat = '{{vat.selectedOptionValue}}',\n\t\trabat = '{{rabatogolny.text}}',\n\t\ttabelanbpkurs = '{{tabelanbpkurs.text}}',\n\t\tkurswgtabeli = '{{kurstabela.text}}',\n\t\tkomentarz = '{{opisoferty.text}}',\n\t\twymaganyzadatekprocent = '{{wymaganyzadatekprocent.text}}',\n\t\tdatawaznosci='',\n\t\twarunkiplatnosci = '{{MultiSelect1.selectedOptionValues}}',\n\t\n\t\tsugerowanyzadatek ='{{wymaganyzadatek.text}}'\n\t\t\nWHERE  id_oferta = {{appsmith.URL.queryParams.id_oferta}}; ",
+      "body": "UPDATE oferty SET \n    kurseuro = '{{kursinput.text}}',\n    waluta = '{{Select6.selectedOptionValue}}',\n\t\tvat = '{{vat.selectedOptionValue}}',\n\t\trabat = '{{rabatogolny.text}}',\n\t\ttabelanbpkurs = '{{tabelanbpkurs.text}}',\n\t\tkurswgtabeli = '{{kurstabela.text}}',\n\t\tkomentarz = '{{opisoferty.text}}',\n\t\twymaganyzadatekprocent = '{{wymaganyzadatekprocent.text}}',\n\t\tdatawaznosci='',\n\t\twarunkiplatnosci = '{{MultiSelect1.selectedOptionValues}}',\n\t\n\t\twymaganyzadatek ='{{wymaganyzadatek.text}}',\n\t\tsumanetto = '{{(netto.text).toFixed(2)}}',\n\t\tsumabrutto = '{{bruttozad.text}}',\n\t\tsumarabatu = '{{(sumarabatu.data[0][\"SUM (kwotarabatogolny)\"]).toFixed(2)}}'\n\t\t\nWHERE  id_oferta = {{appsmith.URL.queryParams.id_oferta}}; ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
