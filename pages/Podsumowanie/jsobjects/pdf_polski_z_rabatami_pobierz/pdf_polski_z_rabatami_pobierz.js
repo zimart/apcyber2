@@ -1,9 +1,9 @@
 export default {
 
-nazwapliku() {
-	const data=Text21.text;
-	return data;
-},
+//nazwapliku() {
+	//const data=Text21.text;
+//	return data;
+//},
 	
 async BuildPDF () {
 const doc = jspdf.jsPDF();
@@ -181,13 +181,13 @@ valign: 'middle'
 	
 	// Add a table with auto columns
 //default_1(doc,tabela_glowna.tableData);
-const nazwa = Text21.text;
+//const nazwa = Text21.text;
 	
 // Add text below the table
 const finalY = doc.lastAutoTable.finalY; // The y position where the table ends
 doc.text(i18n.translate("Razem netto"), 15, finalY + 10);
 doc.setFontSize("12")
-doc.text(Text5.text, 15, finalY + 15);
+//doc.text(Text5.text, 15, finalY + 15);
 //return doc.output("dataurlstring");
 download(doc.output(),'oferta.pdf');
 	

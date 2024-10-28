@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 244,
+  "bottomRow": 247,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,8 +33,8 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 138,
   "needsErrorInfo": false,
-  "originalBottomRow": 251,
-  "originalTopRow": 247,
+  "originalBottomRow": 247,
+  "originalTopRow": 243,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
   "parentId": "0",
@@ -46,7 +46,7 @@
   "text": "{{i18n.translate(\"Poniżej znajdziecie Państwo szczegóły naszej oferty.\")}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 240,
+  "topRow": 243,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

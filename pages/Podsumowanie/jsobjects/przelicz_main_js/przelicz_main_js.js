@@ -11,11 +11,9 @@ updateopismainkurs.run())
 .then(() =>
 tabela_glowna.run())
 .then(() => 
-sumakatalog.run())
+sumanettoporabacie.run())
 .then(() => 
-sumarabatu.run())
-.then(() => 
-razemnettoporabacie.run())
+sumabrutto.run())
 .then(() => 
 closeModal(LanguageLoading.name));
 

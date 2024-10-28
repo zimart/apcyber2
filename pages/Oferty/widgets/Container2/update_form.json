@@ -5,7 +5,7 @@
   "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 52,
+  "bottomRow": 55,
   "bottomRowBeforeCollapse": 89,
   "boxShadow": "none",
   "childStylesheet": {
@@ -361,7 +361,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_id_klient.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 48,
+  "originalBottomRow": 52,
   "originalTopRow": 4,
   "parentColumnSpace": 16.3125,
   "parentId": "x3oj14smam",
