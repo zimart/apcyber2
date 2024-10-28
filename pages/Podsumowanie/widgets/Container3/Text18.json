@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 39,
+  "bottomRow": 37,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 46,
   "shouldTruncate": false,
-  "text": "Zapisane dane oferty z dnia {{dane_oferty_main.data[0].dataoferty ||\"\"}}\n\nSuma netto katalogowo : {{(sumarazemnetto.data[0][\"SUM (razemnetto)\"]/kursinput.text).toFixed(2) ||\" \"}} {{Select6.selectedOptionLabel}}, \nSuma rabatu: {{(sumarabatu.data[0][\"SUM (kwotarabatogolny)\"]/kursinput.text).toFixed(2) ||\" \"}} {{Select6.selectedOptionLabel}}\nSuma netto po rabacie: {{(netto.text/kursinput.text).toFixed(2)}} {{Select6.selectedOptionLabel}}\nVAT: {{Input7.text}} %\nSuma podatku: {{(podatek.text/kursinput.text).toFixed(2)}} {{Select6.selectedOptionLabel}}\nDo zapłaty brutto: {{(bruttozad.text/kursinput.text).toFixed(2)}} {{Select6.selectedOptionLabel}}\nWaluta dokumentu : {{Select6.selectedOptionLabel}}\nNumer konta bankowego :{{numerkonta.data[0].konto}}\nWarunki płatności: \n{{i18n.translate(MultiSelect1.selectedOptionLabels[0])||\"\"}} {{i18n.translate(MultiSelect1.selectedOptionValues[1])||\"\"}}{{i18n.translate(MultiSelect1.selectedOptionValues[2])||\"\"}} {{i18n.translate(MultiSelect1.selectedOptionValues[3])||\"\"}}{{i18n.translate(MultiSelect1.selectedOptionValues[4])||\"\"}}\nWymagana kwota zadatku: {{wymaganyzadatek.text}} {{Select6.selectedOptionLabel}}\nData ważności oferty: {{dniwaznosc.text}} dni",
+  "text": "Zapisane dane oferty z dnia {{dane_oferty_main.data[0].dataoferty ||\"\"}}\n\nSuma netto katalogowo : ...\nSuma rabatu: {{(sumarabatu.data[0][\"SUM (kwotarabatogolny)\"]/kursinput.text).toFixed(2) ||\" \"}} {{Select6.selectedOptionLabel}}\nSuma netto po rabacie: {{(sumanettoporabacie.data[0][\"SUM (razemnetto)\"]/kursinput.text).toFixed(2)||\" \"}} {{Select6.selectedOptionLabel}}\nVAT: {{Input7.text}} %\nSuma podatku: {{(podatek.text/kursinput.text).toFixed(2)}} {{Select6.selectedOptionLabel}}\nDo zapłaty brutto: ...{{Select6.selectedOptionLabel}}\nWaluta dokumentu : {{Select6.selectedOptionLabel}}\nNumer konta bankowego :{{numerkonta.data[0].konto}}\nWarunki płatności: \n{{i18n.translate(MultiSelect1.selectedOptionLabels[0])||\"\"}} {{i18n.translate(MultiSelect1.selectedOptionValues[1])||\"\"}}{{i18n.translate(MultiSelect1.selectedOptionValues[2])||\"\"}} {{i18n.translate(MultiSelect1.selectedOptionValues[3])||\"\"}}{{i18n.translate(MultiSelect1.selectedOptionValues[4])||\"\"}}\nWymagana kwota zadatku: {{wymaganyzadatek.text}} {{Select6.selectedOptionLabel}}\nData ważności oferty: {{dniwaznosc.text}} dni",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 7,

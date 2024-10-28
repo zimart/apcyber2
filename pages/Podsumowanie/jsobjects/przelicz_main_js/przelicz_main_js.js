@@ -11,7 +11,7 @@ updateopismainkurs.run())
 .then(() =>
 tabela_glowna.run())
 .then(() => 
-sumarazemnetto.run())
+sumakatalog.run())
 .then(() => 
 sumarabatu.run())
 .then(() => 

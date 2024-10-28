@@ -1,11 +1,11 @@
 {
   "gitSyncId": "670a2c74cb4eb2140bfd1e60_1cdc6509-4fdd-4511-a0e3-2d5fa18f0805",
-  "id": "Podsumowanie_sumarazemnetto",
+  "id": "Podsumowanie_sumakatalog",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT SUM (razemnetto)\nFROM inventory_main WHERE fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}};",
+      "body": "SELECT SUM (cenanetto)\nFROM inventory_main WHERE fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "sumarazemnetto",
+    "name": "sumakatalog",
     "pageId": "Podsumowanie",
     "userSetOnLoad": true
   }
