@@ -5,7 +5,7 @@
   "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 55,
+  "bottomRow": 63,
   "bottomRowBeforeCollapse": 89,
   "boxShadow": "none",
   "childStylesheet": {
@@ -318,15 +318,6 @@
     },
     {
       "key": "schema.__root_schema__.children.kurswgtabeli.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.sumakatalog.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.sumakatalog.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.sumakatalog.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -361,7 +352,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_id_klient.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 52,
+  "originalBottomRow": 63,
   "originalTopRow": 4,
   "parentColumnSpace": 16.3125,
   "parentId": "x3oj14smam",
@@ -592,7 +583,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Kurswgtabeli",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kurswgtabeli",
@@ -685,28 +676,6 @@
           "originalIdentifier": "sumabrutto",
           "position": 18
         },
-        "sumakatalog": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "sumakatalog",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.sumakatalog))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "sumakatalog",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Sumakatalog",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "sumakatalog",
-          "position": 23,
-          "sourceData": 0
-        },
         "sumanetto": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "sumanetto",
@@ -765,7 +734,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Tabelanbpkurs",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "tabelanbpkurs",
