@@ -1,3 +1,4 @@
 UPDATE warunki SET
+		lang = '{{update_form.fieldState.lang.isVisible ? update_form.formData.lang : update_form.sourceData.lang}}',
 		warunki_pl = '{{update_form.fieldState.warunki_pl.isVisible ? update_form.formData.warunki_pl : update_form.sourceData.warunki_pl}}'
 WHERE id_warunki = {{data_table.selectedRow.id_warunki}};

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "670a2c74cb4eb2140bfd1e60_448da98b-6421-49f8-a2b6-5ab47744af92",
-  "id": "Warunki_SelectQuery",
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_905876bd-15e6-4823-9d95-456b5039ac10",
+  "id": "Warunki2_SelectQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM warunki\nWHERE warunki_pl like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'id_warunki'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM warunki\nWHERE lang like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'id_warunki'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": true,
     "name": "SelectQuery",
-    "pageId": "Warunki",
+    "pageId": "Warunki2",
     "userSetOnLoad": true
   }
 }

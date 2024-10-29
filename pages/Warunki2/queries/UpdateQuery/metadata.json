@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "670a2c74cb4eb2140bfd1e60_960917c5-560e-4dd9-9972-51eb141010dd",
-  "id": "Warunki_InsertQuery",
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_67a8042f-569e-47de-a4fc-b4a7dc7da65a",
+  "id": "Warunki2_UpdateQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO warunki (\n\twarunki_pl)\nVALUES (\n\t'{{insert_form.formData.warunki_pl}}');",
+      "body": "UPDATE warunki SET\n\t\tlang = '{{update_form.fieldState.lang.isVisible ? update_form.formData.lang : update_form.sourceData.lang}}',\n\t\twarunki_pl = '{{update_form.fieldState.warunki_pl.isVisible ? update_form.formData.warunki_pl : update_form.sourceData.warunki_pl}}'\nWHERE id_warunki = {{data_table.selectedRow.id_warunki}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,8 +23,8 @@
       "pluginId": "mysql-plugin"
     },
     "executeOnLoad": false,
-    "name": "InsertQuery",
-    "pageId": "Warunki",
+    "name": "UpdateQuery",
+    "pageId": "Warunki2",
     "userSetOnLoad": false
   }
 }

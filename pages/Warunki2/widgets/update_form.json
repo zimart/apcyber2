@@ -6,7 +6,6 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
   "bottomRow": 89,
-  "bottomRowBeforeCollapse": 89,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -132,6 +131,15 @@
     },
     {
       "key": "schema.__root_schema__.children.warunki_pl.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.lang.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.lang.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.lang.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -166,8 +174,6 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 89,
-  "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -188,6 +194,28 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
+        "lang": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "lang",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.lang))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "lang",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Lang",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "lang",
+          "position": 1,
+          "sourceData": "pl"
+        },
         "warunki_pl": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "warunki_pl",
@@ -208,7 +236,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "warunki_pl",
           "position": 0,
-          "sourceData": "Przedpłata 100%"
+          "sourceData": "Do uzgodnienia,"
         }
       },
       "dataType": "object",
@@ -243,7 +271,6 @@
   },
   "title": "Update Row id_warunki: {{data_table.selectedRow.id_warunki}}",
   "topRow": 0,
-  "topRowBeforeCollapse": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "6g4ewsx2v0",

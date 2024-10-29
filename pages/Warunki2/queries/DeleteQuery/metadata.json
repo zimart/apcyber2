@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "670a2c74cb4eb2140bfd1e60_a7e70c9b-61f3-4262-a25e-be48b394a04f",
-  "id": "Warunki_DeleteQuery",
+  "gitSyncId": "670a2c74cb4eb2140bfd1e60_b713ad6a-dfa6-411f-bb71-172f108087cd",
+  "id": "Warunki2_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "DeleteQuery",
-    "pageId": "Warunki",
+    "pageId": "Warunki2",
     "userSetOnLoad": false
   }
 }
