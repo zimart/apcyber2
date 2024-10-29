@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 6,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -37,7 +37,7 @@
   "originalTopRow": 4,
   "overflow": "NONE",
   "parentColumnSpace": 15.751953125,
-  "parentId": "59rw5mx0bq",
+  "parentId": "uraeas4nkk",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -46,7 +46,7 @@
   "text": "Witaj: {{daneuzytkownik.data[0].first_name||\"Nieznajomy\"}} {{daneuzytkownik.data[0].last_name}}",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
-  "topRow": 0,
+  "topRow": 2,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

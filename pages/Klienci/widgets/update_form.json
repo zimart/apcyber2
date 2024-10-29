@@ -6,7 +6,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
   "bottomRow": 80,
-  "bottomRowBeforeCollapse": 67,
+  "bottomRowBeforeCollapse": 80,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -241,8 +241,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 89,
-  "originalTopRow": 22,
+  "originalBottomRow": 80,
+  "originalTopRow": 13,
   "parentColumnSpace": 16.3125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -494,7 +494,7 @@
   },
   "title": "Aktualizuj: ID klienta {{data_table.selectedRow.accountid}}",
   "topRow": 13,
-  "topRowBeforeCollapse": 0,
+  "topRowBeforeCollapse": 13,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "6g4ewsx2v0",
