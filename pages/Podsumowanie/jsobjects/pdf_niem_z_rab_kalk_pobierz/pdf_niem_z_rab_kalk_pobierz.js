@@ -76,7 +76,7 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 	    doc.setFontSize("11");
 	    doc.text ("ANGEBOT", 16, 48);
 	    doc.text (Text22.text, 35, 48);
-	    doc.text (Text21.text, 175, 48);
+	   // doc.text (Text21.text, 175, 48);
 	    
 	
 	    doc.setFontSize("10");
