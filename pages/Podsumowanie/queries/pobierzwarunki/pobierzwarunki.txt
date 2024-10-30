@@ -1,1 +1,1 @@
-SELECT * FROM warunki;
+SELECT * FROM warunki WHERE lang='pl';
